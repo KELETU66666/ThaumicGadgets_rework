@@ -1,7 +1,6 @@
 package com.ancient.thaumicgadgets.keys;
 
 import baubles.api.BaublesApi;
-import com.ancient.thaumicgadgets.gui.GuiChangeLense;
 import com.ancient.thaumicgadgets.gui.GuiChangeMode;
 import com.ancient.thaumicgadgets.init.ModItems;
 import com.ancient.thaumicgadgets.network.MessageArmorAbility;
@@ -44,9 +43,6 @@ public class KeyInputHandler
                 break;
             case ARMOR_ABILITY:
                 /* 46 */           AbilityArmor();
-                break;
-            case LENSE_GUI:
-                /* 49 */           Minecraft.getMinecraft().displayGuiScreen((GuiScreen)new GuiChangeLense());
                 break;
         }
         }

@@ -55,8 +55,7 @@
 /*  55 */     pouch_hungry_magic_1("pouch_hungry_magic_1", 18),
 /*  56 */     pouch_hungry_magic_2("pouch_hungry_magic_2", 27),
 /*  57 */     pouch_hungry_magic_3("pouch_hungry_magic_3", 36),
-/*  58 */     pouch_void("pouch_void", 18),
-/*  59 */     pouch_lense("pouch_lense", 12);
+/*  58 */     pouch_void("pouch_void", 18);
 /*     */     
 /*     */     private String name;
 /*     */     
@@ -150,41 +149,6 @@
 /*     */     
 /*     */     public String toString() {
 /* 156 */       return this.name;
-/*     */     }
-/*     */   }
-/*     */   
-/*     */   public enum LenseTypes
-/*     */   {
-/* 162 */     NIGHT_VISION(0, "night_vision"),
-/* 163 */     ECHO_LOC(1, "echo_loc"),
-/* 164 */     DEATH_GAZE(2, "death_gaze"),
-/* 165 */     FIRE(3, "fire"),
-/* 166 */     KNOCKBACK(4, "knockback"),
-/* 167 */     DECAY(5, "decay");
-/*     */     
-/*     */     private final int id;
-/*     */     
-/*     */     private final String name;
-/*     */     
-/*     */     LenseTypes(int id, String name) {
-/* 174 */       this.id = id;
-/* 175 */       this.name = name;
-/*     */     }
-/*     */ 
-/*     */     
-/*     */     public String getName() {
-/* 180 */       return this.name;
-/*     */     }
-/*     */ 
-/*     */     
-/*     */     public int getId() {
-/* 185 */       return this.id;
-/*     */     }
-/*     */ 
-/*     */ 
-/*     */     
-/*     */     public String toString() {
-/* 191 */       return getName();
 /*     */     }
 /*     */   }
 /*     */ }

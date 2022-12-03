@@ -135,15 +135,7 @@
 /* 135 */     addGemCutterRecipe("oval_crystal_entropy_lapis", new ItemStack(Items.DYE, 1, 4), (new AspectList()).add(Aspect.ENTROPY, 50), new ItemStack(ModItems.OVAL_CTYSTAL_ENTROPY), 1, "JEWERELY", "oval_crystals");
 /* 136 */     addGemCutterRecipe("oval_crystal_entropy_quartz", new ItemStack(Items.QUARTZ), (new AspectList()).add(Aspect.ENTROPY, 75), new ItemStack(ModItems.OVAL_CTYSTAL_ENTROPY), 1, "JEWERELY", "oval_crystals");
 /* 137 */     addGemCutterRecipe("oval_crystal_entropy_amber", new ItemStack(ItemsTC.amber), (new AspectList()).add(Aspect.ENTROPY, 60), new ItemStack(ModItems.OVAL_CTYSTAL_ENTROPY), 1, "JEWERELY", "oval_crystals");
-/*     */ 
-/*     */     
-/* 140 */     addGemCutterRecipe("lense_echo_loc", new ItemStack(ModItems.LENSE_BLANK), (new AspectList()).add(Aspect.WATER, 50), new ItemStack(ModItems.LENSE_ECHO_LOC), 2, "JEWERELY", "basic_lenses");
-/* 141 */     addGemCutterRecipe("lense_night_vision", new ItemStack(ModItems.LENSE_BLANK), (new AspectList()).add(Aspect.FIRE, 50), new ItemStack(ModItems.LENSE_NIGHT_VISION), 2, "JEWERELY", "basic_lenses");
-/* 142 */     addGemCutterRecipe("lense_death_gaze", new ItemStack(ModItems.LENSE_BLANK), (new AspectList()).add(Aspect.ENTROPY, 50), new ItemStack(ModItems.LENSE_DEATH_GAZE), 2, "JEWERELY", "basic_lenses");
-/* 143 */     addGemCutterRecipe("lense_death_fire", new ItemStack(ModItems.LENSE_NIGHT_VISION), (new AspectList()).add(Aspect.AIR, 50), new ItemStack(ModItems.LENSE_FIRE), 2, "JEWERELY", "graded_lenses");
-/* 144 */     addGemCutterRecipe("lense_knockback", new ItemStack(ModItems.LENSE_BLANK), (new AspectList()).add(Aspect.AIR, 50), new ItemStack(ModItems.LENSE_KNOCKBACK), 2, "JEWERELY", "graded_lenses");
-/* 145 */     addGemCutterRecipe("lense_decay", new ItemStack(ModItems.LENSE_DEATH_GAZE), (new AspectList()).add(Aspect.ORDER, 50), new ItemStack(ModItems.LENSE_DECAY), 2, "JEWERELY", "graded_lenses");
-/*     */   }
+/*     */ }
 /*     */ 
 /*     */   
 /*     */   public static GemCutterRecipes getInstance() {

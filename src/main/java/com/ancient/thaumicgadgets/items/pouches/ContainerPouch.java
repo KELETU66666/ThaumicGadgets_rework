@@ -33,17 +33,7 @@
 /*     */         }
 /*     */       }
 /*     */     
-/*  36 */     } else if (stack.getName().contains("lense")) {
-/*     */       
-/*  38 */       for (int y = 0; y < 2; y++)
-/*     */       {
-/*  40 */         for (int x = 0; x < 6; x++)
-/*     */         {
-/*  42 */           addSlotToContainer(new SlotLensePouch(this.inventory, x + y * 6, 36 + 18 * x, 4 + 16 * y));
-/*     */         }
-/*     */       }
-/*     */     
-/*  46 */     } else if (stack.getName().contains("void")) {
+/*  36 */     }  else if (stack.getName().contains("void")) {
 /*     */       
 /*  48 */       for (int y = 0; y < 3; y++) {
 /*     */         

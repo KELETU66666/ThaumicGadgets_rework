@@ -10,7 +10,7 @@
 /*     */ import com.ancient.thaumicgadgets.items.ItemBase;
 /*     */
 /*     */ import com.ancient.thaumicgadgets.items.ItemCrystal;
-/*     */ import com.ancient.thaumicgadgets.items.ItemLense;
+/*     */
 /*     */ import com.ancient.thaumicgadgets.items.ItemTab;
 /*     */ import com.ancient.thaumicgadgets.items.pouches.ItemPouch;
 /*     */
@@ -32,7 +32,7 @@
 /*     */ import com.ancient.thaumicgadgets.tools.shade.SwordShade;
 /*     */ import com.ancient.thaumicgadgets.tools.thauminium.ScytheThaum;
 /*     */ import com.ancient.thaumicgadgets.tools.voiid.ScytheVoid;
-/*     */ import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
+/*     */
 /*     */ import java.util.ArrayList;
 /*     */ import java.util.List;
 /*     */ import net.minecraft.init.SoundEvents;
@@ -168,22 +168,12 @@
 /* 171 */   public static final Item ENDER_POUCH = (Item)new ItemPouch("pouch_ender");
 /*     */   
 /* 173 */   public static final Item VOID_POUCH = (Item)new ItemPouch("pouch_void");
-/*     */   
-/* 175 */   public static final Item LENSE_POUCH = (Item)new ItemPouch("pouch_lense");
-/*     */   
+
 /* 177 */   public static final Item SCYTHE_THAUM = (Item)new ScytheThaum("scythe_thaum", ThaumcraftMaterials.TOOLMAT_THAUMIUM, 8.0F, -3.0F, 2, 1, 2);
 /* 178 */   public static final Item SCYTHE_VOID = (Item)new ScytheVoid("scythe_void", ThaumcraftMaterials.TOOLMAT_VOID, 1, 60, 9.0F, -3.0F, 3, 2, 3);
 /* 179 */   public static final Item SCYTHE_LIGHT = (Item)new ScytheLight("scythe_light", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /* 180 */   public static final Item SCYTHE_SHADE = (Item)new ScytheShade("scythe_shade", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /*     */
-/* 192 */   public static final Item LENSE_BLANK = (Item)new ItemBase("lense_blank");
-/* 193 */   public static final Item LENSE_NIGHT_VISION = (Item)new ItemLense("lense_night_vision", EnumHandler.LenseTypes.NIGHT_VISION);
-/* 194 */   public static final Item LENSE_ECHO_LOC = (Item)new ItemLense("lense_echo_loc", EnumHandler.LenseTypes.ECHO_LOC);
-/* 195 */   public static final Item LENSE_DEATH_GAZE = (Item)new ItemLense("lense_death_gaze", EnumHandler.LenseTypes.DEATH_GAZE);
-/* 196 */   public static final Item LENSE_FIRE = (Item)new ItemLense("lense_fire", EnumHandler.LenseTypes.FIRE);
-/* 197 */   public static final Item LENSE_KNOCKBACK = (Item)new ItemLense("lense_knockback", EnumHandler.LenseTypes.KNOCKBACK);
-/* 198 */   public static final Item LENSE_DECAY = (Item)new ItemLense("lense_decay", EnumHandler.LenseTypes.DECAY);
-/*     */   
 /* 200 */   public static final Item TG = (Item)new ItemTab("tg");
 /*     */ }
 

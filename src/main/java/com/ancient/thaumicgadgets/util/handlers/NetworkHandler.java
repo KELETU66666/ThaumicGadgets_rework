@@ -1,15 +1,6 @@
  package com.ancient.thaumicgadgets.util.handlers;
 
- import com.ancient.thaumicgadgets.network.MessageArmorAbility;
- import com.ancient.thaumicgadgets.network.MessageButtonCraft;
- import com.ancient.thaumicgadgets.network.MessageChangeModeArmor;
- import com.ancient.thaumicgadgets.network.MessageChangeModeWeapon;
- import com.ancient.thaumicgadgets.network.MessageClientBeltAbilities;
- import com.ancient.thaumicgadgets.network.MessageClientCachePos;
- import com.ancient.thaumicgadgets.network.MessageClientCurrentLense;
- import com.ancient.thaumicgadgets.network.MessageClientExtruderUp;
- import com.ancient.thaumicgadgets.network.MessageGUIButton;
- import com.ancient.thaumicgadgets.network.MessageServerChangeLense;
+ import com.ancient.thaumicgadgets.network.*;
  import com.ancient.thaumicgadgets.network.gemcutter.MessageClientAllAspects;
  import com.ancient.thaumicgadgets.network.gemcutter.MessageServerChoosedAspects;
  import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticles;
@@ -43,9 +34,7 @@
 /* 59 */     INSTANCE.registerMessage(MessageClientSpawnParticlesCustom.handler.class, MessageClientSpawnParticlesCustom.class, id++, Side.CLIENT);
 /* 60 */     INSTANCE.registerMessage(MessageClientSpawnParticlesCustomLightning.handler.class, MessageClientSpawnParticlesCustomLightning.class, id++, Side.CLIENT);
 /* 61 */     INSTANCE.registerMessage(MessageClientCachePos.handler.class, MessageClientCachePos.class, id++, Side.CLIENT);
-/* 62 */     INSTANCE.registerMessage(MessageClientCurrentLense.handler.class, MessageClientCurrentLense.class, id++, Side.CLIENT);
-/* 63 */     INSTANCE.registerMessage(MessageServerChangeLense.handler.class, MessageServerChangeLense.class, id++, Side.SERVER);
-/* 64 */     INSTANCE.registerMessage(MessageServerChoosedAspects.handler.class, MessageServerChoosedAspects.class, id++, Side.SERVER);
+/* 62 */     INSTANCE.registerMessage(MessageServerChoosedAspects.handler.class, MessageServerChoosedAspects.class, id++, Side.SERVER);
 /* 65 */     INSTANCE.registerMessage(MessageClientAllAspects.handler.class, MessageClientAllAspects.class, id++, Side.CLIENT);
    }
 

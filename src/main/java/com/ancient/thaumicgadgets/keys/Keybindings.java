@@ -7,8 +7,7 @@ import net.minecraft.client.settings.KeyBinding;
 public enum Keybindings
 {
     /*  9 */   OPEN_GUI("key.tg.open_gui", 19),
-    /* 10 */   ARMOR_ABILITY("key.tg.armor_ability", 46),
-    /* 11 */   LENSE_GUI("key.tg.lense_gui", 33);
+    /* 10 */   ARMOR_ABILITY("key.tg.armor_ability", 46);
 
     private final KeyBinding bind;
 
