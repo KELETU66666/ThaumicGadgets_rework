@@ -1,0 +1,11 @@
+{
+   "parent": "tg:block/terra_focus_desert.obj",
+   "display":
+   {
+        "firstperson_right_hand":
+        {
+            "translation": [0, 0, 0],
+            "scale": [1.0, 1.0, 1.0]
+        }
+   }   
+}

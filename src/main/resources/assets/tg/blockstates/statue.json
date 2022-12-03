@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": {"model": "tg:statue"},
+        "facing=east": {"model": "tg:statue", "y": 90},
+        "facing=south": {"model": "tg:statue", "y": 180},
+        "facing=west": {"model": "tg:statue", "y": 270}
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": {"model": "tg:spinning_wheel"},
+        "facing=east": {"model": "tg:spinning_wheel", "y": 90},
+        "facing=south": {"model": "tg:spinning_wheel", "y": 180},
+        "facing=west": {"model": "tg:spinning_wheel", "y": 270}
+    }
+}

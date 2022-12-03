@@ -1,0 +1,37 @@
+{
+    "variants": 
+    {
+        "age=0": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_0" 
+        },
+        "age=1": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_1" 
+        },
+        "age=2": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_2" 
+        },
+        "age=3": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_3" 
+        },
+        "age=4": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_4" 
+        },
+        "age=5": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_5" 
+        },
+        "age=6": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_6" 
+        },
+        "age=7": 
+        {
+            "model": "tg:plants/shade_rose_bush_stage_7" 
+        }
+    }
+}

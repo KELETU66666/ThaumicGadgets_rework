@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": {"model": "tg:extruder_up"},
+        "facing=east": {"model": "tg:extruder_up", "y": 90},
+        "facing=south": {"model": "tg:extruder_up", "y": 180},
+        "facing=west": {"model": "tg:extruder_up", "y": 270}
+    }
+}

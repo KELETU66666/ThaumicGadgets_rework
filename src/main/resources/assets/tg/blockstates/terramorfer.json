@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": {"model": "tg:terramorfer"},
+        "facing=east": {"model": "tg:terramorfer", "y": 90},
+        "facing=south": {"model": "tg:terramorfer", "y": 180},
+        "facing=west": {"model": "tg:terramorfer", "y": 270}
+    }
+}

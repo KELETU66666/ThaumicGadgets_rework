@@ -1,0 +1,17 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tg:teleportator_core_ph",
+        "transform": "forge:default-block"
+     },
+    "variants": {
+        "inventory": [{"transform": {       
+                "gui": { "translation": [0.5, 0.5, 0], "scale": 1 , "rotation": [{ "x": 0 },{ "z": 0 }] },
+                "thirdperson_righthand": { "translation": [0.5, 0.5, 0], "scale": 0.725 , "rotation": [{ "x": 0 },{ "z": 0 }] },
+                "firstperson_righthand": { "translation": [0.5, 0.5, 0], "scale": 0.725 , "rotation": [{ "x": 0 },{ "z": 0 }] }
+            }}],
+        "normal": {"model": "tg:teleportator_core_ph"}
+ 
+    }
+    
+}

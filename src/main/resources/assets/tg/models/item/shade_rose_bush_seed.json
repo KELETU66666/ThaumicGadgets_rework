@@ -1,0 +1,7 @@
+{
+   "parent": "item/generated",
+   "textures":
+   {
+        "layer0": "tg:items/shade_rose_bush_seed"
+   }
+}

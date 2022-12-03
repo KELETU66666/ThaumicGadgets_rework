@@ -1,0 +1,6 @@
+{
+    "variants": 
+    {
+        "normal": {"model": "tg:block_light"}
+    }
+}

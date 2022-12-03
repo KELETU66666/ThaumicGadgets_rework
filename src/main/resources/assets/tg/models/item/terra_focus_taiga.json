@@ -1,0 +1,12 @@
+{
+   "parent": "tg:block/terra_focus_taiga.obj",
+   "display":
+   {
+        "firstperson_right_hand":
+        {
+            "translation": [0, 1, 0],
+            "scale": [1.5, 1.5, 1.5],
+            "rotation" : [{"x"  : 0}, {"y"  : 0}, {"z"  : 0}]
+        }
+   }   
+}

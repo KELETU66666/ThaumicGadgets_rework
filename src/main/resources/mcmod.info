@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thaumicbases",
+  "name": "Thaumic Bases",
+  "description": "",
+  "version": "3.3.500.6r",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Rumaruka"],
+  "credits": "A huge addon to an amazing mod named Thaumcraft by Azanor and former developer Modbder",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

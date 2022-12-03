@@ -1,0 +1,183 @@
+{
+    "observer_ambient" :
+    {
+        "category": "ambient",
+        "sounds":
+        [
+         {
+            "name":"tg:observer_ambient",
+            "stream": false
+         }   
+        ]
+    },
+    "observer_hurt" :
+    {
+        "category": "hostile",
+        "sounds":
+        [
+         {
+            "name":"tg:observer_hurt",
+            "stream": false
+         }   
+        ]
+    },
+    "observer_death" :
+    {
+        "category": "hostile",
+        "sounds":
+        [
+         {
+            "name":"tg:observer_death",
+            "stream": false
+         }   
+        ]
+    },
+	"passive_say" :
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:passive_say1",
+			"tg:passive_say2",
+			"tg:passive_say3"
+		]
+	},
+	"passive_hurt": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:passive_hurt1",
+			"tg:passive_hurt2",
+			"tg:passive_hurt3"
+		]
+	},
+	"passive_death": 
+	{
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:passive_death"
+		]
+	},
+	"assist_say": 
+	{
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:assist_say1",
+			"tg:assist_say2",
+			"tg:assist_say3"
+		]
+	},
+	"assist_hurt": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:assist_hurt1",
+			"tg:assist_hurt2",
+			"tg:assist_hurt3"
+		]
+	},
+	"assist_death": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:assist_death"
+		]
+	},
+	"aggressive_say": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:aggressive_say1",
+			"tg:aggressive_say2",
+			"tg:aggressive_say3"
+		]
+	},
+	"aggressive_hurt": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:aggressive_hurt1",
+			"tg:aggressive_hurt2",
+			"tg:aggressive_hurt3"
+		]
+	},
+	"aggressive_death": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:aggressive_death"
+		]
+	},
+	"minotaur_say": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:minotaur_say1",
+			"tg:minotaur_say2",
+			"tg:minotaur_say3",
+			"tg:minotaur_say4"
+		]
+	},
+	"minotaur_hurt": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:minotaur_hurt1",
+			"tg:minotaur_hurt2",
+			"tg:minotaur_hurt3"
+		]
+	},
+	"box_open1": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:box_open1"
+		]
+	},
+	"box_open2": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:box_open2"
+		]
+	},
+	"bag_open": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:bag_open"
+		]
+	},
+	"book_hit": 
+	{ 	
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:book_hit1",
+			"tg:book_hit2",
+			"tg:book_hit3",
+			"tg:book_hit4"
+		]
+	},
+	"none": 
+	{ 
+		"category": "neutral", 
+		"sounds": 
+		[
+			"tg:none"
+		]
+	}
+}

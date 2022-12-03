@@ -1,0 +1,22 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tg:teleportator",
+        "transform": "forge:default-block"
+     },
+    "variants": {
+        "inventory": [{"transform": {       
+                "gui": { "translation": [0.0, 0.0, 0], "scale": 0.725,"rotation": [{"x": 30}, { "y": -45 }, {"z": 0 }]  }
+            }}],
+        "normal": [{
+                       "model": "tg:teleportator",
+                        "transform":
+                        {
+                            "translation":[0,-2,0],
+                            "scale": 5
+                        }      
+                  }]
+ 
+    }
+    
+}
