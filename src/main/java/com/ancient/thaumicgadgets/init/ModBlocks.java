@@ -15,7 +15,7 @@
 /*     */
 /*     */
 /*     */ import com.ancient.thaumicgadgets.blocks.BlockGemCutter;
-/*     */ import com.ancient.thaumicgadgets.blocks.BlockLamp;
+/*     */
 /*     */ import com.ancient.thaumicgadgets.blocks.BlockLight;
 /*     */ import com.ancient.thaumicgadgets.blocks.BlockPlaceholder;
 /*     */
@@ -62,10 +62,6 @@
     /*     */
     /*  65 */   public static final Block AGEING_STONE = (Block) new BlockAgeingStone("ageing_stone");
 
-    /*  87 */   public static final Block PART_STAB_1 = (Block) new BlockBase("part_stab_1", Material.ROCK);
-    /*  88 */   public static final Block LAMP = (Block) new BlockLamp("lamp");
-    /*  89 */   public static final Block PART_STAB_2 = (Block) new BlockBase("part_stab_2", Material.ROCK);
-    /*     */
     /*  91 */   public static final Block OBSIDIAN_PH = (Block) new BlockPlaceholder("obsidian_ph", Material.ROCK, Item.getItemFromBlock(Blocks.OBSIDIAN), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
     /*  92 */   public static final Block SOUL_SAND_PH = (Block) new BlockPlaceholder("soul_sand_ph", Material.ROCK, Item.getItemFromBlock(Blocks.SOUL_SAND), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
     /*  93 */   public static final Block NETHER_BRICKS_PH = (Block) new BlockPlaceholder("nether_bricks_ph", Material.ROCK, Item.getItemFromBlock(Blocks.NETHER_BRICK), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);

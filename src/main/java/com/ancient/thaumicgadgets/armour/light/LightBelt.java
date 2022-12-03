@@ -33,6 +33,7 @@
 /*     */   
 /*     */   public LightBelt(String name) {
 /*  35 */     super(name);
+this.setMaxStackSize(1);
 /*     */   }
 /*     */ 
 /*     */ 

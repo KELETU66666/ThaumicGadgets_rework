@@ -41,6 +41,7 @@
 /*     */   
 /*     */   public ShadeBelt(String name) {
 /*  43 */     super(name);
+    this.setMaxStackSize(1);
 /*     */   }
 /*     */ 
 /*     */ 

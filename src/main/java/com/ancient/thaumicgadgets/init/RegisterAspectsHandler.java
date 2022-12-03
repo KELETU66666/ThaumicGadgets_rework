@@ -19,9 +19,7 @@
 /* 19 */     event.register.registerObjectTag(new ItemStack(ModItems.YARN), (new AspectList()).add(Aspect.CRAFT, 1));
 /* 20 */     event.register.registerObjectTag(new ItemStack(ModItems.YARN_GOLD), (new AspectList()).add(Aspect.CRAFT, 1).add(Aspect.LIGHT, 1));
 /* 21 */     event.register.registerObjectTag(new ItemStack(ModItems.YARN_THANIUM), (new AspectList()).add(Aspect.CRAFT, 1).add(Aspect.MAGIC, 1).add(Aspect.METAL, 1));
-     
-/* 23 */     event.register.registerObjectTag(new ItemStack(ModItems.WOLF_HIDE), (new AspectList()).add(Aspect.CRAFT, 2).add(Aspect.BEAST, 3));
-     
+
 /* 25 */     event.register.registerObjectTag(new ItemStack(Item.getItemFromBlock(ModBlocks.SPINNING_WHEEL)), (new AspectList()).add(Aspect.AIR, 2).add(Aspect.PLANT, 3).add(Aspect.METAL, 3).add(Aspect.ORDER, 2));
      
 /* 43 */     event.register.registerObjectTag(new ItemStack(Item.getItemFromBlock(ModBlocks.GEMCUTTER)), (new AspectList()).add(Aspect.PLANT, 2).add(Aspect.CRYSTAL, 2).add(Aspect.CRAFT, 2));

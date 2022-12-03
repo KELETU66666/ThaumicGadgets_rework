@@ -1,495 +1,678 @@
-/*     */ package com.ancient.thaumicgadgets.armour.shade;
-/*     */ 
-/*     */ import net.minecraft.client.model.ModelBase;
-/*     */ import net.minecraft.client.model.ModelBiped;
-/*     */ import net.minecraft.client.model.ModelRenderer;
-/*     */ import net.minecraft.entity.Entity;
-/*     */ 
-/*     */ public class ArmorShadeModel
-/*     */   extends ModelBiped
-/*     */ {
-/*     */   ModelRenderer RShouderBase;
-/*     */   ModelRenderer LShoulderSpikeB1;
-/*     */   ModelRenderer LShoulderSpikeTopB;
-/*     */   ModelRenderer RShoulderSpikeTopB;
-/*     */   ModelRenderer LShoulderSpikeB2;
-/*     */   ModelRenderer RShoulderSpikeB1;
-/*     */   ModelRenderer RShoulderSpikeB2;
-/*     */   ModelRenderer RShoulderWing;
-/*     */   ModelRenderer LShoulderSpikeBaseB;
-/*     */   ModelRenderer RShoulderSpikeBaseB;
-/*     */   ModelRenderer RShoulderBottom;
-/*     */   ModelRenderer RShoulder;
-/*     */   ModelRenderer RShoulderT1;
-/*     */   ModelRenderer RShoulderT2;
-/*     */   ModelRenderer LShoulderBottom;
-/*     */   ModelRenderer LShoulderT1;
-/*     */   ModelRenderer LShoulderT2;
-/*     */   ModelRenderer LShouderBase;
-/*     */   ModelRenderer LShoulderWing;
-/*     */   ModelRenderer LShoulder;
-/*     */   ModelRenderer LShoulderSpikeF1;
-/*     */   ModelRenderer LShoulderSpikeF2;
-/*     */   ModelRenderer LShoulderSpikeTopF;
-/*     */   ModelRenderer LShoulderSpikeBaseF;
-/*     */   ModelRenderer RShoulderSpikeBaseF;
-/*     */   ModelRenderer RShoulderSpikeF1;
-/*     */   ModelRenderer RShoulderSpikeF2;
-/*     */   ModelRenderer RShoulderSpikeTopF;
-/*     */   ModelRenderer ArmorPlate5;
-/*     */   ModelRenderer ArmorPlate6;
-/*     */   ModelRenderer ArmorPlateMiddle;
-/*     */   ModelRenderer ArmorPlate1;
-/*     */   ModelRenderer ArmorPlate2;
-/*     */   ModelRenderer ArmorPlate4;
-/*     */   ModelRenderer ArmorPlate3;
-/*     */   ModelRenderer ArmorBase;
-/*     */   ModelRenderer ArmorB2;
-/*     */   ModelRenderer ArmorB1;
-/*     */   ModelRenderer ArmorBackB;
-/*     */   ModelRenderer Burr;
-/*     */   ModelRenderer Belt;
-/*     */   ModelRenderer Armor;
-/*     */   ModelRenderer BootsL;
-/*     */   ModelRenderer LegArmorR1;
-/*     */   ModelRenderer LegArmorL2;
-/*     */   ModelRenderer LegArmorL1;
-/*     */   ModelRenderer LegArmorR2;
-/*     */   ModelRenderer BootsR;
-/*     */   ModelRenderer BootsL2;
-/*     */   ModelRenderer BootsR2;
-/*     */   ModelRenderer GlovesL1;
-/*     */   ModelRenderer GlovesR1;
-/*     */   ModelRenderer BoorsL1;
-/*     */   ModelRenderer BoorsR1;
-/*     */   ModelRenderer GlovesL2;
-/*     */   ModelRenderer GlovesR2;
-/*     */   
-/*     */   public ArmorShadeModel(float f) {
-/*  69 */     super(f, 0.0F, 96, 64);
-/*  70 */     this.textureWidth = 96;
-/*  71 */     this.textureHeight = 64;
-/*     */     
-/*  73 */     this.RShouderBase = new ModelRenderer((ModelBase)this, 78, 0);
-/*  74 */     this.RShouderBase.addBox(-3.2F, -2.4F, -2.5F, 4, 3, 5);
-/*  75 */     this.RShouderBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  76 */     this.RShouderBase.setTextureSize(96, 64);
-/*  77 */     this.RShouderBase.mirror = true;
-/*  78 */     setRotation(this.RShouderBase, 0.0F, 0.0F, -0.122173F);
-/*  79 */     this.LShoulderSpikeB1 = new ModelRenderer((ModelBase)this, 74, 0);
-/*  80 */     this.LShoulderSpikeB1.addBox(0.0F, -6.6F, 2.0F, 1, 6, 1);
-/*  81 */     this.LShoulderSpikeB1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  82 */     this.LShoulderSpikeB1.setTextureSize(96, 64);
-/*  83 */     this.LShoulderSpikeB1.mirror = true;
-/*  84 */     setRotation(this.LShoulderSpikeB1, 0.0F, 0.0F, 0.5235988F);
-/*  85 */     this.LShoulderSpikeTopB = new ModelRenderer((ModelBase)this, 66, 0);
-/*  86 */     this.LShoulderSpikeTopB.addBox(3.0F, -7.0F, 2.0F, 1, 2, 1);
-/*  87 */     this.LShoulderSpikeTopB.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  88 */     this.LShoulderSpikeTopB.setTextureSize(96, 64);
-/*  89 */     this.LShoulderSpikeTopB.mirror = true;
-/*  90 */     setRotation(this.LShoulderSpikeTopB, 0.0F, 0.0F, 0.0F);
-/*  91 */     this.RShoulderSpikeTopB = new ModelRenderer((ModelBase)this, 66, 0);
-/*  92 */     this.RShoulderSpikeTopB.addBox(-4.0F, -7.0F, 2.0F, 1, 2, 1);
-/*  93 */     this.RShoulderSpikeTopB.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  94 */     this.RShoulderSpikeTopB.setTextureSize(96, 64);
-/*  95 */     this.RShoulderSpikeTopB.mirror = true;
-/*  96 */     setRotation(this.RShoulderSpikeTopB, 0.0F, 0.0F, 0.0F);
-/*  97 */     this.LShoulderSpikeB2 = new ModelRenderer((ModelBase)this, 70, 0);
-/*  98 */     this.LShoulderSpikeB2.addBox(1.0F, -4.6F, 2.0F, 1, 4, 1);
-/*  99 */     this.LShoulderSpikeB2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 100 */     this.LShoulderSpikeB2.setTextureSize(96, 64);
-/* 101 */     this.LShoulderSpikeB2.mirror = true;
-/* 102 */     setRotation(this.LShoulderSpikeB2, 0.0F, 0.0F, 0.5235988F);
-/* 103 */     this.RShoulderSpikeB1 = new ModelRenderer((ModelBase)this, 74, 0);
-/* 104 */     this.RShoulderSpikeB1.addBox(-1.0F, -6.6F, 2.0F, 1, 6, 1);
-/* 105 */     this.RShoulderSpikeB1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 106 */     this.RShoulderSpikeB1.setTextureSize(96, 64);
-/* 107 */     this.RShoulderSpikeB1.mirror = true;
-/* 108 */     setRotation(this.RShoulderSpikeB1, 0.0F, 0.0F, -0.5235988F);
-/* 109 */     this.RShoulderSpikeB2 = new ModelRenderer((ModelBase)this, 70, 0);
-/* 110 */     this.RShoulderSpikeB2.addBox(-2.0F, -4.6F, 2.0F, 1, 4, 1);
-/* 111 */     this.RShoulderSpikeB2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 112 */     this.RShoulderSpikeB2.setTextureSize(96, 64);
-/* 113 */     this.RShoulderSpikeB2.mirror = true;
-/* 114 */     setRotation(this.RShoulderSpikeB2, 0.0F, 0.0F, -0.5235988F);
-/* 115 */     this.RShoulderWing = new ModelRenderer((ModelBase)this, 52, 59);
-/* 116 */     this.RShoulderWing.addBox(-4.0F, -2.4F, -2.0F, 2, 1, 4);
-/* 117 */     this.RShoulderWing.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 118 */     this.RShoulderWing.setTextureSize(96, 64);
-/* 119 */     this.RShoulderWing.mirror = true;
-/* 120 */     setRotation(this.RShoulderWing, 0.0F, 0.0F, -0.1396263F);
-/* 121 */     this.LShoulderSpikeBaseB = new ModelRenderer((ModelBase)this, 64, 4);
-/* 122 */     this.LShoulderSpikeBaseB.addBox(-0.8F, -2.0F, 2.0F, 2, 2, 1);
-/* 123 */     this.LShoulderSpikeBaseB.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 124 */     this.LShoulderSpikeBaseB.setTextureSize(96, 64);
-/* 125 */     this.LShoulderSpikeBaseB.mirror = true;
-/* 126 */     setRotation(this.LShoulderSpikeBaseB, 0.0F, 0.0F, 0.5235988F);
-/* 127 */     this.RShoulderSpikeBaseB = new ModelRenderer((ModelBase)this, 64, 4);
-/* 128 */     this.RShoulderSpikeBaseB.addBox(-1.2F, -2.0F, 2.0F, 2, 2, 1);
-/* 129 */     this.RShoulderSpikeBaseB.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 130 */     this.RShoulderSpikeBaseB.setTextureSize(96, 64);
-/* 131 */     this.RShoulderSpikeBaseB.mirror = true;
-/* 132 */     setRotation(this.RShoulderSpikeBaseB, 0.0F, 0.0F, -0.5235988F);
-/* 133 */     this.RShoulderBottom = new ModelRenderer((ModelBase)this, 64, 9);
-/* 134 */     this.RShoulderBottom.addBox(-4.0F, -1.0F, -1.5F, 1, 4, 3);
-/* 135 */     this.RShoulderBottom.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 136 */     this.RShoulderBottom.setTextureSize(96, 64);
-/* 137 */     this.RShoulderBottom.mirror = true;
-/* 138 */     setRotation(this.RShoulderBottom, 0.0F, 0.0F, 0.0F);
-/* 139 */     this.RShoulder = new ModelRenderer((ModelBase)this, 72, 14);
-/* 140 */     this.RShoulder.addBox(-2.0F, -3.0F, -0.5F, 2, 1, 1);
-/* 141 */     this.RShoulder.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 142 */     this.RShoulder.setTextureSize(96, 64);
-/* 143 */     this.RShoulder.mirror = true;
-/* 144 */     setRotation(this.RShoulder, 0.0F, 0.0F, -0.1396263F);
-/* 145 */     this.RShoulderT1 = new ModelRenderer((ModelBase)this, 78, 11);
-/* 146 */     this.RShoulderT1.addBox(-0.5F, -4.0F, -1.5F, 1, 2, 3);
-/* 147 */     this.RShoulderT1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 148 */     this.RShoulderT1.setTextureSize(96, 64);
-/* 149 */     this.RShoulderT1.mirror = true;
-/* 150 */     setRotation(this.RShoulderT1, 0.0F, 0.0F, 0.0F);
-/* 151 */     this.RShoulderT2 = new ModelRenderer((ModelBase)this, 73, 12);
-/* 152 */     this.RShoulderT2.addBox(-0.5F, -5.0F, -0.5F, 1, 1, 1);
-/* 153 */     this.RShoulderT2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 154 */     this.RShoulderT2.setTextureSize(96, 64);
-/* 155 */     this.RShoulderT2.mirror = true;
-/* 156 */     setRotation(this.RShoulderT2, 0.0F, 0.0F, 0.0F);
-/* 157 */     this.LShoulderBottom = new ModelRenderer((ModelBase)this, 64, 9);
-/* 158 */     this.LShoulderBottom.addBox(3.0F, -1.0F, -1.5F, 1, 4, 3);
-/* 159 */     this.LShoulderBottom.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 160 */     this.LShoulderBottom.setTextureSize(96, 64);
-/* 161 */     this.LShoulderBottom.mirror = true;
-/* 162 */     setRotation(this.LShoulderBottom, 0.0F, 0.0F, 0.0F);
-/* 163 */     this.LShoulderT1 = new ModelRenderer((ModelBase)this, 78, 11);
-/* 164 */     this.LShoulderT1.addBox(-0.5F, -4.0F, -1.5F, 1, 2, 3);
-/* 165 */     this.LShoulderT1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 166 */     this.LShoulderT1.setTextureSize(96, 64);
-/* 167 */     this.LShoulderT1.mirror = true;
-/* 168 */     setRotation(this.LShoulderT1, 0.0F, 0.0F, 0.0F);
-/* 169 */     this.LShoulderT2 = new ModelRenderer((ModelBase)this, 73, 12);
-/* 170 */     this.LShoulderT2.addBox(-0.5F, -5.0F, -0.5F, 1, 1, 1);
-/* 171 */     this.LShoulderT2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 172 */     this.LShoulderT2.setTextureSize(96, 64);
-/* 173 */     this.LShoulderT2.mirror = true;
-/* 174 */     setRotation(this.LShoulderT2, 0.0F, 0.0F, 0.0F);
-/* 175 */     this.LShouderBase = new ModelRenderer((ModelBase)this, 78, 0);
-/* 176 */     this.LShouderBase.addBox(-0.8F, -2.4F, -2.5F, 4, 3, 5);
-/* 177 */     this.LShouderBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 178 */     this.LShouderBase.setTextureSize(96, 64);
-/* 179 */     this.LShouderBase.mirror = true;
-/* 180 */     setRotation(this.LShouderBase, 0.0F, 0.0F, 0.1396263F);
-/* 181 */     this.LShoulderWing = new ModelRenderer((ModelBase)this, 52, 59);
-/* 182 */     this.LShoulderWing.addBox(2.0F, -2.4F, -2.0F, 2, 1, 4);
-/* 183 */     this.LShoulderWing.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 184 */     this.LShoulderWing.setTextureSize(96, 64);
-/* 185 */     this.LShoulderWing.mirror = true;
-/* 186 */     setRotation(this.LShoulderWing, 0.0F, 0.0F, 0.1396263F);
-/* 187 */     this.LShoulder = new ModelRenderer((ModelBase)this, 72, 14);
-/* 188 */     this.LShoulder.addBox(0.0F, -3.0F, -0.5F, 2, 1, 1);
-/* 189 */     this.LShoulder.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 190 */     this.LShoulder.setTextureSize(96, 64);
-/* 191 */     this.LShoulder.mirror = true;
-/* 192 */     setRotation(this.LShoulder, 0.0F, 0.0F, 0.1396263F);
-/* 193 */     this.LShoulderSpikeF1 = new ModelRenderer((ModelBase)this, 74, 0);
-/* 194 */     this.LShoulderSpikeF1.addBox(0.0F, -6.6F, -3.0F, 1, 6, 1);
-/* 195 */     this.LShoulderSpikeF1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 196 */     this.LShoulderSpikeF1.setTextureSize(96, 64);
-/* 197 */     this.LShoulderSpikeF1.mirror = true;
-/* 198 */     setRotation(this.LShoulderSpikeF1, 0.0F, 0.0F, 0.5235988F);
-/* 199 */     this.LShoulderSpikeF2 = new ModelRenderer((ModelBase)this, 70, 0);
-/* 200 */     this.LShoulderSpikeF2.addBox(1.0F, -4.6F, -3.0F, 1, 4, 1);
-/* 201 */     this.LShoulderSpikeF2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 202 */     this.LShoulderSpikeF2.setTextureSize(96, 64);
-/* 203 */     this.LShoulderSpikeF2.mirror = true;
-/* 204 */     setRotation(this.LShoulderSpikeF2, 0.0F, 0.0F, 0.5235988F);
-/* 205 */     this.LShoulderSpikeTopF = new ModelRenderer((ModelBase)this, 66, 0);
-/* 206 */     this.LShoulderSpikeTopF.addBox(3.0F, -7.0F, -3.0F, 1, 2, 1);
-/* 207 */     this.LShoulderSpikeTopF.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 208 */     this.LShoulderSpikeTopF.setTextureSize(96, 64);
-/* 209 */     this.LShoulderSpikeTopF.mirror = true;
-/* 210 */     setRotation(this.LShoulderSpikeTopF, 0.0F, 0.0F, 0.0F);
-/* 211 */     this.LShoulderSpikeBaseF = new ModelRenderer((ModelBase)this, 64, 4);
-/* 212 */     this.LShoulderSpikeBaseF.addBox(-0.8F, -2.0F, -3.0F, 2, 2, 1);
-/* 213 */     this.LShoulderSpikeBaseF.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 214 */     this.LShoulderSpikeBaseF.setTextureSize(96, 64);
-/* 215 */     this.LShoulderSpikeBaseF.mirror = true;
-/* 216 */     setRotation(this.LShoulderSpikeBaseF, 0.0F, 0.0F, 0.5235988F);
-/* 217 */     this.RShoulderSpikeBaseF = new ModelRenderer((ModelBase)this, 64, 4);
-/* 218 */     this.RShoulderSpikeBaseF.addBox(-1.2F, -2.0F, -3.0F, 2, 2, 1);
-/* 219 */     this.RShoulderSpikeBaseF.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 220 */     this.RShoulderSpikeBaseF.setTextureSize(96, 64);
-/* 221 */     this.RShoulderSpikeBaseF.mirror = true;
-/* 222 */     setRotation(this.RShoulderSpikeBaseF, 0.0F, 0.0F, -0.5235988F);
-/* 223 */     this.RShoulderSpikeF1 = new ModelRenderer((ModelBase)this, 74, 0);
-/* 224 */     this.RShoulderSpikeF1.addBox(-1.0F, -6.6F, -3.0F, 1, 6, 1);
-/* 225 */     this.RShoulderSpikeF1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 226 */     this.RShoulderSpikeF1.setTextureSize(96, 64);
-/* 227 */     this.RShoulderSpikeF1.mirror = true;
-/* 228 */     setRotation(this.RShoulderSpikeF1, 0.0F, 0.0F, -0.5235988F);
-/* 229 */     this.RShoulderSpikeF2 = new ModelRenderer((ModelBase)this, 70, 0);
-/* 230 */     this.RShoulderSpikeF2.addBox(-2.0F, -4.6F, -3.0F, 1, 4, 1);
-/* 231 */     this.RShoulderSpikeF2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 232 */     this.RShoulderSpikeF2.setTextureSize(96, 64);
-/* 233 */     this.RShoulderSpikeF2.mirror = true;
-/* 234 */     setRotation(this.RShoulderSpikeF2, 0.0F, 0.0F, -0.5235988F);
-/* 235 */     this.RShoulderSpikeTopF = new ModelRenderer((ModelBase)this, 66, 0);
-/* 236 */     this.RShoulderSpikeTopF.addBox(-4.0F, -7.0F, -3.0F, 1, 2, 1);
-/* 237 */     this.RShoulderSpikeTopF.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 238 */     this.RShoulderSpikeTopF.setTextureSize(96, 64);
-/* 239 */     this.RShoulderSpikeTopF.mirror = true;
-/* 240 */     setRotation(this.RShoulderSpikeTopF, 0.0F, 0.0F, 0.0F);
-/* 241 */     this.ArmorPlate5 = new ModelRenderer((ModelBase)this, 0, 60);
-/* 242 */     this.ArmorPlate5.addBox(-3.0F, 6.8F, -3.7F, 3, 3, 1);
-/* 243 */     this.ArmorPlate5.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 244 */     this.ArmorPlate5.setTextureSize(96, 64);
-/* 245 */     this.ArmorPlate5.mirror = true;
-/* 246 */     setRotation(this.ArmorPlate5, 0.0F, 0.2443461F, 0.0174533F);
-/* 247 */     this.ArmorPlate6 = new ModelRenderer((ModelBase)this, 0, 60);
-/* 248 */     this.ArmorPlate6.addBox(0.0F, 6.8F, -3.7F, 3, 3, 1);
-/* 249 */     this.ArmorPlate6.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 250 */     this.ArmorPlate6.setTextureSize(96, 64);
-/* 251 */     this.ArmorPlate6.mirror = true;
-/* 252 */     setRotation(this.ArmorPlate6, 0.0F, -0.2443461F, -0.0174533F);
-/* 253 */     this.ArmorPlateMiddle = new ModelRenderer((ModelBase)this, 0, 32);
-/* 254 */     this.ArmorPlateMiddle.addBox(-1.0F, 0.8F, -4.1F, 2, 9, 1);
-/* 255 */     this.ArmorPlateMiddle.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 256 */     this.ArmorPlateMiddle.setTextureSize(96, 64);
-/* 257 */     this.ArmorPlateMiddle.mirror = true;
-/* 258 */     setRotation(this.ArmorPlateMiddle, 0.0349066F, 0.0F, 0.0F);
-/* 259 */     this.ArmorPlate1 = new ModelRenderer((ModelBase)this, 9, 60);
-/* 260 */     this.ArmorPlate1.addBox(-3.0F, 0.8F, -4.0F, 4, 3, 1);
-/* 261 */     this.ArmorPlate1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 262 */     this.ArmorPlate1.setTextureSize(96, 64);
-/* 263 */     this.ArmorPlate1.mirror = true;
-/* 264 */     setRotation(this.ArmorPlate1, 0.0F, 0.2443461F, 0.2268928F);
-/* 265 */     this.ArmorPlate2 = new ModelRenderer((ModelBase)this, 9, 60);
-/* 266 */     this.ArmorPlate2.addBox(-1.0F, 0.8F, -4.0F, 4, 3, 1);
-/* 267 */     this.ArmorPlate2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 268 */     this.ArmorPlate2.setTextureSize(96, 64);
-/* 269 */     this.ArmorPlate2.mirror = true;
-/* 270 */     setRotation(this.ArmorPlate2, 0.0F, -0.2443461F, -0.2268928F);
-/* 271 */     this.ArmorPlate4 = new ModelRenderer((ModelBase)this, 0, 60);
-/* 272 */     this.ArmorPlate4.addBox(-1.3F, 3.8F, -3.7F, 3, 3, 1);
-/* 273 */     this.ArmorPlate4.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 274 */     this.ArmorPlate4.setTextureSize(96, 64);
-/* 275 */     this.ArmorPlate4.mirror = true;
-/* 276 */     setRotation(this.ArmorPlate4, 0.0F, -0.2443461F, -0.2268928F);
-/* 277 */     this.ArmorPlate3 = new ModelRenderer((ModelBase)this, 0, 60);
-/* 278 */     this.ArmorPlate3.addBox(-1.7F, 3.8F, -3.7F, 3, 3, 1);
-/* 279 */     this.ArmorPlate3.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 280 */     this.ArmorPlate3.setTextureSize(96, 64);
-/* 281 */     this.ArmorPlate3.mirror = true;
-/* 282 */     setRotation(this.ArmorPlate3, 0.0F, 0.2443461F, 0.2268928F);
-/* 283 */     this.ArmorBase = new ModelRenderer((ModelBase)this, 20, 19);
-/* 284 */     this.ArmorBase.addBox(-4.0F, 0.0F, -2.5F, 8, 12, 1);
-/* 285 */     this.ArmorBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 286 */     this.ArmorBase.setTextureSize(96, 64);
-/* 287 */     this.ArmorBase.mirror = true;
-/* 288 */     setRotation(this.ArmorBase, 0.0F, 0.0F, 0.0F);
-/* 289 */     this.ArmorB2 = new ModelRenderer((ModelBase)this, 0, 53);
-/* 290 */     this.ArmorB2.addBox(-4.0F, 3.6F, 1.8F, 8, 4, 2);
-/* 291 */     this.ArmorB2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 292 */     this.ArmorB2.setTextureSize(96, 64);
-/* 293 */     this.ArmorB2.mirror = true;
-/* 294 */     setRotation(this.ArmorB2, -0.1396263F, 0.0F, 0.0F);
-/* 295 */     this.ArmorB1 = new ModelRenderer((ModelBase)this, 0, 46);
-/* 296 */     this.ArmorB1.addBox(-4.0F, -0.4F, 2.0F, 8, 4, 2);
-/* 297 */     this.ArmorB1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 298 */     this.ArmorB1.setTextureSize(96, 64);
-/* 299 */     this.ArmorB1.mirror = true;
-/* 300 */     setRotation(this.ArmorB1, -0.1396263F, 0.0F, 0.0F);
-/* 301 */     this.ArmorBackB = new ModelRenderer((ModelBase)this, 13, 40);
-/* 302 */     this.ArmorBackB.addBox(-4.0F, 7.0F, 1.6F, 8, 5, 1);
-/* 303 */     this.ArmorBackB.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 304 */     this.ArmorBackB.setTextureSize(96, 64);
-/* 305 */     this.ArmorBackB.mirror = true;
-/* 306 */     setRotation(this.ArmorBackB, 0.0F, 0.0F, 0.0F);
-/* 307 */     this.Burr = new ModelRenderer((ModelBase)this, 0, 42);
-/* 308 */     this.Burr.addBox(-1.0F, 10.0F, -3.0F, 2, 2, 1);
-/* 309 */     this.Burr.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 310 */     this.Burr.setTextureSize(96, 64);
-/* 311 */     this.Burr.mirror = true;
-/* 312 */     setRotation(this.Burr, 0.0F, 0.0F, 0.0F);
-/* 313 */     this.Belt = new ModelRenderer((ModelBase)this, 7, 32);
-/* 314 */     this.Belt.addBox(-4.0F, 10.0F, -2.6F, 8, 2, 5);
-/* 315 */     this.Belt.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 316 */     this.Belt.setTextureSize(96, 64);
-/* 317 */     this.Belt.mirror = true;
-/* 318 */     setRotation(this.Belt, 0.0F, 0.0F, 0.0F);
-/* 319 */     this.Armor = new ModelRenderer((ModelBase)this, 7, 40);
-/* 320 */     this.Armor.addBox(0.5F, 0.5F, -4.5F, 2, 2, 1);
-/* 321 */     this.Armor.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 322 */     this.Armor.setTextureSize(96, 64);
-/* 323 */     this.Armor.mirror = true;
-/* 324 */     setRotation(this.Armor, 0.0F, 0.0F, 0.7853982F);
-/* 325 */     this.BootsL = new ModelRenderer((ModelBase)this, 44, 32);
-/* 326 */     this.BootsL.addBox(-2.0F, 6.0F, -2.5F, 5, 6, 5);
-/* 327 */     this.BootsL.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 328 */     this.BootsL.setTextureSize(96, 64);
-/* 329 */     this.BootsL.mirror = true;
-/* 330 */     setRotation(this.BootsL, 0.0F, 0.0F, 0.0F);
-/* 331 */     this.LegArmorR1 = new ModelRenderer((ModelBase)this, 20, 53);
-/* 332 */     this.LegArmorR1.addBox(-3.0F, -0.6F, -3.0F, 1, 5, 6);
-/* 333 */     this.LegArmorR1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 334 */     this.LegArmorR1.setTextureSize(96, 64);
-/* 335 */     this.LegArmorR1.mirror = true;
-/* 336 */     setRotation(this.LegArmorR1, 0.0F, 0.0F, 0.122173F);
-/* 337 */     this.LegArmorL2 = new ModelRenderer((ModelBase)this, 34, 56);
-/* 338 */     this.LegArmorL2.addBox(2.0F, -2.0F, -3.0F, 1, 2, 6);
-/* 339 */     this.LegArmorL2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 340 */     this.LegArmorL2.setTextureSize(96, 64);
-/* 341 */     this.LegArmorL2.mirror = true;
-/* 342 */     setRotation(this.LegArmorL2, 0.0F, 0.0F, 0.0F);
-/* 343 */     this.LegArmorL1 = new ModelRenderer((ModelBase)this, 20, 53);
-/* 344 */     this.LegArmorL1.addBox(2.0F, -0.6F, -3.0F, 1, 5, 6);
-/* 345 */     this.LegArmorL1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 346 */     this.LegArmorL1.setTextureSize(96, 64);
-/* 347 */     this.LegArmorL1.mirror = true;
-/* 348 */     setRotation(this.LegArmorL1, 0.0F, 0.0F, -0.122173F);
-/* 349 */     this.LegArmorR2 = new ModelRenderer((ModelBase)this, 34, 56);
-/* 350 */     this.LegArmorR2.addBox(-3.0F, -2.0F, -3.0F, 1, 2, 6);
-/* 351 */     this.LegArmorR2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 352 */     this.LegArmorR2.setTextureSize(96, 64);
-/* 353 */     this.LegArmorR2.mirror = true;
-/* 354 */     setRotation(this.LegArmorR2, 0.0F, 0.0F, 0.0F);
-/* 355 */     this.BootsR = new ModelRenderer((ModelBase)this, 44, 32);
-/* 356 */     this.BootsR.addBox(-3.0F, 6.0F, -2.5F, 5, 6, 5);
-/* 357 */     this.BootsR.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 358 */     this.BootsR.setTextureSize(96, 64);
-/* 359 */     this.BootsR.mirror = true;
-/* 360 */     setRotation(this.BootsR, 0.0F, 0.0F, 0.0F);
-/* 361 */     this.BootsL2 = new ModelRenderer((ModelBase)this, 21, 47);
-/* 362 */     this.BootsL2.addBox(1.8F, 9.0F, -3.8F, 2, 3, 2);
-/* 363 */     this.BootsL2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 364 */     this.BootsL2.setTextureSize(96, 64);
-/* 365 */     this.BootsL2.mirror = true;
-/* 366 */     setRotation(this.BootsL2, 0.0F, 0.7853982F, 0.0F);
-/* 367 */     this.BootsR2 = new ModelRenderer((ModelBase)this, 21, 47);
-/* 368 */     this.BootsR2.addBox(1.8F, 9.0F, -3.8F, 2, 3, 2);
-/* 369 */     this.BootsR2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 370 */     this.BootsR2.setTextureSize(96, 64);
-/* 371 */     this.BootsR2.mirror = true;
-/* 372 */     setRotation(this.BootsR2, 0.0F, 0.7853982F, 0.0F);
-/* 373 */     this.GlovesL1 = new ModelRenderer((ModelBase)this, 31, 44);
-/* 374 */     this.GlovesL1.addBox(3.0F, 6.0F, -2.0F, 1, 4, 4);
-/* 375 */     this.GlovesL1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 376 */     this.GlovesL1.setTextureSize(96, 64);
-/* 377 */     this.GlovesL1.mirror = true;
-/* 378 */     setRotation(this.GlovesL1, 0.0F, 0.0F, 0.0F);
-/* 379 */     this.GlovesR1 = new ModelRenderer((ModelBase)this, 31, 44);
-/* 380 */     this.GlovesR1.addBox(-4.0F, 6.0F, -2.0F, 1, 4, 4);
-/* 381 */     this.GlovesR1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 382 */     this.GlovesR1.setTextureSize(96, 64);
-/* 383 */     this.GlovesR1.mirror = true;
-/* 384 */     setRotation(this.GlovesR1, 0.0F, 0.0F, 0.0F);
-/* 385 */     this.BoorsL1 = new ModelRenderer((ModelBase)this, 52, 46);
-/* 386 */     this.BoorsL1.addBox(-1.5F, 9.0F, -4.0F, 3, 3, 3);
-/* 387 */     this.BoorsL1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 388 */     this.BoorsL1.setTextureSize(96, 64);
-/* 389 */     this.BoorsL1.mirror = true;
-/* 390 */     setRotation(this.BoorsL1, 0.0F, 0.0F, 0.0F);
-/* 391 */     this.BoorsR1 = new ModelRenderer((ModelBase)this, 52, 46);
-/* 392 */     this.BoorsR1.addBox(-1.5F, 9.0F, -4.0F, 3, 3, 3);
-/* 393 */     this.BoorsR1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 394 */     this.BoorsR1.setTextureSize(96, 64);
-/* 395 */     this.BoorsR1.mirror = true;
-/* 396 */     setRotation(this.BoorsR1, 0.0F, 0.0F, 0.0F);
-/* 397 */     this.GlovesL2 = new ModelRenderer((ModelBase)this, 38, 33);
-/* 398 */     this.GlovesL2.addBox(3.5F, 7.0F, -0.5F, 1, 4, 1);
-/* 399 */     this.GlovesL2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 400 */     this.GlovesL2.setTextureSize(96, 64);
-/* 401 */     this.GlovesL2.mirror = true;
-/* 402 */     setRotation(this.GlovesL2, 0.0F, 0.0F, 0.0F);
-/* 403 */     this.GlovesR2 = new ModelRenderer((ModelBase)this, 38, 33);
-/* 404 */     this.GlovesR2.addBox(-4.5F, 7.0F, -0.5F, 1, 4, 1);
-/* 405 */     this.GlovesR2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 406 */     this.GlovesR2.setTextureSize(96, 64);
-/* 407 */     this.GlovesR2.mirror = true;
-/* 408 */     setRotation(this.GlovesR2, 0.0F, 0.0F, 0.0F);
-/*     */     
-/* 410 */     this.bipedRightArm.addChild(this.RShouderBase);
-/* 411 */     this.bipedRightArm.addChild(this.RShoulderSpikeTopB);
-/* 412 */     this.bipedRightArm.addChild(this.RShoulderSpikeB1);
-/* 413 */     this.bipedRightArm.addChild(this.RShoulderSpikeB2);
-/* 414 */     this.bipedRightArm.addChild(this.RShoulderWing);
-/* 415 */     this.bipedRightArm.addChild(this.RShoulderSpikeBaseB);
-/* 416 */     this.bipedRightArm.addChild(this.RShoulderBottom);
-/* 417 */     this.bipedRightArm.addChild(this.RShoulder);
-/* 418 */     this.bipedRightArm.addChild(this.RShoulderT1);
-/* 419 */     this.bipedRightArm.addChild(this.RShoulderT2);
-/* 420 */     this.bipedRightArm.addChild(this.RShoulderSpikeBaseF);
-/* 421 */     this.bipedRightArm.addChild(this.RShoulderSpikeF1);
-/* 422 */     this.bipedRightArm.addChild(this.RShoulderSpikeF2);
-/* 423 */     this.bipedRightArm.addChild(this.RShoulderSpikeTopF);
-/*     */ 
-/*     */     
-/* 426 */     this.bipedLeftArm.addChild(this.LShoulderSpikeB1);
-/* 427 */     this.bipedLeftArm.addChild(this.LShoulderSpikeTopB);
-/* 428 */     this.bipedLeftArm.addChild(this.LShoulderSpikeB2);
-/* 429 */     this.bipedLeftArm.addChild(this.LShoulderSpikeBaseB);
-/* 430 */     this.bipedLeftArm.addChild(this.LShoulderBottom);
-/* 431 */     this.bipedLeftArm.addChild(this.LShoulderT1);
-/* 432 */     this.bipedLeftArm.addChild(this.LShoulderT2);
-/* 433 */     this.bipedLeftArm.addChild(this.LShouderBase);
-/* 434 */     this.bipedLeftArm.addChild(this.LShoulderWing);
-/* 435 */     this.bipedLeftArm.addChild(this.LShoulder);
-/* 436 */     this.bipedLeftArm.addChild(this.LShoulderSpikeF1);
-/* 437 */     this.bipedLeftArm.addChild(this.LShoulderSpikeF2);
-/* 438 */     this.bipedLeftArm.addChild(this.LShoulderSpikeTopF);
-/* 439 */     this.bipedLeftArm.addChild(this.LShoulderSpikeBaseF);
-/* 440 */     this.bipedLeftArm.addChild(this.LShoulderT2);
-/*     */     
-/* 442 */     this.bipedBody.addChild(this.ArmorPlate5);
-/* 443 */     this.bipedBody.addChild(this.ArmorPlate6);
-/* 444 */     this.bipedBody.addChild(this.ArmorPlateMiddle);
-/* 445 */     this.bipedBody.addChild(this.ArmorPlate1);
-/* 446 */     this.bipedBody.addChild(this.ArmorPlate2);
-/* 447 */     this.bipedBody.addChild(this.ArmorPlate3);
-/* 448 */     this.bipedBody.addChild(this.ArmorPlate4);
-/* 449 */     this.bipedBody.addChild(this.ArmorBase);
-/* 450 */     this.bipedBody.addChild(this.ArmorB2);
-/* 451 */     this.bipedBody.addChild(this.ArmorB1);
-/* 452 */     this.bipedBody.addChild(this.ArmorBackB);
-/* 453 */     this.bipedBody.addChild(this.Burr);
-/* 454 */     this.bipedBody.addChild(this.Belt);
-/* 455 */     this.bipedBody.addChild(this.Armor);
-/*     */     
-/* 457 */     this.bipedLeftLeg.addChild(this.BootsL);
-/* 458 */     this.bipedLeftLeg.addChild(this.BoorsL1);
-/* 459 */     this.bipedLeftLeg.addChild(this.BootsL2);
-/* 460 */     this.bipedLeftLeg.addChild(this.LegArmorL1);
-/* 461 */     this.bipedLeftLeg.addChild(this.LegArmorL2);
-/*     */     
-/* 463 */     this.bipedRightLeg.addChild(this.BootsR);
-/* 464 */     this.bipedRightLeg.addChild(this.BoorsR1);
-/* 465 */     this.bipedRightLeg.addChild(this.BootsR2);
-/* 466 */     this.bipedRightLeg.addChild(this.LegArmorR1);
-/* 467 */     this.bipedRightLeg.addChild(this.LegArmorR2);
-/*     */     
-/* 469 */     this.bipedRightArm.addChild(this.GlovesR1);
-/* 470 */     this.bipedRightArm.addChild(this.GlovesR2);
-/*     */     
-/* 472 */     this.bipedLeftArm.addChild(this.GlovesL1);
-/* 473 */     this.bipedLeftArm.addChild(this.GlovesL2);
-/*     */   }
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-/* 479 */     super.render(entity, f, f1, f2, f3, f4, f5);
-/* 480 */     setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-/*     */   }
-/*     */ 
-/*     */   
-/*     */   private void setRotation(ModelRenderer model, float x, float y, float z) {
-/* 485 */     model.rotateAngleX = x;
-/* 486 */     model.rotateAngleY = y;
-/* 487 */     model.rotateAngleZ = z;
-/*     */   }
-/*     */ }
+package com.ancient.thaumicgadgets.armour.shade;
 
 
-/* Location:              C:\Users\戴尔\Desktop\code\Thaumic_Gadgets_1.12.2_0.1.6_tb.26.jar!\com\ancient\thaumicgadgets\armour\shade\ArmorShadeModel.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
+import java.util.HashMap;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
+import org.lwjgl.opengl.GL11;
+import thaumcraft.client.renderers.models.gear.ModelCustomArmor;
+
+public class ArmorShadeModel extends ModelCustomArmor {
+    ModelRenderer OrnamentL;
+
+    ModelRenderer OrnamentL2;
+
+    ModelRenderer OrnamentR;
+
+    ModelRenderer OrnamentR2;
+
+    ModelRenderer Helmet;
+
+    ModelRenderer HelmetR;
+
+    ModelRenderer HelmetL;
+
+    ModelRenderer HelmetB;
+
+    ModelRenderer capsthingy;
+
+    ModelRenderer flapR;
+
+    ModelRenderer flapL;
+
+    ModelRenderer Gemornament;
+
+    ModelRenderer Gem;
+
+    ModelRenderer[] Mask;
+
+    ModelRenderer Goggles;
+
+    ModelRenderer BeltR;
+
+    ModelRenderer Mbelt;
+
+    ModelRenderer MbeltL;
+
+    ModelRenderer MbeltR;
+
+    ModelRenderer BeltL;
+
+    ModelRenderer Chestplate;
+
+    ModelRenderer Scroll;
+
+    ModelRenderer Backplate;
+
+    ModelRenderer Book;
+
+    ModelRenderer ShoulderR;
+
+    ModelRenderer GauntletR;
+
+    ModelRenderer GauntletstrapR1;
+
+    ModelRenderer GauntletstrapR2;
+
+    ModelRenderer ShoulderplateRtop;
+
+    ModelRenderer ShoulderplateR1;
+
+    ModelRenderer ShoulderplateR2;
+
+    ModelRenderer ShoulderplateR3;
+
+    ModelRenderer ShoulderL;
+
+    ModelRenderer GauntletL;
+
+    ModelRenderer Gauntletstrapl1;
+
+    ModelRenderer GauntletstrapL2;
+
+    ModelRenderer ShoulderplateLtop;
+
+    ModelRenderer ShoulderplateL1;
+
+    ModelRenderer ShoulderplateL2;
+
+    ModelRenderer ShoulderplateL3;
+
+    ModelRenderer LegpanelR1;
+
+    ModelRenderer LegpanelR2;
+
+    ModelRenderer LegpanelR3;
+
+    ModelRenderer LegpanelR4;
+
+    ModelRenderer LegpanelR5;
+
+    ModelRenderer LegpanelR6;
+
+    ModelRenderer SidepanelR1;
+
+    ModelRenderer SidepanelR2;
+
+    ModelRenderer SidepanelR3;
+
+    ModelRenderer BackpanelR1;
+
+    ModelRenderer BackpanelR2;
+
+    ModelRenderer BackpanelR3;
+
+    ModelRenderer BackpanelL3;
+
+    ModelRenderer LegpanelL1;
+
+    ModelRenderer LegpanelL2;
+
+    ModelRenderer LegpanelL3;
+
+    ModelRenderer LegpanelL4;
+
+    ModelRenderer LegpanelL5;
+
+    ModelRenderer LegpanelL6;
+
+    ModelRenderer SidepanelL1;
+
+    ModelRenderer SidepanelL2;
+
+    ModelRenderer SidepanelL3;
+
+    ModelRenderer BackpanelL1;
+
+    ModelRenderer BackpanelL2;
+
+    public ArmorShadeModel(float f) {
+        super(f, 0, 128, 64);
+        this.textureWidth = 128;
+        this.textureHeight = 64;
+        this.Mask = new ModelRenderer[3];
+        for (int a = 0; a < 3; a++) {
+            this.Mask[a] = new ModelRenderer((ModelBase)this, 52 + a * 24, 2);
+            this.Mask[a].addBox(-4.5F, -5.0F, -4.6F, 9, 5, 1);
+            this.Mask[a].setRotationPoint(0.0F, 0.0F, 0.0F);
+            this.Mask[a].setTextureSize(128, 64);
+            setRotation(this.Mask[a], 0.0F, 0.0F, 0.0F);
+        }
+        this.Goggles = new ModelRenderer((ModelBase)this, 100, 18);
+        this.Goggles.addBox(-4.5F, -5.0F, -4.25F, 9, 5, 1);
+        this.Goggles.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Goggles.setTextureSize(128, 64);
+        setRotation(this.Goggles, 0.0F, 0.0F, 0.0F);
+        this.OrnamentL = new ModelRenderer((ModelBase)this, 78, 8);
+        this.OrnamentL.mirror = true;
+        this.OrnamentL.addBox(1.5F, -9.0F, -6.5F, 2, 2, 1);
+        this.OrnamentL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.OrnamentL.setTextureSize(128, 64);
+        setRotation(this.OrnamentL, -0.1396263F, 0.0F, 0.0F);
+        this.OrnamentL2 = new ModelRenderer((ModelBase)this, 78, 8);
+        this.OrnamentL2.mirror = true;
+        this.OrnamentL2.addBox(3.5F, -10.0F, -6.5F, 1, 2, 1);
+        this.OrnamentL2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.OrnamentL2.setTextureSize(128, 64);
+        setRotation(this.OrnamentL2, -0.1396263F, 0.0F, 0.0F);
+        this.OrnamentR = new ModelRenderer((ModelBase)this, 78, 8);
+        this.OrnamentR.addBox(-3.5F, -9.0F, -6.5F, 2, 2, 1);
+        this.OrnamentR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.OrnamentR.setTextureSize(128, 64);
+        setRotation(this.OrnamentR, -0.1396263F, 0.0F, 0.0F);
+        this.OrnamentR2 = new ModelRenderer((ModelBase)this, 78, 8);
+        this.OrnamentR2.addBox(-4.5F, -10.0F, -6.5F, 1, 2, 1);
+        this.OrnamentR2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.OrnamentR2.setTextureSize(128, 64);
+        setRotation(this.OrnamentR2, -0.1396263F, 0.0F, 0.0F);
+        this.Helmet = new ModelRenderer((ModelBase)this, 41, 8);
+        this.Helmet.addBox(-4.5F, -9.0F, -4.5F, 9, 4, 9);
+        this.Helmet.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Helmet.setTextureSize(128, 64);
+        setRotation(this.Helmet, 0.0F, 0.0F, 0.0F);
+        this.HelmetR = new ModelRenderer((ModelBase)this, 21, 13);
+        this.HelmetR.addBox(-6.5F, -3.0F, -4.5F, 1, 5, 9);
+        this.HelmetR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.HelmetR.setTextureSize(128, 64);
+        setRotation(this.HelmetR, 0.0F, 0.0F, 0.5235988F);
+        this.HelmetL = new ModelRenderer((ModelBase)this, 21, 13);
+        this.HelmetL.mirror = true;
+        this.HelmetL.addBox(5.5F, -3.0F, -4.5F, 1, 5, 9);
+        this.HelmetL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.HelmetL.setTextureSize(128, 64);
+        setRotation(this.HelmetL, 0.0F, 0.0F, -0.5235988F);
+        this.HelmetB = new ModelRenderer((ModelBase)this, 41, 21);
+        this.HelmetB.addBox(-4.5F, -3.0F, 5.5F, 9, 5, 1);
+        this.HelmetB.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.HelmetB.setTextureSize(128, 64);
+        setRotation(this.HelmetB, 0.5235988F, 0.0F, 0.0F);
+        this.capsthingy = new ModelRenderer((ModelBase)this, 21, 0);
+        this.capsthingy.addBox(-4.5F, -6.0F, -6.5F, 9, 1, 2);
+        this.capsthingy.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.capsthingy.setTextureSize(128, 64);
+        setRotation(this.capsthingy, 0.0F, 0.0F, 0.0F);
+        this.flapR = new ModelRenderer((ModelBase)this, 59, 10);
+        this.flapR.addBox(-10.0F, -2.0F, -1.0F, 3, 3, 1);
+        this.flapR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.flapR.setTextureSize(128, 64);
+        setRotation(this.flapR, 0.0F, -0.5235988F, 0.5235988F);
+        this.flapL = new ModelRenderer((ModelBase)this, 59, 10);
+        this.flapL.mirror = true;
+        this.flapL.addBox(7.0F, -2.0F, -1.0F, 3, 3, 1);
+        this.flapL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.flapL.setTextureSize(128, 64);
+        setRotation(this.flapL, 0.0F, 0.5235988F, -0.5235988F);
+        this.Gemornament = new ModelRenderer((ModelBase)this, 68, 11);
+        this.Gemornament.addBox(-1.5F, -9.0F, -7.0F, 3, 3, 2);
+        this.Gemornament.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Gemornament.setTextureSize(128, 64);
+        setRotation(this.Gemornament, -0.1396263F, 0.0F, 0.0F);
+        this.Gem = new ModelRenderer((ModelBase)this, 72, 8);
+        this.Gem.addBox(-1.0F, -8.5F, -7.5F, 2, 2, 1);
+        this.Gem.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Gem.setTextureSize(128, 64);
+        setRotation(this.Gem, -0.1396263F, 0.0F, 0.0F);
+        this.BeltR = new ModelRenderer((ModelBase)this, 76, 44);
+        this.BeltR.addBox(-5.0F, 4.0F, -3.0F, 1, 3, 6);
+        this.BeltR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BeltR.setTextureSize(128, 64);
+        setRotation(this.BeltR, 0.0F, 0.0F, 0.0F);
+        this.Mbelt = new ModelRenderer((ModelBase)this, 56, 55);
+        this.Mbelt.addBox(-4.0F, 8.0F, -3.0F, 8, 4, 1);
+        this.Mbelt.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Mbelt.setTextureSize(128, 64);
+        setRotation(this.Mbelt, 0.0F, 0.0F, 0.0F);
+        this.MbeltL = new ModelRenderer((ModelBase)this, 76, 44);
+        this.MbeltL.addBox(4.0F, 8.0F, -3.0F, 1, 3, 6);
+        this.MbeltL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.MbeltL.setTextureSize(128, 64);
+        setRotation(this.MbeltL, 0.0F, 0.0F, 0.0F);
+        this.MbeltR = new ModelRenderer((ModelBase)this, 76, 44);
+        this.MbeltR.addBox(-5.0F, 8.0F, -3.0F, 1, 3, 6);
+        this.MbeltR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.MbeltR.setTextureSize(128, 64);
+        setRotation(this.MbeltR, 0.0F, 0.0F, 0.0F);
+        this.BeltL = new ModelRenderer((ModelBase)this, 76, 44);
+        this.BeltL.addBox(4.0F, 4.0F, -3.0F, 1, 3, 6);
+        this.BeltL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BeltL.setTextureSize(128, 64);
+        setRotation(this.BeltL, 0.0F, 0.0F, 0.0F);
+        this.Chestplate = new ModelRenderer((ModelBase)this, 56, 45);
+        this.Chestplate.addBox(-4.0F, 1.0F, -4.0F, 8, 7, 2);
+        this.Chestplate.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Chestplate.setTextureSize(128, 64);
+        setRotation(this.Chestplate, 0.0F, 0.0F, 0.0F);
+        this.Scroll = new ModelRenderer((ModelBase)this, 34, 27);
+        this.Scroll.addBox(-2.0F, 9.5F, 4.0F, 8, 3, 3);
+        this.Scroll.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Scroll.setTextureSize(128, 64);
+        setRotation(this.Scroll, 0.0F, 0.0F, 0.1919862F);
+        this.Backplate = new ModelRenderer((ModelBase)this, 36, 45);
+        this.Backplate.addBox(-4.0F, 1.0F, 2.0F, 8, 11, 2);
+        this.Backplate.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Backplate.setTextureSize(128, 64);
+        setRotation(this.Backplate, 0.0F, 0.0F, 0.0F);
+        this.Book = new ModelRenderer((ModelBase)this, 100, 8);
+        this.Book.addBox(1.0F, -0.3F, 4.0F, 5, 7, 2);
+        this.Book.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Book.setTextureSize(128, 64);
+        setRotation(this.Book, 0.0F, 0.0F, 0.7679449F);
+        this.ShoulderR = new ModelRenderer((ModelBase)this, 56, 35);
+        this.ShoulderR.addBox(-3.5F, -2.5F, -2.5F, 5, 5, 5);
+        this.ShoulderR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderR.setTextureSize(128, 64);
+        setRotation(this.ShoulderR, 0.0F, 0.0F, 0.0F);
+        this.GauntletR = new ModelRenderer((ModelBase)this, 100, 26);
+        this.GauntletR.addBox(-3.5F, 3.5F, -2.5F, 2, 6, 5);
+        this.GauntletR.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.GauntletR.setTextureSize(128, 64);
+        setRotation(this.GauntletR, 0.0F, 0.0F, 0.0F);
+        this.GauntletstrapR1 = new ModelRenderer((ModelBase)this, 84, 31);
+        this.GauntletstrapR1.addBox(-1.5F, 3.5F, -2.5F, 3, 1, 5);
+        this.GauntletstrapR1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.GauntletstrapR1.setTextureSize(128, 64);
+        setRotation(this.GauntletstrapR1, 0.0F, 0.0F, 0.0F);
+        this.GauntletstrapR2 = new ModelRenderer((ModelBase)this, 84, 31);
+        this.GauntletstrapR2.addBox(-1.5F, 6.5F, -2.5F, 3, 1, 5);
+        this.GauntletstrapR2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.GauntletstrapR2.setTextureSize(128, 64);
+        setRotation(this.GauntletstrapR2, 0.0F, 0.0F, 0.0F);
+        this.ShoulderplateRtop = new ModelRenderer((ModelBase)this, 110, 37);
+        this.ShoulderplateRtop.addBox(-5.5F, -2.5F, -3.5F, 2, 1, 7);
+        this.ShoulderplateRtop.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateRtop.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateRtop, 0.0F, 0.0F, 0.4363323F);
+        this.ShoulderplateR1 = new ModelRenderer((ModelBase)this, 110, 45);
+        this.ShoulderplateR1.addBox(-4.5F, -1.5F, -3.5F, 1, 4, 7);
+        this.ShoulderplateR1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateR1.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateR1, 0.0F, 0.0F, 0.4363323F);
+        this.ShoulderplateR2 = new ModelRenderer((ModelBase)this, 94, 45);
+        this.ShoulderplateR2.addBox(-3.5F, 1.5F, -3.5F, 1, 3, 7);
+        this.ShoulderplateR2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateR2.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateR2, 0.0F, 0.0F, 0.4363323F);
+        this.ShoulderplateR3 = new ModelRenderer((ModelBase)this, 94, 45);
+        this.ShoulderplateR3.addBox(-2.5F, 3.5F, -3.5F, 1, 3, 7);
+        this.ShoulderplateR3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateR3.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateR3, 0.0F, 0.0F, 0.4363323F);
+        this.ShoulderL = new ModelRenderer((ModelBase)this, 56, 35);
+        this.ShoulderL.mirror = true;
+        this.ShoulderL.addBox(-1.5F, -2.5F, -2.5F, 5, 5, 5);
+        this.ShoulderL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderL.setTextureSize(128, 64);
+        setRotation(this.ShoulderL, 0.0F, 0.0F, 0.0F);
+        this.GauntletL = new ModelRenderer((ModelBase)this, 114, 26);
+        this.GauntletL.addBox(1.5F, 3.5F, -2.5F, 2, 6, 5);
+        this.GauntletL.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.GauntletL.setTextureSize(128, 64);
+        setRotation(this.GauntletL, 0.0F, 0.0F, 0.0F);
+        this.Gauntletstrapl1 = new ModelRenderer((ModelBase)this, 84, 31);
+        this.Gauntletstrapl1.mirror = true;
+        this.Gauntletstrapl1.addBox(-1.5F, 3.5F, -2.5F, 3, 1, 5);
+        this.Gauntletstrapl1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.Gauntletstrapl1.setTextureSize(128, 64);
+        setRotation(this.Gauntletstrapl1, 0.0F, 0.0F, 0.0F);
+        this.GauntletstrapL2 = new ModelRenderer((ModelBase)this, 84, 31);
+        this.GauntletstrapL2.mirror = true;
+        this.GauntletstrapL2.addBox(-1.5F, 6.5F, -2.5F, 3, 1, 5);
+        this.GauntletstrapL2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.GauntletstrapL2.setTextureSize(128, 64);
+        setRotation(this.GauntletstrapL2, 0.0F, 0.0F, 0.0F);
+        this.ShoulderplateLtop = new ModelRenderer((ModelBase)this, 110, 37);
+        this.ShoulderplateLtop.mirror = true;
+        this.ShoulderplateLtop.addBox(3.5F, -2.5F, -3.5F, 2, 1, 7);
+        this.ShoulderplateLtop.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateLtop.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateLtop, 0.0F, 0.0F, -0.4363323F);
+        this.ShoulderplateL1 = new ModelRenderer((ModelBase)this, 110, 45);
+        this.ShoulderplateL1.mirror = true;
+        this.ShoulderplateL1.addBox(3.5F, -1.5F, -3.5F, 1, 4, 7);
+        this.ShoulderplateL1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateL1.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateL1, 0.0F, 0.0F, -0.4363323F);
+        this.ShoulderplateL2 = new ModelRenderer((ModelBase)this, 94, 45);
+        this.ShoulderplateL2.mirror = true;
+        this.ShoulderplateL2.addBox(2.5F, 1.5F, -3.5F, 1, 3, 7);
+        this.ShoulderplateL2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateL2.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateL2, 0.0F, 0.0F, -0.4363323F);
+        this.ShoulderplateL3 = new ModelRenderer((ModelBase)this, 94, 45);
+        this.ShoulderplateL3.mirror = true;
+        this.ShoulderplateL3.addBox(1.5F, 3.5F, -3.5F, 1, 3, 7);
+        this.ShoulderplateL3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ShoulderplateL3.setTextureSize(128, 64);
+        setRotation(this.ShoulderplateL3, 0.0F, 0.0F, -0.4363323F);
+        this.LegpanelR1 = new ModelRenderer((ModelBase)this, 0, 51);
+        this.LegpanelR1.addBox(-1.0F, 0.5F, -3.5F, 3, 4, 1);
+        this.LegpanelR1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelR1.setTextureSize(128, 64);
+        setRotation(this.LegpanelR1, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelR2 = new ModelRenderer((ModelBase)this, 8, 51);
+        this.LegpanelR2.addBox(-1.0F, 3.5F, -2.5F, 3, 4, 1);
+        this.LegpanelR2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelR2.setTextureSize(128, 64);
+        setRotation(this.LegpanelR2, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelR3 = new ModelRenderer((ModelBase)this, 0, 56);
+        this.LegpanelR3.addBox(-1.0F, 6.5F, -1.5F, 3, 3, 1);
+        this.LegpanelR3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelR3.setTextureSize(128, 64);
+        setRotation(this.LegpanelR3, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelR4 = new ModelRenderer((ModelBase)this, 0, 43);
+        this.LegpanelR4.addBox(-3.0F, 0.5F, -3.5F, 2, 3, 1);
+        this.LegpanelR4.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelR4.setTextureSize(128, 64);
+        setRotation(this.LegpanelR4, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelR5 = new ModelRenderer((ModelBase)this, 0, 47);
+        this.LegpanelR5.addBox(-3.0F, 2.5F, -2.5F, 2, 3, 1);
+        this.LegpanelR5.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelR5.setTextureSize(128, 64);
+        setRotation(this.LegpanelR5, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelR6 = new ModelRenderer((ModelBase)this, 6, 43);
+        this.LegpanelR6.addBox(-3.0F, 4.5F, -1.5F, 2, 3, 1);
+        this.LegpanelR6.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelR6.setTextureSize(128, 64);
+        setRotation(this.LegpanelR6, -0.4363323F, 0.0F, 0.0F);
+        this.SidepanelR1 = new ModelRenderer((ModelBase)this, 0, 22);
+        this.SidepanelR1.addBox(-2.5F, 0.5F, -2.5F, 1, 4, 5);
+        this.SidepanelR1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.SidepanelR1.setTextureSize(128, 64);
+        setRotation(this.SidepanelR1, 0.0F, 0.0F, 0.4363323F);
+        this.SidepanelR2 = new ModelRenderer((ModelBase)this, 0, 31);
+        this.SidepanelR2.addBox(-1.5F, 3.5F, -2.5F, 1, 3, 5);
+        this.SidepanelR2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.SidepanelR2.setTextureSize(128, 64);
+        setRotation(this.SidepanelR2, 0.0F, 0.0F, 0.4363323F);
+        this.SidepanelR3 = new ModelRenderer((ModelBase)this, 12, 31);
+        this.SidepanelR3.addBox(-0.5F, 5.5F, -2.5F, 1, 3, 5);
+        this.SidepanelR3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.SidepanelR3.setTextureSize(128, 64);
+        setRotation(this.SidepanelR3, 0.0F, 0.0F, 0.4363323F);
+        this.BackpanelR1 = new ModelRenderer((ModelBase)this, 0, 18);
+        this.BackpanelR1.addBox(-3.0F, 0.5F, 2.5F, 5, 3, 1);
+        this.BackpanelR1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BackpanelR1.setTextureSize(128, 64);
+        setRotation(this.BackpanelR1, 0.4363323F, 0.0F, 0.0F);
+        this.BackpanelR2 = new ModelRenderer((ModelBase)this, 0, 18);
+        this.BackpanelR2.addBox(-3.0F, 2.5F, 1.5F, 5, 3, 1);
+        this.BackpanelR2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BackpanelR2.setTextureSize(128, 64);
+        setRotation(this.BackpanelR2, 0.4363323F, 0.0F, 0.0F);
+        this.BackpanelR3 = new ModelRenderer((ModelBase)this, 0, 18);
+        this.BackpanelR3.addBox(-3.0F, 4.5F, 0.5F, 5, 3, 1);
+        this.BackpanelR3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BackpanelR3.setTextureSize(128, 64);
+        setRotation(this.BackpanelR3, 0.4363323F, 0.0F, 0.0F);
+        this.BackpanelL3 = new ModelRenderer((ModelBase)this, 0, 18);
+        this.BackpanelL3.mirror = true;
+        this.BackpanelL3.addBox(-2.0F, 4.5F, 0.5F, 5, 3, 1);
+        this.BackpanelL3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BackpanelL3.setTextureSize(128, 64);
+        setRotation(this.BackpanelL3, 0.4363323F, 0.0F, 0.0F);
+        this.LegpanelL1 = new ModelRenderer((ModelBase)this, 0, 51);
+        this.LegpanelL1.mirror = true;
+        this.LegpanelL1.addBox(-2.0F, 0.5F, -3.5F, 3, 4, 1);
+        this.LegpanelL1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelL1.setTextureSize(128, 64);
+        setRotation(this.LegpanelL1, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelL2 = new ModelRenderer((ModelBase)this, 8, 51);
+        this.LegpanelL2.mirror = true;
+        this.LegpanelL2.addBox(-2.0F, 3.5F, -2.5F, 3, 4, 1);
+        this.LegpanelL2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelL2.setTextureSize(128, 64);
+        setRotation(this.LegpanelL2, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelL3 = new ModelRenderer((ModelBase)this, 0, 56);
+        this.LegpanelL3.mirror = true;
+        this.LegpanelL3.addBox(-2.0F, 6.5F, -1.5F, 3, 3, 1);
+        this.LegpanelL3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelL3.setTextureSize(128, 64);
+        setRotation(this.LegpanelL3, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelL4 = new ModelRenderer((ModelBase)this, 0, 43);
+        this.LegpanelL4.mirror = true;
+        this.LegpanelL4.addBox(1.0F, 0.5F, -3.5F, 2, 3, 1);
+        this.LegpanelL4.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelL4.setTextureSize(128, 64);
+        setRotation(this.LegpanelL4, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelL5 = new ModelRenderer((ModelBase)this, 0, 47);
+        this.LegpanelL5.mirror = true;
+        this.LegpanelL5.addBox(1.0F, 2.5F, -2.5F, 2, 3, 1);
+        this.LegpanelL5.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelL5.setTextureSize(128, 64);
+        setRotation(this.LegpanelL5, -0.4363323F, 0.0F, 0.0F);
+        this.LegpanelL6 = new ModelRenderer((ModelBase)this, 6, 43);
+        this.LegpanelL6.mirror = true;
+        this.LegpanelL6.addBox(1.0F, 4.5F, -1.5F, 2, 3, 1);
+        this.LegpanelL6.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.LegpanelL6.setTextureSize(128, 64);
+        setRotation(this.LegpanelL6, -0.4363323F, 0.0F, 0.0F);
+        this.SidepanelL1 = new ModelRenderer((ModelBase)this, 0, 22);
+        this.SidepanelL1.mirror = true;
+        this.SidepanelL1.addBox(1.5F, 0.5F, -2.5F, 1, 4, 5);
+        this.SidepanelL1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.SidepanelL1.setTextureSize(128, 64);
+        setRotation(this.SidepanelL1, 0.0F, 0.0F, -0.4363323F);
+        this.SidepanelL2 = new ModelRenderer((ModelBase)this, 0, 31);
+        this.SidepanelL2.mirror = true;
+        this.SidepanelL2.addBox(0.5F, 3.5F, -2.5F, 1, 3, 5);
+        this.SidepanelL2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.SidepanelL2.setTextureSize(128, 64);
+        setRotation(this.SidepanelL2, 0.0F, 0.0F, -0.4363323F);
+        this.SidepanelL3 = new ModelRenderer((ModelBase)this, 12, 31);
+        this.SidepanelL3.mirror = true;
+        this.SidepanelL3.addBox(-0.5F, 5.5F, -2.5F, 1, 3, 5);
+        this.SidepanelL3.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.SidepanelL3.setTextureSize(128, 64);
+        setRotation(this.SidepanelL3, 0.0F, 0.0F, -0.4363323F);
+        this.BackpanelL1 = new ModelRenderer((ModelBase)this, 0, 18);
+        this.BackpanelL1.mirror = true;
+        this.BackpanelL1.addBox(-2.0F, 0.5F, 2.5F, 5, 3, 1);
+        this.BackpanelL1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BackpanelL1.setTextureSize(128, 64);
+        setRotation(this.BackpanelL1, 0.4363323F, 0.0F, 0.0F);
+        this.BackpanelL2 = new ModelRenderer((ModelBase)this, 0, 18);
+        this.BackpanelL2.mirror = true;
+        this.BackpanelL2.addBox(-2.0F, 2.5F, 1.5F, 5, 3, 1);
+        this.BackpanelL2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.BackpanelL2.setTextureSize(128, 64);
+        setRotation(this.BackpanelL2, 0.4363323F, 0.0F, 0.0F);
+        this.bipedHeadwear.cubeList.clear();
+        this.bipedHead.cubeList.clear();
+        this.bipedHead.addChild(this.OrnamentL);
+        this.bipedHead.addChild(this.OrnamentL2);
+        this.bipedHead.addChild(this.OrnamentR);
+        this.bipedHead.addChild(this.OrnamentR2);
+        this.bipedHead.addChild(this.Helmet);
+        this.bipedHead.addChild(this.HelmetR);
+        this.bipedHead.addChild(this.HelmetL);
+        this.bipedHead.addChild(this.HelmetB);
+        this.bipedHead.addChild(this.capsthingy);
+        this.bipedHead.addChild(this.flapR);
+        this.bipedHead.addChild(this.flapL);
+        this.bipedHead.addChild(this.Gemornament);
+        this.bipedHead.addChild(this.Gem);
+        this.bipedHead.addChild(this.Goggles);
+        this.bipedHead.addChild(this.Mask[0]);
+        this.bipedHead.addChild(this.Mask[1]);
+        this.bipedHead.addChild(this.Mask[2]);
+        this.bipedBody.cubeList.clear();
+        if (f < 1.0F) {
+            this.bipedBody.addChild(this.Mbelt);
+            this.bipedBody.addChild(this.MbeltL);
+            this.bipedBody.addChild(this.MbeltR);
+        } else {
+            this.bipedBody.addChild(this.BeltR);
+            this.bipedBody.addChild(this.BeltL);
+            this.bipedBody.addChild(this.Chestplate);
+            this.bipedBody.addChild(this.Scroll);
+            this.bipedBody.addChild(this.Backplate);
+            this.bipedBody.addChild(this.Book);
+        }
+        this.bipedRightArm.cubeList.clear();
+        this.bipedRightArm.addChild(this.ShoulderR);
+        this.bipedRightArm.addChild(this.GauntletR);
+        this.bipedRightArm.addChild(this.GauntletstrapR1);
+        this.bipedRightArm.addChild(this.GauntletstrapR2);
+        this.bipedRightArm.addChild(this.ShoulderplateRtop);
+        this.bipedRightArm.addChild(this.ShoulderplateR1);
+        this.bipedRightArm.addChild(this.ShoulderplateR2);
+        this.bipedRightArm.addChild(this.ShoulderplateR3);
+        this.bipedLeftArm.cubeList.clear();
+        this.bipedLeftArm.addChild(this.ShoulderL);
+        this.bipedLeftArm.addChild(this.GauntletL);
+        this.bipedLeftArm.addChild(this.Gauntletstrapl1);
+        this.bipedLeftArm.addChild(this.GauntletstrapL2);
+        this.bipedLeftArm.addChild(this.ShoulderplateLtop);
+        this.bipedLeftArm.addChild(this.ShoulderplateL1);
+        this.bipedLeftArm.addChild(this.ShoulderplateL2);
+        this.bipedLeftArm.addChild(this.ShoulderplateL3);
+        this.bipedRightLeg.cubeList.clear();
+        this.bipedRightLeg.addChild(this.LegpanelR1);
+        this.bipedRightLeg.addChild(this.LegpanelR2);
+        this.bipedRightLeg.addChild(this.LegpanelR3);
+        this.bipedRightLeg.addChild(this.LegpanelR4);
+        this.bipedRightLeg.addChild(this.LegpanelR5);
+        this.bipedRightLeg.addChild(this.LegpanelR6);
+        this.bipedRightLeg.addChild(this.SidepanelR1);
+        this.bipedRightLeg.addChild(this.SidepanelR2);
+        this.bipedRightLeg.addChild(this.SidepanelR3);
+        this.bipedRightLeg.addChild(this.BackpanelR1);
+        this.bipedRightLeg.addChild(this.BackpanelR2);
+        this.bipedRightLeg.addChild(this.BackpanelR3);
+        this.bipedLeftLeg.cubeList.clear();
+        this.bipedLeftLeg.addChild(this.BackpanelL3);
+        this.bipedLeftLeg.addChild(this.LegpanelL1);
+        this.bipedLeftLeg.addChild(this.LegpanelL2);
+        this.bipedLeftLeg.addChild(this.LegpanelL3);
+        this.bipedLeftLeg.addChild(this.LegpanelL4);
+        this.bipedLeftLeg.addChild(this.LegpanelL5);
+        this.bipedLeftLeg.addChild(this.LegpanelL6);
+        this.bipedLeftLeg.addChild(this.SidepanelL1);
+        this.bipedLeftLeg.addChild(this.SidepanelL2);
+        this.bipedLeftLeg.addChild(this.SidepanelL3);
+        this.bipedLeftLeg.addChild(this.BackpanelL1);
+        this.bipedLeftLeg.addChild(this.BackpanelL2);
+    }
+
+    private static HashMap<Integer, Integer> hasSet = new HashMap<>();
+
+    private static HashMap<Integer, Integer> hasMask = new HashMap<>();
+
+    private static HashMap<Integer, Boolean> hasGoggles = new HashMap<>();
+
+    private void checkSet(Entity entity) {
+        if (entity instanceof EntityLivingBase && entity.ticksExisted % 20 == 0) {
+            int set = 0;
+            for (int a = 2; a < 5; a++) {
+                ItemStack piece = ((EntityLivingBase)entity).getItemStackFromSlot(EntityEquipmentSlot.values()[a + 1]);
+                if (piece != null && piece.getItem() instanceof ArmorShade) {
+                    set++;
+                    if (a == 4) {
+                        if (piece.hasTagCompound() && piece.getTagCompound().hasKey("mask")) {
+                            hasMask.put(Integer.valueOf(entity.getEntityId()), Integer.valueOf(piece.getTagCompound().getInteger("mask")));
+                        } else {
+                            hasMask.remove(Integer.valueOf(entity.getEntityId()));
+                        }
+                        if (piece.hasTagCompound() && piece.getTagCompound().hasKey("goggles")) {
+                            hasGoggles.put(Integer.valueOf(entity.getEntityId()), Boolean.valueOf(true));
+                        } else {
+                            hasGoggles.remove(Integer.valueOf(entity.getEntityId()));
+                        }
+                    }
+                }
+            }
+            if (set > 0) {
+                hasSet.put(Integer.valueOf(entity.getEntityId()), Integer.valueOf(set));
+            } else {
+                hasSet.remove(Integer.valueOf(entity.getEntityId()));
+            }
+        }
+    }
+
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+        checkSet(entity);
+        int set = hasSet.containsKey(Integer.valueOf(entity.getEntityId())) ? ((Integer)hasSet.get(Integer.valueOf(entity.getEntityId()))).intValue() : -1;
+        int mask = hasMask.containsKey(Integer.valueOf(entity.getEntityId())) ? ((Integer)hasMask.get(Integer.valueOf(entity.getEntityId()))).intValue() : -1;
+        this.Goggles.isHidden = !hasGoggles.containsKey(Integer.valueOf(entity.getEntityId()));
+        for (int a = 0; a < 3; a++) {
+            if (mask == a) {
+                (this.Mask[a]).isHidden = false;
+            } else {
+                (this.Mask[a]).isHidden = true;
+            }
+        }
+        this.Scroll.isHidden = (set < 3);
+        this.Book.isHidden = (set < 2);
+        this.OrnamentL.isHidden = (set < 3);
+        this.OrnamentL2.isHidden = (set < 3);
+        this.OrnamentR.isHidden = (set < 3);
+        this.OrnamentR2.isHidden = (set < 3);
+        this.Gemornament.isHidden = (set < 3);
+        this.Gem.isHidden = (set < 3);
+        this.flapL.isHidden = (set < 2);
+        this.flapR.isHidden = (set < 2);
+        this.ShoulderplateLtop.isHidden = (set < 2);
+        this.ShoulderplateL1.isHidden = (set < 2);
+        this.ShoulderplateL2.isHidden = (set < 3);
+        this.ShoulderplateL3.isHidden = (set < 3);
+        this.ShoulderplateRtop.isHidden = (set < 2);
+        this.ShoulderplateR1.isHidden = (set < 2);
+        this.ShoulderplateR2.isHidden = (set < 3);
+        this.ShoulderplateR3.isHidden = (set < 3);
+        this.SidepanelR2.isHidden = (set < 2);
+        this.SidepanelL2.isHidden = (set < 2);
+        this.SidepanelR3.isHidden = (set < 3);
+        this.SidepanelL3.isHidden = (set < 3);
+        func_78087_a(f, f1, f2, f3, f4, f5, entity);
+        if (this.isChild) {
+            float f6 = 2.0F;
+            GL11.glPushMatrix();
+            GL11.glScalef(1.5F / f6, 1.5F / f6, 1.5F / f6);
+            GL11.glTranslatef(0.0F, 16.0F * f5, 0.0F);
+            this.bipedHead.render(f5);
+            GL11.glPopMatrix();
+            GL11.glPushMatrix();
+            GL11.glScalef(1.0F / f6, 1.0F / f6, 1.0F / f6);
+            GL11.glTranslatef(0.0F, 24.0F * f5, 0.0F);
+            this.bipedBody.render(f5);
+            this.bipedRightArm.render(f5);
+            this.bipedLeftArm.render(f5);
+            this.bipedRightLeg.render(f5);
+            this.bipedLeftLeg.render(f5);
+            this.bipedHeadwear.render(f5);
+            GL11.glPopMatrix();
+        } else {
+            GL11.glPushMatrix();
+            GL11.glScalef(1.01F, 1.01F, 1.01F);
+            this.bipedHead.render(f5);
+            GL11.glPopMatrix();
+            this.bipedBody.render(f5);
+            this.bipedRightArm.render(f5);
+            this.bipedLeftArm.render(f5);
+            this.bipedRightLeg.render(f5);
+            this.bipedLeftLeg.render(f5);
+            this.bipedHeadwear.render(f5);
+        }
+    }
+
+    private void setRotation(ModelRenderer model, float x, float y, float z) {
+        model.rotateAngleX = x;
+        model.rotateAngleY = y;
+        model.rotateAngleZ = z;
+    }
+}

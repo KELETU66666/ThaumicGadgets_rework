@@ -131,10 +131,7 @@
 /* 131 */   public static final Item FABRIC_VOID = (Item)new ItemBase("fabric_void");
 /* 132 */   public static final Item FABRIC_BEWITCHED = (Item)new ItemBase("fabric_bewitched");
 /* 133 */   public static final Item FABRIC_VOLATILE = (Item)new ItemBase("fabric_volatile");
-/*     */ 
-/*     */   
-/* 136 */   public static final Item WOLF_HIDE = (Item)new ItemBase("wolf_hide");
-/*     */   
+/*     */
 /* 138 */   public static final Item INGOT_LIGHT = (Item)new ItemBase("ingot_light");
 /* 139 */   public static final Item INGOT_SHADE = (Item)new ItemBase("ingot_shade");
 /* 140 */   public static final Item NUGGET_LIGHT = (Item)new ItemBase("nugget_light");
@@ -178,9 +175,7 @@
 /* 178 */   public static final Item SCYTHE_VOID = (Item)new ScytheVoid("scythe_void", ThaumcraftMaterials.TOOLMAT_VOID, 1, 60, 9.0F, -3.0F, 3, 2, 3);
 /* 179 */   public static final Item SCYTHE_LIGHT = (Item)new ScytheLight("scythe_light", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /* 180 */   public static final Item SCYTHE_SHADE = (Item)new ScytheShade("scythe_shade", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
-/*     */   
-/* 182 */   public static final Item FORTIFIED_GLASS_SHARD = (Item)new ItemBase("fortified_glass_shard");
-/*     */   
+/*     */
 /* 192 */   public static final Item LENSE_BLANK = (Item)new ItemBase("lense_blank");
 /* 193 */   public static final Item LENSE_NIGHT_VISION = (Item)new ItemLense("lense_night_vision", EnumHandler.LenseTypes.NIGHT_VISION);
 /* 194 */   public static final Item LENSE_ECHO_LOC = (Item)new ItemLense("lense_echo_loc", EnumHandler.LenseTypes.ECHO_LOC);
