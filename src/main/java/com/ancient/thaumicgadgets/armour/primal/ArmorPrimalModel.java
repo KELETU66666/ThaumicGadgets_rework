@@ -1,476 +1,610 @@
-/*     */ package com.ancient.thaumicgadgets.armour.primal;
-/*     */ 
-/*     */ import net.minecraft.client.model.ModelBase;
-/*     */ import net.minecraft.client.model.ModelBiped;
-/*     */ import net.minecraft.client.model.ModelRenderer;
-/*     */ import net.minecraft.entity.Entity;
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ public class ArmorPrimalModel
-/*     */   extends ModelBiped
-/*     */ {
-/*     */   ModelRenderer ChestplateBase;
-/*     */   ModelRenderer Chestplate1;
-/*     */   ModelRenderer Chestplate2;
-/*     */   ModelRenderer Chestplate3;
-/*     */   ModelRenderer GlovesLBase;
-/*     */   ModelRenderer GlovesL1;
-/*     */   ModelRenderer GlovesL2;
-/*     */   ModelRenderer GlovesRBase;
-/*     */   ModelRenderer GlovesR1;
-/*     */   ModelRenderer GlovesR2;
-/*     */   ModelRenderer RShoulderBase;
-/*     */   ModelRenderer RShoulderBack;
-/*     */   ModelRenderer RShoulderForw;
-/*     */   ModelRenderer RShoulderBladeBase1;
-/*     */   ModelRenderer RShoulderBladeBase2;
-/*     */   ModelRenderer RShoulderBladeFront;
-/*     */   ModelRenderer RShoulderBladeTop;
-/*     */   ModelRenderer RShoulderBladeForw;
-/*     */   ModelRenderer RShoulderBladeBack;
-/*     */   ModelRenderer RShoulderBladeDiag;
-/*     */   ModelRenderer Gorget;
-/*     */   ModelRenderer LShoulderBase;
-/*     */   ModelRenderer LShoulderBack;
-/*     */   ModelRenderer LShoulderForw;
-/*     */   ModelRenderer LShoulderBladeBase1;
-/*     */   ModelRenderer LShoulderBladeBase2;
-/*     */   ModelRenderer LShoulderBladeFront;
-/*     */   ModelRenderer LShoulderBladeTop;
-/*     */   ModelRenderer LShoulderBladeForw;
-/*     */   ModelRenderer LShoulderBladeBack;
-/*     */   ModelRenderer LShoulderBladeDiag;
-/*     */   ModelRenderer CrownBase;
-/*     */   ModelRenderer CrownTop;
-/*     */   ModelRenderer CrownSpikeL;
-/*     */   ModelRenderer CrownSpikeR;
-/*     */   ModelRenderer CrownSpikeL1;
-/*     */   ModelRenderer CrownSpikeR1;
-/*     */   ModelRenderer CrownSpikeMiddle;
-/*     */   ModelRenderer CrownSpikeMiddleTop;
-/*     */   ModelRenderer HelmetForw;
-/*     */   ModelRenderer HelmetBack;
-/*     */   ModelRenderer HelmetFNose;
-/*     */   ModelRenderer HelmetEyeArmor;
-/*     */   ModelRenderer LLegArmor;
-/*     */   ModelRenderer RLegArmor;
-/*     */   ModelRenderer BootsL;
-/*     */   ModelRenderer BootsL1;
-/*     */   ModelRenderer BootsR;
-/*     */   ModelRenderer BootsR1;
-/*     */   
-/*     */   public ArmorPrimalModel(float f) {
-/*  76 */     super(f, 0.0F, 128, 80);
-/*  77 */     this.textureWidth = 128;
-/*  78 */     this.textureHeight = 80;
-/*     */     
-/*  80 */     this.ChestplateBase = new ModelRenderer((ModelBase)this, 100, 0);
-/*  81 */     this.ChestplateBase.addBox(-4.5F, 1.5F, -2.5F, 9, 11, 5);
-/*  82 */     this.ChestplateBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  83 */     this.ChestplateBase.setTextureSize(128, 80);
-/*  84 */     this.ChestplateBase.mirror = true;
-/*  85 */     setRotation(this.ChestplateBase, 0.0F, 0.0F, 0.0F);
-/*  86 */     this.Chestplate1 = new ModelRenderer((ModelBase)this, 96, 5);
-/*  87 */     this.Chestplate1.addBox(-0.5F, 6.0F, -3.1F, 1, 5, 1);
-/*  88 */     this.Chestplate1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  89 */     this.Chestplate1.setTextureSize(128, 80);
-/*  90 */     this.Chestplate1.mirror = true;
-/*  91 */     setRotation(this.Chestplate1, 0.0F, 0.0F, 0.0F);
-/*  92 */     this.Chestplate2 = new ModelRenderer((ModelBase)this, 84, 0);
-/*  93 */     this.Chestplate2.addBox(-1.2F, 4.4F, -3.0F, 5, 1, 1);
-/*  94 */     this.Chestplate2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/*  95 */     this.Chestplate2.setTextureSize(128, 80);
-/*  96 */     this.Chestplate2.mirror = true;
-/*  97 */     setRotation(this.Chestplate2, 0.0F, 0.0F, 0.669215F);
-/*  98 */     this.Chestplate3 = new ModelRenderer((ModelBase)this, 84, 0);
-/*  99 */     this.Chestplate3.addBox(-4.2F, 4.3F, -3.0F, 5, 1, 1);
-/* 100 */     this.Chestplate3.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 101 */     this.Chestplate3.setTextureSize(128, 80);
-/* 102 */     this.Chestplate3.mirror = true;
-/* 103 */     setRotation(this.Chestplate3, 0.0F, 0.0F, -0.6692116F);
-/* 104 */     this.GlovesLBase = new ModelRenderer((ModelBase)this, 0, 33);
-/* 105 */     this.GlovesLBase.addBox(1.0F, 6.0F, -2.5F, 3, 4, 5);
-/* 106 */     this.GlovesLBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 107 */     this.GlovesLBase.setTextureSize(128, 80);
-/* 108 */     this.GlovesLBase.mirror = true;
-/* 109 */     setRotation(this.GlovesLBase, 0.0F, 0.0F, 0.0F);
-/* 110 */     this.GlovesL1 = new ModelRenderer((ModelBase)this, 17, 33);
-/* 111 */     this.GlovesL1.addBox(3.0F, 4.0F, -1.5F, 1, 2, 3);
-/* 112 */     this.GlovesL1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 113 */     this.GlovesL1.setTextureSize(128, 80);
-/* 114 */     this.GlovesL1.mirror = true;
-/* 115 */     setRotation(this.GlovesL1, 0.0F, 0.0F, 0.0F);
-/* 116 */     this.GlovesR1 = new ModelRenderer((ModelBase)this, 17, 33);
-/* 117 */     this.GlovesR1.addBox(-4.0F, 4.0F, -1.5F, 1, 2, 3);
-/* 118 */     this.GlovesR1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 119 */     this.GlovesR1.setTextureSize(128, 80);
-/* 120 */     this.GlovesR1.mirror = true;
-/* 121 */     setRotation(this.GlovesR1, 0.0F, 0.0F, 0.0F);
-/* 122 */     this.GlovesR2 = new ModelRenderer((ModelBase)this, 26, 33);
-/* 123 */     this.GlovesR2.addBox(3.0F, 3.0F, -0.5F, 1, 1, 1);
-/* 124 */     this.GlovesR2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 125 */     this.GlovesR2.setTextureSize(128, 80);
-/* 126 */     this.GlovesR2.mirror = true;
-/* 127 */     setRotation(this.GlovesR2, 0.0F, 0.0F, 0.0F);
-/* 128 */     this.GlovesRBase = new ModelRenderer((ModelBase)this, 0, 33);
-/* 129 */     this.GlovesRBase.addBox(-4.0F, 6.0F, -2.5F, 3, 4, 5);
-/* 130 */     this.GlovesRBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 131 */     this.GlovesRBase.setTextureSize(128, 80);
-/* 132 */     this.GlovesRBase.mirror = true;
-/* 133 */     setRotation(this.GlovesRBase, 0.0F, 0.0F, 0.0F);
-/* 134 */     this.GlovesL2 = new ModelRenderer((ModelBase)this, 26, 33);
-/* 135 */     this.GlovesL2.addBox(-4.0F, 3.0F, -0.5F, 1, 1, 1);
-/* 136 */     this.GlovesL2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 137 */     this.GlovesL2.setTextureSize(128, 80);
-/* 138 */     this.GlovesL2.mirror = true;
-/* 139 */     setRotation(this.GlovesL2, 0.0F, 0.0F, 0.0F);
-/* 140 */     this.RShoulderBase = new ModelRenderer((ModelBase)this, 108, 17);
-/* 141 */     this.RShoulderBase.addBox(-4.0F, -2.5F, -2.5F, 5, 4, 5);
-/* 142 */     this.RShoulderBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 143 */     this.RShoulderBase.setTextureSize(128, 80);
-/* 144 */     this.RShoulderBase.mirror = true;
-/* 145 */     setRotation(this.RShoulderBase, 0.0F, 0.0F, 0.0F);
-/* 146 */     this.RShoulderBladeBase2 = new ModelRenderer((ModelBase)this, 103, 17);
-/* 147 */     this.RShoulderBladeBase2.addBox(-3.8F, -3.5F, -0.5F, 1, 2, 1);
-/* 148 */     this.RShoulderBladeBase2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 149 */     this.RShoulderBladeBase2.setTextureSize(128, 80);
-/* 150 */     this.RShoulderBladeBase2.mirror = true;
-/* 151 */     setRotation(this.RShoulderBladeBase2, 0.0174533F, 0.0F, 0.0F);
-/* 152 */     this.RShoulderBladeTop = new ModelRenderer((ModelBase)this, 116, 26);
-/* 153 */     this.RShoulderBladeTop.addBox(-4.0F, -3.3F, 2.3F, 5, 1, 1);
-/* 154 */     this.RShoulderBladeTop.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 155 */     this.RShoulderBladeTop.setTextureSize(128, 80);
-/* 156 */     this.RShoulderBladeTop.mirror = true;
-/* 157 */     setRotation(this.RShoulderBladeTop, 0.7853982F, 0.0F, 0.0F);
-/* 158 */     this.RShoulderBladeBase1 = new ModelRenderer((ModelBase)this, 103, 17);
-/* 159 */     this.RShoulderBladeBase1.addBox(-0.5F, -3.5F, -0.5F, 1, 2, 1);
-/* 160 */     this.RShoulderBladeBase1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 161 */     this.RShoulderBladeBase1.setTextureSize(128, 80);
-/* 162 */     this.RShoulderBladeBase1.mirror = true;
-/* 163 */     setRotation(this.RShoulderBladeBase1, 0.0174533F, 0.0F, 0.0F);
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */     
-/* 170 */     this.RShoulderBladeBack = new ModelRenderer((ModelBase)this, 118, 29);
-/* 171 */     this.RShoulderBladeBack.addBox(-4.5F, 0.5F, 2.0F, 4, 1, 1);
-/* 172 */     this.RShoulderBladeBack.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 173 */     this.RShoulderBladeBack.setTextureSize(128, 80);
-/* 174 */     this.RShoulderBladeBack.mirror = true;
-/* 175 */     setRotation(this.RShoulderBladeBack, 0.7853982F, 0.0F, 0.0F);
-/* 176 */     this.RShoulderBladeDiag = new ModelRenderer((ModelBase)this, 108, 29);
-/* 177 */     this.RShoulderBladeDiag.addBox(-2.7F, -4.4F, -4.4F, 3, 1, 1);
-/* 178 */     this.RShoulderBladeDiag.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 179 */     this.RShoulderBladeDiag.setTextureSize(128, 80);
-/* 180 */     this.RShoulderBladeDiag.mirror = true;
-/* 181 */     setRotation(this.RShoulderBladeDiag, -0.7853982F, 0.0F, -0.7853982F);
-/* 182 */     this.RShoulderBladeForw = new ModelRenderer((ModelBase)this, 118, 29);
-/* 183 */     this.RShoulderBladeForw.addBox(-4.5F, -3.0F, -1.5F, 4, 1, 1);
-/* 184 */     this.RShoulderBladeForw.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 185 */     this.RShoulderBladeForw.setTextureSize(128, 80);
-/* 186 */     this.RShoulderBladeForw.mirror = true;
-/* 187 */     setRotation(this.RShoulderBladeForw, 0.7853982F, 0.0F, 0.0F);
-/* 188 */     this.RShoulderBack = new ModelRenderer((ModelBase)this, 101, 24);
-/* 189 */     this.RShoulderBack.addBox(-1.5F, 0.0F, 2.0F, 2, 2, 1);
-/* 190 */     this.RShoulderBack.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 191 */     this.RShoulderBack.setTextureSize(128, 80);
-/* 192 */     this.RShoulderBack.mirror = true;
-/* 193 */     setRotation(this.RShoulderBack, 0.0F, 0.0F, 0.0F);
-/* 194 */     this.RShoulderForw = new ModelRenderer((ModelBase)this, 101, 24);
-/* 195 */     this.RShoulderForw.addBox(-1.5F, 0.0F, -3.0F, 2, 2, 1);
-/* 196 */     this.RShoulderForw.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 197 */     this.RShoulderForw.setTextureSize(128, 80);
-/* 198 */     this.RShoulderForw.mirror = true;
-/* 199 */     setRotation(this.RShoulderForw, 0.0F, 0.0F, 0.0F);
-/* 200 */     this.LShoulderBase = new ModelRenderer((ModelBase)this, 108, 17);
-/* 201 */     this.LShoulderBase.addBox(-1.0F, -2.5F, -2.5F, 5, 4, 5);
-/* 202 */     this.LShoulderBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 203 */     this.LShoulderBase.setTextureSize(128, 80);
-/* 204 */     this.LShoulderBase.mirror = true;
-/* 205 */     setRotation(this.LShoulderBase, 0.0F, 0.0F, 0.0F);
-/* 206 */     this.Gorget = new ModelRenderer((ModelBase)this, 92, 32);
-/* 207 */     this.Gorget.addBox(-4.5F, -1.0F, -4.5F, 9, 3, 9);
-/* 208 */     this.Gorget.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 209 */     this.Gorget.setTextureSize(128, 80);
-/* 210 */     this.Gorget.mirror = true;
-/* 211 */     setRotation(this.Gorget, 0.2792527F, 0.0F, 0.0F);
-/* 212 */     this.LShoulderBladeBase1 = new ModelRenderer((ModelBase)this, 103, 17);
-/* 213 */     this.LShoulderBladeBase1.addBox(-0.5F, -3.5F, -0.5F, 1, 2, 1);
-/* 214 */     this.LShoulderBladeBase1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 215 */     this.LShoulderBladeBase1.setTextureSize(128, 80);
-/* 216 */     this.LShoulderBladeBase1.mirror = true;
-/* 217 */     setRotation(this.LShoulderBladeBase1, 0.0174533F, 0.0F, 0.0F);
-/* 218 */     this.LShoulderBladeBase2 = new ModelRenderer((ModelBase)this, 103, 17);
-/* 219 */     this.LShoulderBladeBase2.addBox(2.8F, -3.5F, -0.5F, 1, 2, 1);
-/* 220 */     this.LShoulderBladeBase2.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 221 */     this.LShoulderBladeBase2.setTextureSize(128, 80);
-/* 222 */     this.LShoulderBladeBase2.mirror = true;
-/* 223 */     setRotation(this.LShoulderBladeBase2, 0.0174533F, 0.0F, 0.0F);
-/* 224 */     this.LShoulderBladeFront = new ModelRenderer((ModelBase)this, 96, 26);
-/* 225 */     this.LShoulderBladeFront.addBox(3.3F, -2.3F, 3.4F, 1, 4, 1);
-/* 226 */     this.LShoulderBladeFront.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 227 */     this.LShoulderBladeFront.setTextureSize(128, 80);
-/* 228 */     this.LShoulderBladeFront.mirror = true;
-/* 229 */     setRotation(this.LShoulderBladeFront, 0.0F, 0.7853982F, 0.0F);
-/* 230 */     this.LShoulderBladeDiag = new ModelRenderer((ModelBase)this, 108, 29);
-/* 231 */     this.LShoulderBladeDiag.addBox(-0.3F, -4.3F, 3.33F, 3, 1, 1);
-/* 232 */     this.LShoulderBladeDiag.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 233 */     this.LShoulderBladeDiag.setTextureSize(128, 80);
-/* 234 */     this.LShoulderBladeDiag.mirror = true;
-/* 235 */     setRotation(this.LShoulderBladeDiag, 0.7853982F, 0.0F, 0.7853982F);
-/* 236 */     this.LShoulderBladeBack = new ModelRenderer((ModelBase)this, 118, 29);
-/* 237 */     this.LShoulderBladeBack.addBox(0.5F, 0.5F, 2.0F, 4, 1, 1);
-/* 238 */     this.LShoulderBladeBack.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 239 */     this.LShoulderBladeBack.setTextureSize(128, 80);
-/* 240 */     this.LShoulderBladeBack.mirror = true;
-/* 241 */     setRotation(this.LShoulderBladeBack, 0.7853982F, 0.0F, 0.0F);
-/* 242 */     this.LShoulderForw = new ModelRenderer((ModelBase)this, 101, 24);
-/* 243 */     this.LShoulderForw.addBox(-0.5F, 0.0F, -3.0F, 2, 2, 1);
-/* 244 */     this.LShoulderForw.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 245 */     this.LShoulderForw.setTextureSize(128, 80);
-/* 246 */     this.LShoulderForw.mirror = true;
-/* 247 */     setRotation(this.LShoulderForw, 0.0F, 0.0F, 0.0F);
-/* 248 */     this.LShoulderBladeForw = new ModelRenderer((ModelBase)this, 118, 29);
-/* 249 */     this.LShoulderBladeForw.addBox(0.5F, -3.0F, -1.5F, 4, 1, 1);
-/* 250 */     this.LShoulderBladeForw.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 251 */     this.LShoulderBladeForw.setTextureSize(128, 80);
-/* 252 */     this.LShoulderBladeForw.mirror = true;
-/* 253 */     setRotation(this.LShoulderBladeForw, 0.7853982F, 0.0F, 0.0F);
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */     
-/* 266 */     this.LShoulderBladeTop = new ModelRenderer((ModelBase)this, 116, 26);
-/* 267 */     this.LShoulderBladeTop.addBox(-1.0F, -3.3F, 2.3F, 5, 1, 1);
-/* 268 */     this.LShoulderBladeTop.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 269 */     this.LShoulderBladeTop.setTextureSize(128, 80);
-/* 270 */     this.LShoulderBladeTop.mirror = true;
-/* 271 */     setRotation(this.LShoulderBladeTop, 0.7853982F, 0.0F, 0.0F);
-/* 272 */     this.LShoulderBack = new ModelRenderer((ModelBase)this, 101, 24);
-/* 273 */     this.LShoulderBack.addBox(-0.5F, 0.0F, 2.0F, 2, 2, 1);
-/* 274 */     this.LShoulderBack.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 275 */     this.LShoulderBack.setTextureSize(128, 80);
-/* 276 */     this.LShoulderBack.mirror = true;
-/* 277 */     setRotation(this.LShoulderBack, 0.0F, 0.0F, 0.0F);
-/* 278 */     this.RShoulderBladeFront = new ModelRenderer((ModelBase)this, 96, 26);
-/* 279 */     this.RShoulderBladeFront.addBox(-4.3F, -2.3F, -4.4F, 1, 4, 1);
-/* 280 */     this.RShoulderBladeFront.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 281 */     this.RShoulderBladeFront.setTextureSize(128, 80);
-/* 282 */     this.RShoulderBladeFront.mirror = true;
-/* 283 */     setRotation(this.RShoulderBladeFront, 0.0F, 0.7853982F, 0.0F);
-/* 284 */     this.HelmetEyeArmor = new ModelRenderer((ModelBase)this, 0, 44);
-/* 285 */     this.HelmetEyeArmor.addBox(-4.5F, -6.5F, -5.0F, 9, 2, 3);
-/* 286 */     this.HelmetEyeArmor.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 287 */     this.HelmetEyeArmor.setTextureSize(128, 80);
-/* 288 */     this.HelmetEyeArmor.mirror = true;
-/* 289 */     setRotation(this.HelmetEyeArmor, 0.0F, 0.0F, 0.0F);
-/* 290 */     this.CrownBase = new ModelRenderer((ModelBase)this, 0, 50);
-/* 291 */     this.CrownBase.addBox(-4.5F, -8.5F, -4.5F, 9, 2, 9);
-/* 292 */     this.CrownBase.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 293 */     this.CrownBase.setTextureSize(128, 80);
-/* 294 */     this.CrownBase.mirror = true;
-/* 295 */     setRotation(this.CrownBase, 0.0F, 0.0F, 0.0F);
-/* 296 */     this.CrownSpikeL1 = new ModelRenderer((ModelBase)this, 25, 44);
-/* 297 */     this.CrownSpikeL1.addBox(3.9F, -9.5F, -1.0F, 1, 3, 2);
-/* 298 */     this.CrownSpikeL1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 299 */     this.CrownSpikeL1.setTextureSize(128, 80);
-/* 300 */     this.CrownSpikeL1.mirror = true;
-/* 301 */     setRotation(this.CrownSpikeL1, 0.0F, 0.0F, 0.0F);
-/* 302 */     this.CrownSpikeMiddleTop = new ModelRenderer((ModelBase)this, 0, 62);
-/* 303 */     this.CrownSpikeMiddleTop.addBox(-0.5F, -11.0F, -4.5F, 1, 2, 1);
-/* 304 */     this.CrownSpikeMiddleTop.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 305 */     this.CrownSpikeMiddleTop.setTextureSize(128, 80);
-/* 306 */     this.CrownSpikeMiddleTop.mirror = true;
-/* 307 */     setRotation(this.CrownSpikeMiddleTop, 0.0F, 0.0F, 0.0F);
-/* 308 */     this.HelmetForw = new ModelRenderer((ModelBase)this, 5, 62);
-/* 309 */     this.HelmetForw.addBox(-4.4F, -3.5F, -4.3F, 9, 4, 3);
-/* 310 */     this.HelmetForw.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 311 */     this.HelmetForw.setTextureSize(128, 80);
-/* 312 */     this.HelmetForw.mirror = true;
-/* 313 */     setRotation(this.HelmetForw, 0.0F, 0.0F, 0.0F);
-/* 314 */     this.CrownSpikeR1 = new ModelRenderer((ModelBase)this, 0, 70);
-/* 315 */     this.CrownSpikeR1.addBox(-4.866667F, -9.5F, -1.0F, 1, 3, 2);
-/* 316 */     this.CrownSpikeR1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 317 */     this.CrownSpikeR1.setTextureSize(128, 80);
-/* 318 */     this.CrownSpikeR1.mirror = true;
-/* 319 */     setRotation(this.CrownSpikeR1, 0.0F, 0.0F, 0.0F);
-/* 320 */     this.CrownSpikeR = new ModelRenderer((ModelBase)this, 0, 62);
-/* 321 */     this.CrownSpikeR.addBox(-2.866667F, -9.5F, -5.0F, 1, 2, 1);
-/* 322 */     this.CrownSpikeR.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 323 */     this.CrownSpikeR.setTextureSize(128, 80);
-/* 324 */     this.CrownSpikeR.mirror = true;
-/* 325 */     setRotation(this.CrownSpikeR, 0.0F, 0.0F, 0.0F);
-/* 326 */     this.CrownSpikeL = new ModelRenderer((ModelBase)this, 0, 62);
-/* 327 */     this.CrownSpikeL.addBox(2.133333F, -9.5F, -5.0F, 1, 2, 1);
-/* 328 */     this.CrownSpikeL.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 329 */     this.CrownSpikeL.setTextureSize(128, 80);
-/* 330 */     this.CrownSpikeL.mirror = true;
-/* 331 */     setRotation(this.CrownSpikeL, 0.0F, 0.0F, 0.0F);
-/* 332 */     this.HelmetBack = new ModelRenderer((ModelBase)this, 39, 50);
-/* 333 */     this.HelmetBack.addBox(-4.6F, -7.0F, -2.4F, 9, 6, 7);
-/* 334 */     this.HelmetBack.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 335 */     this.HelmetBack.setTextureSize(128, 80);
-/* 336 */     this.HelmetBack.mirror = true;
-/* 337 */     setRotation(this.HelmetBack, 0.0F, 0.0F, 0.0F);
-/* 338 */     this.HelmetFNose = new ModelRenderer((ModelBase)this, 30, 62);
-/* 339 */     this.HelmetFNose.addBox(-1.0F, -7.0F, -5.1F, 2, 7, 2);
-/* 340 */     this.HelmetFNose.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 341 */     this.HelmetFNose.setTextureSize(128, 80);
-/* 342 */     this.HelmetFNose.mirror = true;
-/* 343 */     setRotation(this.HelmetFNose, 0.0F, 0.0F, 0.0F);
-/* 344 */     this.CrownTop = new ModelRenderer((ModelBase)this, 32, 37);
-/* 345 */     this.CrownTop.addBox(-3.4F, -9.0F, -3.5F, 7, 5, 7);
-/* 346 */     this.CrownTop.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 347 */     this.CrownTop.setTextureSize(128, 80);
-/* 348 */     this.CrownTop.mirror = true;
-/* 349 */     setRotation(this.CrownTop, 0.0F, 0.0F, 0.0F);
-/* 350 */     this.CrownSpikeMiddle = new ModelRenderer((ModelBase)this, 7, 70);
-/* 351 */     this.CrownSpikeMiddle.addBox(-1.0F, -10.5F, -5.0F, 2, 4, 1);
-/* 352 */     this.CrownSpikeMiddle.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 353 */     this.CrownSpikeMiddle.setTextureSize(128, 80);
-/* 354 */     this.CrownSpikeMiddle.mirror = true;
-/* 355 */     setRotation(this.CrownSpikeMiddle, 0.0F, 0.0F, 0.0F);
-/* 356 */     this.LLegArmor = new ModelRenderer((ModelBase)this, 69, 0);
-/* 357 */     this.LLegArmor.addBox(1.5F, -1.0F, -2.6F, 2, 6, 5);
-/* 358 */     this.LLegArmor.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 359 */     this.LLegArmor.setTextureSize(128, 80);
-/* 360 */     this.LLegArmor.mirror = true;
-/* 361 */     setRotation(this.LLegArmor, 0.0F, 0.0F, 0.0F);
-/* 362 */     this.RLegArmor = new ModelRenderer((ModelBase)this, 69, 0);
-/* 363 */     this.RLegArmor.addBox(-3.5F, -1.0F, -2.6F, 2, 6, 5);
-/* 364 */     this.RLegArmor.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 365 */     this.RLegArmor.setTextureSize(128, 80);
-/* 366 */     this.RLegArmor.mirror = true;
-/* 367 */     setRotation(this.RLegArmor, 0.0F, 0.0F, 0.0F);
-/* 368 */     this.BootsR1 = new ModelRenderer((ModelBase)this, 82, 16);
-/* 369 */     this.BootsR1.addBox(-1.5F, 9.0F, -4.5F, 3, 3, 2);
-/* 370 */     this.BootsR1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 371 */     this.BootsR1.setTextureSize(128, 80);
-/* 372 */     this.BootsR1.mirror = true;
-/* 373 */     setRotation(this.BootsR1, 0.0F, 0.0F, 0.0F);
-/* 374 */     this.BootsL1 = new ModelRenderer((ModelBase)this, 82, 16);
-/* 375 */     this.BootsL1.addBox(-1.5F, 9.0F, -4.5F, 3, 3, 2);
-/* 376 */     this.BootsL1.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 377 */     this.BootsL1.setTextureSize(128, 80);
-/* 378 */     this.BootsL1.mirror = true;
-/* 379 */     setRotation(this.BootsL1, 0.0F, 0.0F, 0.0F);
-/* 380 */     this.BootsL = new ModelRenderer((ModelBase)this, 59, 16);
-/* 381 */     this.BootsL.addBox(-2.5F, 6.0F, -2.5F, 5, 6, 5);
-/* 382 */     this.BootsL.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 383 */     this.BootsL.setTextureSize(128, 80);
-/* 384 */     this.BootsL.mirror = true;
-/* 385 */     setRotation(this.BootsL, 0.0F, 0.0F, 0.0F);
-/* 386 */     this.BootsR = new ModelRenderer((ModelBase)this, 59, 16);
-/* 387 */     this.BootsR.addBox(-2.5F, 6.0F, -2.5F, 5, 6, 5);
-/* 388 */     this.BootsR.setRotationPoint(0.0F, 0.0F, 0.0F);
-/* 389 */     this.BootsR.setTextureSize(128, 80);
-/* 390 */     this.BootsR.mirror = true;
-/* 391 */     setRotation(this.BootsR, 0.0F, 0.0F, 0.0F);
-/*     */     
-/* 393 */     this.bipedBody.addChild(this.ChestplateBase);
-/* 394 */     this.ChestplateBase.addChild(this.Chestplate1);
-/* 395 */     this.ChestplateBase.addChild(this.Chestplate2);
-/* 396 */     this.ChestplateBase.addChild(this.Chestplate3);
-/*     */     
-/* 398 */     this.bipedLeftArm.addChild(this.GlovesLBase);
-/* 399 */     this.GlovesLBase.addChild(this.GlovesL1);
-/* 400 */     this.GlovesLBase.addChild(this.GlovesL2);
-/*     */     
-/* 402 */     this.bipedRightArm.addChild(this.GlovesRBase);
-/* 403 */     this.GlovesRBase.addChild(this.GlovesR1);
-/* 404 */     this.GlovesRBase.addChild(this.GlovesR2);
-/*     */     
-/* 406 */     this.bipedRightArm.addChild(this.RShoulderBase);
-/* 407 */     this.RShoulderBase.addChild(this.RShoulderBack);
-/* 408 */     this.RShoulderBase.addChild(this.RShoulderForw);
-/* 409 */     this.RShoulderBase.addChild(this.RShoulderBladeBase1);
-/* 410 */     this.RShoulderBase.addChild(this.RShoulderBladeBase2);
-/* 411 */     this.RShoulderBase.addChild(this.RShoulderBladeFront);
-/* 412 */     this.RShoulderBase.addChild(this.RShoulderBladeTop);
-/* 413 */     this.RShoulderBase.addChild(this.RShoulderBladeForw);
-/* 414 */     this.RShoulderBase.addChild(this.RShoulderBladeBack);
-/* 415 */     this.RShoulderBase.addChild(this.RShoulderBladeDiag);
-/*     */ 
-/*     */     
-/* 418 */     this.bipedHead.addChild(this.Gorget);
-/*     */     
-/* 420 */     this.bipedLeftArm.addChild(this.LShoulderBase);
-/* 421 */     this.LShoulderBase.addChild(this.LShoulderBack);
-/* 422 */     this.LShoulderBase.addChild(this.LShoulderForw);
-/* 423 */     this.LShoulderBase.addChild(this.LShoulderBladeBase1);
-/* 424 */     this.LShoulderBase.addChild(this.LShoulderBladeBase2);
-/* 425 */     this.LShoulderBase.addChild(this.LShoulderBladeFront);
-/* 426 */     this.LShoulderBase.addChild(this.LShoulderBladeTop);
-/* 427 */     this.LShoulderBase.addChild(this.LShoulderBladeForw);
-/* 428 */     this.LShoulderBase.addChild(this.LShoulderBladeBack);
-/* 429 */     this.LShoulderBase.addChild(this.LShoulderBladeDiag);
-/*     */ 
-/*     */ 
-/*     */     
-/* 433 */     this.bipedHead.addChild(this.CrownBase);
-/* 434 */     this.CrownBase.addChild(this.CrownTop);
-/* 435 */     this.CrownBase.addChild(this.CrownSpikeL);
-/* 436 */     this.CrownBase.addChild(this.CrownSpikeR);
-/* 437 */     this.CrownBase.addChild(this.CrownSpikeL1);
-/* 438 */     this.CrownBase.addChild(this.CrownSpikeR1);
-/* 439 */     this.CrownBase.addChild(this.CrownSpikeMiddle);
-/* 440 */     this.CrownBase.addChild(this.CrownSpikeMiddleTop);
-/*     */     
-/* 442 */     this.bipedHead.addChild(this.HelmetForw);
-/* 443 */     this.HelmetForw.addChild(this.HelmetBack);
-/* 444 */     this.HelmetForw.addChild(this.HelmetFNose);
-/* 445 */     this.HelmetForw.addChild(this.HelmetEyeArmor);
-/*     */     
-/* 447 */     this.bipedLeftLeg.addChild(this.LLegArmor);
-/* 448 */     this.bipedRightLeg.addChild(this.RLegArmor);
-/*     */     
-/* 450 */     this.bipedLeftLeg.addChild(this.BootsL);
-/* 451 */     this.bipedLeftLeg.addChild(this.BootsL1);
-/*     */     
-/* 453 */     this.bipedRightLeg.addChild(this.BootsR);
-/* 454 */     this.bipedRightLeg.addChild(this.BootsR1);
-/*     */   }
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-/* 460 */     super.render(entity, f, f1, f2, f3, f4, f5);
-/* 461 */     setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-/*     */   }
-/*     */ 
-/*     */   
-/*     */   private void setRotation(ModelRenderer model, float x, float y, float z) {
-/* 466 */     model.rotateAngleX = x;
-/* 467 */     model.rotateAngleY = y;
-/* 468 */     model.rotateAngleZ = z;
-/*     */   }
-/*     */ }
+package com.ancient.thaumicgadgets.armour.primal;
 
+import java.util.HashMap;
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.monster.EntitySkeleton;
+import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.EnumAction;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.MathHelper;
+import org.lwjgl.opengl.GL11;
 
-/* Location:              C:\Users\戴尔\Desktop\code\Thaumic_Gadgets_1.12.2_0.1.6_tb.26.jar!\com\ancient\thaumicgadgets\armour\primal\ArmorPrimalModel.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
+/**
+ * Created using Tabula 4.1.0
  */
+public class ArmorPrimalModel extends ModelBiped {
+    public ModelRenderer ll_plate_o0;
+    public ModelRenderer ll_plate_o1;
+    public ModelRenderer ll_plate_b0;
+    public ModelRenderer ll_plate_b1;
+    public ModelRenderer ll_plate_f0;
+    public ModelRenderer ll_plate_f1;
+    public ModelRenderer ll_plate_f2;
+    public ModelRenderer ll_plate_f3;
+    public ModelRenderer lb_base;
+    public ModelRenderer ll_chainmail;
+    public ModelRenderer lb_front;
+    public ModelRenderer lb_side0;
+    public ModelRenderer lb_side1;
+    public ModelRenderer rl_plate_o0;
+    public ModelRenderer rl_plate_o1;
+    public ModelRenderer rl_plate_b0;
+    public ModelRenderer rl_plate_b1;
+    public ModelRenderer rl_plate_f0;
+    public ModelRenderer rl_plate_f1;
+    public ModelRenderer rl_plate_f2;
+    public ModelRenderer rl_plate_f3;
+    public ModelRenderer rb_base;
+    public ModelRenderer rl_chainmail;
+    public ModelRenderer rb_front;
+    public ModelRenderer rb_side0;
+    public ModelRenderer rb_side1;
+    public ModelRenderer la_plate0;
+    public ModelRenderer la_plate1;
+    public ModelRenderer la_shoulder0;
+    public ModelRenderer la_shoulder1;
+    public ModelRenderer la_shoulder2;
+    public ModelRenderer la_shoulder3;
+    public ModelRenderer la_shoulder4;
+    public ModelRenderer ra_plate0;
+    public ModelRenderer ra_plate1;
+    public ModelRenderer ra_shoulder0;
+    public ModelRenderer ra_shoulder1;
+    public ModelRenderer ra_shoulder2;
+    public ModelRenderer ra_shoulder3;
+    public ModelRenderer ra_shoulder4;
+    public ModelRenderer bd_belt;
+    public ModelRenderer bd_chainmail;
+    public ModelRenderer bd_chest;
+    public ModelRenderer bd_strap0;
+    public ModelRenderer bd_strap1;
+    public ModelRenderer bd_strap2;
+    public ModelRenderer bd_add0;
+    public ModelRenderer bd_add1;
+    public ModelRenderer bd_add2;
+    public ModelRenderer bd_add3;
+    public ModelRenderer bd_back;
+    public ModelRenderer bd_strap3;
+    public ModelRenderer bd_strap4;
+    public ModelRenderer bd_strap5;
+    public ModelRenderer bd_add4;
+    public ModelRenderer bd_add5;
+    public ModelRenderer bd_add6;
+    public ModelRenderer bd_add7;
+    public ModelRenderer hm_top;
+    public ModelRenderer hm_l0;
+    public ModelRenderer hm_r0;
+    public ModelRenderer hm_b0;
+    public ModelRenderer hm_b1;
+    public ModelRenderer hm_f0;
+    public ModelRenderer face_0;
+    public ModelRenderer face_mask;
+    public ModelRenderer face_goggles;
+    public ModelRenderer face_l1;
+    public ModelRenderer face_l2;
+    public ModelRenderer face_r1;
+    public ModelRenderer face_r2;
+
+    public ArmorPrimalModel(ItemStack stack) {
+        super(((ItemArmor) stack.getItem()).armorType.getSlotIndex() == 3 ? .3125f : .0625f, 0, 128, 64);
+        float scale = ((ItemArmor) stack.getItem()).armorType.getSlotIndex() == 3 ? .3125f : .0625f;
+        this.bipedHeadwear.setTextureOffset(0, 0);
+        this.bipedBody.cubeList.clear();
+
+        int mask = stack.hasTagCompound() && stack.getTagCompound().hasKey("mask")
+                ? stack.getTagCompound().getInteger("mask")
+                : -1;
+        boolean goggles = stack.hasTagCompound() && stack.getTagCompound().hasKey("goggles");
+
+        this.bd_chainmail = new ModelRenderer(this, 16, 16);
+        this.bd_chainmail.setRotationPoint(0.0F, 0.0F + scale, 0.0F);
+        this.bd_chainmail.addBox(-4.0F, 0.0F, -2.0F, 8, 12, 4, scale);
+        this.bd_chest = new ModelRenderer(this, 66, 31);
+        this.bd_chest.setRotationPoint(0.0F, 1.0F, -2.5F);
+        this.bd_chest.addBox(-3.5F, 0.0F, -0.5F, 7, 9, 2, scale);
+
+        this.bd_add0 = new ModelRenderer(this, 66, 46);
+        this.bd_add0.setRotationPoint(0.0F, 0.0F, -3.3F);
+        this.bd_add0.addBox(-2.0F, 0.0F, -1.0F, 4, 4, 2, scale);
+        this.setRotateAngle(bd_add0, 0.3141592653589793F, 0.0F, 0.0F);
+
+        this.bd_add1 = new ModelRenderer(this, 66, 52);
+        this.bd_add1.mirror = true;
+        this.bd_add1.setRotationPoint(2.5F, 8.7F, -2.5F);
+        this.bd_add1.addBox(-1.5F, 0.0F, -0.5F, 3, 2, 1, scale);
+        this.setRotateAngle(bd_add1, -0.2617993877991494F, -0.3490658503988659F, 0.0F);
+        this.bd_add2 = new ModelRenderer(this, 66, 52);
+        this.bd_add2.setRotationPoint(-2.5F, 8.7F, -2.5F);
+        this.bd_add2.addBox(-1.5F, 0.0F, -0.5F, 3, 2, 1, scale);
+        this.setRotateAngle(bd_add2, -0.2617993877991494F, 0.3490658503988659F, 0.0F);
+        this.bd_add3 = new ModelRenderer(this, 66, 52);
+        this.bd_add3.setRotationPoint(0.0F, 8.7F, -2.9F);
+        this.bd_add3.addBox(-1.5F, 0.0F, -0.5F, 3, 2, 1, scale);
+        this.setRotateAngle(bd_add3, -0.2617993877991494F, 0.0F, 0.0F);
+
+        this.bd_strap0 = new ModelRenderer(this, 66, 42);
+        this.bd_strap0.setRotationPoint(0.0F, 6.7F, -2.0F);
+        this.bd_strap0.addBox(-4.0F, 0.0F, -0.5F, 8, 2, 1, scale);
+        this.bd_strap1 = new ModelRenderer(this, 66, 42);
+        this.bd_strap1.mirror = true;
+        this.bd_strap1.setRotationPoint(2.8F, -0.4F, -2.0F);
+        this.bd_strap1.addBox(-1.0F, 0.0F, -0.5F, 2, 2, 1, scale);
+        this.setRotateAngle(bd_strap1, 0.0F, 0.0F, 0.39269908169872414F);
+        this.bd_strap2 = new ModelRenderer(this, 66, 42);
+        this.bd_strap2.setRotationPoint(-2.8F, -0.4F, -2.0F);
+        this.bd_strap2.addBox(-1.0F, 0.0F, -0.5F, 2, 2, 1, scale);
+        this.setRotateAngle(bd_strap2, 0.0F, 0.0F, -0.39269908169872414F);
+
+        this.bd_back = new ModelRenderer(this, 80, 46);
+        this.bd_back.setRotationPoint(0.0F, 1.0F, 1.5F);
+        this.bd_back.addBox(-3.5F, 0.0F, -0.5F, 7, 9, 2, scale);
+        this.bd_strap3 = new ModelRenderer(this, 66, 42);
+        this.bd_strap3.setRotationPoint(0.0F, 5.7F, 2.0F);
+        this.bd_strap3.addBox(-4.0F, 0.0F, -0.5F, 8, 2, 1, scale);
+        this.bd_strap4 = new ModelRenderer(this, 66, 42);
+        this.bd_strap4.mirror = true;
+        this.bd_strap4.setRotationPoint(2.8F, -0.4F, 2.0F);
+        this.bd_strap4.addBox(-1.0F, 0.0F, -0.5F, 2, 2, 1, scale);
+        this.setRotateAngle(bd_strap4, 0.0F, 0.0F, 0.39269908169872414F);
+        this.bd_strap5 = new ModelRenderer(this, 66, 42);
+        this.bd_strap5.setRotationPoint(-2.8F, -0.4F, 2.0F);
+        this.bd_strap5.addBox(-1.0F, 0.0F, -0.5F, 2, 2, 1, scale);
+        this.setRotateAngle(bd_strap5, 0.0F, 0.0F, -0.39269908169872414F);
+
+        this.bd_add4 = new ModelRenderer(this, 84, 40);
+        this.bd_add4.setRotationPoint(-2.0F, 7.9F, 2.3F);
+        this.bd_add4.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(bd_add4, 0.30019663134302466F, -0.13962634015954636F, 0.0F);
+        this.bd_add5 = new ModelRenderer(this, 84, 40);
+        this.bd_add5.setRotationPoint(-2.0F, 9.8F, 2.1F);
+        this.bd_add5.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(bd_add5, 0.30019663134302466F, -0.13962634015954636F, 0.0F);
+        this.bd_add6 = new ModelRenderer(this, 84, 40);
+        this.bd_add6.mirror = true;
+        this.bd_add6.setRotationPoint(2.0F, 7.9F, 2.3F);
+        this.bd_add6.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(bd_add6, 0.30019663134302466F, 0.13962634015954636F, 0.0F);
+        this.bd_add7 = new ModelRenderer(this, 84, 40);
+        this.bd_add7.mirror = true;
+        this.bd_add7.setRotationPoint(2.0F, 9.8F, 2.1F);
+        this.bd_add7.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(bd_add7, 0.30019663134302466F, 0.13962634015954636F, 0.0F);
+        this.bd_belt = new ModelRenderer(this, 66, 56);
+        this.bd_belt.setRotationPoint(0.0F, 10.2F, 0.0F);
+        this.bd_belt.addBox(-4.0F, 0.0F, -2.0F, 8, 2, 4, scale);
+
+        this.la_shoulder0 = new ModelRenderer(this, 42, 41);
+        this.la_shoulder0.mirror = true;
+        this.la_shoulder0.setRotationPoint(0.7F, -0.5F, 0.0F);
+        this.la_shoulder0.addBox(-2.5F, -2.5F, -2.5F, 5, 5, 5, scale);
+        this.la_shoulder1 = new ModelRenderer(this, 42, 51);
+        this.la_shoulder1.setRotationPoint(2.5F, -3.3F, 0.0F);
+        this.la_shoulder1.addBox(-0.5F, 0.0F, -2.5F, 1, 5, 5, scale);
+        this.setRotateAngle(la_shoulder1, 0.0F, 0.0F, -0.323323129985824F);
+        this.la_shoulder2 = new ModelRenderer(this, 42, 51);
+        this.la_shoulder2.mirror = true;
+        this.la_shoulder2.setRotationPoint(2.5F, -.5F, 0.0F);
+        this.la_shoulder2.addBox(-0.5F, 0.0F, -2.5F, 1, 5, 5, scale);
+        this.setRotateAngle(la_shoulder2, 0.0F, 0.0F, -0.20943951023931953F);
+        this.la_shoulder3 = new ModelRenderer(this, 42, 62);
+        this.la_shoulder3.mirror = true;
+        this.la_shoulder3.setRotationPoint(-1.0F, -3.2F, 0.0F);
+        this.la_shoulder3.addBox(-0.5F, 0.0F, -0.5F, 4, 1, 1, scale);
+        this.setRotateAngle(la_shoulder3, 0.0F, 0.0F, -0.07504915783575616F);
+        this.la_shoulder4 = new ModelRenderer(this, 42, 62);
+        this.la_shoulder4.mirror = true;
+        this.la_shoulder4.setRotationPoint(-1.1F, -2.8F, 0.0F);
+        this.la_shoulder4.addBox(-0.1F, -0.5F, -0.5F, 3, 1, 1, scale);
+        this.setRotateAngle(la_shoulder4, 0.0F, 0.0F, -0.5026548245743669F);
+        this.la_plate0 = new ModelRenderer(this, 42, 32);
+        this.la_plate0.mirror = true;
+        this.la_plate0.setRotationPoint(3.0F, 5.5F, 0.0F);
+        this.la_plate0.addBox(-1.5F, 0.0F, -2.5F, 2, 4, 5, scale);
+        this.la_plate1 = new ModelRenderer(this, 56, 32);
+        this.la_plate1.mirror = true;
+        this.la_plate1.setRotationPoint(2.5F, 3.7F, 0.0F);
+        this.la_plate1.addBox(-0.5F, 0.0F, -2.0F, 1, 2, 4, scale);
+        this.setRotateAngle(la_plate1, 0.0F, 0.0F, -0.17453292519943295F);
+
+        this.ra_shoulder0 = new ModelRenderer(this, 42, 41);
+        this.ra_shoulder0.setRotationPoint(-0.7F, -0.5F, 0.0F);
+        this.ra_shoulder0.addBox(-2.5F, -2.5F, -2.5F, 5, 5, 5, scale);
+        this.ra_shoulder1 = new ModelRenderer(this, 42, 51);
+        this.ra_shoulder1.setRotationPoint(-2.5F, -3.3F, 0.0F);
+        this.ra_shoulder1.addBox(-0.5F, 0.0F, -2.5F, 1, 5, 5, scale);
+        this.setRotateAngle(ra_shoulder1, 0.0F, 0.0F, 0.323323129985824F);
+        this.ra_shoulder2 = new ModelRenderer(this, 42, 51);
+        this.ra_shoulder2.setRotationPoint(-2.5F, -.5F, 0.0F);
+        this.ra_shoulder2.addBox(-0.5F, 0.0F, -2.5F, 1, 5, 5, scale);
+        this.setRotateAngle(ra_shoulder2, 0.0F, 0.0F, 0.20943951023931953F);
+        this.ra_shoulder3 = new ModelRenderer(this, 42, 62);
+        this.ra_shoulder3.setRotationPoint(1.0F, -3.2F, 0.0F);
+        this.ra_shoulder3.addBox(-3.5F, 0.0F, -0.5F, 4, 1, 1, scale);
+        this.setRotateAngle(ra_shoulder3, 0.0F, 0.0F, 0.07504915783575616F);
+        this.ra_shoulder4 = new ModelRenderer(this, 42, 62);
+        this.ra_shoulder4.setRotationPoint(1.1F, -2.8F, 0.0F);
+        this.ra_shoulder4.addBox(-2.9F, -0.5F, -0.5F, 3, 1, 1, scale);
+        this.setRotateAngle(ra_shoulder4, 0.0F, 0.0F, 0.5026548245743669F);
+        this.ra_plate0 = new ModelRenderer(this, 42, 32);
+        this.ra_plate0.setRotationPoint(-2.0F, 5.5F, 0.0F);
+        this.ra_plate0.addBox(-1.5F, 0.0F, -2.5F, 2, 4, 5, scale);
+        this.ra_plate1 = new ModelRenderer(this, 56, 32);
+        this.ra_plate1.setRotationPoint(-2.5F, 3.7F, 0.0F);
+        this.ra_plate1.addBox(-0.5F, 0.0F, -2.0F, 1, 2, 4, scale);
+        this.setRotateAngle(ra_plate1, 0.0F, 0.0F, 0.17453292519943295F);
+
+        this.ll_chainmail = new ModelRenderer(this, 26, 32);
+        this.ll_chainmail.mirror = true;
+        this.ll_chainmail.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.ll_chainmail.addBox(-2.0F, 0.0F, -2.0F, 4, 8, 4, scale);
+        this.ll_plate_f0 = new ModelRenderer(this, 0, 32);
+        this.ll_plate_f0.mirror = true;
+        this.ll_plate_f0.setRotationPoint(0.4F, 0.2F, -1.7F);
+        this.ll_plate_f0.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(ll_plate_f0, -0.17453292519943295F, 0.0F, 0.0F);
+        this.ll_plate_f1 = new ModelRenderer(this, 0, 32);
+        this.ll_plate_f1.mirror = true;
+        this.ll_plate_f1.setRotationPoint(0.0F, 3.0F, -1.7F);
+        this.ll_plate_f1.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(ll_plate_f1, -0.17453292519943295F, 0.0F, 0.0F);
+        this.ll_plate_f2 = new ModelRenderer(this, 10, 32);
+        this.ll_plate_f2.mirror = true;
+        this.ll_plate_f2.setRotationPoint(0.0F, 0.0F, -1.7F);
+        this.ll_plate_f2.addBox(-2.0F, 0.0F, -0.7F, 2, 5, 1, scale);
+        this.setRotateAngle(ll_plate_f2, -0.17453292519943295F, 0.0F, 0.0F);
+        this.ll_plate_f3 = new ModelRenderer(this, 10, 32);
+        this.ll_plate_f3.mirror = true;
+        this.ll_plate_f3.setRotationPoint(0.0F, 3.0F, -1.7F);
+        this.ll_plate_f3.addBox(-2.0F, 0.0F, -0.7F, 2, 5, 1, scale);
+        this.setRotateAngle(ll_plate_f3, -0.17453292519943295F, 0.0F, 0.0F);
+        this.ll_plate_o0 = new ModelRenderer(this, 16, 32);
+        this.ll_plate_o0.mirror = true;
+        this.ll_plate_o0.setRotationPoint(1.8F, 0.2F, 0.0F);
+        this.ll_plate_o0.addBox(-0.5F, 0.0F, -2.0F, 1, 4, 4, scale);
+        this.setRotateAngle(ll_plate_o0, 0.0F, 0.0F, -0.3141592653589793F);
+        this.ll_plate_o1 = new ModelRenderer(this, 16, 32);
+        this.ll_plate_o1.mirror = true;
+        this.ll_plate_o1.setRotationPoint(1.9F, 3.0F, 0.0F);
+        this.ll_plate_o1.addBox(-0.5F, 0.0F, -2.0F, 1, 4, 4, scale);
+        this.setRotateAngle(ll_plate_o1, 0.0F, 0.0F, -0.24434609527920614F);
+        this.ll_plate_b0 = new ModelRenderer(this, 0, 32);
+        this.ll_plate_b0.mirror = true;
+        this.ll_plate_b0.setRotationPoint(0.0F, 0.2F, 2.0F);
+        this.ll_plate_b0.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(ll_plate_b0, 0.17453292519943295F, 0.0F, 0.0F);
+        this.ll_plate_b1 = new ModelRenderer(this, 0, 32);
+        this.ll_plate_b1.mirror = true;
+        this.ll_plate_b1.setRotationPoint(0.0F, 3.0F, 2.0F);
+        this.ll_plate_b1.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(ll_plate_b1, 0.17453292519943295F, 0.0F, 0.0F);
+
+        this.rl_chainmail = new ModelRenderer(this, 26, 32);
+        this.rl_chainmail.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.rl_chainmail.addBox(-2.0F, 0.0F, -2.0F, 4, 8, 4, scale);
+        this.rl_plate_f0 = new ModelRenderer(this, 0, 32);
+        this.rl_plate_f0.setRotationPoint(-.4F, 0.2F, -1.7F);
+        this.rl_plate_f0.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(rl_plate_f0, -0.17453292519943295F, 0.0F, 0.0F);
+        this.rl_plate_f1 = new ModelRenderer(this, 0, 32);
+        this.rl_plate_f1.setRotationPoint(0.0F, 3.0F, -1.7F);
+        this.rl_plate_f1.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(rl_plate_f1, -0.17453292519943295F, 0.0F, 0.0F);
+        this.rl_plate_f2 = new ModelRenderer(this, 10, 32);
+        this.rl_plate_f2.setRotationPoint(0.0F, 0.0F, -1.7F);
+        this.rl_plate_f2.addBox(0.0F, 0.0F, -0.7F, 2, 5, 1, scale);
+        this.setRotateAngle(rl_plate_f2, -0.17453292519943295F, 0.0F, 0.0F);
+        this.rl_plate_f3 = new ModelRenderer(this, 10, 32);
+        this.rl_plate_f3.setRotationPoint(0.0F, 3.0F, -1.7F);
+        this.rl_plate_f3.addBox(0.0F, 0.0F, -0.7F, 2, 5, 1, scale);
+        this.setRotateAngle(rl_plate_f3, -0.17453292519943295F, 0.0F, 0.0F);
+        this.rl_plate_o0 = new ModelRenderer(this, 16, 32);
+        this.rl_plate_o0.setRotationPoint(-1.8F, 0.2F, 0.0F);
+        this.rl_plate_o0.addBox(-0.5F, 0.0F, -2.0F, 1, 4, 4, scale);
+        this.setRotateAngle(rl_plate_o0, 0.0F, 0.0F, 0.3141592653589793F);
+        this.rl_plate_o1 = new ModelRenderer(this, 16, 32);
+        this.rl_plate_o1.setRotationPoint(-1.9F, 3.0F, 0.0F);
+        this.rl_plate_o1.addBox(-0.5F, 0.0F, -2.0F, 1, 4, 4, scale);
+        this.setRotateAngle(rl_plate_o1, 0.0F, 0.0F, 0.24434609527920614F);
+        this.rl_plate_b0 = new ModelRenderer(this, 0, 32);
+        this.rl_plate_b0.setRotationPoint(0.0F, 0.2F, 2.0F);
+        this.rl_plate_b0.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(rl_plate_b0, 0.17453292519943295F, 0.0F, 0.0F);
+        this.rl_plate_b1 = new ModelRenderer(this, 0, 32);
+        this.rl_plate_b1.setRotationPoint(0.0F, 3.0F, 2.0F);
+        this.rl_plate_b1.addBox(-2.0F, 0.0F, -0.5F, 4, 4, 1, scale);
+        this.setRotateAngle(rl_plate_b1, 0.17453292519943295F, 0.0F, 0.0F);
+
+        this.lb_base = new ModelRenderer(this, 0, 40);
+        this.lb_base.mirror = true;
+        this.lb_base.setRotationPoint(0.0F, 8.0F, 0.0F);
+        this.lb_base.addBox(-2.0F, -.5F, -2.0F, 4, 5, 4, scale);
+        this.lb_front = new ModelRenderer(this, 0, 50);
+        this.lb_front.mirror = true;
+        this.lb_front.setRotationPoint(0.0F, 3.0F, -2.8F);
+        this.lb_front.addBox(-2.0F, .5F, 0.0F, 4, 1, 1, scale);
+        this.lb_side0 = new ModelRenderer(this, 10, 50);
+        this.lb_side0.mirror = true;
+        this.lb_side0.setRotationPoint(2.0F, 3.0F, -2.1F);
+        this.lb_side0.addBox(-0.5F, .5F, 0.0F, 1, 1, 4, scale);
+        this.lb_side1 = new ModelRenderer(this, 20, 50);
+        this.lb_side1.mirror = true;
+        this.lb_side1.setRotationPoint(2.0F, 2.2F, -1.1F);
+        this.lb_side1.addBox(-0.5F, .5F, 0.0F, 1, 1, 3, scale);
+
+        this.rb_base = new ModelRenderer(this, 0, 40);
+        this.rb_base.setRotationPoint(0.0F, 8.0F, 0.0F);
+        this.rb_base.addBox(-2.0F, -.5F, -2.0F, 4, 5, 4, scale);
+        this.rb_front = new ModelRenderer(this, 0, 50);
+        this.rb_front.setRotationPoint(0.0F, 3.0F, -2.8F);
+        this.rb_front.addBox(-2.0F, .5F, 0.0F, 4, 1, 1, scale);
+        this.rb_side0 = new ModelRenderer(this, 10, 50);
+        this.rb_side0.setRotationPoint(-2.0F, 3.0F, -2.1F);
+        this.rb_side0.addBox(-0.5F, .5F, 0.0F, 1, 1, 4, scale);
+        this.rb_side1 = new ModelRenderer(this, 20, 50);
+        this.rb_side1.setRotationPoint(-2.0F, 2.2F, -1.1F);
+        this.rb_side1.addBox(-0.5F, .5F, 0.0F, 1, 1, 3, scale);
+
+        this.hm_top = new ModelRenderer(this, 32, 0);
+        this.hm_top.setRotationPoint(-0.5F, -1.0F, -0.5F);
+        this.hm_top.addBox(-4.0F, -8.0F, -4.0F, 9, 4, 9, 0.0F);
+        this.hm_l0 = new ModelRenderer(this, 68, 0);
+        this.hm_l0.mirror = true;
+        this.hm_l0.setRotationPoint(4.1F, -6.3F, -1.2F);
+        this.hm_l0.addBox(-0.5F, 0.0F, -4.0F, 1, 4, 10, 0.0F);
+        this.setRotateAngle(hm_l0, 0.0F, 0.0F, -0.39269908169872414F);
+        this.hm_r0 = new ModelRenderer(this, 68, 0);
+        this.hm_r0.setRotationPoint(-4.1F, -6.3F, -1.2F);
+        this.hm_r0.addBox(-0.5F, 0.0F, -4.0F, 1, 4, 10, 0.0F);
+        this.setRotateAngle(hm_r0, 0.0F, 0.0F, 0.39269908169872414F);
+        this.hm_b0 = new ModelRenderer(this, 68, 14);
+        this.hm_b0.setRotationPoint(0.0F, -4.0F, 3.7F);
+        this.hm_b0.addBox(-4.5F, 0.0F, -0.5F, 9, 4, 1, 0.0F);
+        this.setRotateAngle(hm_b0, 0.39269908169872414F, 0.0F, 0.0F);
+        this.hm_b1 = new ModelRenderer(this, 68, 14);
+        this.hm_b1.setRotationPoint(0.0F, -6.3F, 4.1F);
+        this.hm_b1.addBox(-4.5F, 0.0F, -0.5F, 9, 4, 1, 0.0F);
+        this.setRotateAngle(hm_b1, 0.39269908169872414F, 0.0F, 0.0F);
+        this.hm_f0 = new ModelRenderer(this, 68, 19);
+        this.hm_f0.setRotationPoint(-0.5F, -6.5F, -4.7F);
+        this.hm_f0.addBox(-4.0F, -0.0F, -0.5F, 9, 1, 1, 0.0F);
+
+        this.face_0 = new ModelRenderer(this, 102, 0);
+        this.face_0.setRotationPoint(0.0F, -2.8F, -4.1F);
+        this.face_0.addBox(-1.0F, 0.0F, -0.5F, 2, 3, 1, 0.0F);
+        this.setRotateAngle(face_0, 0.08726646259971647F, 0.0F, 0.0F);
+        this.face_l1 = new ModelRenderer(this, 90, 0);
+        this.face_l1.mirror = true;
+        this.face_l1.setRotationPoint(3.4F, 0.0F, 0.2F);
+        this.face_l1.addBox(-1.0F, 0.0F, -0.5F, 2, 3, 4, 0.0F);
+        this.setRotateAngle(face_l1, -0.08726646259971647F, 0.0F, 0.0F);
+        this.face_l2 = new ModelRenderer(this, 102, 4);
+        this.face_l2.mirror = true;
+        this.face_l2.setRotationPoint(1.7F, 0.9F, 0.2F);
+        this.face_l2.addBox(-1.0F, 0.0F, -0.5F, 2, 2, 1, 0.0F);
+        this.setRotateAngle(face_l2, -0.08726646259971647F, 0.0F, 0.0F);
+        this.face_r1 = new ModelRenderer(this, 90, 0);
+        this.face_r1.setRotationPoint(-3.4F, 0.0F, 0.2F);
+        this.face_r1.addBox(-1.0F, 0.0F, -0.5F, 2, 3, 4, 0.0F);
+        this.setRotateAngle(face_r1, -0.08726646259971647F, 0.0F, 0.0F);
+        this.face_r2 = new ModelRenderer(this, 102, 4);
+        this.face_r2.setRotationPoint(-1.7F, 0.9F, 0.2F);
+        this.face_r2.addBox(-1.0F, 0.0F, -0.5F, 2, 2, 1, 0.0F);
+        this.face_mask = new ModelRenderer(this, 90, 8 + mask * 7);
+        this.face_mask.setRotationPoint(0.0F, -5.0F, -3.6F);
+        this.face_mask.addBox(-4.0F, 0.0F, -0.5F, 8, 4, 3, 0.0F);
+        this.face_goggles = new ModelRenderer(this, 112, 8);
+        this.face_goggles.setRotationPoint(0.0F, -5.0F, -3.5F);
+        this.face_goggles.addBox(-4.0F, 0.0F, -0.5F, 8, 4, 3, 0.0F);
+
+        this.bipedBody.addChild(this.bd_chainmail);
+        this.bd_chainmail.addChild(this.bd_chest);
+        this.bd_chainmail.addChild(this.bd_add0);
+        this.bd_chainmail.addChild(this.bd_add1);
+        this.bd_chainmail.addChild(this.bd_add2);
+        this.bd_chainmail.addChild(this.bd_add3);
+        this.bd_chainmail.addChild(this.bd_strap0);
+        this.bd_chainmail.addChild(this.bd_strap1);
+        this.bd_chainmail.addChild(this.bd_strap2);
+        this.bd_chainmail.addChild(this.bd_back);
+        this.bd_chainmail.addChild(this.bd_add4);
+        this.bd_chainmail.addChild(this.bd_add5);
+        this.bd_chainmail.addChild(this.bd_add6);
+        this.bd_chainmail.addChild(this.bd_add7);
+        this.bd_chainmail.addChild(this.bd_strap3);
+        this.bd_chainmail.addChild(this.bd_strap4);
+        this.bd_chainmail.addChild(this.bd_strap5);
+        this.bipedBody.addChild(this.bd_belt);
+
+        this.bipedLeftArm.addChild(this.la_shoulder0);
+        this.la_shoulder0.addChild(this.la_shoulder1);
+        this.la_shoulder0.addChild(this.la_shoulder2);
+        this.la_shoulder0.addChild(this.la_shoulder3);
+        this.la_shoulder0.addChild(this.la_shoulder4);
+        this.bipedLeftArm.addChild(this.la_plate0);
+        this.bipedLeftArm.addChild(this.la_plate1);
+
+        this.bipedRightArm.addChild(this.ra_shoulder0);
+        this.ra_shoulder0.addChild(this.ra_shoulder1);
+        this.ra_shoulder0.addChild(this.ra_shoulder2);
+        this.ra_shoulder0.addChild(this.ra_shoulder3);
+        this.ra_shoulder0.addChild(this.ra_shoulder4);
+        this.bipedRightArm.addChild(this.ra_plate0);
+        this.bipedRightArm.addChild(this.ra_plate1);
+
+        this.bipedLeftLeg.addChild(this.ll_chainmail);
+        this.ll_chainmail.addChild(this.ll_plate_f0);
+        this.ll_chainmail.addChild(this.ll_plate_f1);
+        this.ll_chainmail.addChild(this.ll_plate_f2);
+        this.ll_chainmail.addChild(this.ll_plate_f3);
+        this.ll_chainmail.addChild(this.ll_plate_o0);
+        this.ll_chainmail.addChild(this.ll_plate_o1);
+        this.ll_chainmail.addChild(this.ll_plate_b0);
+        this.ll_chainmail.addChild(this.ll_plate_b1);
+
+        this.bipedRightLeg.addChild(this.rl_chainmail);
+        this.rl_chainmail.addChild(this.rl_plate_f0);
+        this.rl_chainmail.addChild(this.rl_plate_f1);
+        this.rl_chainmail.addChild(this.rl_plate_f2);
+        this.rl_chainmail.addChild(this.rl_plate_f3);
+        this.rl_chainmail.addChild(this.rl_plate_o0);
+        this.rl_chainmail.addChild(this.rl_plate_o1);
+        this.rl_chainmail.addChild(this.rl_plate_b0);
+        this.rl_chainmail.addChild(this.rl_plate_b1);
+
+        this.bipedLeftLeg.addChild(this.lb_base);
+        this.lb_base.addChild(this.lb_front);
+        this.lb_base.addChild(this.lb_side0);
+        this.lb_base.addChild(this.lb_side1);
+        this.bipedRightLeg.addChild(this.rb_base);
+        this.rb_base.addChild(this.rb_front);
+        this.rb_base.addChild(this.rb_side0);
+        this.rb_base.addChild(this.rb_side1);
+
+        this.bipedHead.addChild(this.hm_top);
+        this.bipedHead.addChild(this.hm_l0);
+        this.bipedHead.addChild(this.hm_r0);
+        this.bipedHead.addChild(this.hm_b0);
+        this.bipedHead.addChild(this.hm_b1);
+        this.bipedHead.addChild(this.hm_f0);
+
+        this.bipedHead.addChild(this.face_0);
+        this.face_0.addChild(this.face_l1);
+        this.face_0.addChild(this.face_l2);
+        this.face_0.addChild(this.face_r1);
+        this.face_0.addChild(this.face_r2);
+        if (mask >= 0) this.bipedHead.addChild(this.face_mask);
+        if (goggles) this.bipedHead.addChild(this.face_goggles);
+    }
+
+    @Override
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+        this.isSneak = entity.isSneaking();
+        this.isRiding = entity.isRiding();
+        if (entity instanceof EntityLivingBase) {
+            this.isChild = ((EntityLivingBase) entity).isChild();
+        }
+
+        this.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+        if (((entity instanceof EntitySkeleton)) || ((entity instanceof EntityZombie))) {
+            float f6 = MathHelper.sin(this.textureHeight * 3.141593F);
+            float f7 = MathHelper.sin((1.0F - (1.0F - this.textureHeight) * (1.0F - this.textureHeight)) * 3.141593F);
+            this.bipedRightArm.rotateAngleZ = 0.0F;
+            this.bipedLeftArm.rotateAngleZ = 0.0F;
+            this.bipedRightArm.rotateAngleY = (-(0.1F - f6 * 0.6F));
+            this.bipedLeftArm.rotateAngleY = (0.1F - f6 * 0.6F);
+            this.bipedRightArm.rotateAngleX = -1.570796F;
+            this.bipedLeftArm.rotateAngleX = -1.570796F;
+            this.bipedRightArm.rotateAngleX -= f6 * 1.2F - f7 * 0.4F;
+            this.bipedLeftArm.rotateAngleX -= f6 * 1.2F - f7 * 0.4F;
+            this.bipedRightArm.rotateAngleZ += MathHelper.cos(f2 * 0.09F) * 0.05F + 0.05F;
+            this.bipedLeftArm.rotateAngleZ -= MathHelper.cos(f2 * 0.09F) * 0.05F + 0.05F;
+            this.bipedRightArm.rotateAngleX += MathHelper.sin(f2 * 0.067F) * 0.05F;
+            this.bipedLeftArm.rotateAngleX -= MathHelper.sin(f2 * 0.067F) * 0.05F;
+        }
+
+        if (this.isChild) {
+            float f6 = 2.0F;
+            GL11.glPushMatrix();
+            GL11.glScalef(1.5F / f6, 1.5F / f6, 1.5F / f6);
+            GL11.glTranslatef(0.0F, 16.0F * f5, 0.0F);
+            this.bipedHead.render(f5);
+            GL11.glPopMatrix();
+            GL11.glPushMatrix();
+            GL11.glScalef(1.0F / f6, 1.0F / f6, 1.0F / f6);
+            GL11.glTranslatef(0.0F, 24.0F * f5, 0.0F);
+            this.bipedBody.render(f5);
+            this.bipedRightArm.render(f5);
+            this.bipedLeftArm.render(f5);
+            this.bipedRightLeg.render(f5);
+            this.bipedLeftLeg.render(f5);
+            GL11.glPopMatrix();
+        } else {
+            this.bipedHead.render(f5);
+            this.bipedBody.render(f5);
+            this.bipedRightArm.render(f5);
+            this.bipedLeftArm.render(f5);
+            this.bipedRightLeg.render(f5);
+            this.bipedLeftLeg.render(f5);
+        }
+    }
+
+    /**
+     * This is a helper function from Tabula to set the rotation of model parts
+     */
+    public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+        modelRenderer.rotateAngleX = x;
+        modelRenderer.rotateAngleY = y;
+        modelRenderer.rotateAngleZ = z;
+    }
+
+    static ArmorPrimalModel[][] modelHelm = new ArmorPrimalModel[4][2];
+    static ArmorPrimalModel modelChest;
+    static ArmorPrimalModel modelLegs;
+    static ArmorPrimalModel modelBoots;
+    static HashMap<ItemStack, ArmorPrimalModel> modelMap = new HashMap();
+
+    public static ModelBiped getModel(EntityLivingBase entity, ItemStack stack) {
+        if (stack == null || !(stack.getItem() instanceof ItemArmor)) return null;
+        int slot = ((ItemArmor) stack.getItem()).armorType.getSlotIndex();
+
+        ArmorPrimalModel armor = null;
+        if (slot == 0) {
+            int mask = stack.hasTagCompound() && stack.getTagCompound().hasKey("mask")
+                    ? stack.getTagCompound().getInteger("mask")
+                    : -1;
+            boolean goggles = stack.hasTagCompound() && stack.getTagCompound().hasKey("goggles");
+            if (modelHelm[mask + 1][goggles ? 1 : 0] != null) return modelHelm[mask + 1][goggles ? 1 : 0];
+        } else if (slot == 1 && modelChest != null) return modelChest;
+        else if (slot == 2 && modelLegs != null) return modelLegs;
+        else if (slot == 3 && modelBoots != null) return modelBoots;
+
+        armor = new ArmorPrimalModel(stack);
+
+        switch (slot) {
+            case 0:
+                int mask = stack.hasTagCompound() && stack.getTagCompound().hasKey("mask")
+                        ? stack.getTagCompound().getInteger("mask")
+                        : -1;
+                boolean goggles =
+                        stack.hasTagCompound() && stack.getTagCompound().hasKey("goggles");
+                armor.bipedBody.isHidden = true;
+                armor.bipedLeftArm.isHidden = true;
+                armor.bipedRightArm.isHidden = true;
+                armor.bipedLeftLeg.isHidden = true;
+                armor.bipedRightLeg.isHidden = true;
+                modelHelm[mask + 1][goggles ? 1 : 0] = armor;
+                break;
+            case 1:
+                armor.bipedHead.isHidden = true;
+                armor.bipedLeftLeg.isHidden = true;
+                armor.bipedRightLeg.isHidden = true;
+                armor.bd_belt.isHidden = true;
+                modelChest = armor;
+                break;
+            case 2:
+                armor.bd_chainmail.isHidden = true;
+                armor.bipedHead.isHidden = true;
+                armor.bipedLeftArm.isHidden = true;
+                armor.bipedRightArm.isHidden = true;
+                armor.lb_base.isHidden = true;
+                armor.rb_base.isHidden = true;
+                modelLegs = armor;
+                break;
+            case 3:
+                armor.bipedHead.isHidden = true;
+                armor.bipedBody.isHidden = true;
+                armor.bipedLeftArm.isHidden = true;
+                armor.bipedRightArm.isHidden = true;
+                armor.rl_chainmail.isHidden = true;
+                armor.ll_chainmail.isHidden = true;
+                modelBoots = armor;
+                break;
+        }
+        return armor;
+    }
+}

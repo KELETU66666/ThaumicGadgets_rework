@@ -29,6 +29,7 @@
 /* 29 */           NonNullList<ItemStack> pouchInv = pouch.getInventory(inv.getStackInSlot(i));
 
 /* 31 */           for (ItemStack stack : pouchInv) {
+    if(stack.getTagCompound() != null && event.getItem().getItem().getTagCompound() != null)
 /* 32 */             if (OreDictionary.itemMatches(stack, event.getItem().getItem(), true) && stack.getTagCompound().equals(event.getItem().getItem().getTagCompound()))
              {
 /* 34 */               if (ItemStack.areItemStackTagsEqual(stack, event.getItem().getItem())) {

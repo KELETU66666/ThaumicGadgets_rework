@@ -65,7 +65,7 @@
 
 /* 66 */       if (!st.getItem().equals(Items.AIR) && st != null)
        {
-/* 68 */         tooltip.add(I18n.format("item.primal_upgraded.description", new Object[0]) + "§" + IFunctionLibrary.getAspectFromName(st.getUnlocalizedName()).getChatcolor() + st.getDisplayName());
+/* 68 */         tooltip.add(I18n.format("item.primal_upgraded.description", new Object[0]) + IFunctionLibrary.getAspectFromName(st.getUnlocalizedName()).getChatcolor() + st.getDisplayName());
        }
      }
    }

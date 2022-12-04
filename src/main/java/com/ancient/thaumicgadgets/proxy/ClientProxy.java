@@ -29,9 +29,6 @@
 /* 43 */   public static final ArmorLightModel ARMOR_LIGHT_MODEL = new ArmorLightModel(0.25F);
 /* 44 */   public static final ArmorLightModel ARMOR_LIGHT_MODEL_LEGS = new ArmorLightModel(0.25F);
 
-/* 46 */   public static final ArmorPrimalModel ARMOR_PRIMAL_MODEL = new ArmorPrimalModel(0.25F);
-/* 47 */   public static final ArmorPrimalModel ARMOR_PRIMAL_MODEL_LEGS = new ArmorPrimalModel(0.25F);
-
 
 
    public void registerItemRenderer(Item item, int meta, String id) {

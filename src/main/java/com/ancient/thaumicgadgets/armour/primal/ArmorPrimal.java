@@ -1,7 +1,8 @@
 /*     */ package com.ancient.thaumicgadgets.armour.primal;
 /*     */ 
 /*     */ import com.ancient.thaumicgadgets.armour.ArmorBase;
-/*     */ import com.ancient.thaumicgadgets.init.ModEnchantments;
+/*     */ import com.ancient.thaumicgadgets.armour.shade.ArmorShadeModel;
+import com.ancient.thaumicgadgets.init.ModEnchantments;
 /*     */ import com.ancient.thaumicgadgets.proxy.ClientProxy;
 /*     */ import com.ancient.thaumicgadgets.util.ICheckEnchantment;
 /*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
@@ -23,10 +24,14 @@
 /*     */ import net.minecraft.nbt.NBTTagCompound;
 /*     */ import net.minecraft.nbt.NBTTagList;
 /*     */ import net.minecraft.util.DamageSource;
-/*     */ import net.minecraft.world.World;
+/*     */ import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
 /*     */ import net.minecraftforge.fml.relauncher.Side;
 /*     */ import net.minecraftforge.fml.relauncher.SideOnly;
-/*     */ 
+
+import javax.annotation.Nullable;
+
+/*     */
 /*     */ 
 /*     */ 
 /*     */ 
@@ -39,14 +44,16 @@
 /*     */   private long lastTick;
 /*     */   private int period;
 /*     */   private int mode;
-/*     */   
+/*     */   ModelBiped model;
+String location;
 /*     */   public ArmorPrimal(String name, ItemArmor.ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
 /*  44 */     super(name, materialIn, renderIndexIn, equipmentSlotIn);
 /*     */ 
 /*     */ 
 /*     */     
 /*  48 */     this.mode = 0;
-/*     */     
+/*     */     model = null;
+location = null;
 /*  50 */     this.regenCount = 2;
 /*  51 */     this.lastTick = 0L;
 /*  52 */     this.period = 100;
@@ -68,7 +75,7 @@
 /*  68 */       mode = stack.getTagCompound().getInteger("mode");
 /*     */     }
 /*     */     
-/*  71 */     tooltip.add(I18n.format("item.primal.description", new Object[0]) + "§" + IFunctionLibrary.getAspectFromMode(mode).getChatcolor() + IFunctionLibrary.getAspectFromMode(mode).getName());
+/*  71 */     tooltip.add(I18n.format("item.primal.description", new Object[0]) + IFunctionLibrary.getAspectFromMode(mode).getChatcolor() + IFunctionLibrary.getAspectFromMode(mode).getName());
 /*     */   }
 /*     */ 
 /*     */ 
@@ -165,46 +172,45 @@
 /* 165 */       stack.setTagCompound(nbt);
 /*     */     } 
 /*     */   }
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   @SideOnly(Side.CLIENT)
-/*     */   public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, ModelBiped _default) {
-/* 174 */     if (!itemStack.isEmpty())
-/*     */     {
-/* 176 */       if (itemStack.getItem() instanceof ItemArmor) {
-/*     */ 
-/*     */         
-/* 179 */         ArmorPrimalModel armorModel = ClientProxy.ARMOR_PRIMAL_MODEL;
-/* 180 */         ArmorPrimalModel armorModelLegs = ClientProxy.ARMOR_PRIMAL_MODEL_LEGS;
-/*     */         
-/* 182 */         armorModel.bipedHead.showModel = (armorSlot == EntityEquipmentSlot.HEAD);
-/* 183 */         armorModel.bipedHeadwear.showModel = (armorSlot == EntityEquipmentSlot.HEAD);
-/* 184 */         armorModel.bipedBody.showModel = (armorSlot == EntityEquipmentSlot.CHEST || armorSlot == EntityEquipmentSlot.CHEST);
-/* 185 */         armorModel.bipedRightArm.showModel = (armorSlot == EntityEquipmentSlot.CHEST);
-/* 186 */         armorModel.bipedLeftArm.showModel = (armorSlot == EntityEquipmentSlot.CHEST);
-/* 187 */         armorModelLegs.bipedRightLeg.showModel = (armorSlot == EntityEquipmentSlot.LEGS || armorSlot == EntityEquipmentSlot.FEET);
-/* 188 */         armorModelLegs.bipedLeftLeg.showModel = (armorSlot == EntityEquipmentSlot.LEGS || armorSlot == EntityEquipmentSlot.FEET);
-/*     */         
-/* 190 */         armorModel.isSneak = _default.isSneak;
-/* 191 */         armorModel.isRiding = _default.isRiding;
-/* 192 */         armorModel.isChild = _default.isChild;
-/* 193 */         armorModel.rightArmPose = _default.rightArmPose;
-/* 194 */         armorModel.leftArmPose = _default.leftArmPose;
-/*     */         
-/* 196 */         armorModelLegs.isSneak = _default.isSneak;
-/* 197 */         armorModelLegs.isRiding = _default.isRiding;
-/* 198 */         armorModelLegs.isChild = _default.isChild;
-/* 199 */         armorModelLegs.rightArmPose = _default.rightArmPose;
-/* 200 */         armorModelLegs.leftArmPose = _default.leftArmPose;
-/*     */         
-/* 202 */         return armorModel;
-/*     */       } 
-/*     */     }
-/*     */     
-/* 206 */     return null;
-/*     */   }
+/*     */
+@Override
+@Nullable
+@SideOnly(Side.CLIENT)
+public ModelBiped getArmorModel(EntityLivingBase living, ItemStack stack, EntityEquipmentSlot slot,
+                                ModelBiped _default) {
+
+    if (model == null) {
+        if (slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.FEET)
+            model = new ArmorPrimalModel(stack);
+        else
+            model = new ArmorPrimalModel(stack);
+
+        model.bipedHead.showModel = slot == EntityEquipmentSlot.HEAD;
+        model.bipedHeadwear.showModel = slot == EntityEquipmentSlot.HEAD;
+        model.bipedBody.showModel = slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.LEGS;
+        model.bipedRightArm.showModel = slot == EntityEquipmentSlot.CHEST;
+        model.bipedLeftArm.showModel = slot == EntityEquipmentSlot.CHEST;
+        model.bipedRightLeg.showModel = slot == EntityEquipmentSlot.LEGS;
+        model.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.LEGS;
+    }
+
+    if(slot == EntityEquipmentSlot.LEGS)
+        return ArmorPrimalModel.getModel(living, stack);
+    if(slot == EntityEquipmentSlot.FEET)
+        return null;
+    return model;
+}
+
+    public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
+        if (location == null) {
+            if (slot == EntityEquipmentSlot.FEET)
+                location = "tg:textures/models/armor/primal_boots.png";
+            else
+                location = "tg:textures/models/armor/primal_armor.png";
+        }
+        return location;
+    }
+
 /*     */ }
 
 

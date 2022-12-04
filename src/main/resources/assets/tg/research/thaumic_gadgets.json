@@ -18,7 +18,7 @@
         "name": "research.TG_WEAVING.title",
         "icons": ["tg:spinning_wheel" ],
         "category": "GADGETS", "location": [ 0, -2 ], 
-        "parents": [ "THAUMICGADGETS", "tg:FABRIC" ],        
+        "parents": [ "THAUMICGADGETS"],
         "stages": [
                 {
                     "text": "research.TG_WEAVING.stage.1",  
@@ -33,34 +33,15 @@
             ]
         },
         {
-        "key": "TG_BETTER_WEAVING",    
-        "name": "research.TG_BETTER_WEAVING.title",
-        "icons": ["tg:spinning_wheel" ],
-        "category": "GADGETS", "location": [ 0, -4 ], 
-        "parents": [ "TG_WEAVING", "TG_LIGHT_METAL", "TG_SHADOW_METAL"],
-        "meta": ["HIDDEN"],        
-        "stages": [
-                {
-                    "text": "research.TG_BETTER_WEAVING.stage.1",  
-                    "required_knowledge":["THEORY;ARTIFICE;1"],  
-                    "required_item": ["thaumcraft:fabric;4"]
-                },
-                {
-                    "text": "research.TG_BETTER_WEAVING.stage.2"  
-                }
-            ]
-        },
-        {
         "key": "TG_BAGS",    
         "name": "research.TG_BAGS.title",
         "icons": ["tg:pouch_magic_1", "tg:pouch_magic_2", "tg:pouch_magic_3"],
-        "category": "GADGETS", "location": [ 2, -4 ], 
-        "parents": [ "TG_BETTER_WEAVING" ],        
+        "category": "GADGETS", "location": [  0, -4  ],
+        "parents": [ "TG_WEAVING" ],
         "stages": [
                 {
                     "text": "research.TG_BAGS.stage.1",  
-                    "required_knowledge":["THEORY;INFUSION;2", "THEORY;BASICS;1"],
-                    "required_research":["tg:CHEST"]
+                    "required_knowledge":["THEORY;INFUSION;2", "THEORY;BASICS;1"]
                 },
                 {
                     "text": "research.TG_BAGS.stage.2",
@@ -72,15 +53,14 @@
         "key": "TG_HUNGRY_BAGS",    
         "name": "research.TG_HUNGRY_BAGS.title",
         "icons": ["tg:pouch_hungry_magic_1","tg:pouch_hungry_magic_2","tg:pouch_hungry_magic_3" ],
-        "category": "GADGETS", "location": [ 2, -6 ], 
+        "category": "GADGETS", "location": [ 0, -6 ],
         "parents": [ "TG_BAGS", "tg:HUNGRY_CHEST"],
         "meta":["HIDDEN"],        
         "stages": [
                 {
                     "text": "research.TG_HUNGRY_BAGS.stage.1",  
                     "required_knowledge":["THEORY;INFUSION;1"],  
-                    "required_item": ["thaumcraft:hungryChest;1"],
-                    "required_research":["tg:MAGIC_POUCH"]
+                    "required_item": ["thaumcraft:hungryChest;1"]
                 },
                 {
                     "text": "research.TG_HUNGRY_BAGS.stage.2",  
@@ -92,14 +72,13 @@
         "key": "TG_ENDER_BAG",    
         "name": "research.TG_ENDER_BAG.title",
         "icons": ["tg:pouch_ender"],
-        "category": "GADGETS", "location": [ 4, -6 ], 
+        "category": "GADGETS", "location": [ 2, -6 ],
         "parents": [ "TG_BAGS"],        
         "stages": [
                 {
                     "text": "research.TG_ENDER_BAG.stage.1",  
                     "required_knowledge":["OBSERVATION;ARTIFICE;1"],
-                    "required_item": ["minecraft:ender_chest;1"],
-                    "required_research":["tg:ENDER_CHEST"]
+                    "required_item": ["minecraft:ender_chest;1"]
                 },
                 {
                     "text": "research.TG_ENDER_BAG.stage.2",
@@ -111,13 +90,12 @@
         "key": "TG_VOID_BAG",    
         "name": "research.TG_VOID_BAG.title",
         "icons": ["tg:pouch_void"],
-        "category": "GADGETS", "location": [ 4, -8 ], 
+        "category": "GADGETS", "location": [ 2, -8 ],
         "parents": [ "TG_ENDER_BAG" ],        
         "stages": [
                 {
                     "text": "research.TG_VOID_BAG.stage.1",  
-                    "required_knowledge":["THEORY;BASICS;1"],  
-                    "required_research":["tg:ENDER_POUCH"],
+                    "required_knowledge":["THEORY;BASICS;1"],
                     "warp": 1
                 },
                 {
@@ -130,14 +108,13 @@
         "key": "TG_AGEING_STONE",    
         "name": "research.TG_AGEING_STONE.title",
         "icons": ["tg:ageing_stone"],
-        "category": "GADGETS", "location": [ 4, 2 ], 
+        "category": "GADGETS", "location": [ 2, 2 ],
         "parents": [ "THAUMICGADGETS", "PAVINGSTONES"],
         "meta":["HIDDEN"],        
         "stages": [
                 {
                     "text": "research.TG_AGEING_STONE.stage.1",  
                     "required_knowledge":["THEORY;ARTIFICE;1", "OBSERVATION;BASICS;1"] , 
-                    "required_research":["tg:SHEEP", "tg:COW", "tg:CHICKEN", "tg:PIG", "tg:HORSE", "tg:RABBIT", "tg:LLAMA", "tg:CRACKED_STONE", "tg:CLOCK"],
                     "required_item": ["minecraft:clock;1"],
                     "reward_item": [ "minecraft:bone;4", "minecraft:skull;1;0" ]
                 },
@@ -156,8 +133,7 @@
             "stages": [
                 {
                     "text": "research.TG_STONE_EXTRUDER.stage.1",  
-                    "required_knowledge":[ "OBSERVATION;BASICS;1"],  
-                    "required_research":["tg:THAUM_PICKAXE"],
+                    "required_knowledge":[ "OBSERVATION;BASICS;1"],
                     "required_item": ["minecraft:water_bucket;1", "minecraft:lava_bucket;1"],
                     "reward_item": [ "minecraft:diamond;1" ]
                 },
@@ -195,8 +171,7 @@
             "stages": [
                 {
                     "text": "research.TG_BLAST_FURNACE.stage.1",  
-                    "required_knowledge":["THEORY;ARTIFICE;1"],  
-                    "required_research":["tg:SOUL_SAND", "tg:OBSIDIAN"]
+                    "required_knowledge":["THEORY;ARTIFICE;1"]
                 },
                 {
                     "text": "research.TG_BLAST_FURNACE.stage.2",
@@ -216,13 +191,11 @@
                     "text": "research.TG_SHADOW_METAL.stage.1",  
                     "required_knowledge":["THEORY;INFUSION;1", "OBSERVATION;ALCHEMY;1"],
                     "required_item": ["thaumcraft:celestialNotes;1;5"],
-                    "required_research":["tg:OBSIDIAN", "tg:THAUM_INGOT"],
                     "recipes":["tg:shade_ore","tg:shade_metal"]
                 },
                 {
                     "text": "research.TG_SHADOW_METAL.stage.2",  
                     "required_knowledge":["OBSERVATION;INFUSION;1"],
-                    "required_research":["tg:BLOCK_SHADE", "tg:THAUM_HELM", "tg:THAUM_BOOTS", "tg:THAUM_CHEST", "tg:THAUM_LEGS"],
                     "recipes":["tg:shade_ore","tg:shade_metal", "tg:shade_instruments"]
                     
                 },
@@ -244,13 +217,11 @@
                     "text": "research.TG_LIGHT_METAL.stage.1",  
                     "required_knowledge":["THEORY;INFUSION;1", "OBSERVATION;ALCHEMY;1"],
                     "required_item": ["thaumcraft:celestialNotes;1;0"],
-                    "required_research":["tg:TORCH", "tg:THAUM_INGOT"],
                     "recipes":["tg:light_ore","tg:light_metal"]
                 },
                 {
                     "text": "research.TG_LIGHT_METAL.stage.2",  
                     "required_knowledge":["OBSERVATION;INFUSION;1"],
-                    "required_research":["tg:BLOCK_LIGHT", "tg:THAUM_HELM", "tg:THAUM_BOOTS", "tg:THAUM_CHEST", "tg:THAUM_LEGS"],
                     "recipes": ["tg:light_ore","tg:light_metal","tg:light_instruments"]
                 },
                 {
@@ -268,8 +239,7 @@
             "stages": [
                 {
                     "text": "research.TG_PRIMAL_ARMOR.stage.1",  
-                    "required_knowledge":["OBSERVATION;ELDRITCH;1", "THEORY;INFUSION;1", "THEORY;ARTIFICE;1" ],  
-                    "required_research":["tg:THAUM_BOSS", "tg:SING_PEARL"],
+                    "required_knowledge":["OBSERVATION;ELDRITCH;1", "THEORY;INFUSION;1", "THEORY;ARTIFICE;1" ],
                     "warp": 3
                 },
                 {
@@ -288,7 +258,6 @@
                 {
                     "text": "research.TG_PRIMAL_WEAPON.stage.1",  
                     "required_knowledge":["THEORY;ELDRITCH;1", "OBSERVATION;INFUSION;1"],
-                    "required_research":["tg:VOID_SWORD", "tg:VOID_AXE"],
                     "required_item":["thaumcraft:primalCrusher;1"],
                     "warp": 5  
                 },
@@ -310,7 +279,6 @@
                     "text": "research.TG_BETTER_PRIMAL_ARMOR.stage.1",  
                     "required_knowledge":["OBSERVATION;INFUSION;1", "THEORY;ARTIFICE;1"],
                     "required_item":["tg:oval_crystal_air;1", "tg:oval_crystal_earth;1", "tg:oval_crystal_fire;1", "tg:oval_crystal_water;1", "tg:oval_crystal_order;1", "tg:oval_crystal_entropy;1"],
-                    "required_research":["tg:CRYSTAL_OVAL_AIR", "tg:CRYSTAL_OVAL_FIRE", "tg:CRYSTAL_OVAL_WATER", "tg:CRYSTAL_OVAL_EARTH", "tg:CRYSTAL_OVAL_ORDER", "tg:CRYSTAL_OVAL_ENTROPY" ],
                     "warp": 5
                 },
                 {
@@ -329,7 +297,6 @@
             "stages": [
                 {
                     "text": "research.TG_BELT_LIGHT.stage.1",  
-                    "required_research":["tg:LIGHT_HELM", "tg:LIGHT_CHEST", "tg:LIGHT_LEGS", "tg:LIGHT_BOOTS"],
                     "required_item":["thaumcraft:baubles;1;6", "thaumcraft:celestialNotes;1;0"],
                     "required_knowledge":["THEORY;INFUSION;1"], 
                     "warp": 2  
@@ -350,7 +317,6 @@
             "stages": [
                 {
                     "text": "research.TG_BELT_SHADOW.stage.1",  
-                    "required_research":["tg:SHADE_HELM", "tg:SHADE_CHEST", "tg:SHADE_LEGS", "tg:SHADE_BOOTS"],
                     "required_item":["thaumcraft:baubles;1;6", "thaumcraft:celestialNotes;1;5"],
                     "required_knowledge":["THEORY;INFUSION;1"],
                     "warp": 2 
@@ -372,8 +338,7 @@
                 {
                     "text": "research.TG_SCYTHES.stage.1",  
                     "required_knowledge":["THEORY;BASICS;1"],  
-                    "required_research":["tg:OAK_LEAVES", "tg:DOUBLE_GRASS"],
-                    "required_item":["minecraft:stick;1", "minecraft:iron_ingot;1", "minecraft:flint;1"]  
+                    "required_item":["minecraft:stick;1", "minecraft:iron_ingot;1", "minecraft:flint;1"]
                 },
                 {
                     "text": "research.TG_SCYTHES.stage.2",
@@ -408,8 +373,7 @@
                 {
                     "text": "research.TG_JEWELLERY.stage.1",  
                     "required_knowledge":["THEORY;ALCHEMY;1", "OBSERVATION;ARTIFICE;1"],
-                    "required_research":["tg:DIAMOND", "tg:EMERALD", "tg:AMBER", "tg:QUARTZ"], 
-                    "recipes": ["tg:cutting_tools"] 
+                    "recipes": ["tg:cutting_tools"]
                 },
                 {
                     "text": "research.TG_JEWELLERY.stage.2",  

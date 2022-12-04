@@ -85,7 +85,7 @@
 /*  85 */       mode = stack.getTagCompound().getInteger("mode");
 /*     */     }
 /*     */     
-/*  88 */     tooltip.add("Current Aspect: §" + IFunctionLibrary.getAspectFromMode(mode).getChatcolor() + IFunctionLibrary.getAspectFromMode(mode).getName());
+/*  88 */     tooltip.add("Current Aspect: " + IFunctionLibrary.getAspectFromMode(mode).getChatcolor() + IFunctionLibrary.getAspectFromMode(mode).getName());
 /*     */   }
 /*     */ 
 /*     */   

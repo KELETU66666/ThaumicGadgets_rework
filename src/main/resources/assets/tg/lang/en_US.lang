@@ -1,11 +1,9 @@
-//Keys
 
+tc.research.category.GADGETS=Thaumic Gadgets
 key.categories.tg=Thaumic Gadgets
 key.tg.open_gui=Open Mode GUI
 key.tg.armor_ability=Armor Ability
-key.tg.lense_gui=Open Lense GUI
 
-//Items
 item.tool_gemcutter.name=Gemcutter's Tools
 
 item.yarn.name=Yarn
@@ -113,50 +111,12 @@ item.pouch.description.soulbinded=Soulbinded!
 item.pouch.description.unbinded=Unbinded!
 item.pouch.description.wrong_owner=Don't touch it! It's not your!
 
-item.lense_blank.name=Blank Lense
-item.lense_night_vision.name=Night Vision Lense
-item.lense_echo_loc.name=Echo Loc Lense
-item.lense_death_gaze.name=Death Gaze Lense
-item.lense_fire.name=Fire Lense
-item.lense_knockback.name=Knockback Lense
-item.lense_decay.name=Decay Lense
-
-item.fortified_glass_shard.name=Fortified Glass Shard
-
-item.cache_compass.name=Seeker Amulet
-
-item.shade_rose_bush_seed.name=Shade Rose Bush Seed
-item.shade_rose_seed.name=Shade Rose Seed
-item.shade_petal.name=Shade Rose Petal
-item.light_rose_bush_seed.name=Light Rose Bush Seed
-item.light_rose_seed.name=Light Rose Seed
-item.light_petal.name=Light Rose Petal
-
-//Blocks
-
 tile.block_shade.name=Shaded Metal Block
 tile.block_light.name=Block of Light Metal
 tile.ore_light.name=Light Ore
 tile.ore_shade.name=Shaded Ore
 
-tile.fortified_glass.name=Fortified Glass
-tile.fortified_glass_pane.name=Fortified Glass Pane
-tile.statue.name=Statue
-tile.ancient_sarcophagus.name=Ancient Sarcophagus
-tile.ancient_cache.name=Ancient Cache
-tile.dummy.name=Dummy Block
-
 tile.ageing_stone.name=Ageing Stone
-
-tile.dechantment_table.name=Dechantment Table
-tile.eye.name=Eye of the Ancient
-tile.spire.name=Greater Spire
-tile.stabilizer_1.name=Ancient Holder
-tile.stabilizer_2.name=Pillar of Creation
-tile.book_holder.name=Book Holder
-tile.lamp.name=Holder
-tile.part_stab_1.name=Ancient Holder Blank
-tile.part_stab_2.name=Pillar of Creation Blank
 
 tile.spinning_wheel.name=Spinning Wheel
 container.spinning_wheel=Spinning Wheel
@@ -168,58 +128,17 @@ tile.extruder_up.name=Upgraded Thaumic Extruder
 
 tile.blast_furnace.name=Infernal Blast Furnace
 
-tile.terramorfer.name=Terramorfer
-
-tile.terra_focus.taiga.name=Focus (Taiga)
-tile.terra_focus.desert.name=Focus (Desert)
-tile.terra_focus.hell.name=Focus (Hell)
-tile.terra_focus.jungle.name=Focus (Jungle)
-tile.terra_focus.mushroom.name=Focus (Mushroom)
-tile.terra_focus.plains.name=Focus (Plains)
-tile.terra_focus.ice_plains.name=Focus (Ice Plains)
-tile.terra_focus.forest.name=Focus (Forest)
-tile.terra_focus.swampland.name=Focus (Swamp)
-tile.terra_focus.savanna.name=Focus (Savanna)
-
 tile.shade_rose_bush.name=Shade Rose Bush
 tile.shade_rose.name=Shade Rose
 tile.light_rose_bush.name=Light Rose Bush
 tile.light_rose.name=Light Rose
 
-//enchantments
-
 enchantment.regen_primal=Primal Regeneration
 
-//description
-teleportator.description.name=Teleportator Name:
-teleportator.description.pos=Position:
-teleportator.description.choose_address=Choose Desired Point:
-teleportator.description.nothing=Ignore All Lists
-teleportator.description.black_list=Use Blacklist
-teleportator.description.white_list=Use Whitelist
-teleportator.description.not_enought=Not Enought Vis
-teleportator.description.start_tp=Teleport to Selected Position
-
-tile.teleportator_frame.name=Limiting Contour
-tile.teleportator_floor.name=Platform
-tile.teleportator_core.name=Spatial Matrix
-tile.teleportator.name=Teleportator
-
-tile.eldrich_core.name=Pocket Eldrich
-tile.lit_eldrich_core.name=Pocket Eldrich
-tile.ench_obs.name=Enchanted Obsidian
-tile.ench_obs_dummy.name=Enchanted Obsidian
-
-//tabs
 itemGroup.gadgets=Thaumic Gadgets
 
-//entity
-entity.observer.name=Corrupted Observer
-
-//Research Categories
 tc.research_category.GADGETS=Thaumic Gadgets
 
-//Researches
 research.THAUMICGADGETS.title=Thaumic Gadgets
 research.THAUMICGADGETS.stage.1=The beginning of a new way
 
@@ -230,14 +149,6 @@ research.TG_WEAVING.stage.2=Surprisingly, it worked. However, it was not fabric 
 research.TG_BETTER_WEAVING.title=Upgraded Weaving
 research.TG_BETTER_WEAVING.stage.1=Magic cloth. It would seem that in it this? What else can you do with it, except as a magician's attire. But still... And what if we twist several types of fabric and, say, stretched to the size of a thaum metal thread?
 research.TG_BETTER_WEAVING.stage.2=Combining the previous success and new knowledge, you created a light, shadow, ethereal and hollow yarn, as well as fabrics - Light, shadow, hollow, enchanted and changeable. Soon, you can find them application...
-
-research.TG_FLYING_CARPET.title=Flying Carpet
-research.TG_FLYING_CARPET.stage.1=Placeholder start research
-research.TG_FLYING_CARPET.stage.2=Placeholde finish research
-
-research.TG_BETTER_FLYING_CARPET.title=Better Flying Carpet
-research.TG_BETTER_FLYING_CARPET.stage.1=Placeholder start research
-research.TG_BETTER_FLYING_CARPET.stage.2=Placeholde finish research
 
 research.TG_BAGS.title=Magic Bags
 research.TG_BAGS.stage.1=You constantly do not have enough pockets to carry all these things. Always like this. Just go in search of adventure - and find something interesting, and then more, more... And already full pockets... You need to solve this problem.
@@ -254,36 +165,6 @@ research.TG_ENDER_BAG.stage.2=Ender-bag completely imitates the Ender-chest, but
 research.TG_VOID_BAG.title=Void Bag
 research.TG_VOID_BAG.stage.1=Too much excess land, too much excess stone... It is urgent to solve this problem until your bags are packed with them...
 research.TG_VOID_BAG.stage.2=Void bag will destroy any items that you catch and which are in the "White List". To add an item to the "white list", you just need to put the item in the bag. In the future, any item that will match it will be automatically placed in a hollow bag and destroyed.
-
-research.TG_CAPES.title=Capes
-research.TG_CAPES.stage.1=Placeholder start research
-research.TG_CAPES.stage.2=Placeholde finish research
-
-research.TG_CAPE_PHOENIX.title=Cape of Phoenix
-research.TG_CAPE_PHOENIX.stage.1=Placeholder start research
-research.TG_CAPE_PHOENIX.stage.2=Placeholde finish research
-
-research.TG_CAPE_WOLF.title=Wolf Cape
-research.TG_CAPE_WOLF.stage.1=Placeholder start research
-research.TG_CAPE_WOLF.stage.2=Placeholde finish research
-
-research.TG_CAPE_NECRO.title=Necromancer Cape
-research.TG_CAPE_NECRO.stage.1=Placeholder start research
-research.TG_CAPE_NECRO.stage.2=Placeholde finish research
-
-research.TG_TERRAMORFER.title=Terramorfer
-research.TG_TERRAMORFER.stage.1=In your wanderings, you have met many different biomes: forest, savanna, tundra, desert, swamps and many other. You came up with the idea of creating a terramorfer that would allow you to change the biome to the one you want...
-research.TG_TERRAMORFER.stage.2=It was not easy, but you could create it. The taumic terramorfer. Its principle of operation is very simple: Install the terraformer in the right place, install a special focus on it, which is responsible for selecting the biome and feeding the essence. Terramorfer will gradually change the surrounding area. The range of terramorfer is 16 blocks. Depending on the installed focus, the terramorfer needs different essences. <BR>Тaiga: Gelum<BR>Desert: Ignis<BR>Nether: Potentia<BR>Jungle: Herba<BR>Mushroom Island: Praecantatio<BR>Plains: Terra<BR>Ice Plains: Gelum<BR>Forest: Herba<BR>Swamp: Aqua<BR>Savanna: Bestia
-
-research.TG_ALCHEMY.title=Alchemy
-research.TG_ALCHEMY.stage.1=After the successful development of a terramorfer, you got the idea of a little fun with alchemy. What will come of it?
-research.TG_ALCHEMY.stage.2=And it turned out much more than you thought. A pair of simple experiments and you can easily learn how to turn one matter into another! But does it have side effects?
-research.TG_ALCHEMY.shade=Adding a little Tenebrae it dawned on you that the darkness is also material. And it is quite useful.
-research.TG_ALCHEMY.light=Adding a little Lux dawned on you that the light is also material. And even quite useful.
-
-research.TG_POCKET_ELDRICH.title=Pocket Eldritch
-research.TG_POCKET_ELDRICH.stage.1=Experimenting with changing the soil you are thinking, is it possible to change not only the material world? Indeed, in essence, portals are a “change” of the material world - a tear of the fabric of the reality of different dimensions. Worm-hole. And what if you try to break in reality, but not so chaotic, which is caused by flux, but more stable and larger. Who knows what awaits you for him ...
-research.TG_POCKET_ELDRICH.stage.2=You managed to create a car and called it "Eldrich's pocket measurement." But it does not work exactly as you planned. It does not transfer you to another dimension. It brings another dimension to you ... However, that dwells in it. Ordinary earth blocks are unstable, even obsidian. Therefore, you have created Enchanted Obsidian, able to contain the power of a space alien to this world. You also created a special block - the core, which can create a gap in the fabric of reality and transfer part of it to its position. The machine is designed in such a way as to fully protect the outside world from the dangers - the contour becomes indestructible as soon as you invoke a different reality. Everything will come back as soon as the entity is destroyed... Or as soon as you die...
 
 research.TG_AGEING_STONE.title=Ageing Stone
 research.TG_AGEING_STONE.stage.1=Sometimes, sitting for hours at the fireplace with a hot mug of tea, you wondered what time is, and whether it is possible to manage it locally. And one of these evenings, it seems, you have found a solution...
@@ -338,141 +219,7 @@ research.TG_SCYTHES.void_metal=The void scythe, as well as the taum-scythe, cuts
 research.TG_SCYTHES.shade=A Shaded scythe, as well as a taum-scythe, cuts down leaves in a wide area, but in a larger radius - 9x7x9 and like all objects made of shaded metal allows you to cut faster and gradually self-repair at nighttime. Deals 11 damage per attack.
 research.TG_SCYTHES.light=A Light scythe, as well as a taum-scythe, cuts down leaves in a wide area, but in a larger radius - 9x7x9 and like all objects made of light metal allows you to cut faster and gradually self-repair at daytime. Deals 11 damage per attack.
 
-research.TG_SCYTHE_OF_DEATH.title=Scythe of Death
-research.TG_SCYTHE_OF_DEATH.stage.1=Placeholder start research
-research.TG_SCYTHE_OF_DEATH.stage.2=Placeholde finish research
-
-research.TG_GARMENT_OF_DEATH.title=Garment of Death
-research.TG_GARMENT_OF_DEATH.stage.1=Placeholder start research
-research.TG_GARMENT_OF_DEATH.stage.2=Placeholde finish research
-
 research.TG_JEWELLERY.title=Jewellery
 research.TG_JEWELLERY.stage.1=Once you accidentally spilled some of the essence on the stone and he... Filled with it. Having studied its properties, you thought that why not try it with other stones and essences?
 research.TG_JEWELLERY.stage.2=Definitely, the result is interesting. But for a stable effect, you need a table and tools. By creating tools for cutting stones and putting them on the table, you can create sharp magic stones. To do this, you need the essence and the stone itself. But there is one thing - the essence in its usual sense is not suitable for these purposes. A substance disintegrator built into the table allows you to direct the essence directly to the stone. <BR>You can fill the following types of stones: Quartz - 50 units, Amber - 40 units, Lapis - 35 units, Diamond - 25 units and Emerald - 20 units. The stone has an instant effect, but it only lasts for one application, after which it collapses.<BR> Effects of stones: Perditio - Gives a "death look" for 3 minutes; Ordo - Removes negative effects; Terra - Gives "Resistance Damage"; Aqua - Freezes water into ice and turns lava into obsidian in a 5x5x5 area; Ignis - gives "Fire Resistance" for 5 minutes; Aer - Gives "Speed 2" and "Jumping 2" for 3 minutes.<PAGE><IMG>tg:textures/gui/research/recipe_cutting_table.png:0:0:195:149:1</IMG>
 research.TG_JEWELLERY.stage.3=Experimenting with stones a little more, you invented another type of cut - oval. <BR>Stone and essence are also used to fill them: Quartz - 75 units, Amber - 60 units, Lapis - 50 units, Diamond - 40 units and Emerald - 35 units. These stones can be reused. After use, they will need time to recover. <BR>The effects of this cut are different from the sharp: Perditio - Increases the level of infection of the aura by 50 units; Ordo - Restores 5 health; Terra - Adds "10 golden hearts" for 5 min; Aqua - Creates a block of pure water; Ignis - Lights the fire on the block; Aer - Gives scuba breathing for 3 minutes. And don't forgot about prev. sharp cut. <BR> Effects of stones: Perditio - Gives a "death look" for 3 minutes; Ordo - Removes negative effects; Terra - Gives "Resistance Damage"; Aqua - Freezes water into ice and turns lava into obsidian in a 5x5x5 area; Ignis - gives "Fire Resistance" for 5 minutes; Aer - Gives "Speed ​​2" and "Jumping 2" for 3 minutes. <PAGE><IMG>tg:textures/gui/research/recipe_cutting_table.png:0:0:195:149:1</IMG>
-
-research.TG_LENSES.title=Lenses
-research.TG_LENSES.stage.1=Once, turning the thaumometer in your hands, you caught yourself thinking that it would be nice to reduce it and insert it in glasses instead of glasses or... Or as an additional lens. What if you try to fill the glass with aspects like you did with stones?
-research.TG_LENSES.stage.2=The result was curious. Ordinary glass is not suitable for filling aspects. You had to create a special lens capable of absorbing the essence, while being quite miniature. Filling an empty lens with the original aspects in a gemcutter table gives it certain permanent effects: Aqua provides the ability to look through the water as if it were not there. Ignis allows you to see the night as well as during the day, but unfortunately it does not work in the water. Perditio will give your eyesight the effect of "death gaze." And despite such a success, you understand that this is not the limit of possibilities ...
-research.TG_LENSES.stage.3=Experiments with the filing of the same essence on the lens did not lead to anything. Already in despair, you accidentally missed, submitting the opposite. And suddenly the effect of the lens has changed. Ignis lens and aer essence - Gives night vision and fire resistance, and also sets fire to the creatures who came close. Empty lense and aer essence - knockback creatures that you looks at. Perditio lens and ordo essence - imposes on creatures that the magician looks at "wither", "Slow 2" and "Weakness 2".
-
-research.TG_RINGS.title=Rings
-research.TG_RINGS.stage.1=Placeholder start research
-research.TG_RINGS.stage.2=Placeholde finish research
-
-research.TG_RING_ASPECT.title=Aspect Ring
-research.TG_RING_ASPECT.stage.1=Placeholder start research
-research.TG_RING_ASPECT.stage.2=Placeholde finish research
-
-research.TG_COMPASS.title=Seeker Amulet
-research.TG_COMPASS.stage.1=A normal compass points to the north. Ender Eye - to the nearest portal in the End. And this amulet? Seeker Amulet... Where is he pulling you?
-research.TG_COMPASS.stage.2=After some research, you find that the amulet only works in Nezer. And he points... To the lava lakes. Or that is hidden under them.
-
-research.TG_DECHANT.title=Dechantment Table
-research.TG_DECHANT.stage.1=In your wanderings on the Nether, you accidentally found a strange building under the lava lake - some ancient vault. Inside is a strange sarcophagus, surrounded by statues of beings that you have never seen. But when you tried to open it... It was not easy, but you uncovered the sarcophagus. Inside the table was a concept... no, not an enchantment. Something ancient that you can not understand right away... You need to do some research...
-research.TG_DECHANT.stage.2=Everything turned out to be much easier than you thought. This is the dechantment table. He destroys all enchantments imposed on the item. You just need to put the object on the table and wait a little... However, you still have not found a way to move or recreate this table. But you feel that this is still not all that can be done with it...
-
-research.TG_TRANSFER_CHANT.title=Enchantment Transfer
-research.TG_TRANSFER_CHANT.stage.1=Watching the process of removing enchantment, you noticed that the residual magic of the object for some time is in the air. From what you have made the assumption that it can somehow be caught and used.
-research.TG_TRANSFER_CHANT.stage.2=After doing a lot of calculations and having spent many hours analyzing the data, you were able to find a solution. For this you had to build a large structure right on the spot - you could not move the table. Having installed the "Book Holder" directly above the table and 4 "Ancient Holders" with the "Ancient Eyes" at the edges you were able to track and transfer the liberated magic to the books... But not always successfully. With a 20% chance, you will not succeed. But if you succeed - do not rush to rejoice. On the received enchantments there can be "Curse of Vanishing" or "Curse of Binding"...
-
-research.TG_CONTROL_CHANT.title=Enchantment Control
-research.TG_CONTROL_CHANT.stage.1=The randomness factor is not what the real thaumaturge seeks. He must be absolutely sure of his success or failure. If the chance of transferring the spell can still be reconciled, then with a curse of loss - never. We need to find a way to get rid of this... "Randomness"...
-research.TG_CONTROL_CHANT.stage.2=You expected that it would be much easier. To completely get rid of the negative effect of transferring spells, you had to use the power of a primordial pearl, and not even one... The resulting "Infinity Spheres", as you dubbed them, should be placed on the "Pillars of Creation" by placing them around the edges. Also you will need to transfer "Ancient Holders" and "Ancient Eyes". By combining everything into one design. The resulting design will transfer any enchantments to a book located in the "Book Holder". In this case, if there was a "Curse of Vanishing" or "Curse of Binding", it will be deleted.
-
-research.TG_TELEPORTATOR.title=Teleportator
-research.TG_TELEPORTATOR.stage.1=Watching the Endermen and his, seemingly, spontaneous teleports, you found that they are more than not accidental - he completely controls them. And you came up with the idea of creating controlled teleports in space. But since by nature you are not enderman, and you can't implant yourself with an organ responsible for this, it is simply unrealistic, then it will be necessary to create a mechanism that mimics this...
-research.TG_TELEPORTATOR.stage.2=And you created it. The Teleporter is a rather complex structure that carries whole pieces of space between artificially created holes in reality. For these purposes, you will need to create a special Platform on which the portable "space" will be placed, as well as the Restricting Circle around it. A special Spatial Matrix will control the movement of this "space". Unfortunately, the transfer can only be carried out between other similar structures. At the same time, you either have to own it, or you will need it to be allowed to move to it. <PAGE>The motion control system has a special interface. In it, you can select the point where you want to move (from the ones available to you), select those you allow (or do not allow) to navigate to you, as well as the charge indicator and the teleport start button. All those who stand on the platform, and not only those who activated the teleport (unauthorized creatures will not be moved) can move through the teleporter. <PAGE>In this case, there is one nuance - the teleporter can transfer you to another telepointer... Which no longer exists. Although, from this you can benefit ... Probably ... In any case, you have stange feeling what you "re-invented the bike"...
-
-research.tg:FABRIC.text=Scan Enchanted Fabric
-research.tg:CARPET.text=Scan Carpet
-research.tg:CHEST.text=Scan Chest
-research.tg:HUNGRY_CHEST.text=Scan Hungry Chest
-research.tg:MAGIC_POUCH.text=Scan Magic Pouch
-research.tg:ENDER_CHEST.text=Scan Ender Chest
-research.tg:ENDER_POUCH.text=Scan Ender Pouch
-research.tg:ARMOR_STAND.text=Scan Armor Stand
-research.tg:BLAZE.text=Scan Blaze
-research.tg:WOLF.text=Scan Wolf
-research.tg:ZOMBIE.text=Scan Zombie
-research.tg:SKELETON.text=Scan Skeleton
-research.tg:SKELETON_WITHER.text=Scan Wither Skeleton
-research.tg:SAND.text=Scan Sand
-research.tg:NETHERRACK.text=Scan Netherrack
-research.tg:DIRT.text=Scan Dirt
-research.tg:PODZOL.text=Scan Podzol
-research.tg:GRASS.text=Scan Grass
-research.tg:COARSE_DIRT.text=Scan Coarse Dirt
-research.tg:CLAY.text=Scan Clay
-research.tg:SHEEP.text=Scan Sheep
-research.tg:COW.text=Scan Cow
-research.tg:CHICKEN.text=Scan Chicken
-research.tg:PIG.text=Scan Pig
-research.tg:HORSE.text=Scan Horse
-research.tg:RABBIT.text=Scan Rabbit
-research.tg:LLAMA.text=Scan Llama
-research.tg:CRACKED_STONE.text=Scan Cracked Stone Bricks
-research.tg:CLOCK.text=Scan Clock
-research.tg:THAUM_PICKAXE.text=Scan Thaumium Pickaxe
-research.tg:THAUM_EXTRUDER.text=Scan Thaumic Stone Extruder
-research.tg:OBSIDIAN.text=Scan Obsidian
-research.tg:SOUL_SAND.text=Scan Soul Sand
-research.tg:TORCH.text=Scan Torch
-research.tg:THAUM_INGOT.text=Scan Thaumium Ingot
-research.tg:BLOCK_SHADE.text=Scan Shaded Block
-research.tg:BLOCK_LIGHT.text=Scan Block of Light
-research.tg:THAUM_HELM.text=Scan Thaumium Helmet
-research.tg:THAUM_BOOTS.text=Scan Thaumium Boots
-research.tg:THAUM_CHEST.text=Scan Thaumium Chestplate
-research.tg:THAUM_LEGS.text=Scan Thaumium Leggins
-research.tg:SING_PEARL.text=Scan Primordial Pearl
-research.tg:THAUM_BOSS.text=Scan Any Thaumcraft Boss
-research.tg:VOID_SWORD.text=Scan Void Sword
-research.tg:VOID_AXE.text=Scan Void Axe
-research.tg:CRYSTAL_OVAL_AIR.text=Scan Oval Aer Crystal
-research.tg:CRYSTAL_OVAL_FIRE.text=Scan Oval Ingis Crystal
-research.tg:CRYSTAL_OVAL_WATER.text=Scan Oval Aqua Crystal
-research.tg:CRYSTAL_OVAL_EARTH.text=Scan Oval Terra Crystal
-research.tg:CRYSTAL_OVAL_ORDER.text=Scan Oval Ordo Crystal
-research.tg:CRYSTAL_OVAL_ENTROPY.text=Scan Oval Perditio Crystal
-research.tg:LIGHT_HELM.text=Scan Helmet of Light
-research.tg:LIGHT_CHEST.text=Scan Chestplate of Light
-research.tg:LIGHT_LEGS.text=Scan Leggins of Light
-research.tg:LIGHT_BOOTS.text=Scan Boots of Light
-research.tg:SHADE_HELM.text=Scan Shaded Helmet
-research.tg:SHADE_CHEST.text=Scan Shaded Chestplate
-research.tg:SHADE_LEGS.text=Scan Shaded Leggins
-research.tg:SHADE_BOOTS.text=Scan Boots
-research.tg:OAK_LEAVES.text=Scan Oak Leaves
-research.tg:DOUBLE_GRASS.text=Scan Tall Grass
-research.tg:VILLAGER.text=Scan Villager
-research.tg:ELDRITCH_GUARD.text=Scan Eldritch Guardian
-research.tg:WITHER.text=Scan Wither
-research.tg:DIAMOND.text=Scan Diamond
-research.tg:EMERALD.text=Scan Emerald
-research.tg:AMBER.text=Scan Amber
-research.tg:QUARTZ.text=Scan Nether Quartz
-research.tg:BOW.text=Scan Bow
-research.tg:ARROW.text=Scan Arrow
-research.tg:IRON_SWORD.text=Scan Iron Sword
-research.tg:IRON_PICKAXE.text=Scan Iron Pickaxe
-research.tg:DECHANTMENT.text=Scan Dechantment Table
-research.tg:ENCH_BOOK.text=Scan Any Enchanted Book
-research.tg:EXP.text=Scan Experience Orb
-research.tg:EYE.text=Scan Eye of Ancient
-research.tg:DRAGON_EGG.text=Scan Dragon Egg
-research.tg:ENDERMAN.text=Scan Enderman
-research.tg:ENDER_PEARL.text=Scan Ender Pearl
-research.tg:CRIMSON_PORTAL.text=Scan Crimson Portal
-research.tg:THAUMOMETR.text=Scan Thaumometr
-research.tg:GLASS.text=Scan Glass Block
-research.tg:GEMCUTTER.text=Scan Gemcutter Table
-research.tg:GOGGLES.text=Scan Goggles of Revealing
-research.tg:LENSE_ECHO_LOC.text=Scan Echo Loc Lense
-research.tg:LENSE_NIGHT_VISION.text=Scan Night Vision Lense
-research.tg:DEATH_GAZE.text=Scan Death Gaze Lense
-research.tg:COMPASS.text=Scan Compass
-research.tg:MAP.text=Scan Empty Map
-research.tg:END_PORTAL.text=Scan End Portal
-research.tg:NETHER_PORTAL.text=Scan Nether Portal
-research.tg:ENDER_EYE.text=Scan Ender Eye

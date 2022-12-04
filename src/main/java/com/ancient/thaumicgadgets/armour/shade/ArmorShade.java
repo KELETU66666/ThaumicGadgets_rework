@@ -78,7 +78,7 @@ location = null;
      public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
          if (location == null) {
              if (slot == EntityEquipmentSlot.FEET)
-                 location = "thaumcraft:textures/entity/armor/bootstraveler.png";
+                 location = "tg:textures/models/armor/shade_boots.png";
              else
                  location = "tg:textures/models/armor/shade_armor.png";
          }
