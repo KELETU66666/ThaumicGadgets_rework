@@ -1,8 +1,5 @@
  package com.ancient.thaumicgadgets.proxy;
 
- import com.ancient.thaumicgadgets.armour.light.ArmorLightModel;
- import com.ancient.thaumicgadgets.armour.primal.ArmorPrimalModel;
- import com.ancient.thaumicgadgets.armour.shade.ArmorShadeModel;
  import com.ancient.thaumicgadgets.gui.GuiOverlay;
  import com.ancient.thaumicgadgets.keys.KeyInputHandler;
  import com.ancient.thaumicgadgets.keys.Keybindings;
@@ -11,7 +8,6 @@
  import com.ancient.thaumicgadgets.objects.machines.lamp.RenderLamp;
  import com.ancient.thaumicgadgets.objects.machines.lamp.TileEntityLamp;
  import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
- import com.ancient.thaumicgadgets.util.handlers.RenderHandler;
  import net.minecraft.client.renderer.block.model.ModelResourceLocation;
  import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
  import net.minecraft.item.Item;
@@ -23,11 +19,6 @@
  public class ClientProxy
    extends CommonProxy
  {
-/* 40 */   public static final ArmorShadeModel ARMOR_SHADE_MODEL = new ArmorShadeModel(0.25F);
-/* 41 */   public static final ArmorShadeModel ARMOR_SHADE_MODEL_LEGS = new ArmorShadeModel(0.25F);
-
-/* 43 */   public static final ArmorLightModel ARMOR_LIGHT_MODEL = new ArmorLightModel(0.25F);
-/* 44 */   public static final ArmorLightModel ARMOR_LIGHT_MODEL_LEGS = new ArmorLightModel(0.25F);
 
 
 

@@ -48,43 +48,6 @@ location = null;
      }
    }
 
-     @Override
-     @Nullable
-     @SideOnly(Side.CLIENT)
-     public ModelBiped getArmorModel(EntityLivingBase living, ItemStack stack, EntityEquipmentSlot slot,
-                                     ModelBiped _default) {
-
-         if (model == null) {
-             if (slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.FEET)
-                 model = new ArmorShadeModel(1.0F);
-             else
-                 model = new ArmorShadeModel(0.5F);
-
-             model.bipedHead.showModel = slot == EntityEquipmentSlot.HEAD;
-             model.bipedHeadwear.showModel = slot == EntityEquipmentSlot.HEAD;
-             model.bipedBody.showModel = slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.LEGS;
-             model.bipedRightArm.showModel = slot == EntityEquipmentSlot.CHEST;
-             model.bipedLeftArm.showModel = slot == EntityEquipmentSlot.CHEST;
-             model.bipedRightLeg.showModel = slot == EntityEquipmentSlot.LEGS;
-             model.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.LEGS;
-         }
-
-         if(slot == EntityEquipmentSlot.FEET)
-             return null;
-
-         return model;
-     }
-
-     public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
-         if (location == null) {
-             if (slot == EntityEquipmentSlot.FEET)
-                 location = "tg:textures/models/armor/shade_boots.png";
-             else
-                 location = "tg:textures/models/armor/shade_armor.png";
-         }
-         return location;
-   }
-
    public int getWarp(ItemStack itemstack, EntityPlayer player) {
 /* 47 */     return 5;
    }

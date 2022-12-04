@@ -81,7 +81,7 @@ item.scythe_shade.name=暗影镰刀
 item.helmet_primal.name=元始头盔
 item.chestplate_primal.name=元始胸甲
 item.leggins_primal.name=元始护腿
-item.boots_primal.name=元始之血
+item.boots_primal.name=元始之靴
 
 item.helmet_primal_up.name=高级元始头盔
 item.chestplate_primal_up.name=高级元始胸甲
@@ -104,7 +104,6 @@ item.pouch_hungry_magic_3.name=饕餮迷幻手袋
 
 item.pouch_ender.name=末影手袋
 item.pouch_void.name=虚空手袋
-item.pouch_lense.name=透镜手袋
 
 item.pouch.description.soulbinded=已进行灵魂绑定!
 item.pouch.description.unbinded=未进行灵魂绑定!
@@ -126,11 +125,6 @@ tile.extruder.name=神秘造石机
 tile.extruder_up.name=高级神秘造石机
 
 tile.blast_furnace.name=无间熔炉
-
-tile.shade_rose_bush.name=暗影玫瑰丛
-tile.shade_rose.name=暗影玫瑰
-tile.light_rose_bush.name=光明玫瑰丛
-tile.light_rose.name=光明玫瑰
 
 enchantment.regen_primal=元始修复
 

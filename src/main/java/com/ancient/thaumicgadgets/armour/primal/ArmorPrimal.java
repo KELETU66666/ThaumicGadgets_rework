@@ -1,9 +1,9 @@
 /*     */ package com.ancient.thaumicgadgets.armour.primal;
 /*     */ 
 /*     */ import com.ancient.thaumicgadgets.armour.ArmorBase;
-/*     */ import com.ancient.thaumicgadgets.armour.shade.ArmorShadeModel;
+/*     */
 import com.ancient.thaumicgadgets.init.ModEnchantments;
-/*     */ import com.ancient.thaumicgadgets.proxy.ClientProxy;
+/*     */
 /*     */ import com.ancient.thaumicgadgets.util.ICheckEnchantment;
 /*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
 /*     */ import java.util.List;
@@ -24,7 +24,7 @@ import com.ancient.thaumicgadgets.init.ModEnchantments;
 /*     */ import net.minecraft.nbt.NBTTagCompound;
 /*     */ import net.minecraft.nbt.NBTTagList;
 /*     */ import net.minecraft.util.DamageSource;
-/*     */ import net.minecraft.util.text.TextFormatting;
+/*     */
 import net.minecraft.world.World;
 /*     */ import net.minecraftforge.fml.relauncher.Side;
 /*     */ import net.minecraftforge.fml.relauncher.SideOnly;
