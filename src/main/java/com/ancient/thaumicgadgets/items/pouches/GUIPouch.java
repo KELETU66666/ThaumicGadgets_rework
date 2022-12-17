@@ -25,8 +25,10 @@
      
 /* 26 */     drawTexturedModalRect(this.guiLeft, this.guiTop - 27, 0, 0, this.xSize, this.ySize + 20);
    }
- 
- 
+
+     protected boolean checkHotbarKeys(int par1) {
+         return false;
+     }
    
    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 /* 32 */     super.drawScreen(mouseX, mouseY, partialTicks);

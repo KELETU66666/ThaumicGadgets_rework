@@ -33,7 +33,7 @@
  
  
  
- @Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.1.6.0", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
+ @Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.1.1-Kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
  public class Main
  {
    @Instance

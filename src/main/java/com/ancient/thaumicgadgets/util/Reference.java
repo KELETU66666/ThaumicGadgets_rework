@@ -7,7 +7,7 @@
  {
    public static final String MOD_ID = "tg";
    public static final String NAME = "Thaumic Gadgets";
-   public static final String VERSION = "0.1.6.0";
+   public static final String VERSION = "0.1.1-Kedition";
    public static final String ACCEPTED_VERSIONS = "[1.12.2]";
    public static final String CLIENT_PROXY_CLASS = "com.ancient.thaumicgadgets.proxy.ClientProxy";
    public static final String COMMON_PROXY_CLASS = "com.ancient.thaumicgadgets.proxy.CommonProxy";

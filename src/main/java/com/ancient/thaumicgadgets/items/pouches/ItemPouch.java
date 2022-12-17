@@ -119,7 +119,7 @@
 /* 119 */         playerIn.displayGUIChest((IInventory)playerIn.getInventoryEnderChest());
 /*     */       } 
 /*     */     } 
-/* 122 */     return new ActionResult(EnumActionResult.SUCCESS, playerIn.getHeldItemMainhand());
+/* 122 */     return new ActionResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
 /*     */   }
 /*     */ 
 /*     */   
