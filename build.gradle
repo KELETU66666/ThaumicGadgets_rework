@@ -113,6 +113,8 @@ dependencies {
         implementation 'curse.maven:thaumcraft-223628:2629023'
         implementation 'curse.maven:baubles-227083:2518667'
     implementation 'curse.maven:jei-238222:3040523'
+    implementation 'curse.maven:crafttweaker-239197:4077688'
+    implementation 'curse.maven:modtweaker-220954:3840577'
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

@@ -19,11 +19,11 @@
 /* 19 */     SpinningWheelRecipes instance = SpinningWheelRecipes.getInstance();
 /* 20 */     List<SpinningWheelRecipe> jeiRecipes = Lists.newArrayList();
      
-/* 22 */     Map<String, SpinningWheelRecipes.craftingRecepies> list = instance.getDualWorkingList();
+/* 22 */     Map<String, SpinningWheelRecipes.craftingRecipes> list = instance.getDualWorkingList();
      
-/* 24 */     for (Map.Entry<String, SpinningWheelRecipes.craftingRecepies> e : list.entrySet()) {
+/* 24 */     for (Map.Entry<String, SpinningWheelRecipes.craftingRecipes> e : list.entrySet()) {
        
-/* 26 */       SpinningWheelRecipes.craftingRecepies recipe = (SpinningWheelRecipes.craftingRecepies)e.getValue();
+/* 26 */       SpinningWheelRecipes.craftingRecipes recipe = (SpinningWheelRecipes.craftingRecipes)e.getValue();
        
 /* 28 */       ItemStack input1 = recipe.item1;
 /* 29 */       ItemStack input2 = recipe.item2;

@@ -14,10 +14,10 @@
 /*     */ 
 /*     */ public class SpinningWheelRecipes
 /*     */ {
-/*  17 */   private static final SpinningWheelRecipes INSTANCE = new SpinningWheelRecipes();
+/*  17 */   public static final SpinningWheelRecipes INSTANCE = new SpinningWheelRecipes();
 /*     */ 
 /*     */   
-/*     */   public class craftingRecepies
+/*     */   public static class craftingRecipes
 /*     */   {
 /*     */     public String group;
 /*     */     public ItemStack item1;
@@ -27,7 +27,7 @@
 /*     */     public ItemStack result;
 /*     */     public float experience;
 /*     */     
-/*     */     public craftingRecepies(String group, ItemStack Item1, ItemStack Item2, ItemStack Item3, ItemStack Item4, ItemStack Result, float Experience) {
+/*     */     public craftingRecipes(String group, ItemStack Item1, ItemStack Item2, ItemStack Item3, ItemStack Item4, ItemStack Result, float Experience) {
 /*  31 */       this.group = group;
 /*  32 */       this.item1 = Item1;
 /*  33 */       this.item2 = Item2;
@@ -38,7 +38,7 @@
 /*     */     }
 /*     */   }
 /*     */   
-/*  41 */   private final Map<String, craftingRecepies> list = Maps.newHashMap();
+/*  41 */   private final Map<String, craftingRecipes> list = Maps.newHashMap();
 /*     */ 
 /*     */   
 /*     */   public static SpinningWheelRecipes getInstance() {
@@ -72,12 +72,18 @@
 /*     */   public void addSpinningWheelRecipe(String group, ItemStack input1, ItemStack input2, ItemStack input3, ItemStack input4, ItemStack result, float experience) {
 /*  73 */     if (!result.isEmpty()) {
 /*     */       
-/*  75 */       craftingRecepies recipe = new craftingRecepies(group, input1, input2, input3, input4, result, Float.valueOf(experience).floatValue());
+/*  75 */       craftingRecipes recipe = new craftingRecipes(group, input1, input2, input3, input4, result, Float.valueOf(experience).floatValue());
 /*  76 */       this.list.put(result.getUnlocalizedName().toLowerCase(), recipe);
 /*     */     } 
 /*     */   }
 /*     */ 
-/*     */   
+    public void removeSpinningWheelRecipe(ItemStack result) {
+        if (!result.isEmpty()) {
+
+            this.list.remove(result.getUnlocalizedName().toLowerCase());
+        }
+    }
+
 /*     */   public int getMaxRecipeCount() {
 /*  82 */     return this.list.size();
 /*     */   }
@@ -85,9 +91,9 @@
 /*     */ 
 /*     */   
 /*     */   public ItemStack getWorkResult(ItemStack input1, ItemStack input2, ItemStack input3, ItemStack input4) {
-/*  88 */     for (Map.Entry<String, craftingRecepies> e : this.list.entrySet()) {
+/*  88 */     for (Map.Entry<String, craftingRecipes> e : this.list.entrySet()) {
 /*     */       
-/*  90 */       craftingRecepies recipe = (craftingRecepies)e.getValue();
+/*  90 */       craftingRecipes recipe = (craftingRecipes)e.getValue();
 /*     */       
 /*  92 */       if (compareItemStacks(input1, recipe.item1) && compareItemStacks(input2, recipe.item2) && compareItemStacks(input3, recipe.item3) && compareItemStacks(input4, recipe.item4))
 /*     */       {
@@ -104,15 +110,15 @@
 /*     */   }
 /*     */ 
 /*     */   
-/*     */   public Map<String, craftingRecepies> getDualWorkingList() {
+/*     */   public Map<String, craftingRecipes> getDualWorkingList() {
 /* 108 */     return this.list;
 /*     */   }
 /*     */ 
 /*     */   
 /*     */   public float getWorkExperience(ItemStack output) {
-/* 113 */     for (Map.Entry<String, craftingRecepies> e : this.list.entrySet()) {
+/* 113 */     for (Map.Entry<String, craftingRecipes> e : this.list.entrySet()) {
 /*     */       
-/* 115 */       craftingRecepies recipe = (craftingRecepies)e.getValue();
+/* 115 */       craftingRecipes recipe = (craftingRecipes)e.getValue();
 /* 116 */       if (output.isItemEqual(recipe.result))
 /*     */       {
 /* 118 */         return recipe.experience;

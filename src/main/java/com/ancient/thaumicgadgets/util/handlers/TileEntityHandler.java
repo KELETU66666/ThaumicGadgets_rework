@@ -5,7 +5,6 @@
  import com.ancient.thaumicgadgets.objects.machines.extruder.TileEntityExtruder;
  import com.ancient.thaumicgadgets.objects.machines.extruder.TileEntityExtruderUp;
  import com.ancient.thaumicgadgets.objects.machines.gemcutter.TileEntityGemCutter;
- import com.ancient.thaumicgadgets.objects.machines.lamp.TileEntityLamp;
  import com.ancient.thaumicgadgets.objects.machines.spinningwheel.TileEntitySpinningWheel;
  import net.minecraft.util.ResourceLocation;
  import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -22,7 +21,6 @@
 /* 31 */     GameRegistry.registerTileEntity(TileEntityBlastFurnace.class, new ResourceLocation("tg", "blast_furnace"));
 /* 32 */     GameRegistry.registerTileEntity(TileEntityAgeingStone.class, new ResourceLocation("tg", "ageing_stone"));
 /* 37 */     GameRegistry.registerTileEntity(TileEntityExtruderUp.class, new ResourceLocation("tg", "extruder_up"));
-/* 38 */     GameRegistry.registerTileEntity(TileEntityLamp.class, new ResourceLocation("tg", "lamp"));
    }
  }
 

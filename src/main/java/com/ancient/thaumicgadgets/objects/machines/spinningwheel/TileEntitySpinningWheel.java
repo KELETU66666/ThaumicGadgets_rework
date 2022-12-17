@@ -136,7 +136,7 @@
 /*     */ 
 /*     */   
 /*     */   public int getInventoryStackLimit() {
-/* 139 */     return 64;
+/* 139 */     return 1;
 /*     */   }
 /*     */ 
 /*     */   

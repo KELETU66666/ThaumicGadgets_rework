@@ -23,14 +23,14 @@
 /*     */ import net.minecraft.util.text.ITextComponent;
 /*     */ import net.minecraft.util.text.TextComponentString;
 /*     */ import net.minecraft.world.World;
-/*     */ 
+/*     */
 /*     */ 
 /*     */ public class ItemPouch
 /*     */   extends ItemBase
 /*     */ {
 /*  31 */   private UUID defaultUUID = new UUID(0L, 1L);
 /*     */ 
-/*     */   
+/*     */
 /*     */   public ItemPouch(String name) {
 /*  35 */     super(name);
 /*     */     
@@ -53,7 +53,7 @@
 /*  53 */       stack.setTagCompound(nbt);
 /*     */     } 
 /*     */     
-/*  56 */     if (stack.getUnlocalizedName().contains("magic") && stack.getUnlocalizedName().contains("pouch")) {
+/*  56 */     if (stack.getUnlocalizedName().contains("magic") && stack.getUnlocalizedName().contains("pouch") && stack.getUnlocalizedName().contains("hungry") && !entity.isSneaking()) {
 /*     */       
 /*  58 */       AxisAlignedBB aabb = new AxisAlignedBB(entity.posX - 2.5D, entity.posY - 2.5D, entity.posZ - 2.5D, entity.posX + 2.5D, entity.posY + 2.5D, entity.posZ + 2.5D);
 /*  59 */       for (EntityItem item : entity.world.getEntitiesWithinAABB(EntityItem.class, aabb)) {

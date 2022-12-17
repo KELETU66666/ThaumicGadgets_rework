@@ -60,7 +60,7 @@ import thaumcraft.common.lib.crafting.DustTriggerMultiblock;
     };
 
      IDustTrigger.registerDustTrigger(new DustTriggerMultiblock("TG_BLAST_FURNACE", MultiblockBlastFurnace));
-     ThaumcraftApi.addMultiblockRecipeToCatalog(new ResourceLocation("tg", EnumHandler.MultiBlocks.BLAST_FURNACE.getName()), new ThaumcraftApi.BluePrint("TG_BLAST_FURNACE", new ItemStack(ModBlocks.FURNACE), MultiblockBlastFurnace, new ItemStack[] { new ItemStack(Item.getItemFromBlock(Blocks.OBSIDIAN), 9), new ItemStack(Item.getItemFromBlock(Blocks.SOUL_SAND), 5), new ItemStack(Item.getItemFromBlock(Blocks.NETHER_BRICK), 12), new ItemStack(Items.LAVA_BUCKET) }));
+     ThaumcraftApi.addMultiblockRecipeToCatalog(new ResourceLocation("tg", EnumHandler.MultiBlocks.BLAST_FURNACE.getName()), new ThaumcraftApi.BluePrint("TG_BLAST_FURNACE", new ItemStack(ModBlocks.FURNACE), MultiblockBlastFurnace, new ItemStack[] { new ItemStack(Item.getItemFromBlock(Blocks.OBSIDIAN), 9), new ItemStack(Item.getItemFromBlock(Blocks.SOUL_SAND), 5), new ItemStack(Item.getItemFromBlock(Blocks.NETHER_BRICK), 12), new ItemStack(Blocks.MAGMA) }));
 }
 /*     */ 
 /*     */   

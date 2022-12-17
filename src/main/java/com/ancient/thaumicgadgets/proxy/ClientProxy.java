@@ -5,8 +5,6 @@
  import com.ancient.thaumicgadgets.keys.Keybindings;
  import com.ancient.thaumicgadgets.objects.machines.extruder.RenderExtruderUp;
  import com.ancient.thaumicgadgets.objects.machines.extruder.TileEntityExtruderUp;
- import com.ancient.thaumicgadgets.objects.machines.lamp.RenderLamp;
- import com.ancient.thaumicgadgets.objects.machines.lamp.TileEntityLamp;
  import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
  import net.minecraft.client.renderer.block.model.ModelResourceLocation;
  import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -29,7 +27,6 @@
 
    public void init() {
 /* 57 */     ClientRegistry.bindTileEntitySpecialRenderer(TileEntityExtruderUp.class, (TileEntitySpecialRenderer)new RenderExtruderUp());
-/* 63 */     ClientRegistry.bindTileEntitySpecialRenderer(TileEntityLamp.class, (TileEntitySpecialRenderer)new RenderLamp());
 /* 64 */    }
 
 

@@ -3,15 +3,15 @@
 /*     */ import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
 /*     */ import net.minecraft.entity.player.EntityPlayer;
 /*     */ import net.minecraft.entity.player.InventoryPlayer;
-/*     */ import net.minecraft.inventory.ClickType;
-/*     */ import net.minecraft.inventory.Container;
-/*     */ import net.minecraft.inventory.IInventory;
-/*     */ import net.minecraft.inventory.Slot;
+/*     */ import net.minecraft.inventory.*;
+/*     */
+/*     */
+/*     */
 /*     */ import net.minecraft.item.ItemStack;
 /*     */ 
 /*     */ public class ContainerPouch
 /*     */   extends Container
-/*     */ {
+        implements IInventoryChangedListener {
 /*     */   private final InventoryPouch inventory;
 /*     */   private final int INV_START;
 /*     */   
@@ -113,7 +113,7 @@
 /* 123 */     return itemstack;
 /*     */   }
 /*     */ 
-/*     */ 
+/*     */
 /*     */   
 /*     */   public ItemStack slotClick(int slot, int dragType, ClickType clickTypeIn, EntityPlayer player) {
 /* 129 */     if (slot >= 0 && getSlot(slot) != null && getSlot(slot).getStack() == player.getHeldItemMainhand())
@@ -127,7 +127,12 @@
 /*     */   public InventoryPouch getInv() {
 /* 138 */     return this.inventory;
 /*     */   }
-/*     */ }
+
+    @Override
+    public void onInventoryChanged(IInventory invBasic) {
+        detectAndSendChanges();
+    }
+    /*     */ }
 
 
 /* Location:              C:\Users\戴尔\Desktop\code\Thaumic_Gadgets_1.12.2_0.1.6_tb.26.jar!\com\ancient\thaumicgadgets\items\pouches\ContainerPouch.class
