@@ -29,11 +29,16 @@
 
     ModMultiBlocks.InitMultiblocks();
 
-/*  29 */     ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "light_metal"), new CrucibleRecipe("TG_LIGHT_METAL@1", new ItemStack(ModItems.INGOT_LIGHT), new ItemStack(Items.GOLD_INGOT), (new AspectList()).add(Aspect.LIGHT, 75).add(Aspect.ENERGY, 35).add(Aspect.AURA, 25)));
-/*     */     
-/*  31 */     ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "shade_metal"), new CrucibleRecipe("TG_SHADOW_METAL@1", new ItemStack(ModItems.INGOT_SHADE), new ItemStack(Items.GOLD_INGOT), (new AspectList()).add(Aspect.DARKNESS, 75).add(Aspect.VOID, 35).add(Aspect.AURA, 25)));
-/*     */ 
-/*     */     
+
+    ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "light_metal"), new CrucibleRecipe("TG_LIGHT_METAL@1", new ItemStack(ModItems.INGOT_LIGHT), new ItemStack(Items.GOLD_INGOT), (new AspectList()).add(Aspect.LIGHT, 75).add(Aspect.ENERGY, 35).add(Aspect.AURA, 25)));
+
+    ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "shade_metal"), new CrucibleRecipe("TG_SHADOW_METAL@1", new ItemStack(ModItems.INGOT_SHADE), new ItemStack(Items.GOLD_INGOT), (new AspectList()).add(Aspect.DARKNESS, 75).add(Aspect.VOID, 35).add(Aspect.AURA, 25)));
+
+    ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "dust_flour"), new CrucibleRecipe("TG_BLAST_FURNACE", new ItemStack(ModItems.FOOD_MATERIAL, 1, 0), "cropWheat", (new AspectList()).add(Aspect.ENTROPY, 3)));
+
+    ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "dust_netherwart"), new CrucibleRecipe("TG_BLAST_FURNACE", new ItemStack(ModItems.FOOD_MATERIAL, 1, 1), "cropNetherWart", (new AspectList()).add(Aspect.ENTROPY, 3).add(Aspect.DESIRE, 1)));
+
+    /*     */
 /*  34 */     ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "light_ore"), new CrucibleRecipe("TG_LIGHT_METAL@1", new ItemStack(ModBlocks.ORE_LIGHT), new ItemStack(Blocks.GOLD_ORE), (new AspectList()).add(Aspect.LIGHT, 50).add(Aspect.ENERGY, 25).add(Aspect.AURA, 20)));
 /*     */     
 /*  36 */     ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("tg", "shade_ore"), new CrucibleRecipe("TG_SHADOW_METAL@1", new ItemStack(ModBlocks.ORE_SHADE), new ItemStack(Blocks.GOLD_ORE), (new AspectList()).add(Aspect.DARKNESS, 50).add(Aspect.VOID, 25).add(Aspect.AURA, 20)));

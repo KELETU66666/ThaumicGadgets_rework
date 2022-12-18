@@ -9,12 +9,15 @@
  import net.minecraft.block.Block;
  import net.minecraft.enchantment.Enchantment;
  import net.minecraft.item.Item;
+ import net.minecraft.item.ItemStack;
  import net.minecraft.util.SoundEvent;
  import net.minecraftforge.client.event.ModelRegistryEvent;
  import net.minecraftforge.event.RegistryEvent;
+ import net.minecraftforge.fml.common.Mod;
  import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
  import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
  import net.minecraftforge.fml.common.network.NetworkRegistry;
+ import net.minecraftforge.oredict.OreDictionary;
 
 
  @EventBusSubscriber
@@ -73,6 +76,13 @@
    public static void onSoundRegister(RegistryEvent.Register<SoundEvent> event) {
 /* 82 */     event.getRegistry().registerAll(ModSounds.SOUNDS.toArray((new SoundEvent[0])));
    }
+
+     @SubscribeEvent
+     public static void OreRegister(RegistryEvent.Register<Enchantment> event)
+     {
+         OreDictionary.registerOre("dustFlour", new ItemStack(ModItems.FOOD_MATERIAL, 1, 0));
+         OreDictionary.registerOre("dustNetherWart", new ItemStack(ModItems.FOOD_MATERIAL, 1, 1));
+     }
  }
 
 

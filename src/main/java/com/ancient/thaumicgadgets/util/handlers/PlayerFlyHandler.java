@@ -33,40 +33,41 @@
 /*  33 */     if (!(event.getEntity().getEntityWorld()).isRemote)
 /*     */     {
 /*  35 */       if (event.getEntity() instanceof EntityPlayer) {
-/*     */         
+/*     */         if(!((EntityPlayer) event.getEntity()).isCreative() && !((EntityPlayer) event.getEntity()).isSpectator()){
 /*  37 */         EntityPlayer player = (EntityPlayer)event.getEntityLiving();
-/*     */ 
-/*     */ 
-/*     */         
+/*     */
+/*     */
+/*     */
 /*  41 */         NBTTagCompound nbt = player.getEntityData();
-/*     */         
+/*     */
 /*  43 */         if (nbt.hasKey("thaumic_gadgets")) {
-/*     */           
+/*     */
 /*  45 */           NBTTagList list = nbt.getTagList("thaumic_gadgets", 10);
 /*  46 */           NBTTagCompound compound = list.getCompoundTagAt(Reference.getNBTPlayerIndexFromString("lightFlying"));
-/*     */           
+/*     */
 /*  48 */           Long lastUse = Long.valueOf(compound.getLong("lastAbilityUse"));
 /*  49 */           int duration = compound.getInteger("duration");
-/*     */           
+/*     */
 /*  51 */           if (lastUse.longValue() + duration > player.world.getTotalWorldTime()) {
-/*     */             
+/*     */
 /*  53 */             player.capabilities.allowFlying = true;
 /*  54 */             player.capabilities.isFlying = true;
 /*  55 */             player.sendPlayerAbilities();
 /*     */           }
 /*  57 */           else if (lastUse.longValue() + duration == player.world.getTotalWorldTime()) {
-/*     */             
+/*     */
 /*  59 */             player.capabilities.allowFlying = false;
 /*  60 */             if (!player.onGround)
 /*     */             {
 /*  62 */               player.capabilities.isFlying = false;
 /*     */             }
 /*  64 */             player.sendPlayerAbilities();
-/*     */           } 
-/*     */         } 
-/*     */       } 
-/*     */     }
-/*     */   }
+/*     */           }
+/*     */         }
+/*     */       }
+            }
+        }
+    }
 /*     */ 
 /*     */ 
 /*     */   

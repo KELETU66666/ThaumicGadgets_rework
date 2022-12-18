@@ -90,6 +90,7 @@
 /*     */     }
 /*  91 */     addBlastFurnaceRecipe(new ItemStack(Item.getItemFromBlock(ModBlocks.ORE_LIGHT)), 5.0F, new ItemStack[] { new ItemStack(ModItems.INGOT_LIGHT) });
 /*  92 */     addBlastFurnaceRecipe(new ItemStack(Item.getItemFromBlock(ModBlocks.ORE_SHADE)), 5.0F, new ItemStack[] { new ItemStack(ModItems.INGOT_SHADE) });
+    addBlastFurnaceRecipe(new ItemStack(ModItems.FOOD_MATERIAL, 1, 2), 1.0F, new ItemStack[] { new ItemStack(ModItems.MAGIC_FOOD, 1 ,1) });
 /*     */   }
 /*     */ 
 /*     */   

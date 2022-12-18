@@ -3,14 +3,18 @@
   "ingredients": [
     {
       "type": "forge:ore_dict",
-      "ore": "cropNetherWart"
+      "ore": "dustNetherWart"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustFlour"
     },
     {
       "item": "minecraft:sugar"
     }
   ],
   "result": {
-    "item": "tg:magicfood",
-    "data": 0
+    "item": "tg:foodmaterial",
+    "data": 2
   }
 }

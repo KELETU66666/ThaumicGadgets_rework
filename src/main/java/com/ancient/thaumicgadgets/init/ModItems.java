@@ -175,6 +175,7 @@ import net.minecraftforge.common.util.EnumHelper;
 /* 179 */   public static final Item SCYTHE_LIGHT = (Item)new ScytheLight("scythe_light", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /* 180 */   public static final Item SCYTHE_SHADE = (Item)new ScytheShade("scythe_shade", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /*     */
+    public static final Item FOOD_MATERIAL = new FoodMaterial();
     public static final ItemFood MAGIC_FOOD = new MagicFood();
 
 /* 200 */   public static final Item TG = (Item)new ItemTab("tg");

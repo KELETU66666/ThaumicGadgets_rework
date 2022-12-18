@@ -10,6 +10,10 @@ item.magicfood.sweetwart.name=糖渍地狱疣
 item.magicfood.nethercake.name=地狱蛋糕
 item.magicfood.brainjerky.name=僵尸之脑肉干
 
+item.foodmaterial.dustflour.name=面粉
+item.foodmaterial.dustnetherwart.name=地狱疣粉
+item.foodmaterial.nether_dough.name=地狱面团
+
 item.yarn.name=纺线
 item.yarn_gold.name=黄金纺线
 item.yarn_thanium.name=神秘纺线

@@ -37,7 +37,6 @@ public class MagicFood extends ItemFood implements IHasModel {
         super(0, 0, false);
         setCreativeTab(Main.GADGETSTAB);
         setHasSubtypes(true);
-        setHasSubtypes(true);
         setRegistryName("magicfood");
         setUnlocalizedName("magicfood");
         this.addPropertyOverride(new ResourceLocation("meta"), new IItemPropertyGetter() {

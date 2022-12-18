@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tg:items/dustflour"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "meta": 1
+      },
+      "model": "tg:item/dustnetherwart"
+    },
+    {
+      "predicate": {
+        "meta": 2
+      },
+      "model": "tg:item/nether_dough"
+    }
+  ]
+}

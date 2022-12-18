@@ -171,11 +171,12 @@
             "stages": [
                 {
                     "text": "research.TG_BLAST_FURNACE.stage.1",  
-                    "required_knowledge":["THEORY;ARTIFICE;1"]
+                    "required_knowledge":["THEORY;ARTIFICE;1"],
+                    "recipes": ["tg:nether_swart", "tg:nether_cake"]
                 },
                 {
                     "text": "research.TG_BLAST_FURNACE.stage.2",
-                    "recipes":["tg:blast_furnace"]  
+                    "recipes":["tg:blast_furnace", "tg:dust_flour", "tg:dust_netherwart", "tg:nether_dough"]
                 }
             ]
         },        
