@@ -8,10 +8,9 @@
     "updateUrl": "",
     "authorList": ["arcanc", "KELETU66666"],
     "credits":
-    " Arcanc > ThaumicGadgets's author and owner, Azanor > Thaumcraft creator , KingLemming and The CoFH Team > Thaumcraft maintainers, KELETU66666 > this modifiered version's creator, BluSunrize and Damien Hazard > texture's owner and author",
+    " Arcanc > ThaumicGadgets's author and owner, Azanor > Thaumcraft creator , KingLemming and The CoFH Team > Thaumcraft maintainers, KELETU66666 > this modifier version's creator, BluSunrize and Damien Hazard > texture's owner and author",
     "logoFile": "",
     "screenshots": [],
     "dependencies": ["thaumcraft"]
 }
-]
 
