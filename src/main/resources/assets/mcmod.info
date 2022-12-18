@@ -1,17 +1,17 @@
-[
-    {
-        "modid": "tg",
-        "name": "Thaumic Gadgets ReWorked",
-        "description": "A liter version of ThaumicGadgets",
-        "version": "0.1.2-kedition",
-        "mcversion": "1.12.2",
-        "url": "https://github.com/KELETU66666/ThaumicGadgets_rework",
-        "updateUrl": "",
-        "authorList": ["arcanc", "keletu"],
-        "credits":
-            "",
-        "logoFile": "",
-        "screenshots": [],
-        "dependencies": ["thaumcraft"]
-    }
+{
+    "modid": "tg",
+    "name": "Thaumic Gadgets ReWorked",
+    "description": "A liter version of ThaumicGadgets",
+    "version": "0.1.2-kedition",
+    "mcversion": "1.12.2",
+    "url": "https://github.com/KELETU66666/ThaumicGadgets_rework",
+    "updateUrl": "",
+    "authorList": ["arcanc", "KELETU66666"],
+    "credits":
+    " Arcanc > ThaumicGadgets's author and owner, Azanor > Thaumcraft creator , KingLemming and The CoFH Team > Thaumcraft maintainers, KELETU66666 > this modifiered version's creator, BluSunrize and Damien Hazard > texture's owner and author",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": ["thaumcraft"]
+}
 ]
+
