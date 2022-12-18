@@ -5,6 +5,11 @@ key.tg.armor_ability=装甲能力
 
 item.tool_gemcutter.name=珠宝雕刻师的工具
 
+
+item.magicfood.sweetwart.name=糖渍地狱疣
+item.magicfood.nethercake.name=地狱蛋糕
+item.magicfood.brainjerky.name=僵尸之脑肉干
+
 item.yarn.name=纺线
 item.yarn_gold.name=黄金纺线
 item.yarn_thanium.name=神秘纺线

@@ -6,6 +6,10 @@ key.tg.armor_ability=Armor Ability
 
 item.tool_gemcutter.name=Gemcutter's Tools
 
+item.magicfood.sweetwart.name=Nether Swart
+item.magicfood.nethercake.name=Nether Cake
+item.magicfood.brainjerky.name=Brain Jerky
+
 item.yarn.name=Yarn
 item.yarn_gold.name=Golden Yarn
 item.yarn_thanium.name=Thauminium Yarn

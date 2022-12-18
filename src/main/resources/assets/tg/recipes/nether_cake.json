@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "NNN",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "type": "forge:ore_dict",
+      "ore": "cropWheat"
+    },
+    "N": {
+      "item": "tg:magicfood",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "tg:magicfood",
+    "data": 1
+  }
+}

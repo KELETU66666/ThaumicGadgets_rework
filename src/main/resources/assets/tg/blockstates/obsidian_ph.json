@@ -1,6 +1,6 @@
 {
     "variants": 
     {
-        "normal": {"model": "minecraft:obsidian"}
+        "normal": {"model": "tg:obsidian_ph"}
     }
 }

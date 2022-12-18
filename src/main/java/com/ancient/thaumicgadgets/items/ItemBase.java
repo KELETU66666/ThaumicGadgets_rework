@@ -21,7 +21,7 @@
  
    
    public void registerModels() {
-/* 24 */     Main.proxy.registerItemRenderer(this, 0, "inventory");
+     Main.proxy.registerItemRenderer(this, 0, "inventory");
    }
  }
 

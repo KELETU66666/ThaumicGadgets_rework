@@ -16,8 +16,8 @@ import stanhebben.zenscript.annotations.ZenMethod;
 public class SpinningWheelRecipe {
 
         @ZenMethod
-        public static void addRecipe(String name, IItemStack input1, IItemStack input2, IItemStack input3, IItemStack input4, IItemStack output, int expreience) {
-            CraftTweakerAPI.apply(new AddRecipe(SpinningWheelRecipes.INSTANCE, name, input1, input2, input3, input4, output, expreience));
+        public static void addRecipe(String name, IItemStack input1, IItemStack input2, IItemStack input3, IItemStack input4, IItemStack output, int experience) {
+            CraftTweakerAPI.apply(new AddRecipe(SpinningWheelRecipes.INSTANCE, name, input1, input2, input3, input4, output, experience));
         }
 
         @ZenMethod

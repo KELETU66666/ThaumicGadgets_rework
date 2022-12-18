@@ -6,12 +6,12 @@
 /*     */ import com.ancient.thaumicgadgets.armour.primal.ArmorPrimalUpgraded;
 /*     */ import com.ancient.thaumicgadgets.armour.shade.ArmorShade;
 /*     */ import com.ancient.thaumicgadgets.armour.shade.ShadeBelt;
-/*     */ import com.ancient.thaumicgadgets.items.GemCutter;
-/*     */ import com.ancient.thaumicgadgets.items.ItemBase;
+/*     */ import com.ancient.thaumicgadgets.items.*;
 /*     */
-/*     */ import com.ancient.thaumicgadgets.items.ItemCrystal;
 /*     */
-/*     */ import com.ancient.thaumicgadgets.items.ItemTab;
+/*     */
+/*     */
+/*     */
 /*     */ import com.ancient.thaumicgadgets.items.pouches.ItemPouch;
 /*     */
 /*     */ import com.ancient.thaumicgadgets.tools.light.AxeLight;
@@ -39,7 +39,8 @@
 /*     */ import net.minecraft.inventory.EntityEquipmentSlot;
 /*     */ import net.minecraft.item.Item;
 /*     */ import net.minecraft.item.ItemArmor;
-/*     */ import net.minecraftforge.common.util.EnumHelper;
+/*     */ import net.minecraft.item.ItemFood;
+import net.minecraftforge.common.util.EnumHelper;
 /*     */ import thaumcraft.api.ThaumcraftMaterials;
 /*     */ 
 /*     */ 
@@ -174,6 +175,8 @@
 /* 179 */   public static final Item SCYTHE_LIGHT = (Item)new ScytheLight("scythe_light", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /* 180 */   public static final Item SCYTHE_SHADE = (Item)new ScytheShade("scythe_shade", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 /*     */
+    public static final ItemFood MAGIC_FOOD = new MagicFood();
+
 /* 200 */   public static final Item TG = (Item)new ItemTab("tg");
 /*     */ }
 

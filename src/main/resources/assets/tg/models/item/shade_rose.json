@@ -1,7 +1,0 @@
-{
-   "parent": "item/generated",
-   "textures":
-   {
-        "layer0": "tg:blocks/plants/shade_rose_7"
-   }
-}
