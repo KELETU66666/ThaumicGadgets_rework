@@ -1,6 +1,5 @@
 package com.ancient.thaumicgadgets.util.compat.crafttweaker;
 
-
 import com.ancient.thaumicgadgets.objects.machines.spinningwheel.SpinningWheelRecipes;
 import crafttweaker.CraftTweakerAPI;
 import crafttweaker.IAction;
@@ -24,11 +23,6 @@ public class SpinningWheelRecipe {
         public static void removeRecipe(IItemStack output) {
             CraftTweakerAPI.apply(new RemoveRecipe(SpinningWheelRecipes.INSTANCE, output));
         }
-
-    @ZenMethod
-    public static void removeRecipeForInput(IItemStack input) {
-        removeRecipe(input);
-    }
 
     private static final class AddRecipe implements IAction {
         private final SpinningWheelRecipes recipes;

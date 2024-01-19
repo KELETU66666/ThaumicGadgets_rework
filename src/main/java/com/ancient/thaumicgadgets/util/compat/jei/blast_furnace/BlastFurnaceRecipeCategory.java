@@ -14,18 +14,17 @@
  
  
  
- public class BlastFurnaceRecipeCategory
-   extends AbstractBlastFurnaceRecipeCategory<BlastFurnaceRecipe>
+ public class BlastFurnaceRecipeCategory extends AbstractBlastFurnaceRecipeCategory<BlastFurnaceRecipe>
  {
    private final IDrawable background;
    private final IDrawable icon;
    private final String name;
    
    public BlastFurnaceRecipeCategory(IGuiHelper helper) {
-/* 25 */     super(helper);
-/* 26 */     this.background = (IDrawable)helper.createDrawable(TEXTURES, 0, 0, 176, 93);
-/* 27 */     this.icon = helper.createDrawableIngredient(new ItemStack(Item.getItemFromBlock(ModBlocks.FURNACE)));
-/* 28 */     this.name = "Blast Furnace";
+       super(helper);
+       this.background = helper.createDrawable(TEXTURES, 0, 0, 176, 93);
+       this.icon = helper.createDrawableIngredient(new ItemStack(Item.getItemFromBlock(ModBlocks.FURNACE)));
+       this.name = "Blast Furnace";
    }
  
  
@@ -37,9 +36,9 @@
  
    
    public void drawExtras(Minecraft minecraft) {
-/* 40 */     this.animatedProcess.draw(minecraft, 39, 12);
-/* 41 */     this.animatedProcess.draw(minecraft, 116, 28);
-/* 42 */     this.animatedProcess.draw(minecraft, 116, 51);
+       this.animatedProcess.draw(minecraft, 39, 12);
+       this.animatedProcess.draw(minecraft, 116, 28);
+       this.animatedProcess.draw(minecraft, 116, 51);
    }
  
  
@@ -69,17 +68,11 @@
  
    
    public void setRecipe(IRecipeLayout recipeLayout, BlastFurnaceRecipe recipeWrapper, IIngredients ingredients) {
-/* 72 */     IGuiItemStackGroup stacks = recipeLayout.getItemStacks();
-/* 73 */     stacks.init(0, true, 13, 11);
-/* 74 */     stacks.init(1, false, 143, 23);
-/* 75 */     stacks.init(2, false, 143, 48);
-     
-/* 77 */     stacks.set(ingredients);
+       IGuiItemStackGroup stacks = recipeLayout.getItemStacks();
+       stacks.init(0, true, 13, 11);
+       stacks.init(1, false, 143, 23);
+       stacks.init(2, false, 143, 48);
+
+       stacks.set(ingredients);
    }
  }
-
-
-/* Location:              C:\Users\戴尔\Desktop\code\Thaumic_Gadgets_1.12.2_0.1.6_tb.26.jar!\com\ancient\thaumicgadget\\util\compat\jei\blast_furnace\BlastFurnaceRecipeCategory.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

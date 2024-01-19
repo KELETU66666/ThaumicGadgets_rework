@@ -106,5 +106,20 @@
       <option name="name" value="forge" />
       <option name="url" value="https://maven.minecraftforge.net" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="http://www.cursemaven.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven3" />
+      <option name="name" value="maven3" />
+      <option name="url" value="http://maven.blamejared.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="deobfDeps" />
+      <option name="name" value="deobfDeps" />
+      <option name="url" value="file:/D:/.gradle/caches/minecraft/deobfedDeps/" />
+    </remote-repository>
   </component>
 </project>

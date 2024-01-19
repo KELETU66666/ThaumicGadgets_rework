@@ -24,7 +24,7 @@
    
    public SpinningWheelRecipeCategory(IGuiHelper helper) {
 /* 26 */     super(helper);
-/* 27 */     this.background = (IDrawable)helper.createDrawable(TEXTURES, 0, 0, 150, 83);
+/* 27 */     this.background = helper.createDrawable(TEXTURES, 0, 0, 150, 83);
 /* 28 */     this.icon = helper.createDrawableIngredient(new ItemStack(Item.getItemFromBlock(ModBlocks.SPINNING_WHEEL)));
 /* 29 */     this.name = "Spinning Wheel";
    }

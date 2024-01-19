@@ -7,14 +7,14 @@
           <platformType>FORGE</platformType>
           <platformType>MCP</platformType>
         </autoDetectTypes>
+        <projectReimportVersion>1</projectReimportVersion>
       </configuration>
     </facet>
   </component>
   <component name="McpModuleSettings">
-    <option name="mappingFile" value="E:\code\ThaumicGadgets\build\createMcpToSrg\output.tsrg" />
-    <option name="mcpVersion" value="snapshot_20171003-1.12" />
+    <option name="mappingFile" value="D:\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp-srg.srg" />
+    <option name="mcpVersion" value="snapshot_20171003" />
     <option name="minecraftVersion" value="1.12.2" />
-    <option name="platformVersion" value="14.23.5.2860" />
-    <option name="srgType" value="TSRG" />
+    <option name="srgType" value="SRG" />
   </component>
 </module>
