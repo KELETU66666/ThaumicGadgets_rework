@@ -53,7 +53,7 @@
 /*  53 */       stack.setTagCompound(nbt);
 /*     */     } 
 /*     */     
-/*  56 */     if (stack.getUnlocalizedName().contains("magic") && stack.getUnlocalizedName().contains("pouch") && stack.getUnlocalizedName().contains("hungry") && !entity.isSneaking()) {
+/*  56 */     if (stack.getTranslationKey().contains("magic") && stack.getTranslationKey().contains("pouch") && stack.getTranslationKey().contains("hungry") && !entity.isSneaking()) {
 /*     */       
 /*  58 */       AxisAlignedBB aabb = new AxisAlignedBB(entity.posX - 2.5D, entity.posY - 2.5D, entity.posZ - 2.5D, entity.posX + 2.5D, entity.posY + 2.5D, entity.posZ + 2.5D);
 /*  59 */       for (EntityItem item : entity.world.getEntitiesWithinAABB(EntityItem.class, aabb)) {
@@ -81,7 +81,7 @@
 /*  81 */       ItemStack stack = playerIn.getHeldItem(handIn);
 /*  82 */       NBTTagCompound nbt = stack.getTagCompound();
 /*     */       
-/*  84 */       if (!stack.getUnlocalizedName().contains("ender") && stack.getUnlocalizedName().contains("pouch")) {
+/*  84 */       if (!stack.getTranslationKey().contains("ender") && stack.getTranslationKey().contains("pouch")) {
 /*     */         
 /*  86 */         if (!playerIn.isSneaking())
 /*     */         {
@@ -114,7 +114,7 @@
 /*     */         }
 /*     */       
 /*     */       }
-/* 117 */       else if (stack.getUnlocalizedName().contains("ender") && stack.getUnlocalizedName().contains("pouch")) {
+/* 117 */       else if (stack.getTranslationKey().contains("ender") && stack.getTranslationKey().contains("pouch")) {
 /*     */         
 /* 119 */         playerIn.displayGUIChest((IInventory)playerIn.getInventoryEnderChest());
 /*     */       } 
@@ -125,7 +125,7 @@
 /*     */   
 /*     */   public NonNullList<ItemStack> getInventory(ItemStack stack) {
 /* 127 */     NBTTagCompound nbt = stack.getTagCompound();
-/* 128 */     String tagName = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length());
+/* 128 */     String tagName = stack.getTranslationKey().substring(5, stack.getTranslationKey().length());
 /* 129 */     NBTTagList items = nbt.getTagList(tagName, 10);
 /* 130 */     NonNullList<ItemStack> inventory = NonNullList.withSize(EnumHandler.PouchTypes.valueOf(tagName).getSlotCount(), ItemStack.EMPTY);
 /* 131 */     for (int i = 0; i < items.tagCount(); i++) {
@@ -154,7 +154,7 @@
 /* 154 */         items.appendTag((NBTBase)item);
 /*     */       } 
 /*     */     } 
-/* 157 */     String tagName = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length());
+/* 157 */     String tagName = stack.getTranslationKey().substring(5, stack.getTranslationKey().length());
 /* 158 */     stack.getTagCompound().setTag(tagName, (NBTBase)items);
 /*     */   }
 /*     */ }

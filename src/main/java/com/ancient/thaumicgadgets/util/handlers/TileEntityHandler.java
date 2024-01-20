@@ -18,7 +18,7 @@ public class TileEntityHandler
    GameRegistry.registerTileEntity(TileEntitySpinningWheel.class, new ResourceLocation("tg", "spinning_wheel"));
    GameRegistry.registerTileEntity(TileEntityGemCutter.class, new ResourceLocation("tg", "gemcutter"));
    GameRegistry.registerTileEntity(TileEntityExtruder.class, new ResourceLocation("tg", "extruder"));
-   GameRegistry.registerTileEntity(TileEntityBlastFurnace.class, new ResourceLocation("tg", "blast_furnace"));
+   GameRegistry.registerTileEntity(TileEntityBlastFurnace.class, new ResourceLocation("tg", "infernal_blast_furnace"));
    GameRegistry.registerTileEntity(TileEntityAgeingStone.class, new ResourceLocation("tg", "ageing_stone"));
    GameRegistry.registerTileEntity(TileEntityExtruderUp.class, new ResourceLocation("tg", "extruder_up"));
   }

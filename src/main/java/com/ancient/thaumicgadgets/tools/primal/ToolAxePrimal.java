@@ -45,7 +45,7 @@
 /*     */   
 /*     */   public ToolAxePrimal(String name, Item.ToolMaterial material, float damage, float attackSpeed) {
 /*  47 */     super(damage, attackSpeed, material, EFFECTIVE_ON);
-/*  48 */     setUnlocalizedName(name);
+/*  48 */     setTranslationKey(name);
 /*  49 */     setRegistryName(name);
 /*  50 */     setCreativeTab(Main.GADGETSTAB);
 /*     */     
@@ -132,7 +132,7 @@
 /*     */     {
 /* 133 */       is.getTagCompound().setInteger("mode", 0);
 /*     */     }
-/* 135 */     if (stack.getItem() instanceof com.ancient.thaumicgadgets.armour.primal.ArmorPrimalUpgraded) {
+/* 135 */     if (stack.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded) {
 /*     */       
 /* 137 */       NBTTagList list = stack.getTagCompound().getTagList("primalInventory", 10);
 /* 138 */       is.getTagCompound().setTag("primalInventory", (NBTBase)list);

@@ -1,8 +1,8 @@
  package com.ancient.thaumicgadgets.util.handlers;
  
- import com.ancient.thaumicgadgets.armour.primal.ContainerPrimalArmor;
- import com.ancient.thaumicgadgets.armour.primal.GUIPrimalArmor;
- import com.ancient.thaumicgadgets.armour.primal.InventoryPrimalArmor;
+ import com.ancient.thaumicgadgets.armor.primal.ContainerPrimalArmor;
+ import com.ancient.thaumicgadgets.armor.primal.GUIPrimalArmor;
+ import com.ancient.thaumicgadgets.armor.primal.InventoryPrimalArmor;
  import com.ancient.thaumicgadgets.items.pouches.ContainerPouch;
  import com.ancient.thaumicgadgets.items.pouches.GUIPouch;
  import com.ancient.thaumicgadgets.items.pouches.InventoryPouch;

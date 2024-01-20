@@ -34,7 +34,7 @@
    public ToolScytheBase(String name, Item.ToolMaterial material, int xSize, int ySize, int zSize) {
 /* 35 */     super(material);
      
-/* 37 */     setUnlocalizedName(name);
+/* 37 */     setTranslationKey(name);
 /* 38 */     setRegistryName(name);
 /* 39 */     setCreativeTab(Main.GADGETSTAB);
      

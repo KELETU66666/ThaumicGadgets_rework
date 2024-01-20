@@ -7,14 +7,7 @@ import com.ancient.thaumicgadgets.init.RegisterAspectsHandler;
 import com.ancient.thaumicgadgets.objects.machines.blastfurnace.InfernalBlastfurnaceRecipe;
 import com.ancient.thaumicgadgets.proxy.CommonProxy;
 import com.ancient.thaumicgadgets.tabs.GadgetsTab;
-import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
-import com.ancient.thaumicgadgets.util.handlers.PickUpHandler;
-import com.ancient.thaumicgadgets.util.handlers.PlayerFlyHandler;
-import com.ancient.thaumicgadgets.util.handlers.PlayerGetDamageHandler;
-import com.ancient.thaumicgadgets.util.handlers.PlayerLoggedIn;
-import com.ancient.thaumicgadgets.util.handlers.PlayerTickHandler;
-import com.ancient.thaumicgadgets.util.handlers.RegistyHandler;
-import com.ancient.thaumicgadgets.util.handlers.TableMorphHandler;
+import com.ancient.thaumicgadgets.util.handlers.*;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -66,6 +59,7 @@ public class Main
 
     @EventHandler
     public static void init(FMLInitializationEvent event) {
+        TileEntityHandler.registerTileEntities();
         ResearchCategories.registerCategory("GADGETS", "UNLOCKINFUSION", null, research_icon, research_background);
         ResourceLocation loc = new ResourceLocation("tg", "research/thaumic_gadgets");
 

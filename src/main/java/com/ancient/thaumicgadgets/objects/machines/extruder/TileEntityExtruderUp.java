@@ -215,7 +215,7 @@ public class TileEntityExtruderUp
                 IBlockState state = this.world.getBlockState(this.pos);
                 EnumFacing face = (EnumFacing)state.getValue((IProperty)BlockHorizontal.FACING);
                 if (this.workTime % 7 == 0) {
-                    ps.transferData(EnumHandler.CustomParticles.SMOKE, 1, (this.pos.getX() + face.getFrontOffsetX()), this.pos.getY() + 0.8D, (this.pos.getZ() + face.getFrontOffsetZ()), ps.rf.getRandomPartcileVelocity(0.02D), 0.05D, ps.rf.getRandomPartcileVelocity(0.02D), dim);
+                    ps.transferData(EnumHandler.CustomParticles.SMOKE, 1, (this.pos.getX() + face.getXOffset()), this.pos.getY() + 0.8D, (this.pos.getZ() + face.getZOffset()), ps.rf.getRandomPartcileVelocity(0.02D), 0.05D, ps.rf.getRandomPartcileVelocity(0.02D), dim);
                 }
             } else {
                 this.workTime = 0;

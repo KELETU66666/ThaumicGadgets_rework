@@ -12,7 +12,7 @@
    implements IHasModel
  {
    public ItemBase(String name) {
-/* 15 */     setUnlocalizedName(name);
+/* 15 */     setTranslationKey(name);
 /* 16 */     setRegistryName(name);
 /* 17 */     setCreativeTab(Main.GADGETSTAB);
      

@@ -39,16 +39,16 @@
 /*  38 */         int[] c = { 0, 0, 0, 0, 0, 0, 0 };
 /*  39 */         for (ItemStack stack : player.inventory.armorInventory) {
 /*     */           
-/*  41 */           if (stack.getUnlocalizedName().contains("primal"))
+/*  41 */           if (stack.getTranslationKey().contains("primal"))
 /*     */           {
 /*  43 */             if (stack.hasTagCompound()) {
 /*     */               
 /*  45 */               i[stack.getTagCompound().getInteger("mode")] = i[stack.getTagCompound().getInteger("mode")] + 1;
-/*  46 */               if (stack.getItem() instanceof com.ancient.thaumicgadgets.armour.primal.ArmorPrimalUpgraded) {
+/*  46 */               if (stack.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded) {
 /*     */                 
 /*  48 */                 NBTTagList nbt = stack.getTagCompound().getTagList("primalInventory", 10);
 /*  49 */                 NBTTagCompound item = nbt.getCompoundTagAt(0);
-/*  50 */                 c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getUnlocalizedName())] = c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getUnlocalizedName())] + 1;
+/*  50 */                 c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getTranslationKey())] = c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getTranslationKey())] + 1;
 /*     */               } 
 /*     */             } 
 /*     */           }

@@ -15,7 +15,7 @@
  
    
    public boolean isItemValid(ItemStack stack) {
-/* 18 */     if (stack.getUnlocalizedName().contains("pouch") && (stack.getUnlocalizedName().contains("void") || stack.getUnlocalizedName().contains("magic")))
+/* 18 */     if (stack.getTranslationKey().contains("pouch") && (stack.getTranslationKey().contains("void") || stack.getTranslationKey().contains("magic")))
      {
 /* 20 */       return false;
      }

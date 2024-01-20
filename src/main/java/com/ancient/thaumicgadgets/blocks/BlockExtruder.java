@@ -135,7 +135,7 @@ public class BlockExtruder extends BlockBase implements ITileEntityProvider, IHa
 
 
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing face = EnumFacing.getFront(meta);
+        EnumFacing face = EnumFacing.byIndex(meta);
         if (face.getAxis() == EnumFacing.Axis.Y)
         {
             face = EnumFacing.NORTH;

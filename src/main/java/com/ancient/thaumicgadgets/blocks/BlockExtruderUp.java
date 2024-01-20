@@ -161,16 +161,12 @@ public class BlockExtruderUp
      return state.withProperty((IProperty)FACING, (Comparable)rot.rotate((EnumFacing)state.getValue((IProperty)FACING)));
    }
 
-
-
    public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
      return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue((IProperty)FACING)));
    }
 
-
-
    public IBlockState getStateFromMeta(int meta) {
-     EnumFacing face = EnumFacing.getFront(meta);
+     EnumFacing face = EnumFacing.byIndex(meta);
      if (face.getAxis() == EnumFacing.Axis.Y)
      {
        face = EnumFacing.NORTH;
@@ -178,37 +174,26 @@ public class BlockExtruderUp
      return getDefaultState().withProperty((IProperty)FACING, (Comparable)face);
    }
 
-
-
    public int getMetaFromState(IBlockState state) {
      return ((EnumFacing)state.getValue((IProperty)FACING)).getIndex();
    }
-
-
 
    protected BlockStateContainer createBlockState() {
      return new BlockStateContainer(this, FACING);
    }
 
-
-
    public EnumBlockRenderType getRenderType(IBlockState state) {
      return EnumBlockRenderType.MODEL;
    }
-
 
    @SideOnly(Side.CLIENT)
    public BlockRenderLayer getRenderLayer() {
      return BlockRenderLayer.SOLID;
    }
 
-
-
    public boolean isOpaqueCube(IBlockState state) {
      return false;
    }
-
-
 
    public boolean isFullCube(IBlockState state) {
      return false;

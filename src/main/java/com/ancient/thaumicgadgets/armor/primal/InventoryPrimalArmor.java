@@ -1,4 +1,4 @@
-/*     */ package com.ancient.thaumicgadgets.armour.primal;
+/*     */ package com.ancient.thaumicgadgets.armor.primal;
 /*     */ 
 /*     */ import java.util.List;
 /*     */ import net.minecraft.entity.player.EntityPlayer;
@@ -193,27 +193,27 @@
 /*     */   
 /*     */   public int getField(int id) {
 /* 195 */     ItemStack stack = getStackInSlot(id);
-/* 196 */     if (stack.getUnlocalizedName().contains("Aer"))
+/* 196 */     if (stack.getTranslationKey().contains("Aer"))
 /*     */     {
 /* 198 */       return 0;
 /*     */     }
-/* 200 */     if (stack.getUnlocalizedName().contains("Ignis"))
+/* 200 */     if (stack.getTranslationKey().contains("Ignis"))
 /*     */     {
 /* 202 */       return 1;
 /*     */     }
-/* 204 */     if (stack.getUnlocalizedName().contains("Aqua"))
+/* 204 */     if (stack.getTranslationKey().contains("Aqua"))
 /*     */     {
 /* 206 */       return 2;
 /*     */     }
-/* 208 */     if (stack.getUnlocalizedName().contains("Terra"))
+/* 208 */     if (stack.getTranslationKey().contains("Terra"))
 /*     */     {
 /* 210 */       return 3;
 /*     */     }
-/* 212 */     if (stack.getUnlocalizedName().contains("Ordo"))
+/* 212 */     if (stack.getTranslationKey().contains("Ordo"))
 /*     */     {
 /* 214 */       return 4;
 /*     */     }
-/* 216 */     if (stack.getUnlocalizedName().contains("Perditio"))
+/* 216 */     if (stack.getTranslationKey().contains("Perditio"))
 /*     */     {
 /* 218 */       return 5;
 /*     */     }

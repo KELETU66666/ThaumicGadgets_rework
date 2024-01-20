@@ -1,4 +1,4 @@
-/*     */ package com.ancient.thaumicgadgets.armour.primal;
+/*     */ package com.ancient.thaumicgadgets.armor.primal;
 /*     */ 
 /*     */ import net.minecraft.entity.player.EntityPlayer;
 /*     */ import net.minecraft.entity.player.InventoryPlayer;

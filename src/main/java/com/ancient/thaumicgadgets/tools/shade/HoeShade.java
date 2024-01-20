@@ -26,12 +26,12 @@
    private float speed;
    
    public HoeShade(String name, Item.ToolMaterial material, int repairCount, int repairCooldown, float damage, float speed) {
-/* 29 */     super(name, material);
-/* 30 */     this.count = repairCount;
-/* 31 */     this.cd = repairCooldown;
-     
-/* 33 */     this.damage = damage;
-/* 34 */     this.speed = speed;
+       super(name, material);
+       this.count = repairCount;
+       this.cd = repairCooldown;
+
+       this.damage = damage;
+       this.speed = speed;
    }
  
  

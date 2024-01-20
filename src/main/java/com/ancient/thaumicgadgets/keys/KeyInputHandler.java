@@ -58,11 +58,11 @@ public class KeyInputHandler
             /* 62 */       if (!stack.getItem().equals(Items.AIR)) {
 
                 /* 64 */         ItemArmor s = (ItemArmor)stack.getItem();
-                /* 65 */         if (s instanceof com.ancient.thaumicgadgets.armour.light.ArmorLight)
+                /* 65 */         if (s instanceof com.ancient.thaumicgadgets.armor.light.ArmorLight)
                 {
                     /* 67 */           li++;
                 }
-                /* 69 */         if (s instanceof com.ancient.thaumicgadgets.armour.shade.ArmorShade)
+                /* 69 */         if (s instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade)
                 {
                     /* 71 */           sh++;
                 }

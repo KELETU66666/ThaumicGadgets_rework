@@ -94,7 +94,7 @@
 /*  93 */         ItemStack stack = player.inventory.armorItemInSlot(0);
 /*  94 */         if (stack.getItem() != Items.AIR) {
 /*     */           
-/*  96 */           if (stack.getItem() instanceof com.ancient.thaumicgadgets.armour.primal.ArmorPrimal || stack.getItem() instanceof com.ancient.thaumicgadgets.armour.light.ArmorLight || stack.getItem() instanceof com.ancient.thaumicgadgets.armour.shade.ArmorShade)
+/*  96 */           if (stack.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimal || stack.getItem() instanceof com.ancient.thaumicgadgets.armor.light.ArmorLight || stack.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade)
 /*     */           {
 /*  98 */             player.stepHeight = 1.25F;
 /*     */           }
@@ -113,7 +113,7 @@
 /*     */     
 /* 113 */     for (ItemStack stack : player.inventory.armorInventory) {
 /*     */       
-/* 115 */       if (stack.getItem() instanceof com.ancient.thaumicgadgets.armour.shade.ArmorShade)
+/* 115 */       if (stack.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade)
 /*     */       {
 /* 117 */         i++;
 /*     */       }
@@ -122,7 +122,7 @@
 /* 121 */     IBaublesItemHandler handler = BaublesApi.getBaublesHandler(player);
 /* 122 */     ItemStack belt = handler.getStackInSlot(3);
 /*     */     
-/* 124 */     if (belt.getItem() instanceof com.ancient.thaumicgadgets.armour.shade.ShadeBelt)
+/* 124 */     if (belt.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ShadeBelt)
 /*     */     {
 /* 126 */       i++;
 /*     */     }

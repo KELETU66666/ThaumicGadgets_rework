@@ -1,18 +1,13 @@
- package com.ancient.thaumicgadgets.armour.light;
+ package com.ancient.thaumicgadgets.armor.light;
  
- import com.ancient.thaumicgadgets.armour.ArmorBase;
- import com.ancient.thaumicgadgets.proxy.ClientProxy;
+ import com.ancient.thaumicgadgets.armor.ArmorBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
- import net.minecraft.client.model.ModelBiped;
  import net.minecraft.entity.Entity;
- import net.minecraft.entity.EntityLivingBase;
  import net.minecraft.entity.player.EntityPlayer;
  import net.minecraft.inventory.EntityEquipmentSlot;
  import net.minecraft.item.ItemArmor;
  import net.minecraft.item.ItemStack;
  import net.minecraft.world.World;
- import net.minecraftforge.fml.relauncher.Side;
- import net.minecraftforge.fml.relauncher.SideOnly;
  import thaumcraft.api.items.IWarpingGear;
  
  

@@ -2,8 +2,8 @@
 /*     */ 
 /*     */ import baubles.api.BaublesApi;
 /*     */ import baubles.api.cap.IBaublesItemHandler;
-/*     */ import com.ancient.thaumicgadgets.armour.light.LightBelt;
-/*     */ import com.ancient.thaumicgadgets.armour.shade.ShadeBelt;
+/*     */ import com.ancient.thaumicgadgets.armor.light.LightBelt;
+/*     */ import com.ancient.thaumicgadgets.armor.shade.ShadeBelt;
 /*     */
 /*     */ import net.minecraft.client.Minecraft;
 /*     */ import net.minecraft.client.entity.EntityPlayerSP;
@@ -39,11 +39,11 @@
 /*  39 */       int[] i = { 0, 0 };
 /*  40 */       for (ItemStack s : pl.inventory.armorInventory) {
 /*     */         
-/*  42 */         if (s.getItem() instanceof com.ancient.thaumicgadgets.armour.light.ArmorLight)
+/*  42 */         if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.light.ArmorLight)
 /*     */         {
 /*  44 */           i[0] = i[0] + 1;
 /*     */         }
-/*  46 */         if (s.getItem() instanceof com.ancient.thaumicgadgets.armour.shade.ArmorShade)
+/*  46 */         if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade)
 /*     */         {
 /*  48 */           i[1] = i[1] + 1;
 /*     */         }

@@ -22,7 +22,7 @@
    public ToolSwordBase(String name, Item.ToolMaterial material) {
 /* 23 */     super(material);
 
-/* 25 */     setUnlocalizedName(name);
+/* 25 */     setTranslationKey(name);
 /* 26 */     setRegistryName(name);
 /* 27 */     setCreativeTab(Main.GADGETSTAB);
 

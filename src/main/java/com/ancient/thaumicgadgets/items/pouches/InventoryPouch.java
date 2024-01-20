@@ -29,7 +29,7 @@
 /*     */   
 /*     */   public InventoryPouch(ItemStack stack) {
 /*  31 */     this.invItem = stack;
-/*  32 */     this.customName = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length());
+/*  32 */     this.customName = stack.getTranslationKey().substring(5, stack.getTranslationKey().length());
 /*  33 */     this.inv_size = EnumHandler.PouchTypes.valueOf(this.customName).getSlotCount();
 /*  34 */     this.inventory = (List<ItemStack>)NonNullList.withSize(this.inv_size, ItemStack.EMPTY);
 /*  35 */     if (!stack.hasTagCompound())
@@ -161,7 +161,7 @@
 /*     */ 
 /*     */   
 /*     */   public void readFromNBT(ItemStack stack) {
-/* 164 */     String tagName = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length());
+/* 164 */     String tagName = stack.getTranslationKey().substring(5, stack.getTranslationKey().length());
 /* 165 */     NBTTagList items = stack.getTagCompound().getTagList(tagName, 10);
 /* 166 */     for (int i = 0; i < items.tagCount(); i++) {
 /*     */       
@@ -188,7 +188,7 @@
 /* 188 */         items.appendTag((NBTBase)item);
 /*     */       } 
 /*     */     } 
-/* 191 */     String tagName = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length());
+/* 191 */     String tagName = stack.getTranslationKey().substring(5, stack.getTranslationKey().length());
 /* 192 */     stack.getTagCompound().setTag(tagName, (NBTBase)items);
 /*     */   }
 /*     */ 

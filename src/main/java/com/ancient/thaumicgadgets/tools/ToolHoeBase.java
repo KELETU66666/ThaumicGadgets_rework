@@ -14,7 +14,7 @@
    public ToolHoeBase(String name, Item.ToolMaterial material) {
 /* 15 */     super(material);
      
-/* 17 */     setUnlocalizedName(name);
+/* 17 */     setTranslationKey(name);
 /* 18 */     setRegistryName(name);
 /* 19 */     setCreativeTab(Main.GADGETSTAB);
      

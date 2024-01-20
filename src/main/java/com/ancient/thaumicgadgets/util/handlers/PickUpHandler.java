@@ -23,7 +23,7 @@
 /* 23 */       InventoryPlayer inv = player.inventory;
 /* 24 */       for (int i = 0; i < (event.getEntityPlayer()).inventory.getSizeInventory(); i++) {
 
-/* 26 */         if (inv.getStackInSlot(i).getUnlocalizedName().contains("void") && inv.getStackInSlot(i).getUnlocalizedName().contains("pouch")) {
+/* 26 */         if (inv.getStackInSlot(i).getTranslationKey().contains("void") && inv.getStackInSlot(i).getTranslationKey().contains("pouch")) {
 
 /* 28 */           ItemPouch pouch = (ItemPouch)inv.getStackInSlot(i).getItem();
 /* 29 */           NonNullList<ItemStack> pouchInv = pouch.getInventory(inv.getStackInSlot(i));
@@ -43,7 +43,7 @@
                }
              }
            }
-/* 45 */         } else if (inv.getStackInSlot(i).getUnlocalizedName().contains("hungry") && inv.getStackInSlot(i).getUnlocalizedName().contains("pouch")) {
+/* 45 */         } else if (inv.getStackInSlot(i).getTranslationKey().contains("hungry") && inv.getStackInSlot(i).getTranslationKey().contains("pouch")) {
 
 /* 47 */           ItemPouch pouch = (ItemPouch)inv.getStackInSlot(i).getItem();
 /* 48 */           NonNullList<ItemStack> pouchInv = pouch.getInventory(inv.getStackInSlot(i));

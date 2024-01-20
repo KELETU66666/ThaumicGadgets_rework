@@ -33,11 +33,11 @@ import java.util.Random;
 public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider ,IBlockFacingHorizontal{
     public static boolean ignoreDestroy = false;
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    
-    
+
+
     public BlockBlastFurnace(String name) {
         super(name, Material.ROCK);
-        
+
         setSoundType(SoundType.STONE);
         setHardness(4.0F);
         setResistance(30.0F);
@@ -46,19 +46,19 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
         setLightLevel(1.0F);
         setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
-    
+
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new TileEntityBlastFurnace(meta);
+        return new TileEntityBlastFurnace();
     }
-    
+
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return Item.getItemFromBlock(ModBlocks.FURNACE);
     }
-    
+
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
         return new ItemStack(ModBlocks.FURNACE);
     }
-    
+
 
     @Override
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
@@ -67,10 +67,10 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.5, 1.0);
+        return new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.75, 1.0);
     }
 
-    public void onEntityCollidedWithBlock(World world, BlockPos pos, IBlockState state, Entity entity)
+    public void onEntityCollision(World world, BlockPos pos, IBlockState state, Entity entity)
     {
         if (!world.isRemote && world.getTileEntity(pos) instanceof TileEntityBlastFurnace)
             if (entity instanceof EntityItem) {
@@ -127,7 +127,7 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
     }
 
 
-  
+
   public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         worldIn.setBlockState(pos, getDefaultState().withProperty((IProperty)FACING, (Comparable)placer.getHorizontalFacing().getOpposite()), 2);
   }
@@ -137,13 +137,13 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
   }
 
 
-  
+
   public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
      return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue((IProperty)FACING)));
   }
 
   public IBlockState getStateFromMeta(int meta) {
-        EnumFacing face = EnumFacing.getFront(meta);
+        EnumFacing face = EnumFacing.byIndex(meta);
         if (face.getAxis() == EnumFacing.Axis.Y)
     {
       face = EnumFacing.NORTH;
@@ -156,18 +156,18 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
   }
 
 
-  
+
   protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
   }
 
 
-  
+
   public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
   }
 
-  
+
   @SideOnly(Side.CLIENT)
   public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.SOLID;

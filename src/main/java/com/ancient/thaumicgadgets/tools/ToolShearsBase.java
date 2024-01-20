@@ -13,7 +13,7 @@
    implements IHasModel
  {
    public ToolShearsBase(String name, Item.ToolMaterial material) {
-/* 16 */     setUnlocalizedName(name);
+/* 16 */     setTranslationKey(name);
 /* 17 */     setRegistryName(name);
 /* 18 */     setCreativeTab(Main.GADGETSTAB);
 /* 19 */     setMaxDamage(material.getMaxUses());

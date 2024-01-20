@@ -1,22 +1,15 @@
- package com.ancient.thaumicgadgets.armour.shade;
+ package com.ancient.thaumicgadgets.armor.shade;
 
- import com.ancient.thaumicgadgets.armour.ArmorBase;
- import com.ancient.thaumicgadgets.proxy.ClientProxy;
+ import com.ancient.thaumicgadgets.armor.ArmorBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
  import net.minecraft.client.model.ModelBiped;
- import net.minecraft.client.renderer.block.model.ModelResourceLocation;
  import net.minecraft.entity.Entity;
- import net.minecraft.entity.EntityLivingBase;
  import net.minecraft.entity.player.EntityPlayer;
  import net.minecraft.inventory.EntityEquipmentSlot;
  import net.minecraft.item.ItemArmor;
  import net.minecraft.item.ItemStack;
  import net.minecraft.world.World;
- import net.minecraftforge.fml.relauncher.Side;
- import net.minecraftforge.fml.relauncher.SideOnly;
  import thaumcraft.api.items.IWarpingGear;
-
- import javax.annotation.Nullable;
 
  public class ArmorShade
    extends ArmorBase

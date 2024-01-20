@@ -1,6 +1,6 @@
  package com.ancient.thaumicgadgets.network;
  
- import com.ancient.thaumicgadgets.armour.primal.ArmorPrimal;
+ import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
  import io.netty.buffer.ByteBuf;
  import net.minecraft.entity.player.EntityPlayer;
  import net.minecraft.entity.player.EntityPlayerMP;

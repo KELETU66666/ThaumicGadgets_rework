@@ -3,6 +3,7 @@ package com.ancient.thaumicgadgets.init;
 import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
 import com.google.common.collect.Maps;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -36,7 +37,7 @@ public class ModMultiBlocks {
         Part O = new Part(Blocks.OBSIDIAN, ModBlocks.OBSIDIAN_PH);
         Part S = new Part(Blocks.SOUL_SAND, ModBlocks.SOUL_SAND_PH);
         Part C = new Part(Blocks.SOUL_SAND, ModBlocks.FURNACE).setApplyPlayerFacing(true);
-        Part L = new Part(Blocks.LAVA, ModBlocks.AIR_PH);
+        Part L = new Part(Material.LAVA, ModBlocks.AIR_PH);
         Part[][][] MultiblockBlastFurnace = {
                 {
                     {N, O, N},

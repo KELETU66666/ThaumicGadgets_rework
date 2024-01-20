@@ -73,14 +73,14 @@ public class SpinningWheelRecipes
         if (!result.isEmpty()) {
 
             craftingRecipes recipe = new craftingRecipes(group, input1, input2, input3, input4, result, Float.valueOf(experience).floatValue());
-            this.list.put(result.getUnlocalizedName().toLowerCase(), recipe);
+            this.list.put(result.getTranslationKey().toLowerCase(), recipe);
         }
     }
 
     public void removeSpinningWheelRecipe(ItemStack result) {
         if (!result.isEmpty()) {
 
-            this.list.remove(result.getUnlocalizedName().toLowerCase());
+            this.list.remove(result.getTranslationKey().toLowerCase());
         }
     }
 

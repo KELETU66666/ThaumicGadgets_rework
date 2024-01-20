@@ -1,6 +1,6 @@
-/*     */ package com.ancient.thaumicgadgets.armour.primal;
+/*     */ package com.ancient.thaumicgadgets.armor.primal;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.armour.ArmorBase;
+/*     */ import com.ancient.thaumicgadgets.armor.ArmorBase;
 /*     */
 import com.ancient.thaumicgadgets.init.ModEnchantments;
 /*     */

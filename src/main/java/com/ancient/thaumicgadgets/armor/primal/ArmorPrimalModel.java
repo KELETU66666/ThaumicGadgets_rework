@@ -1,4 +1,4 @@
-package com.ancient.thaumicgadgets.armour.primal;
+package com.ancient.thaumicgadgets.armor.primal;
 
 import java.util.HashMap;
 import net.minecraft.client.model.ModelBiped;
@@ -7,8 +7,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.monster.EntityZombie;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.MathHelper;

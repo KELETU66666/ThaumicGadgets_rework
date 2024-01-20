@@ -94,7 +94,7 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
 
                 if (this.workTime % 7 == 0)
                 {
-                    ps.transferData(EnumHandler.CustomParticles.SMOKE, 1, (this.pos.getX() + face.getFrontOffsetX()), this.pos.getY() + 0.1D, (this.pos.getZ() + face.getFrontOffsetZ()), ps.rf.getRandomPartcileVelocity(0.02D), 0.05D, ps.rf.getRandomPartcileVelocity(0.02D), dim);
+                    ps.transferData(EnumHandler.CustomParticles.SMOKE, 1, (this.pos.getX() + face.getXOffset()), this.pos.getY() + 0.1D, (this.pos.getZ() + face.getZOffset()), ps.rf.getRandomPartcileVelocity(0.02D), 0.05D, ps.rf.getRandomPartcileVelocity(0.02D), dim);
                 }
                 if (this.workTime >= this.maxWorkTime) {
 

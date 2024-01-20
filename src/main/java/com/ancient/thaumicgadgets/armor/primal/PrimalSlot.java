@@ -1,4 +1,4 @@
- package com.ancient.thaumicgadgets.armour.primal;
+ package com.ancient.thaumicgadgets.armor.primal;
  
  import net.minecraft.inventory.IInventory;
  import net.minecraft.inventory.Slot;
@@ -17,7 +17,7 @@
  
    
    public boolean isItemValid(ItemStack stack) {
-/* 20 */     if (stack.getUnlocalizedName().contains("crystal") && stack.getUnlocalizedName().contains("oval"))
+/* 20 */     if (stack.getTranslationKey().contains("crystal") && stack.getTranslationKey().contains("oval"))
      {
 /* 22 */       return true;
      }

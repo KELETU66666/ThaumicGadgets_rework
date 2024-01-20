@@ -165,7 +165,7 @@ public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
 
 
 public IBlockState getStateFromMeta(int meta) {
-    EnumFacing face = EnumFacing.getFront(meta);
+    EnumFacing face = EnumFacing.byIndex(meta);
     if (face.getAxis() == EnumFacing.Axis.Y)
     {face = EnumFacing.NORTH;
     }

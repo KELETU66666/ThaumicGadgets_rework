@@ -14,7 +14,7 @@
    public ToolAxeBase(String name, Item.ToolMaterial material, float damage, float speed) {
 /* 15 */     super(material, damage, speed);
      
-/* 17 */     setUnlocalizedName(name);
+/* 17 */     setTranslationKey(name);
 /* 18 */     setRegistryName(name);
 /* 19 */     setCreativeTab(Main.GADGETSTAB);
      

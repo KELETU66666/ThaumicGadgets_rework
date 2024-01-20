@@ -1,6 +1,6 @@
 /*     */ package com.ancient.thaumicgadgets.util.handlers;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.armour.primal.ArmorPrimal;
+/*     */ import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
 /*     */ import com.ancient.thaumicgadgets.init.ModItems;
 /*     */ import com.ancient.thaumicgadgets.tools.primal.ToolAxePrimal;
 /*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
@@ -31,17 +31,17 @@
 /*     */       
 /*  32 */       for (ItemStack s : event.getEntity().getArmorInventoryList()) {
 /*     */         
-/*  34 */         if (s.getUnlocalizedName().contains("primal")) {
+/*  34 */         if (s.getTranslationKey().contains("primal")) {
 /*     */           
 /*  36 */           if (s.hasTagCompound())
 /*     */           {
 /*  38 */             count[s.getTagCompound().getInteger("mode")] = count[s.getTagCompound().getInteger("mode")] + 1;
 /*     */           }
-/*  40 */           if (s.getItem() instanceof com.ancient.thaumicgadgets.armour.primal.ArmorPrimalUpgraded) {
+/*  40 */           if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded) {
 /*     */             
 /*  42 */             NBTTagList nbt = s.getTagCompound().getTagList("primalInventory", 10);
 /*  43 */             NBTTagCompound item = nbt.getCompoundTagAt(0);
-/*  44 */             c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getUnlocalizedName())] = c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getUnlocalizedName())] + 1;
+/*  44 */             c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getTranslationKey())] = c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getTranslationKey())] + 1;
 /*     */             
 /*     */             continue;
 /*     */           } 
@@ -178,11 +178,11 @@
 /* 178 */         int[] z = { 0, 0 };
 /* 179 */         for (ItemStack s : target.getArmorInventoryList()) {
 /*     */           
-/* 181 */           if (s.getUnlocalizedName().contains("light")) {
+/* 181 */           if (s.getTranslationKey().contains("light")) {
 /*     */             
 /* 183 */             z[0] = z[0] + 1; continue;
 /*     */           } 
-/* 185 */           if (s.getUnlocalizedName().contains("shade"))
+/* 185 */           if (s.getTranslationKey().contains("shade"))
 /*     */           {
 /* 187 */             z[1] = z[1] + 1;
 /*     */           }
@@ -201,11 +201,11 @@
 /* 201 */         int[] z = { 0, 0 };
 /* 202 */         for (ItemStack s : target.getArmorInventoryList()) {
 /*     */           
-/* 204 */           if (s.getUnlocalizedName().contains("light")) {
+/* 204 */           if (s.getTranslationKey().contains("light")) {
 /*     */             
 /* 206 */             z[0] = z[0] + 1; continue;
 /*     */           } 
-/* 208 */           if (s.getUnlocalizedName().contains("shade"))
+/* 208 */           if (s.getTranslationKey().contains("shade"))
 /*     */           {
 /* 210 */             z[1] = z[1] + 1;
 /*     */           }

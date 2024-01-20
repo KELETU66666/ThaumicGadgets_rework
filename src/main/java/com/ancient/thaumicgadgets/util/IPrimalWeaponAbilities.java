@@ -55,7 +55,7 @@ public interface IPrimalWeaponAbilities
         int z = 0;
         for (ItemStack s : target.getArmorInventoryList()) {
 
-            if (s.getItem() instanceof com.ancient.thaumicgadgets.armour.shade.ArmorShade)
+            if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade)
             {
                 z++;
             }
@@ -69,7 +69,7 @@ public interface IPrimalWeaponAbilities
         int z = 0;
         for (ItemStack s : target.getArmorInventoryList()) {
 
-            if (s.getItem() instanceof com.ancient.thaumicgadgets.armour.light.ArmorLight)
+            if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.light.ArmorLight)
             {
                 z++;
             }

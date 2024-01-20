@@ -1,6 +1,6 @@
 /*     */ package com.ancient.thaumicgadgets.gui;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.armour.primal.ArmorPrimal;
+/*     */ import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
 /*     */ import com.ancient.thaumicgadgets.network.MessageChangeModeArmor;
 /*     */ import com.ancient.thaumicgadgets.network.MessageChangeModeWeapon;
 /*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
@@ -40,21 +40,21 @@
 /*     */     
 /*  41 */     for (ItemStack stack : list) {
 /*     */       
-/*  43 */       if (stack != null && stack.getUnlocalizedName().contains("primal")) {
+/*  43 */       if (stack != null && stack.getTranslationKey().contains("primal")) {
 /*     */         
-/*  45 */         if (stack.getUnlocalizedName().contains("helmet"))
+/*  45 */         if (stack.getTranslationKey().contains("helmet"))
 /*     */         {
 /*  47 */           this.buttonList.add(new GuiTexturedButton(3, this.width / 2 - 64, this.height / 2 - 68, 32, 32, "", HELMET_LOC, 32, 32, 32, 32));
 /*     */         }
-/*  49 */         if (stack.getUnlocalizedName().contains("chest"))
+/*  49 */         if (stack.getTranslationKey().contains("chest"))
 /*     */         {
 /*  51 */           this.buttonList.add(new GuiTexturedButton(2, this.width / 2 + 30, this.height / 2 - 68, 32, 32, "", CHEST_LOC, 0, 0, 32, 32));
 /*     */         }
-/*  53 */         if (stack.getUnlocalizedName().contains("leggins"))
+/*  53 */         if (stack.getTranslationKey().contains("leggins"))
 /*     */         {
 /*  55 */           this.buttonList.add(new GuiTexturedButton(1, this.width / 2 - 68, this.height / 2 + 30, 32, 32, "", LEGGINS_LOC, 0, 0, 32, 32));
 /*     */         }
-/*  57 */         if (stack.getUnlocalizedName().contains("boots"))
+/*  57 */         if (stack.getTranslationKey().contains("boots"))
 /*     */         {
 /*  59 */           this.buttonList.add(new GuiTexturedButton(0, this.width / 2 + 30, this.height / 2 + 30, 32, 32, "", BOOTS_LOC, 0, 0, 32, 32));
 /*     */         }
@@ -62,17 +62,17 @@
 /*     */     } 
 /*     */     
 /*  64 */     ItemStack stackRightHand = entityPlayerSP.getHeldItemMainhand();
-/*  65 */     if (stackRightHand.getUnlocalizedName().contains("primal"))
+/*  65 */     if (stackRightHand.getTranslationKey().contains("primal"))
 /*     */     {
-/*  67 */       if (stackRightHand.getUnlocalizedName().contains("axe")) {
+/*  67 */       if (stackRightHand.getTranslationKey().contains("axe")) {
 /*     */         
 /*  69 */         this.buttonList.add(new GuiTexturedButton(4, this.width / 2 - 16, this.height / 2 - 16, 32, 32, "", AXE_LOC, 0, 0, 32, 32));
 /*     */       }
-/*  71 */       else if (stackRightHand.getUnlocalizedName().contains("sword")) {
+/*  71 */       else if (stackRightHand.getTranslationKey().contains("sword")) {
 /*     */         
 /*  73 */         this.buttonList.add(new GuiTexturedButton(4, this.width / 2 - 16, this.height / 2 - 16, 32, 32, "", SWORD_LOC, 0, 32, 32, 32));
 /*     */       }
-/*  75 */       else if (stackRightHand.getUnlocalizedName().contains("hammer")) {
+/*  75 */       else if (stackRightHand.getTranslationKey().contains("hammer")) {
 /*     */         
 /*  77 */         this.buttonList.add(new GuiTexturedButton(4, this.width / 2 - 16, this.height / 2 - 16, 32, 32, "", HAMMER_LOC, 0, 0, 32, 32));
 /*     */       } 
@@ -94,7 +94,7 @@
 /*  94 */     NonNullList<ItemStack> list = ((EntityPlayer)entityPlayerSP).inventory.armorInventory;
 /*  95 */     for (ItemStack stack : list) {
 /*     */       
-/*  97 */       if (stack != null && stack.getUnlocalizedName().contains("primal")) {
+/*  97 */       if (stack != null && stack.getTranslationKey().contains("primal")) {
 /*     */         
 /*  99 */         ArmorPrimal l = (ArmorPrimal)stack.getItem();
 /* 100 */         int i = l.getEquipmentSlot().getIndex();
@@ -117,7 +117,7 @@
 /*     */       
 /* 118 */       if (b.id == 4)
 /*     */       {
-/* 120 */         if (stackRightHand.getUnlocalizedName().contains("sword_primal") || stackRightHand.getUnlocalizedName().contains("axe_primal") || stackRightHand.getUnlocalizedName().contains("hammer_primal"))
+/* 120 */         if (stackRightHand.getTranslationKey().contains("sword_primal") || stackRightHand.getTranslationKey().contains("axe_primal") || stackRightHand.getTranslationKey().contains("hammer_primal"))
 /*     */         {
 /* 122 */           if (IFunctionLibrary.isPointInRegion(b.x, b.y, b.width, b.height, mouseX, mouseY))
 /*     */           {

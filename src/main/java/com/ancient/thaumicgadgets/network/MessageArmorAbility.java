@@ -2,8 +2,8 @@
  
  import baubles.api.BaublesApi;
  import baubles.api.cap.IBaublesItemHandler;
- import com.ancient.thaumicgadgets.armour.light.LightBelt;
- import com.ancient.thaumicgadgets.armour.shade.ShadeBelt;
+ import com.ancient.thaumicgadgets.armor.light.LightBelt;
+ import com.ancient.thaumicgadgets.armor.shade.ShadeBelt;
  import io.netty.buffer.ByteBuf;
  import net.minecraft.entity.player.EntityPlayer;
  import net.minecraft.entity.player.EntityPlayerMP;

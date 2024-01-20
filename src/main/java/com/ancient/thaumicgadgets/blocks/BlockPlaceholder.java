@@ -61,10 +61,9 @@ public class BlockPlaceholder extends BlockBase
    }
 
     @Override
-    @SuppressWarnings("deprecation")
     public void addCollisionBoxToList(IBlockState state, World world, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entity, boolean isActualState)
     {
-        if (entity != null && (!(entity instanceof EntityItem) || !(world.getBlockState(pos) == ModBlocks.AIR_PH.getDefaultState())))
+        if (entity != null && (world.getBlockState(pos) != ModBlocks.AIR_PH.getDefaultState()))
             super.addCollisionBoxToList(state, world, pos, entityBox, collidingBoxes, entity, isActualState);
     }
 

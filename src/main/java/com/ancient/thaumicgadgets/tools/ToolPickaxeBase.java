@@ -15,7 +15,7 @@
    public ToolPickaxeBase(String name, Item.ToolMaterial material) {
 /* 16 */     super(material);
      
-/* 18 */     setUnlocalizedName(name);
+/* 18 */     setTranslationKey(name);
 /* 19 */     setRegistryName(name);
 /* 20 */     setCreativeTab(Main.GADGETSTAB);
      

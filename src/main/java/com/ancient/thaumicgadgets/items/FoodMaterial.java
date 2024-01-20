@@ -37,8 +37,8 @@ public class FoodMaterial extends ItemBase implements IHasModel {
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemstack) {
-        return getUnlocalizedName() + "." + subNames[itemstack.getItemDamage()];
+    public String getTranslationKey(ItemStack itemstack) {
+        return getTranslationKey() + "." + subNames[itemstack.getItemDamage()];
     }
 
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)

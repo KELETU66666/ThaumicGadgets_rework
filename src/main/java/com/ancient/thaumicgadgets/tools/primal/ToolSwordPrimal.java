@@ -99,7 +99,7 @@
 /*     */     {
 /* 100 */       is.getTagCompound().setInteger("mode", 0);
 /*     */     }
-/* 102 */     if (stack.getItem() instanceof com.ancient.thaumicgadgets.armour.primal.ArmorPrimalUpgraded) {
+/* 102 */     if (stack.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded) {
 /*     */       
 /* 104 */       NBTTagList list = stack.getTagCompound().getTagList("primalInventory", 10);
 /* 105 */       is.getTagCompound().setTag("primalInventory", (NBTBase)list);

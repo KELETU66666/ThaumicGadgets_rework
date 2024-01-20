@@ -35,7 +35,7 @@
 /*     */   
 /*     */   public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 /*  37 */     ItemStack stack = playerIn.getHeldItemMainhand();
-/*  38 */     String name = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length()).toLowerCase();
+/*  38 */     String name = stack.getTranslationKey().substring(5, stack.getTranslationKey().length()).toLowerCase();
 /*  39 */     if (isCrystalOval(stack)) {
 /*     */       
 /*  41 */       stack.damageItem(stack.getMaxDamage() - 8, (EntityLivingBase)playerIn);
@@ -98,7 +98,7 @@
 /*     */   
 /*     */   public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 /* 100 */     ItemStack stack = player.getHeldItemMainhand();
-/* 101 */     String name = stack.getUnlocalizedName().substring(5, stack.getUnlocalizedName().length()).toLowerCase();
+/* 101 */     String name = stack.getTranslationKey().substring(5, stack.getTranslationKey().length()).toLowerCase();
 /*     */     
 /* 103 */     if (isCrystalOval(stack)) {
 /*     */       
@@ -161,7 +161,7 @@
 /*     */ 
 /*     */   
 /*     */   public boolean isCrystalOval(ItemStack stack) {
-/* 164 */     String name = stack.getUnlocalizedName().substring(5, 9);
+/* 164 */     String name = stack.getTranslationKey().substring(5, 9);
 /* 165 */     if (name.equals("oval"))
 /*     */     {
 /* 167 */       return true;

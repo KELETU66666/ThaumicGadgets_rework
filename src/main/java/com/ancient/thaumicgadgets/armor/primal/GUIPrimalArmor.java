@@ -1,4 +1,4 @@
- package com.ancient.thaumicgadgets.armour.primal;
+ package com.ancient.thaumicgadgets.armor.primal;
 
  import net.minecraft.client.gui.inventory.GuiContainer;
  import net.minecraft.client.renderer.GlStateManager;

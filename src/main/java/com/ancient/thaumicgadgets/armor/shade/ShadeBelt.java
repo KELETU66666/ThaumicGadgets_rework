@@ -1,4 +1,4 @@
-/*     */ package com.ancient.thaumicgadgets.armour.shade;
+/*     */ package com.ancient.thaumicgadgets.armor.shade;
 /*     */ 
 /*     */ import baubles.api.BaubleType;
 /*     */ import baubles.api.IBauble;

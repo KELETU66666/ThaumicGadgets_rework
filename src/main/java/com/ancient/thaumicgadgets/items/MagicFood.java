@@ -38,7 +38,7 @@ public class MagicFood extends ItemFood implements IHasModel {
         setCreativeTab(Main.GADGETSTAB);
         setHasSubtypes(true);
         setRegistryName("magicfood");
-        setUnlocalizedName("magicfood");
+        setTranslationKey("magicfood");
         this.addPropertyOverride(new ResourceLocation("meta"), new IItemPropertyGetter() {
                     @Override
                     @SideOnly(Side.CLIENT)
@@ -82,8 +82,8 @@ public class MagicFood extends ItemFood implements IHasModel {
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemstack) {
-        return getUnlocalizedName() + "." + subNames[itemstack.getItemDamage()];
+    public String getTranslationKey(ItemStack itemstack) {
+        return getTranslationKey() + "." + subNames[itemstack.getItemDamage()];
     }
 
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)
