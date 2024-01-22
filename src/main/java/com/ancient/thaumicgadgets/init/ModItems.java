@@ -170,8 +170,8 @@ public class ModItems
   public static final Item SCYTHE_LIGHT = new ScytheLight("scythe_light", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
   public static final Item SCYTHE_SHADE = new ScytheShade("scythe_shade", TOOL_LIGHT, 2, 100, 10.0F, -3.0F, 4, 3, 4);
 
-    public static final Item FOOD_MATERIAL = new FoodMaterial();
-    public static final ItemFood MAGIC_FOOD = new MagicFood();
+  public static final Item FOOD_MATERIAL = new FoodMaterial();
+  public static final ItemFood MAGIC_FOOD = new MagicFood();
 
-    public static final Item TG = new ItemTab("tg");
+  public static final Item TG = new ItemTab("tg");
 }

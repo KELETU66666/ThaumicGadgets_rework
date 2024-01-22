@@ -1,6 +1,6 @@
-/*     */ package com.ancient.thaumicgadgets.armor.primal;
-/*     */ 
-/*     */ import com.ancient.thaumicgadgets.armor.ArmorBase;
+package com.ancient.thaumicgadgets.armor.primal;
+
+import com.ancient.thaumicgadgets.armor.ArmorBase;
 /*     */
 import com.ancient.thaumicgadgets.init.ModEnchantments;
 /*     */
@@ -31,175 +31,160 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-/*     */
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ public class ArmorPrimal
-/*     */   extends ArmorBase
-/*     */   implements ICheckEnchantment
-/*     */ {
-/*     */   private int regenCount;
-/*     */   private long lastTick;
-/*     */   private int period;
-/*     */   private int mode;
-/*     */   ModelBiped model;
-String location;
-/*     */   public ArmorPrimal(String name, ItemArmor.ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
-/*  44 */     super(name, materialIn, renderIndexIn, equipmentSlotIn);
-/*     */ 
-/*     */ 
-/*     */     
-/*  48 */     this.mode = 0;
-/*     */     model = null;
-location = null;
-/*  50 */     this.regenCount = 2;
-/*  51 */     this.lastTick = 0L;
-/*  52 */     this.period = 100;
-/*     */   }
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   public void OnPlayerHurt(EntityPlayer player, DamageSource source, float amount) {}
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   @SideOnly(Side.CLIENT)
-/*     */   public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-/*  64 */     int mode = 0;
-/*     */     
-/*  66 */     if (stack.hasTagCompound())
-/*     */     {
-/*  68 */       mode = stack.getTagCompound().getInteger("mode");
-/*     */     }
-/*     */     
-/*  71 */     tooltip.add(I18n.format("item.primal.description", new Object[0]) + IFunctionLibrary.getAspectFromMode(mode).getChatcolor() + IFunctionLibrary.getAspectFromMode(mode).getName());
-/*     */   }
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
-/*  77 */     if (!stack.hasTagCompound()) {
-/*     */       
-/*  79 */       NBTTagCompound nbt = new NBTTagCompound();
-/*  80 */       nbt.setInteger("mode", this.mode);
-/*  81 */       stack.setTagCompound(nbt);
-/*     */     } 
-/*     */   }
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   public void changeItemMode(EntityPlayer player, ItemStack stack, int slotId) {
-/*  89 */     ArmorPrimal ar = (ArmorPrimal)stack.getItem();
-/*  90 */     ItemStack is = new ItemStack(stack.getItem());
-/*  91 */     NBTTagCompound nbt = new NBTTagCompound();
-/*  92 */     nbt.setInteger("mode", stack.getTagCompound().getInteger("mode") + 1);
-/*  93 */     is.setTagCompound(nbt);
-/*  94 */     if (is.getTagCompound().getInteger("mode") > 5)
-/*     */     {
-/*  96 */       is.getTagCompound().setInteger("mode", 0);
-/*     */     }
-/*  98 */     if (stack.getItem() instanceof ArmorPrimalUpgraded) {
-/*     */       
-/* 100 */       NBTTagList list = stack.getTagCompound().getTagList("primalInventory", 10);
-/* 101 */       is.getTagCompound().setTag("primalInventory", (NBTBase)list);
-/*     */     } 
-/* 103 */     player.inventory.armorInventory.set(slotId, is);
-/*     */   }
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */   
-/*     */   public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-/* 110 */     if (itemStack.getItemDamage() > 0)
-/*     */     {
-/* 112 */       setDamage(itemStack, -1);
-/*     */     }
-/*     */     
-/* 115 */     int mode = 0;
-/*     */     
-/* 117 */     if (itemStack.getItem() instanceof ArmorPrimal)
-/*     */     {
-/* 119 */       canApplyEchantment(itemStack, 0, 5);
-/*     */     }
-/*     */ 
-/*     */     
-/* 123 */     if (itemStack.hasTagCompound() && itemStack.getTagCompound().getInteger("mode") == 2) {
-/*     */       
-/* 125 */       boolean canApply = true;
-/* 126 */       Map<Enchantment, Integer> enc = EnchantmentHelper.getEnchantments(itemStack);
-/*     */       
-/* 128 */       for (Map.Entry<Enchantment, Integer> e : enc.entrySet()) {
-/*     */         
-/* 130 */         if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.REGEN_PRIMAL, itemStack) > 0) {
-/*     */           
-/* 132 */           canApply = false;
-/* 133 */           regenTick(world, player, itemStack);
-/*     */         } 
-/*     */       } 
-/*     */       
-/* 137 */       if (canApply) {
-/*     */         
-/* 139 */         itemStack.addEnchantment(ModEnchantments.REGEN_PRIMAL, 1);
-/* 140 */         NBTTagCompound nbt = itemStack.getTagCompound();
-/* 141 */         if (nbt == null)
-/*     */         {
-/* 143 */           nbt = new NBTTagCompound();
-/*     */         }
-/* 145 */         nbt.setLong("lastTick", world.getTotalWorldTime());
-/* 146 */         itemStack.setTagCompound(nbt);
-/*     */       } 
-/*     */     } 
-/*     */     
-/* 150 */     if (itemStack.hasTagCompound() && itemStack.getTagCompound().getInteger("mode") == 5)
-/*     */     {
-/* 152 */       canApplyEchantment(itemStack, Enchantments.THORNS, 5);
-/*     */     }
-/*     */   }
-/*     */ 
-/*     */   
-/*     */   private void regenTick(World world, EntityPlayer player, ItemStack stack) {
-/* 158 */     NBTTagCompound nbt = stack.getTagCompound();
-/* 159 */     long lastTick = nbt.getLong("lastTick");
-/*     */     
-/* 161 */     if (lastTick + this.period < world.getTotalWorldTime()) {
-/*     */       
-/* 163 */       player.heal(this.regenCount);
-/* 164 */       nbt.setLong("lastTick", world.getTotalWorldTime());
-/* 165 */       stack.setTagCompound(nbt);
-/*     */     } 
-/*     */   }
-/*     */
-@Override
-@Nullable
-@SideOnly(Side.CLIENT)
-public ModelBiped getArmorModel(EntityLivingBase living, ItemStack stack, EntityEquipmentSlot slot,
-                                ModelBiped _default) {
 
-    if (model == null) {
-        if (slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.FEET)
-            model = new ArmorPrimalModel(stack);
-        else
-            model = new ArmorPrimalModel(stack);
 
-        model.bipedHead.showModel = slot == EntityEquipmentSlot.HEAD;
-        model.bipedHeadwear.showModel = slot == EntityEquipmentSlot.HEAD;
-        model.bipedBody.showModel = slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.LEGS;
-        model.bipedRightArm.showModel = slot == EntityEquipmentSlot.CHEST;
-        model.bipedLeftArm.showModel = slot == EntityEquipmentSlot.CHEST;
-        model.bipedRightLeg.showModel = slot == EntityEquipmentSlot.LEGS;
-        model.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.LEGS;
+public class ArmorPrimal extends ArmorBase implements ICheckEnchantment {
+    private final int regenCount;
+    private final long lastTick;
+    private final int period;
+    private final int mode;
+    ModelBiped model;
+    String location;
+    public ArmorPrimal(String name, ItemArmor.ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
+        super(name, materialIn, renderIndexIn, equipmentSlotIn);
+        this.mode = 0;
+        model = null;
+        location = null;
+        this.regenCount = 2;
+        this.lastTick = 0L;
+        this.period = 100;
     }
 
-    if(slot == EntityEquipmentSlot.LEGS)
-        return ArmorPrimalModel.getModel(living, stack);
-    if(slot == EntityEquipmentSlot.FEET)
-        return null;
-    return model;
-}
+    public void OnPlayerHurt(EntityPlayer player, DamageSource source, float amount) {}
+
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        int mode = 0;
+
+        if (stack.hasTagCompound())
+        {
+            mode = stack.getTagCompound().getInteger("mode");
+        }
+
+        tooltip.add(I18n.format("item.primal.description") + IFunctionLibrary.getAspectFromMode(mode).getChatcolor() + IFunctionLibrary.getAspectFromMode(mode).getName());
+    }
+
+
+
+    public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
+        if (!stack.hasTagCompound()) {
+
+            NBTTagCompound nbt = new NBTTagCompound();
+            nbt.setInteger("mode", this.mode);
+            stack.setTagCompound(nbt);
+        }
+    }
+
+
+
+
+    public void changeItemMode(EntityPlayer player, ItemStack stack, int slotId) {
+        ArmorPrimal ar = (ArmorPrimal)stack.getItem();
+        ItemStack is = new ItemStack(stack.getItem());
+        NBTTagCompound nbt = new NBTTagCompound();
+        nbt.setInteger("mode", stack.getTagCompound().getInteger("mode") + 1);
+        is.setTagCompound(nbt);
+        if (is.getTagCompound().getInteger("mode") > 5)
+        {
+            is.getTagCompound().setInteger("mode", 0);
+        }
+        if (stack.getItem() instanceof ArmorPrimalUpgraded) {
+
+            NBTTagList list = stack.getTagCompound().getTagList("primalInventory", 10);
+            is.getTagCompound().setTag("primalInventory", list);
+        }
+        player.inventory.armorInventory.set(slotId, is);
+    }
+
+
+
+
+    public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
+        if (itemStack.getItemDamage() > 0)
+        {
+            setDamage(itemStack, -1);
+        }
+
+        int mode = 0;
+
+        if (itemStack.getItem() instanceof ArmorPrimal)
+        {
+            canApplyEchantment(itemStack, 0, 5);
+        }
+
+
+        if (itemStack.hasTagCompound() && itemStack.getTagCompound().getInteger("mode") == 2) {
+
+            boolean canApply = true;
+            Map<Enchantment, Integer> enc = EnchantmentHelper.getEnchantments(itemStack);
+
+            for (Map.Entry<Enchantment, Integer> e : enc.entrySet()) {
+
+                if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.REGEN_PRIMAL, itemStack) > 0) {
+
+                    canApply = false;
+                    regenTick(world, player, itemStack);
+                }
+            }
+
+            if (canApply) {
+
+                itemStack.addEnchantment(ModEnchantments.REGEN_PRIMAL, 1);
+                NBTTagCompound nbt = itemStack.getTagCompound();
+                if (nbt == null)
+                {
+                    nbt = new NBTTagCompound();
+                }
+                nbt.setLong("lastTick", world.getTotalWorldTime());
+                itemStack.setTagCompound(nbt);
+            }
+        }
+
+        if (itemStack.hasTagCompound() && itemStack.getTagCompound().getInteger("mode") == 5)
+        {
+            canApplyEchantment(itemStack, Enchantments.THORNS, 5);
+        }
+    }
+
+
+    private void regenTick(World world, EntityPlayer player, ItemStack stack) {
+        NBTTagCompound nbt = stack.getTagCompound();
+        long lastTick = nbt.getLong("lastTick");
+
+        if (lastTick + this.period < world.getTotalWorldTime()) {
+
+            player.heal(this.regenCount);
+            nbt.setLong("lastTick", world.getTotalWorldTime());
+            stack.setTagCompound(nbt);
+        }
+    }
+
+    @Override
+    @Nullable
+    @SideOnly(Side.CLIENT)
+    public ModelBiped getArmorModel(EntityLivingBase living, ItemStack stack, EntityEquipmentSlot slot, ModelBiped _default) {
+
+        if (model == null) {
+            if (slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.FEET)
+                model = new ArmorPrimalModel(stack);
+            else
+                model = new ArmorPrimalModel(stack);
+
+            model.bipedHead.showModel = slot == EntityEquipmentSlot.HEAD;
+            model.bipedHeadwear.showModel = slot == EntityEquipmentSlot.HEAD;
+            model.bipedBody.showModel = slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.LEGS;
+            model.bipedRightArm.showModel = slot == EntityEquipmentSlot.CHEST;
+            model.bipedLeftArm.showModel = slot == EntityEquipmentSlot.CHEST;
+            model.bipedRightLeg.showModel = slot == EntityEquipmentSlot.LEGS;
+            model.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.LEGS;
+        }
+
+        if(slot == EntityEquipmentSlot.LEGS)
+            return ArmorPrimalModel.getModel(living, stack);
+        if(slot == EntityEquipmentSlot.FEET)
+            return null;
+        return model;
+    }
 
     public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
         if (location == null) {
@@ -210,11 +195,4 @@ public ModelBiped getArmorModel(EntityLivingBase living, ItemStack stack, Entity
         }
         return location;
     }
-
-/*     */ }
-
-
-/* Location:              C:\Users\戴尔\Desktop\code\Thaumic_Gadgets_1.12.2_0.1.6_tb.26.jar!\com\ancient\thaumicgadgets\armour\primal\ArmorPrimal.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
+}

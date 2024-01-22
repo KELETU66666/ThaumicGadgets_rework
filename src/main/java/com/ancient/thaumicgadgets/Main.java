@@ -27,7 +27,7 @@ import thaumcraft.api.research.ResearchCategories;
 
 
 
-@Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.1.2-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.3.1-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
 public class Main
 {
     @Instance

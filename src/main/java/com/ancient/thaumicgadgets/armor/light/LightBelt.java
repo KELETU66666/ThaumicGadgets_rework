@@ -1,31 +1,29 @@
-/*     */ package com.ancient.thaumicgadgets.armor.light;
-/*     */ 
-/*     */ import baubles.api.BaubleType;
-/*     */ import baubles.api.IBauble;
-/*     */ import com.ancient.thaumicgadgets.init.ModItems;
-/*     */ import com.ancient.thaumicgadgets.items.ItemBase;
-/*     */ import com.ancient.thaumicgadgets.network.MessageClientBeltAbilities;
-/*     */ import com.ancient.thaumicgadgets.util.IItemAutoRepair;
-/*     */ import com.ancient.thaumicgadgets.util.Reference;
-/*     */ import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.SharedMonsterAttributes;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.entity.player.EntityPlayerMP;
-/*     */ import net.minecraft.init.Items;
-/*     */ import net.minecraft.inventory.EntityEquipmentSlot;
-/*     */ import net.minecraft.item.ItemArmor;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.nbt.NBTBase;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraft.potion.Potion;
-/*     */ import net.minecraft.potion.PotionEffect;
-/*     */ import net.minecraft.util.NonNullList;
-/*     */ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
-/*     */ 
-/*     */ public class LightBelt
-/*     */   extends ItemBase implements IBauble, IItemAutoRepair {
+
+package com.ancient.thaumicgadgets.armor.light;
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
+import com.ancient.thaumicgadgets.init.ModItems;
+import com.ancient.thaumicgadgets.items.ItemBase;
+import com.ancient.thaumicgadgets.network.MessageClientBeltAbilities;
+import com.ancient.thaumicgadgets.util.IItemAutoRepair;
+import com.ancient.thaumicgadgets.util.Reference;
+import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.NonNullList;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+public class LightBelt extends ItemBase implements IBauble, IItemAutoRepair {
 /*  29 */   public final int cd = 1200;
 /*  30 */   public final int duration = 100;
 /*     */   

@@ -6,14 +6,11 @@ import com.ancient.thaumicgadgets.armor.shade.ShadeBelt;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.WorldClient;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
-
-
-
-
 
 public class MessageClientBeltAbilities implements IMessage {
     private Long lastUse;
@@ -42,19 +39,18 @@ public class MessageClientBeltAbilities implements IMessage {
 
 
 
-    public static class handler
-            implements IMessageHandler<MessageClientBeltAbilities, IMessage>
+    public static class handler implements IMessageHandler<MessageClientBeltAbilities, IMessage>
     {
         public IMessage onMessage(final MessageClientBeltAbilities message, MessageContext ctx) {
             Minecraft.getMinecraft().addScheduledTask(() -> {
-                Minecraft mc = Minecraft.getMinecraft();
-                WorldClient worldClient = mc.world;
+                final EntityPlayerMP pl = (ctx.getServerHandler()).player;
+                WorldClient worldClient = Minecraft.getMinecraft().world;
 
                 if (worldClient == null) {
                     return;
                 }
 
-                ItemStack belt = BaublesApi.getBaublesHandler(mc.player).getStackInSlot(3);
+                ItemStack belt = BaublesApi.getBaublesHandler(pl).getStackInSlot(3);
                 if (belt.getItem() instanceof LightBelt) {
 
                     LightBelt item = (LightBelt)belt.getItem();
