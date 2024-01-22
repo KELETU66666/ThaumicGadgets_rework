@@ -13,14 +13,12 @@ import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IIngredientRegistry;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.transfer.IRecipeTransferRegistry;
-import net.minecraft.util.text.translation.I18n;
+import net.minecraft.client.resources.I18n;
 
 import java.util.IllegalFormatException;
 
 @JEIPlugin
-public class JEICompat
-        implements IModPlugin
-{
+public class JEICompat implements IModPlugin {
     public void registerCategories(IRecipeCategoryRegistration registry) {
         IJeiHelpers helpers = registry.getJeiHelpers();
         IGuiHelper gui = helpers.getGuiHelper();
@@ -36,6 +34,7 @@ public class JEICompat
         IRecipeTransferRegistry recipeTransfer = registry.getRecipeTransferRegistry();
 
         registry.addRecipes(BlastFurnaceRecipeMaker.getRecipes(jeiHelpers), "tg.blast_furnace");
+
         registry.addRecipes(SpinningWheelRecipeMaker.getRecipes(jeiHelpers), "tg.spinning_wheel");
         registry.addRecipeClickArea(GUISpinningWheel.class, 130, 0, 50, 50, "tg.spinning_wheel");
         recipeTransfer.addRecipeTransferHandler(ContainerSpinningWheel.class, "tg.spinning_wheel", 0, 4, 5, 36);
@@ -46,16 +45,14 @@ public class JEICompat
 
 
     public static String translateToLocal(String key) {
-        if (I18n.canTranslate(key))
+        if (I18n.hasKey(key))
         {
-            return I18n.translateToLocal(key);
+            return I18n.format(key);
         }
 
-        return I18n.translateToFallback(key);
+        return I18n.format(key);
     }
-
-
-
+    
     public static String translateToLocalFormatted(String key, Object... format) {
         String s = translateToLocal(key);
 

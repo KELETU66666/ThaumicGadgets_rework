@@ -12,9 +12,7 @@ import net.minecraft.item.ItemStack;
 
 
 
-public class SpinningWheelRecipe
-        implements IRecipeWrapper
-{
+public class SpinningWheelRecipe implements IRecipeWrapper {
     private final List<ItemStack> inputs;
     private final ItemStack output;
 

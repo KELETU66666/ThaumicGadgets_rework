@@ -12,10 +12,9 @@ public class Utilities {
     }
 
     public static ItemStack copyStackWithSize(ItemStack stack, int i) {
-        stack.setCount(i);
-        if (stack.hasTagCompound())
-            stack.setTagCompound(stack.getTagCompound());
-        return stack;
+        ItemStack s = new ItemStack(stack.getItem(), i, stack.getItemDamage());
+        if (stack.hasTagCompound()) s.setTagCompound(stack.getTagCompound());
+        return s;
     }
 
     public static class OreDictStack {
