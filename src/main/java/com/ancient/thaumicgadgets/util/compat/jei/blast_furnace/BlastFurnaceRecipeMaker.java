@@ -22,7 +22,7 @@ public class BlastFurnaceRecipeMaker
 		for (InfernalBlastfurnaceRecipe sr : list) {
 			Object oInput = (sr.getInput() instanceof OreDictStack)? OreDictionary.getOres(((OreDictStack)sr.getInput()).key):sr.getInput();
 
-			ItemStack input1 = (ItemStack) ((NonNullList) oInput).get(0);
+			ItemStack input1 = oInput instanceof  NonNullList ? (ItemStack) ((NonNullList) oInput).get(0) : (ItemStack) oInput;
 			List<ItemStack> outputs = Lists.newArrayList();
 			outputs.add(sr.getOutput());
 			BlastFurnaceRecipe bfrecipe = new BlastFurnaceRecipe(input1, outputs);
