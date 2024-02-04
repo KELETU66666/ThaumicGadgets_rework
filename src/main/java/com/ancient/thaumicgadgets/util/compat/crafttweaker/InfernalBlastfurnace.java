@@ -6,13 +6,15 @@ import com.ancient.thaumicgadgets.objects.machines.blastfurnace.InfernalBlastfur
 import com.ancient.thaumicgadgets.util.handlers.Utilities;
 import crafttweaker.CraftTweakerAPI;
 import crafttweaker.IAction;
+import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.item.IItemStack;
 import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
-@ZenClass("mods.witchinggadgets.InfernalBlastfurnace")
+@ZenRegister
+@ZenClass("mods.thaumicgadgets.InfernalBlastfurnace")
 public class InfernalBlastfurnace
 {
     @ZenMethod
