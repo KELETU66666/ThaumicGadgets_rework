@@ -293,7 +293,7 @@
         "name": "research.TG_BELT_LIGHT.title",
         "icons": ["tg:belt_light"],
         "category": "GADGETS", "location": [ -4, -7 ], 
-        "parents": ["TG_LIGHT_METAL", "tg:SING_PEARL"],
+        "parents": ["TG_LIGHT_METAL"],
         "meta": ["HIDDEN"],        
             "stages": [
                 {
@@ -313,7 +313,7 @@
         "name": "research.TG_BELT_SHADOW.title",
         "icons": ["tg:belt_shade"],
         "category": "GADGETS", "location": [ -4, -1 ], 
-        "parents": ["TG_SHADOW_METAL", "tg:SING_PEARL" ],
+        "parents": ["TG_SHADOW_METAL"],
         "meta": ["HIDDEN"],        
             "stages": [
                 {
