@@ -54,7 +54,7 @@
         "name": "research.TG_HUNGRY_BAGS.title",
         "icons": ["tg:pouch_hungry_magic_1","tg:pouch_hungry_magic_2","tg:pouch_hungry_magic_3" ],
         "category": "GADGETS", "location": [ 0, -6 ],
-        "parents": [ "TG_BAGS", "tg:HUNGRY_CHEST"],
+        "parents": [ "TG_BAGS", "HUNGRYCHEST"],
         "meta":["HIDDEN"],        
         "stages": [
                 {
