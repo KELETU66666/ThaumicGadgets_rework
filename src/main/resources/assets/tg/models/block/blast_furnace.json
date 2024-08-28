@@ -45,7 +45,8 @@
 	],
 	"display": {
 		"gui": {
-			"rotation": [-160, -40, 180]
+			"rotation": [-160, -40, 180],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"fixed": {
 			"rotation": [0, 63.5, 0]

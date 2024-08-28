@@ -2,7 +2,6 @@
 
  import com.ancient.thaumicgadgets.Main;
  import com.ancient.thaumicgadgets.util.IFunctionLibrary;
- import java.util.List;
  import net.minecraft.client.resources.I18n;
  import net.minecraft.client.util.ITooltipFlag;
  import net.minecraft.entity.player.EntityPlayer;
@@ -17,6 +16,8 @@
  import net.minecraft.world.World;
  import net.minecraftforge.fml.relauncher.Side;
  import net.minecraftforge.fml.relauncher.SideOnly;
+
+ import java.util.List;
 
 
 

@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.network.particles;
- 
+
  import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
  import com.ancient.thaumicgadgets.util.handlers.ParticleSpawner;
  import io.netty.buffer.ByteBuf;

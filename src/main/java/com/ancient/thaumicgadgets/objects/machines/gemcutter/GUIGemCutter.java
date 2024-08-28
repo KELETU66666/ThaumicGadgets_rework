@@ -1,22 +1,25 @@
 /*     */ package com.ancient.thaumicgadgets.objects.machines.gemcutter;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.gui.GuiAspectButton;
-/*     */ import com.ancient.thaumicgadgets.gui.GuiTexturedButton;
-/*     */ import com.ancient.thaumicgadgets.network.MessageButtonCraft;
-/*     */ import com.ancient.thaumicgadgets.network.MessageGUIButton;
-/*     */ import com.ancient.thaumicgadgets.network.gemcutter.MessageServerChoosedAspects;
-/*     */ import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
-/*     */ import com.google.common.collect.Lists;
-/*     */ import java.io.IOException;
-/*     */ import java.util.List;
-/*     */ import net.minecraft.client.gui.GuiButton;
-/*     */ import net.minecraft.client.gui.inventory.GuiContainer;
-/*     */ import net.minecraft.client.renderer.GlStateManager;
-/*     */ import net.minecraft.entity.player.InventoryPlayer;
-/*     */ import net.minecraft.util.ResourceLocation;
-/*     */ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
-/*     */ import thaumcraft.api.aspects.Aspect;
-/*     */ import thaumcraft.api.aspects.AspectList;
+/*     */
+
+import com.ancient.thaumicgadgets.gui.GuiAspectButton;
+import com.ancient.thaumicgadgets.gui.GuiTexturedButton;
+import com.ancient.thaumicgadgets.network.MessageButtonCraft;
+import com.ancient.thaumicgadgets.network.MessageGUIButton;
+import com.ancient.thaumicgadgets.network.gemcutter.MessageServerChoosedAspects;
+import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
+import com.google.common.collect.Lists;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.AspectList;
+
+import java.io.IOException;
+import java.util.List;
 /*     */ 
 /*     */ 
 /*     */ 

@@ -1,7 +1,5 @@
 package com.ancient.thaumicgadgets.util.compat.crafttweaker;
 
-import java.util.List;
-
 import com.ancient.thaumicgadgets.objects.machines.blastfurnace.InfernalBlastfurnaceRecipe;
 import com.ancient.thaumicgadgets.util.handlers.Utilities;
 import crafttweaker.CraftTweakerAPI;
@@ -12,6 +10,8 @@ import crafttweaker.api.item.IItemStack;
 import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
+
+import java.util.List;
 
 @ZenRegister
 @ZenClass("mods.thaumicgadgets.InfernalBlastfurnace")

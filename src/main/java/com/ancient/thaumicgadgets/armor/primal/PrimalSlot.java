@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.armor.primal;
- 
+
  import net.minecraft.inventory.IInventory;
  import net.minecraft.inventory.Slot;
  import net.minecraft.item.ItemStack;

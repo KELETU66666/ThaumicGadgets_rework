@@ -1,7 +1,5 @@
  package com.ancient.thaumicgadgets.init;
- 
- import com.ancient.thaumicgadgets.proxy.CommonProxy;
- import net.minecraft.block.Block;
+
  import net.minecraft.item.Item;
  import net.minecraft.item.ItemStack;
  import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

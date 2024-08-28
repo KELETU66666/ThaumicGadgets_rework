@@ -138,6 +138,7 @@ public class ModRecipes {
         addBlastTrippling("Silver");
         addBlastTrippling("Lead");
         InfernalBlastfurnaceRecipe.addRecipe(new ItemStack(ItemsTC.quicksilver, 3), "clusterCinnabar", 1, 440, false).addBonus(new ItemStack(ItemsTC.nuggets, 1, 5));
+        InfernalBlastfurnaceRecipe.addRecipe(new ItemStack(ModItems.MAGIC_FOOD, 1, 1), new ItemStack(ModItems.FOOD_MATERIAL, 1, 2), 440, false);
         for (String name : OreDictionary.getOreNames())
             if (name.startsWith("cluster"))
                 addBlastTrippling(name.substring("cluster".length()));

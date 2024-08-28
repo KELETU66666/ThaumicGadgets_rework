@@ -27,7 +27,7 @@ import thaumcraft.api.research.ResearchCategories;
 
 
 
-@Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.3.1-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.3.2-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
 public class Main
 {
     @Instance
@@ -80,5 +80,7 @@ public class Main
         InfernalBlastfurnaceRecipe.tryAddIngotImprovement("Iron", "Steel", false);
         InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Tungsten","Tungsten",true);
         InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Rutile","Titanium",true);
+        InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Shade", "Shade", false);
+        InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Light", "Light", false);
     }
 }

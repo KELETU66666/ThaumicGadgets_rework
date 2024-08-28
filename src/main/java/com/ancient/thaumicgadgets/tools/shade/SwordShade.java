@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.tools.shade;
- 
+
  import com.ancient.thaumicgadgets.tools.ToolSwordBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
  import com.google.common.collect.ArrayListMultimap;

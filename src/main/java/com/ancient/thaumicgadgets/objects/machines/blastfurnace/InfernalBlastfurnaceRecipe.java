@@ -1,14 +1,13 @@
 package com.ancient.thaumicgadgets.objects.machines.blastfurnace;
 
+import com.ancient.thaumicgadgets.util.handlers.Utilities;
+import com.ancient.thaumicgadgets.util.handlers.Utilities.OreDictStack;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import com.ancient.thaumicgadgets.util.handlers.Utilities;
-import com.ancient.thaumicgadgets.util.handlers.Utilities.OreDictStack;
-
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class InfernalBlastfurnaceRecipe {
 

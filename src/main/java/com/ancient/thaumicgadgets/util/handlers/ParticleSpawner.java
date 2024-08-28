@@ -1,17 +1,19 @@
 /*     */ package com.ancient.thaumicgadgets.util.handlers;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticles;
-/*     */ import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustom;
-/*     */ import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustomLightning;
-/*     */ import net.minecraft.client.Minecraft;
-/*     */ import net.minecraft.client.particle.Particle;
-/*     */ import net.minecraft.util.EnumParticleTypes;
-/*     */ import net.minecraft.util.math.Vec3d;
-/*     */ import net.minecraft.world.World;
-/*     */ import net.minecraftforge.fml.common.network.NetworkRegistry;
-/*     */ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
-/*     */ import net.minecraftforge.fml.relauncher.Side;
-/*     */ import net.minecraftforge.fml.relauncher.SideOnly;
+/*     */
+
+import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticles;
+import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustom;
+import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustomLightning;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 /*     */ 
 /*     */ 
 /*     */ 

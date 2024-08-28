@@ -1,18 +1,20 @@
 /*     */ package com.ancient.thaumicgadgets.util.handlers;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
-/*     */ import com.ancient.thaumicgadgets.init.ModItems;
-/*     */ import com.ancient.thaumicgadgets.tools.primal.ToolAxePrimal;
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
-/*     */ import com.ancient.thaumicgadgets.util.IPrimalArmorAbilities;
-/*     */ import com.ancient.thaumicgadgets.util.IPrimalWeaponAbilities;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraftforge.event.entity.living.LivingHurtEvent;
-/*     */ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+/*     */
+
+import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
+import com.ancient.thaumicgadgets.init.ModItems;
+import com.ancient.thaumicgadgets.tools.primal.ToolAxePrimal;
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import com.ancient.thaumicgadgets.util.IPrimalArmorAbilities;
+import com.ancient.thaumicgadgets.util.IPrimalWeaponAbilities;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /*     */ 
 /*     */ 
 /*     */ 

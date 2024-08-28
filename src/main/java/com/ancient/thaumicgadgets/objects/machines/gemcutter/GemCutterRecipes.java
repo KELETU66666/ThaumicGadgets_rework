@@ -1,15 +1,18 @@
 /*     */ package com.ancient.thaumicgadgets.objects.machines.gemcutter;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.init.ModItems;
-/*     */ import com.google.common.collect.Lists;
-/*     */ import java.util.List;
-/*     */ import java.util.Map;
-/*     */ import net.minecraft.init.Items;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import thaumcraft.api.aspects.Aspect;
-/*     */ import thaumcraft.api.aspects.AspectList;
-/*     */ import thaumcraft.api.crafting.IThaumcraftRecipe;
-/*     */ import thaumcraft.api.items.ItemsTC;
+/*     */
+
+import com.ancient.thaumicgadgets.init.ModItems;
+import com.google.common.collect.Lists;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.crafting.IThaumcraftRecipe;
+import thaumcraft.api.items.ItemsTC;
+
+import java.util.List;
+import java.util.Map;
 /*     */ 
 /*     */ 
 /*     */ 

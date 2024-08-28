@@ -1,22 +1,20 @@
 /*     */ package com.ancient.thaumicgadgets.gui;
 /*     */ 
-/*     */ import baubles.api.BaublesApi;
-/*     */ import baubles.api.cap.IBaublesItemHandler;
-/*     */ import com.ancient.thaumicgadgets.armor.light.LightBelt;
-/*     */ import com.ancient.thaumicgadgets.armor.shade.ShadeBelt;
 /*     */
-/*     */ import net.minecraft.client.Minecraft;
-/*     */ import net.minecraft.client.entity.EntityPlayerSP;
-/*     */ import net.minecraft.client.gui.Gui;
-/*     */
-/*     */ import net.minecraft.client.renderer.GlStateManager;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.util.ResourceLocation;
-/*     */
-/*     */
-/*     */ import net.minecraftforge.client.event.RenderGameOverlayEvent;
-/*     */ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+import baubles.api.BaublesApi;
+import baubles.api.cap.IBaublesItemHandler;
+import com.ancient.thaumicgadgets.armor.light.LightBelt;
+import com.ancient.thaumicgadgets.armor.shade.ShadeBelt;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /*     */ 
 /*     */ 
 /*     */ 

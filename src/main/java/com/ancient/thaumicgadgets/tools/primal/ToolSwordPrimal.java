@@ -1,26 +1,29 @@
 /*     */ package com.ancient.thaumicgadgets.tools.primal;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.tools.ToolSwordBase;
-/*     */ import com.ancient.thaumicgadgets.util.ICheckEnchantment;
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
-/*     */ import com.google.common.collect.ArrayListMultimap;
-/*     */ import com.google.common.collect.Multimap;
-/*     */ import java.util.List;
-/*     */ import net.minecraft.client.util.ITooltipFlag;
-/*     */ import net.minecraft.entity.Entity;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.SharedMonsterAttributes;
-/*     */ import net.minecraft.entity.ai.attributes.AttributeModifier;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.inventory.EntityEquipmentSlot;
-/*     */ import net.minecraft.item.Item;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.nbt.NBTBase;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraft.world.World;
-/*     */ import net.minecraftforge.fml.relauncher.Side;
-/*     */ import net.minecraftforge.fml.relauncher.SideOnly;
+/*     */
+
+import com.ancient.thaumicgadgets.tools.ToolSwordBase;
+import com.ancient.thaumicgadgets.util.ICheckEnchantment;
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.List;
 /*     */ 
 /*     */ 
 /*     */ 

@@ -2,13 +2,14 @@ package com.ancient.thaumicgadgets.util.compat.jei.spinningwhell;
 
 import com.ancient.thaumicgadgets.objects.machines.spinningwheel.SpinningWheelRecipes;
 import com.ancient.thaumicgadgets.util.compat.jei.JEICompat;
-import java.awt.Color;
-import java.util.List;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IRecipeWrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.item.ItemStack;
+
+import java.awt.*;
+import java.util.List;
 
 
 

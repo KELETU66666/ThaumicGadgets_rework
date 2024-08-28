@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'com.wynprice.cursemaven'
 
-version = "kedition-0.3"
+version = "0.3.2-kedition"
 group = "com.ancient.thaumicgadgets"
 archivesBaseName = "ThaumicGadgets"
 
@@ -51,8 +51,6 @@ dependencies {
     deobfCompile 'curse.maven:thaumcraft-223628:2629023'
     deobfCompile 'curse.maven:baubles-227083:2518667'
     deobfCompile 'curse.maven:thaumic-augmentation-319441:4486505'
-    deobfCompile 'curse.maven:cb-multipart-258426:2755790'
-    deobfCompile 'curse.maven:codechicken-lib-1-8-242818:2779848'
 }
 
 jar {

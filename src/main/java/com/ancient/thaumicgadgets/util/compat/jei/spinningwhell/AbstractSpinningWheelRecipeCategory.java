@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util.compat.jei.spinningwhell;
- 
+
  import mezz.jei.api.IGuiHelper;
  import mezz.jei.api.gui.IDrawableAnimated;
  import mezz.jei.api.gui.IDrawableStatic;

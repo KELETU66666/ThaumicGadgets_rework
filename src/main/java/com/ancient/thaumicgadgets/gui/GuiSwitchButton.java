@@ -1,11 +1,14 @@
 /*     */ package com.ancient.thaumicgadgets.gui;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
-/*     */ import java.util.List;
-/*     */ import net.minecraft.client.Minecraft;
-/*     */ import net.minecraft.client.gui.GuiButton;
-/*     */ import net.minecraft.client.renderer.GlStateManager;
-/*     */ import net.minecraft.util.ResourceLocation;
+/*     */
+
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.util.ResourceLocation;
+
+import java.util.List;
 /*     */ 
 /*     */ 
 /*     */ 

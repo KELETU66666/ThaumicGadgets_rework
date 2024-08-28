@@ -1,25 +1,28 @@
 /*     */ package com.ancient.thaumicgadgets.util;
 /*     */ 
-/*     */ import java.util.Random;
-/*     */ import javax.annotation.Nullable;
-/*     */ import net.minecraft.enchantment.EnchantmentData;
-/*     */ import net.minecraft.entity.Entity;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.EnumCreatureAttribute;
-/*     */ import net.minecraft.entity.SharedMonsterAttributes;
-/*     */ import net.minecraft.entity.item.EntityItem;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.entity.projectile.EntityArrow;
-/*     */ import net.minecraft.entity.projectile.EntityThrowable;
-/*     */ import net.minecraft.init.Enchantments;
-/*     */ import net.minecraft.init.MobEffects;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.potion.Potion;
-/*     */ import net.minecraft.potion.PotionEffect;
-/*     */ import net.minecraft.util.NonNullList;
-/*     */ import net.minecraft.util.math.AxisAlignedBB;
-/*     */ import net.minecraft.util.math.Vec3d;
-/*     */ import thaumcraft.common.lib.potions.PotionWarpWard;
+/*     */
+
+import net.minecraft.enchantment.EnchantmentData;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.EnumCreatureAttribute;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.init.Enchantments;
+import net.minecraft.init.MobEffects;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.Vec3d;
+import thaumcraft.common.lib.potions.PotionWarpWard;
+
+import javax.annotation.Nullable;
+import java.util.Random;
 /*     */ 
 /*     */ 
 /*     */ 

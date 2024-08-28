@@ -2,11 +2,12 @@ package com.ancient.thaumicgadgets.util.compat.jei.gemcutter;
 
 import com.ancient.thaumicgadgets.objects.machines.gemcutter.GemCutterRecipes;
 import com.google.common.collect.Lists;
-import java.util.List;
 import mezz.jei.api.IJeiHelpers;
 import mezz.jei.api.recipe.IStackHelper;
 import net.minecraft.item.ItemStack;
 import thaumcraft.api.aspects.AspectList;
+
+import java.util.List;
 
 
 

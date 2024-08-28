@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.items;
- 
+
  import com.ancient.thaumicgadgets.Main;
  import com.ancient.thaumicgadgets.init.ModItems;
  import com.ancient.thaumicgadgets.util.IHasModel;

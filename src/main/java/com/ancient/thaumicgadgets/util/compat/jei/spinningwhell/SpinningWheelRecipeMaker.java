@@ -2,11 +2,12 @@ package com.ancient.thaumicgadgets.util.compat.jei.spinningwhell;
 
 import com.ancient.thaumicgadgets.objects.machines.spinningwheel.SpinningWheelRecipes;
 import com.google.common.collect.Lists;
-import java.util.List;
-import java.util.Map;
 import mezz.jei.api.IJeiHelpers;
 import mezz.jei.api.recipe.IStackHelper;
 import net.minecraft.item.ItemStack;
+
+import java.util.List;
+import java.util.Map;
 
 
 

@@ -7,7 +7,6 @@ import com.ancient.thaumicgadgets.objects.machines.extruder.RenderExtruderUp;
 import com.ancient.thaumicgadgets.objects.machines.extruder.TileEntityExtruderUp;
 import net.minecraft.client.particle.ParticleLava;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;

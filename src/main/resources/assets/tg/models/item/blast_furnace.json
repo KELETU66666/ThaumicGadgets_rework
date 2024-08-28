@@ -1,12 +1,3 @@
 {
-   "parent": "tg:block/blast_furnace",
-   "display":
-   {
-        "gui":
-        {
-            "translation": [0, 0, 0],
-            "scale": [0.275, 0.275, 0.275],
-            "rotation": [{ "x": 300 },{ "z": 45 }]
-        }
-  }   
+   "parent": "tg:block/blast_furnace"
 }

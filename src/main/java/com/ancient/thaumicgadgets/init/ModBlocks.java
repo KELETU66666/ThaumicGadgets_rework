@@ -2,12 +2,13 @@ package com.ancient.thaumicgadgets.init;
 
 import com.ancient.thaumicgadgets.blocks.*;
 import com.google.common.collect.Lists;
-import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+
+import java.util.List;
 
 public class ModBlocks
 {
@@ -29,8 +30,8 @@ public class ModBlocks
     public static final Block FURNACE = new BlockBlastFurnace("blast_furnace");
     public static final Block AGEING_STONE = new BlockAgeingStone("ageing_stone");
 
-    public static final Block OBSIDIAN_PH = new BlockPlaceholder("obsidian_ph", Material.ROCK, Item.getItemFromBlock(Blocks.OBSIDIAN), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
-    public static final Block SOUL_SAND_PH = new BlockPlaceholder("soul_sand_ph", Material.ROCK, Item.getItemFromBlock(Blocks.SOUL_SAND), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
-    public static final Block NETHER_BRICKS_PH = new BlockPlaceholder("nether_bricks_ph", Material.ROCK, Item.getItemFromBlock(Blocks.NETHER_BRICK), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
-    public static final Block AIR_PH = new BlockPlaceholder("air_ph", Material.ROCK, Item.getItemFromBlock(Blocks.STONE), 1, SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
+    public static final Block OBSIDIAN_PH = new BlockPlaceholder("obsidian_ph", Material.ROCK, Item.getItemFromBlock(Blocks.OBSIDIAN), SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
+    public static final Block SOUL_SAND_PH = new BlockPlaceholder("soul_sand_ph", Material.ROCK, Item.getItemFromBlock(Blocks.SOUL_SAND), SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
+    public static final Block NETHER_BRICKS_PH = new BlockPlaceholder("nether_bricks_ph", Material.ROCK, Item.getItemFromBlock(Blocks.NETHER_BRICK), SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
+    public static final Block AIR_PH = new BlockPlaceholder("air_ph", Material.ROCK, Item.getItemFromBlock(Blocks.STONE), SoundType.STONE, 4.0F, 30.0F, 0, "pickaxe", 3);
 }

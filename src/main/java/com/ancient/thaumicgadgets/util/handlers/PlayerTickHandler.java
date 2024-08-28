@@ -2,18 +2,17 @@
 /*     */ 
 /*     */
 
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
 /*     */
-/*     */ import com.ancient.thaumicgadgets.util.IPrimalArmorAbilities;
-/*     */
-        /*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */
-        /*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraftforge.event.entity.living.LivingEvent;
-/*     */ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import com.ancient.thaumicgadgets.util.IPrimalArmorAbilities;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /*     */ 
 /*     */ 
 /*     */ 

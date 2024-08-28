@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.tools.light;
- 
+
  import com.ancient.thaumicgadgets.tools.ToolShearsBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
  import net.minecraft.entity.Entity;

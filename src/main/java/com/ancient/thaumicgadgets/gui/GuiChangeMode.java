@@ -1,22 +1,25 @@
 /*     */ package com.ancient.thaumicgadgets.gui;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
-/*     */ import com.ancient.thaumicgadgets.network.MessageChangeModeArmor;
-/*     */ import com.ancient.thaumicgadgets.network.MessageChangeModeWeapon;
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
-/*     */ import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
-/*     */ import java.io.IOException;
-/*     */ import net.minecraft.client.Minecraft;
-/*     */ import net.minecraft.client.entity.EntityPlayerSP;
-/*     */ import net.minecraft.client.gui.GuiButton;
-/*     */ import net.minecraft.client.gui.GuiScreen;
-/*     */ import net.minecraft.client.renderer.GlStateManager;
-/*     */ import net.minecraft.client.util.ITooltipFlag;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.util.NonNullList;
-/*     */ import net.minecraft.util.ResourceLocation;
-/*     */ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+/*     */
+
+import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
+import com.ancient.thaumicgadgets.network.MessageChangeModeArmor;
+import com.ancient.thaumicgadgets.network.MessageChangeModeWeapon;
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import com.ancient.thaumicgadgets.util.handlers.NetworkHandler;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+
+import java.io.IOException;
 /*     */ 
 /*     */ public class GuiChangeMode
 /*     */   extends GuiScreen

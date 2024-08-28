@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.tools.light;
- 
+
  import com.ancient.thaumicgadgets.tools.ToolPickaxeBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
  import com.google.common.collect.ArrayListMultimap;

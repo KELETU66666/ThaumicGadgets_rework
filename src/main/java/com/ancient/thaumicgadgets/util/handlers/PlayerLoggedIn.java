@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util.handlers;
- 
+
  import com.ancient.thaumicgadgets.util.Reference;
  import net.minecraft.entity.Entity;
  import net.minecraft.entity.player.EntityPlayer;

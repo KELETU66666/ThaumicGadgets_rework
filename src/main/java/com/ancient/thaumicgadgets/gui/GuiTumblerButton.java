@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.gui;
- 
+
  import com.ancient.thaumicgadgets.util.IFunctionLibrary;
  import net.minecraft.client.Minecraft;
  import net.minecraft.client.gui.GuiButton;

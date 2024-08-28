@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.objects.machines;
- 
+
  import net.minecraft.entity.player.EntityPlayer;
  import net.minecraft.inventory.IInventory;
  import net.minecraft.inventory.Slot;

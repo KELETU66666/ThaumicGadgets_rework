@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util.handlers;
- 
+
  import com.ancient.thaumicgadgets.init.ModBlocks;
  import com.ancient.thaumicgadgets.init.ModItems;
  import net.minecraft.block.Block;

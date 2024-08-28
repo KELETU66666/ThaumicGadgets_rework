@@ -1,17 +1,20 @@
 /*     */ package com.ancient.thaumicgadgets.gui;
 /*     */ 
-/*     */ import com.google.common.collect.Lists;
-/*     */ import com.google.common.collect.Maps;
-/*     */ import java.io.IOException;
-/*     */ import java.util.List;
-/*     */ import java.util.Map;
-/*     */ import net.minecraft.client.gui.GuiButton;
-/*     */ import net.minecraft.client.gui.GuiLabel;
-/*     */ import net.minecraft.client.gui.GuiScreen;
-/*     */ import net.minecraft.client.gui.GuiTextField;
-/*     */ import net.minecraftforge.client.event.GuiScreenEvent;
-/*     */ import net.minecraftforge.common.MinecraftForge;
-/*     */ import net.minecraftforge.fml.common.eventhandler.Event;
+/*     */
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiLabel;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiTextField;
+import net.minecraftforge.client.event.GuiScreenEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.eventhandler.Event;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 /*     */ 
 /*     */ public class GuiDynamic
 /*     */   extends GuiScreen

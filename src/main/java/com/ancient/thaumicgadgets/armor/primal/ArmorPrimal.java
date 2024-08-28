@@ -1,35 +1,31 @@
 package com.ancient.thaumicgadgets.armor.primal;
 
 import com.ancient.thaumicgadgets.armor.ArmorBase;
-/*     */
 import com.ancient.thaumicgadgets.init.ModEnchantments;
-/*     */
-/*     */ import com.ancient.thaumicgadgets.util.ICheckEnchantment;
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
-/*     */ import java.util.List;
-/*     */ import java.util.Map;
-/*     */ import net.minecraft.client.model.ModelBiped;
-/*     */ import net.minecraft.client.resources.I18n;
-/*     */ import net.minecraft.client.util.ITooltipFlag;
-/*     */ import net.minecraft.enchantment.Enchantment;
-/*     */ import net.minecraft.enchantment.EnchantmentHelper;
-/*     */ import net.minecraft.entity.Entity;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.init.Enchantments;
-/*     */ import net.minecraft.inventory.EntityEquipmentSlot;
-/*     */ import net.minecraft.item.ItemArmor;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.nbt.NBTBase;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraft.util.DamageSource;
-/*     */
+import com.ancient.thaumicgadgets.util.ICheckEnchantment;
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Enchantments;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
-/*     */ import net.minecraftforge.fml.relauncher.Side;
-/*     */ import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Map;
 
 
 

@@ -2,12 +2,13 @@ package com.ancient.thaumicgadgets.objects.machines.spinningwheel;
 
 import com.ancient.thaumicgadgets.init.ModItems;
 import com.google.common.collect.Maps;
-import java.util.Map;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import thaumcraft.api.blocks.BlocksTC;
 import thaumcraft.api.items.ItemsTC;
+
+import java.util.Map;
 
 
 

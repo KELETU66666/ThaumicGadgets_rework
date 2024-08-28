@@ -1,12 +1,12 @@
 package com.ancient.thaumicgadgets.enchantments;
 
 import com.ancient.thaumicgadgets.init.ModEnchantments;
- import net.minecraft.enchantment.Enchantment;
- import net.minecraft.enchantment.EnumEnchantmentType;
- import net.minecraft.init.Enchantments;
- import net.minecraft.inventory.EntityEquipmentSlot;
- import net.minecraft.item.ItemStack;
- import net.minecraft.util.ResourceLocation;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnumEnchantmentType;
+import net.minecraft.init.Enchantments;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 
 public class EnchRegenPrimal extends Enchantment {
    public EnchRegenPrimal(String name, Enchantment.Rarity rarityIn, EnumEnchantmentType typeIn, EntityEquipmentSlot[] slots) {

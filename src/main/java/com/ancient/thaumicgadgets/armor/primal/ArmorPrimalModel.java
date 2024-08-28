@@ -1,6 +1,5 @@
 package com.ancient.thaumicgadgets.armor.primal;
 
-import java.util.HashMap;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -11,6 +10,8 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.MathHelper;
 import org.lwjgl.opengl.GL11;
+
+import java.util.HashMap;
 
 /**
  * Created using Tabula 4.1.0

@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.tools.shade;
- 
+
  import com.ancient.thaumicgadgets.tools.ToolAxeBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
  import net.minecraft.entity.Entity;

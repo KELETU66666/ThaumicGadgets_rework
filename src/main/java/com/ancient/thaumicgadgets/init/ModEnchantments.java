@@ -1,8 +1,6 @@
  package com.ancient.thaumicgadgets.init;
- 
+
  import com.ancient.thaumicgadgets.enchantments.EnchRegenPrimal;
- import java.util.ArrayList;
- import java.util.List;
  import net.minecraft.enchantment.Enchantment;
  import net.minecraft.enchantment.EnchantmentHelper;
  import net.minecraft.enchantment.EnumEnchantmentType;
@@ -13,6 +11,9 @@
  import net.minecraftforge.event.entity.living.LivingEvent;
  import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
  import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+ import java.util.ArrayList;
+ import java.util.List;
  
  
  

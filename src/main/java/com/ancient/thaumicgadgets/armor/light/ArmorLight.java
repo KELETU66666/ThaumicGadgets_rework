@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.armor.light;
- 
+
  import com.ancient.thaumicgadgets.armor.ArmorBase;
  import com.ancient.thaumicgadgets.util.IItemAutoRepair;
  import net.minecraft.entity.Entity;

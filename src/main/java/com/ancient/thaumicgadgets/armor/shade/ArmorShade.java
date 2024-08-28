@@ -3,7 +3,6 @@ package com.ancient.thaumicgadgets.armor.shade;
 import com.ancient.thaumicgadgets.armor.ArmorBase;
 import com.ancient.thaumicgadgets.util.IItemAutoRepair;
 import net.minecraft.client.model.ModelBiped;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;

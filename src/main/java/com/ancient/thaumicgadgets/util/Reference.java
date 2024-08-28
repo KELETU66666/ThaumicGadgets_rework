@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util;
- 
+
  import net.minecraft.util.ResourceLocation;
  import net.minecraft.util.math.Vec3d;
  

@@ -133,7 +133,7 @@ container.gemcutter.name=晶体加工台
 tile.extruder.name=神秘造石机
 tile.extruder_up.name=高级神秘造石机
 
-tile.blast_furnace.name=无间熔炉
+tile.blast_furnace.name=炼狱高炉
 
 enchantment.regen_primal=元始修复
 

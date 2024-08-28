@@ -1,7 +1,7 @@
 package com.ancient.thaumicgadgets.util;
+
 import com.ancient.thaumicgadgets.util.handlers.ParticleSpawner;
 import com.ancient.thaumicgadgets.util.handlers.RandomFunctions;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -12,6 +12,8 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
+
+import javax.annotation.Nullable;
 
 
 

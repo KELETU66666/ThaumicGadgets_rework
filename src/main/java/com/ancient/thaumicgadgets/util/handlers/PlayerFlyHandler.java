@@ -1,20 +1,22 @@
 /*     */ package com.ancient.thaumicgadgets.util.handlers;
 /*     */ 
-/*     */ import baubles.api.BaublesApi;
-/*     */ import baubles.api.cap.IBaublesItemHandler;
-/*     */ import com.ancient.thaumicgadgets.util.Reference;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.init.Items;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraft.util.EnumFacing;
-/*     */ import net.minecraft.util.EnumParticleTypes;
-/*     */ import net.minecraftforge.client.event.RenderLivingEvent;
-/*     */ import net.minecraftforge.event.entity.living.LivingEvent;
-/*     */ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-/*     */ import net.minecraftforge.fml.relauncher.Side;
-/*     */ import net.minecraftforge.fml.relauncher.SideOnly;
+/*     */
+
+import baubles.api.BaublesApi;
+import baubles.api.cap.IBaublesItemHandler;
+import com.ancient.thaumicgadgets.util.Reference;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 /*     */ 
 /*     */ 
 /*     */ 

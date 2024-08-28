@@ -1,20 +1,22 @@
 /*     */ package com.ancient.thaumicgadgets.items;
 /*     */ 
-/*     */ import net.minecraft.entity.Entity;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.init.Blocks;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.potion.Potion;
-/*     */ import net.minecraft.potion.PotionEffect;
-/*     */ import net.minecraft.util.ActionResult;
-/*     */ import net.minecraft.util.EnumActionResult;
-/*     */ import net.minecraft.util.EnumFacing;
-/*     */ import net.minecraft.util.EnumHand;
-/*     */ import net.minecraft.util.math.BlockPos;
-/*     */ import net.minecraft.world.World;
-/*     */ import thaumcraft.api.aura.AuraHelper;
-/*     */ import thaumcraft.common.lib.potions.PotionDeathGaze;
+/*     */
+
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import thaumcraft.api.aura.AuraHelper;
+import thaumcraft.common.lib.potions.PotionDeathGaze;
 /*     */ 
 /*     */ 
 /*     */ public class ItemCrystal

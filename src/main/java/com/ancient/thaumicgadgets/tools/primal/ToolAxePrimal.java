@@ -1,32 +1,35 @@
 /*     */ package com.ancient.thaumicgadgets.tools.primal;
 /*     */ 
-/*     */ import com.ancient.thaumicgadgets.Main;
-/*     */ import com.ancient.thaumicgadgets.init.ModItems;
-/*     */ import com.ancient.thaumicgadgets.util.ICheckEnchantment;
-/*     */ import com.ancient.thaumicgadgets.util.IFunctionLibrary;
-/*     */ import com.ancient.thaumicgadgets.util.IHasModel;
-/*     */ import com.google.common.collect.Sets;
-/*     */ import java.util.List;
-/*     */ import java.util.Set;
-/*     */ import net.minecraft.block.Block;
-/*     */ import net.minecraft.block.material.Material;
-/*     */ import net.minecraft.block.state.IBlockState;
-/*     */ import net.minecraft.client.util.ITooltipFlag;
-/*     */ import net.minecraft.entity.Entity;
-/*     */ import net.minecraft.entity.EntityLivingBase;
-/*     */ import net.minecraft.entity.player.EntityPlayer;
-/*     */ import net.minecraft.init.Blocks;
-/*     */ import net.minecraft.item.Item;
-/*     */ import net.minecraft.item.ItemStack;
-/*     */ import net.minecraft.item.ItemTool;
-/*     */ import net.minecraft.nbt.NBTBase;
-/*     */ import net.minecraft.nbt.NBTTagCompound;
-/*     */ import net.minecraft.nbt.NBTTagList;
-/*     */ import net.minecraft.potion.Potion;
-/*     */ import net.minecraft.potion.PotionEffect;
-/*     */ import net.minecraft.world.World;
-/*     */ import net.minecraftforge.fml.relauncher.Side;
-/*     */ import net.minecraftforge.fml.relauncher.SideOnly;
+/*     */
+
+import com.ancient.thaumicgadgets.Main;
+import com.ancient.thaumicgadgets.init.ModItems;
+import com.ancient.thaumicgadgets.util.ICheckEnchantment;
+import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import com.ancient.thaumicgadgets.util.IHasModel;
+import com.google.common.collect.Sets;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTool;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.List;
+import java.util.Set;
 /*     */ 
 /*     */ 
 /*     */ 

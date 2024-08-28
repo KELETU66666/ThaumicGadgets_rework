@@ -4,11 +4,10 @@ import crafttweaker.CraftTweakerAPI;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IngredientStack;
+import static crafttweaker.api.minecraft.CraftTweakerMC.getItemStack;
 import crafttweaker.api.oredict.IOreDictEntry;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
-
-import static crafttweaker.api.minecraft.CraftTweakerMC.getItemStack;
 
 public class TGCrafttweaker
 {

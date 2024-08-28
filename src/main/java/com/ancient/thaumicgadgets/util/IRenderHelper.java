@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util;
- 
+
  import net.minecraft.client.gui.FontRenderer;
  import net.minecraft.client.renderer.BufferBuilder;
  import net.minecraft.client.renderer.Tessellator;

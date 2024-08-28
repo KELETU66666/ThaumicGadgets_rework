@@ -1,11 +1,12 @@
 package com.ancient.thaumicgadgets.util;
 
-import java.util.ArrayList;
-import java.util.Map;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentData;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.item.ItemStack;
+
+import java.util.ArrayList;
+import java.util.Map;
 
 
 

@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.network.gemcutter;
- 
+
  import com.ancient.thaumicgadgets.objects.machines.gemcutter.TileEntityGemCutter;
  import io.netty.buffer.ByteBuf;
  import net.minecraft.entity.player.EntityPlayerMP;

@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.objects.machines.spinningwheel;
- 
+
  import net.minecraft.client.gui.inventory.GuiContainer;
  import net.minecraft.client.renderer.GlStateManager;
  import net.minecraft.entity.player.InventoryPlayer;

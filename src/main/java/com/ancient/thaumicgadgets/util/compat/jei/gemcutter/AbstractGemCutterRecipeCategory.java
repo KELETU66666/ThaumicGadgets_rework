@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util.compat.jei.gemcutter;
- 
+
  import mezz.jei.api.IGuiHelper;
  import mezz.jei.api.gui.IDrawableStatic;
  import mezz.jei.api.recipe.IRecipeCategory;

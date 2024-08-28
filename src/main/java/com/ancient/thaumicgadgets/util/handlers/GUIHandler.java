@@ -1,5 +1,5 @@
  package com.ancient.thaumicgadgets.util.handlers;
- 
+
  import com.ancient.thaumicgadgets.armor.primal.ContainerPrimalArmor;
  import com.ancient.thaumicgadgets.armor.primal.GUIPrimalArmor;
  import com.ancient.thaumicgadgets.armor.primal.InventoryPrimalArmor;
