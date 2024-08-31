@@ -217,7 +217,7 @@ public class TileEntitySpinningWheel extends TileEntity implements IInventory, I
   }
 
   public String getGuiID() {
-      return "tg:spinning_wheel";
+      return "thaumicgadgets:spinning_wheel";
   }
 
   public int getField(int id) {switch (id) {

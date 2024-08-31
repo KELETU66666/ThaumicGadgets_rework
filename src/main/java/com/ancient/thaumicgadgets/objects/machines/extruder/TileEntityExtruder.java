@@ -4,7 +4,6 @@ import com.ancient.thaumicgadgets.util.handlers.EnumHandler;
 import com.ancient.thaumicgadgets.util.handlers.ParticleSpawner;
 import com.ancient.thaumicgadgets.util.handlers.RandomFunctions;
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Blocks;
@@ -26,8 +25,8 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
 
     public NBTTagCompound writeToNBT(NBTTagCompound compound) {
         super.writeToNBT(compound);
-        compound.setInteger("WorkTime", (short)this.workTime);
-        compound.setInteger("MaxWorkTime", (short)this.maxWorkTime);
+        compound.setInteger("WorkTime", (short) this.workTime);
+        compound.setInteger("MaxWorkTime", (short) this.maxWorkTime);
 
         return compound;
     }
@@ -61,8 +60,8 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
 
             case 0:
                 return this.workTime;
-                case 1:
-                    return this.maxWorkTime;
+            case 1:
+                return this.maxWorkTime;
         }
         return 0;
     }
@@ -73,9 +72,9 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
             case 0:
                 this.workTime = value;
                 break;
-                case 1:
-                    this.maxWorkTime = value;
-                    break;
+            case 1:
+                this.maxWorkTime = value;
+                break;
         }
     }
 
@@ -89,11 +88,10 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
             if (canWork()) {
 
                 IBlockState state = this.world.getBlockState(this.pos);
-                EnumFacing face = (EnumFacing)state.getValue((IProperty)BlockHorizontal.FACING);
+                EnumFacing face = (EnumFacing) state.getValue( BlockHorizontal.FACING);
                 this.workTime++;
 
-                if (this.workTime % 7 == 0)
-                {
+                if (this.workTime % 7 == 0) {
                     ps.transferData(EnumHandler.CustomParticles.SMOKE, 1, (this.pos.getX() + face.getXOffset()), this.pos.getY() + 0.1D, (this.pos.getZ() + face.getZOffset()), ps.rf.getRandomPartcileVelocity(0.02D), 0.05D, ps.rf.getRandomPartcileVelocity(0.02D), dim);
                 }
                 if (this.workTime >= this.maxWorkTime) {
@@ -106,15 +104,15 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
                         case NORTH:
                             cobble = new EntityItem(this.world, this.pos.getX() + 0.5D, this.pos.getY(), this.pos.getZ() - 0.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
                             break;
-                            case SOUTH:
-                                cobble = new EntityItem(this.world, this.pos.getX() + 0.5D, this.pos.getY(), this.pos.getZ() + 1.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
-                                break;
-                                case EAST:
-                                    cobble = new EntityItem(this.world, this.pos.getX() + 1.5D, this.pos.getY(), this.pos.getZ() + 0.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
-                                    break;
-                                    case WEST:
-                                        cobble = new EntityItem(this.world, this.pos.getX() - 0.5D, this.pos.getY(), this.pos.getZ() + 0.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
-                                        break;
+                        case SOUTH:
+                            cobble = new EntityItem(this.world, this.pos.getX() + 0.5D, this.pos.getY(), this.pos.getZ() + 1.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
+                            break;
+                        case EAST:
+                            cobble = new EntityItem(this.world, this.pos.getX() + 1.5D, this.pos.getY(), this.pos.getZ() + 0.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
+                            break;
+                        case WEST:
+                            cobble = new EntityItem(this.world, this.pos.getX() - 0.5D, this.pos.getY(), this.pos.getZ() + 0.5D, new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE), 1));
+                            break;
                     }
 
 
@@ -129,13 +127,12 @@ public class TileEntityExtruder extends TileEntity implements ITickable {
             } else {
 
                 this.workTime = 0;
-            }  if (flag == isWorking())
-            {
+            }
+            if (flag == isWorking()) {
                 flag1 = true;
             }
         }
-        if (flag1)
-        {
+        if (flag1) {
             markDirty();
         }
     }

@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "facing=north": {"model": "thaumicgadgets:extruder"},
+        "facing=east": {"model": "thaumicgadgets:extruder", "y": 90},
+        "facing=south": {"model": "thaumicgadgets:extruder", "y": 180},
+        "facing=west": {"model": "thaumicgadgets:extruder", "y": 270}
+    }
+}

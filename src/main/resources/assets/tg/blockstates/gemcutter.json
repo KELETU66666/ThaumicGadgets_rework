@@ -1,9 +1,0 @@
-{
-    "variants": 
-    {
-        "facing=north": {"model": "tg:gemcutter"},
-        "facing=east": {"model": "tg:gemcutter", "y": 90},
-        "facing=south": {"model": "tg:gemcutter", "y": 180},
-        "facing=west": {"model": "tg:gemcutter", "y": 270}
-    }
-}

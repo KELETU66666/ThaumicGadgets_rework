@@ -6,9 +6,7 @@ import net.minecraft.util.ResourceLocation;
 import thaumcraft.api.aspects.Aspect;
 
 
-public class GuiAspectButton
-        extends GuiTumblerButton
-{
+public class GuiAspectButton extends GuiTumblerButton {
     public ResourceLocation loc;
     public int textureX;
     public int textureY;
@@ -48,7 +46,6 @@ public class GuiAspectButton
     public Aspect getAspect() {
         return this.as;
     }
-
 
 
     public void drawButton(Minecraft mc, int mouseX, int mouseY, float partialTicks) {

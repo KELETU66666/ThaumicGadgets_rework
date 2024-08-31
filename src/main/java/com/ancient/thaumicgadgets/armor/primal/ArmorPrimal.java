@@ -185,9 +185,9 @@ public class ArmorPrimal extends ArmorBase implements ICheckEnchantment {
     public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
         if (location == null) {
             if (slot == EntityEquipmentSlot.FEET)
-                location = "tg:textures/models/armor/primal_boots.png";
+                location = "thaumicgadgets:textures/models/armor/primal_boots.png";
             else
-                location = "tg:textures/models/armor/primal_armor.png";
+                location = "thaumicgadgets:textures/models/armor/primal_armor.png";
         }
         return location;
     }

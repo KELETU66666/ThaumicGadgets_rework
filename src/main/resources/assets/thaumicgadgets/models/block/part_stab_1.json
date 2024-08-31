@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube",
+   "textures": {
+       "particle": "thaumicgadgets:blocks/part_stab_1_front_back",
+       "up": "thaumicgadgets:blocks/part_stab_1_up_down",
+       "north": "thaumicgadgets:blocks/part_stab_1_front_back",
+       "down": "thaumicgadgets:blocks/part_stab_1_up_down",
+       "south": "thaumicgadgets:blocks/part_stab_1_front_back",
+       "east": "thaumicgadgets:blocks/part_stab_1_left_right",
+       "west": "thaumicgadgets:blocks/part_stab_1_left_right"
+   }
+}

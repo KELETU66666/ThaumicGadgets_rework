@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": {"model": "thaumicgadgets:gemcutter"},
+        "facing=east": {"model": "thaumicgadgets:gemcutter", "y": 90},
+        "facing=south": {"model": "thaumicgadgets:gemcutter", "y": 180},
+        "facing=west": {"model": "thaumicgadgets:gemcutter", "y": 270}
+    }
+}

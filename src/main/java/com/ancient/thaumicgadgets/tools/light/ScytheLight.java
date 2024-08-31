@@ -55,7 +55,7 @@ public class ScytheLight extends ToolScytheBase implements IItemAutoRepair {
     }
 
 
-    public Multimap<String, AttributeModifier> func_111205_h(EntityEquipmentSlot equipmentSlot) {
+    public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot) {
         ArrayListMultimap arrayListMultimap = ArrayListMultimap.create();
 
         if (equipmentSlot.equals(EntityEquipmentSlot.MAINHAND)) {

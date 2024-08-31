@@ -12,8 +12,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 
-
-
 public class SpinningWheelRecipeCategory extends AbstractSpinningWheelRecipeCategory<SpinningWheelRecipe> {
     private final IDrawable background;
     private final IDrawable icon;
@@ -27,11 +25,9 @@ public class SpinningWheelRecipeCategory extends AbstractSpinningWheelRecipeCate
     }
 
 
-
     public IDrawable getBackground() {
         return this.background;
     }
-
 
 
     public void drawExtras(Minecraft minecraft) {
@@ -43,17 +39,14 @@ public class SpinningWheelRecipeCategory extends AbstractSpinningWheelRecipeCate
     }
 
 
-
     public String getTitle() {
         return this.name;
     }
 
 
-
-    public IDrawable getIcon() {return this.icon;
+    public IDrawable getIcon() {
+        return this.icon;
     }
-
-
 
 
     public String getModName() {
@@ -61,11 +54,9 @@ public class SpinningWheelRecipeCategory extends AbstractSpinningWheelRecipeCate
     }
 
 
-
     public String getUid() {
         return "tg.spinning_wheel";
     }
-
 
 
     public void setRecipe(IRecipeLayout recipeLayout, SpinningWheelRecipe recipeWrapper, IIngredients ingredients) {

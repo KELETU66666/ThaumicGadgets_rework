@@ -2,7 +2,6 @@ package com.ancient.thaumicgadgets;
 
 import com.ancient.thaumicgadgets.init.ModMultiBlocks;
 import com.ancient.thaumicgadgets.init.ModRecipes;
-import com.ancient.thaumicgadgets.init.ModResearches;
 import com.ancient.thaumicgadgets.init.RegisterAspectsHandler;
 import com.ancient.thaumicgadgets.objects.machines.blastfurnace.InfernalBlastfurnaceRecipe;
 import com.ancient.thaumicgadgets.proxy.CommonProxy;
@@ -22,22 +21,16 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.research.ResearchCategories;
 
 
-
-
-
-
-
-@Mod(modid = "tg", name = "Thaumic Gadgets", version = "0.3.2-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
-public class Main
-{
+@Mod(modid = "thaumicgadgets", name = "Thaumic Gadgets", version = "0.3.2-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
+public class Main {
     @Instance
     public static Main instance;
     public static final CreativeTabs GADGETSTAB = new GadgetsTab("gadgets");
 
     public static ModMultiBlocks MMB;
 
-    private static final ResourceLocation research_icon = new ResourceLocation("tg", "textures/items/tg.png");
-    private static final ResourceLocation research_background = new ResourceLocation("tg", "textures/gui/research/research_background.jpg");
+    private static final ResourceLocation research_icon = new ResourceLocation("thaumicgadgets", "textures/items/thaumicgadgets.png");
+    private static final ResourceLocation research_background = new ResourceLocation("thaumicgadgets", "textures/gui/research/research_background.jpg");
 
     @SidedProxy(clientSide = "com.ancient.thaumicgadgets.proxy.ClientProxy", serverSide = "com.ancient.thaumicgadgets.proxy.CommonProxy")
     public static CommonProxy proxy;
@@ -61,14 +54,13 @@ public class Main
     public static void init(FMLInitializationEvent event) {
         TileEntityHandler.registerTileEntities();
         ResearchCategories.registerCategory("GADGETS", "UNLOCKINFUSION", null, research_icon, research_background);
-        ResourceLocation loc = new ResourceLocation("tg", "research/thaumic_gadgets");
+        ResourceLocation loc = new ResourceLocation("thaumicgadgets", "research/thaumic_gadgets");
 
         ThaumcraftApi.registerResearchLocation(loc);
 
         ModRecipes.InitRecipes();
         ModMultiBlocks.InitMultiblocks();
 
-        ModResearches.InitResearches();
         proxy.init();
         MMB = ModMultiBlocks.getInstance();
     }
@@ -78,8 +70,8 @@ public class Main
         proxy.postInit();
 
         InfernalBlastfurnaceRecipe.tryAddIngotImprovement("Iron", "Steel", false);
-        InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Tungsten","Tungsten",true);
-        InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Rutile","Titanium",true);
+        InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Tungsten", "Tungsten", true);
+        InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Rutile", "Titanium", true);
         InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Shade", "Shade", false);
         InfernalBlastfurnaceRecipe.tryAddSpecialOreMelting("Light", "Light", false);
     }

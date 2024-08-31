@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 
-
-
-public interface ICheckEnchantment
-{
+public interface ICheckEnchantment {
     default boolean canApplyEchantment(ItemStack stack, int enchId, int enchLvl) {
         boolean canApply = true;
         boolean changeLvl = false;
@@ -31,14 +28,11 @@ public interface ICheckEnchantment
                 canApply = false;
             }
         }
-        if (canApply)
-        {
+        if (canApply) {
             stack.addEnchantment(Enchantment.getEnchantmentByID(enchId), enchLvl);
         }
-        if (changeLvl)
-        {
-            for (EnchantmentData data : ed)
-            {
+        if (changeLvl) {
+            for (EnchantmentData data : ed) {
                 changeLvlEnch(stack, data);
             }
         }
@@ -57,8 +51,7 @@ public interface ICheckEnchantment
                 break;
             }
         }
-        if (canApply)
-        {
+        if (canApply) {
             stack.addEnchantment(enchType, enchLvl);
         }
         return canApply;
@@ -83,14 +76,11 @@ public interface ICheckEnchantment
                 canApply = false;
             }
         }
-        if (canApply)
-        {
+        if (canApply) {
             stack.addEnchantment(Enchantment.getEnchantmentByID(enchId), enchLvl);
         }
-        if (changeLvl)
-        {
-            for (EnchantmentData data : ed)
-            {
+        if (changeLvl) {
+            for (EnchantmentData data : ed) {
                 changeLvlEnchStatic(stack, data);
             }
         }
@@ -109,8 +99,7 @@ public interface ICheckEnchantment
                 break;
             }
         }
-        if (canApply)
-        {
+        if (canApply) {
             stack.addEnchantment(enchType, enchLvl);
         }
         return canApply;
@@ -120,8 +109,7 @@ public interface ICheckEnchantment
     default void changeLvlEnch(ItemStack stack, EnchantmentData ed) {
         Map<Enchantment, Integer> ench = EnchantmentHelper.getEnchantments(stack);
 
-        if (ench.get(ed.enchantment) != null)
-        {
+        if (ench.get(ed.enchantment) != null) {
             ench.replace(ed.enchantment, ed.enchantmentLevel);
         }
         EnchantmentHelper.setEnchantments(ench, stack);
@@ -131,8 +119,7 @@ public interface ICheckEnchantment
     static void changeLvlEnchStatic(ItemStack stack, EnchantmentData ed) {
         Map<Enchantment, Integer> ench = EnchantmentHelper.getEnchantments(stack);
 
-        if (ench.get(ed.enchantment) != null)
-        {
+        if (ench.get(ed.enchantment) != null) {
             ench.replace(ed.enchantment, ed.enchantmentLevel);
         }
         EnchantmentHelper.setEnchantments(ench, stack);

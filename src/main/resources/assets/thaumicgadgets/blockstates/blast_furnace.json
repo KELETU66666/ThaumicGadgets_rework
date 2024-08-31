@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "thaumicgadgets:blast_furnace",
+        "transform": "forge:default-block"
+     },
+    "variants": {
+        "facing=north": [{}],
+        "facing=south": [{"y": 180}],
+        "facing=east": [{"y": 90}],
+        "facing=west": [{"y": 270}]
+    }
+}

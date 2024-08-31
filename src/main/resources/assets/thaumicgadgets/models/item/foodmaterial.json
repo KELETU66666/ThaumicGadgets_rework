@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "thaumicgadgets:items/dustflour"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "meta": 1
+      },
+      "model": "thaumicgadgets:item/dustnetherwart"
+    },
+    {
+      "predicate": {
+        "meta": 2
+      },
+      "model": "thaumicgadgets:item/nether_dough"
+    }
+  ]
+}

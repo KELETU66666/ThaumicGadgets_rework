@@ -2,7 +2,6 @@ package com.ancient.thaumicgadgets.util;
 
 import com.ancient.thaumicgadgets.util.handlers.ParticleSpawner;
 import com.ancient.thaumicgadgets.util.handlers.RandomFunctions;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.init.Items;
@@ -16,19 +15,14 @@ import net.minecraft.util.SoundCategory;
 import javax.annotation.Nullable;
 
 
-
-
-public interface IPrimalWeaponAbilities
-{
-    public static final ParticleSpawner ps = ParticleSpawner.INSTANCE;
+public interface IPrimalWeaponAbilities {
+    ParticleSpawner ps = ParticleSpawner.INSTANCE;
 
 
     static void abilityAxeFire(@Nullable EntityLivingBase entity, EntityLivingBase target, int modifier) {
-        if (RandomFunctions.rand.nextInt(101) < 20)
-        {
-            if (target != null)
-            {
-                target.world.createExplosion((Entity)entity, target.posX, target.posY, target.posZ, modifier, false);
+        if (RandomFunctions.rand.nextInt(101) < 20) {
+            if (target != null) {
+                target.world.createExplosion(entity, target.posX, target.posY, target.posZ, modifier, false);
             }
         }
     }
@@ -57,8 +51,7 @@ public interface IPrimalWeaponAbilities
         int z = 0;
         for (ItemStack s : target.getArmorInventoryList()) {
 
-            if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade)
-            {
+            if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.shade.ArmorShade) {
                 z++;
             }
         }
@@ -71,8 +64,7 @@ public interface IPrimalWeaponAbilities
         int z = 0;
         for (ItemStack s : target.getArmorInventoryList()) {
 
-            if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.light.ArmorLight)
-            {
+            if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.light.ArmorLight) {
                 z++;
             }
         }
@@ -87,7 +79,7 @@ public interface IPrimalWeaponAbilities
             EntityLightningBolt entitybolt = new EntityLightningBolt(target.world, 0.0D, 0.0D, 0.0D, false);
             entitybolt.setLocationAndAngles(target.posX, target.posY, target.posZ, 0.0F, 0.0F);
 
-            target.world.addWeatherEffect((Entity)entitybolt);
+            target.world.addWeatherEffect(entitybolt);
         }
     }
 
@@ -95,15 +87,14 @@ public interface IPrimalWeaponAbilities
     static void abilityHammerFire(@Nullable EntityLivingBase entity, EntityLivingBase target) {
         if (RandomFunctions.rand.nextInt(101) < 20) {
 
-            target.world.createExplosion((Entity)entity, target.posX, target.posY, target.posZ, 1.0F, false);
+            target.world.createExplosion(entity, target.posX, target.posY, target.posZ, 1.0F, false);
             target.setFire(3);
         }
     }
 
 
     static void abilityHammerWater(@Nullable EntityLivingBase entity, EntityLivingBase target) {
-        if (RandomFunctions.rand.nextInt(101) < 50)
-        {
+        if (RandomFunctions.rand.nextInt(101) < 50) {
             target.addPotionEffect(new PotionEffect(Potion.getPotionById(7), 5, 0));
         }
     }
@@ -136,8 +127,7 @@ public interface IPrimalWeaponAbilities
     }
 
     static void abilityHammerEntropy(@Nullable EntityLivingBase entity, EntityLivingBase target) {
-        if (RandomFunctions.rand.nextInt(101) < 50)
-        {
+        if (RandomFunctions.rand.nextInt(101) < 50) {
             target.addPotionEffect(new PotionEffect(Potion.getPotionById(20), 65, 1));
         }
     }

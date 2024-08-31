@@ -17,16 +17,11 @@ import thaumcraft.common.lib.crafting.DustTriggerMultiblock;
 
 import java.util.Map;
 
-              
-               
-               
-               
-               
-               
-               
+
 public class ModMultiBlocks {
     private static final ModMultiBlocks INSTANCE = new ModMultiBlocks();
     private final Map<String, MBHeading> list = Maps.newHashMap();
+
     public static ModMultiBlocks getInstance() {
         return INSTANCE;
     }
@@ -40,24 +35,24 @@ public class ModMultiBlocks {
         Part L = new Part(Material.LAVA, ModBlocks.AIR_PH);
         Part[][][] MultiblockBlastFurnace = {
                 {
-                    {N, O, N},
+                        {N, O, N},
                         {O, L, O},
                         {N, O, N}
                 },
                 {
-                    {O,S,O},
-                        {S,C,S},
-                        {O,S,O}
+                        {O, S, O},
+                        {S, C, S},
+                        {O, S, O}
                 },
                 {
-                    {N,N,N},
+                        {N, N, N},
                         {N, O, N},
                         {N, N, N}
                 }
         };
 
         IDustTrigger.registerDustTrigger(new DustTriggerMultiblock("TG_BLAST_FURNACE", MultiblockBlastFurnace));
-        ThaumcraftApi.addMultiblockRecipeToCatalog(new ResourceLocation("tg", EnumHandler.MultiBlocks.BLAST_FURNACE.getName()), new ThaumcraftApi.BluePrint("TG_BLAST_FURNACE", new ItemStack(ModBlocks.FURNACE), MultiblockBlastFurnace, new ItemStack(Item.getItemFromBlock(Blocks.OBSIDIAN), 9), new ItemStack(Item.getItemFromBlock(Blocks.SOUL_SAND), 5), new ItemStack(Item.getItemFromBlock(Blocks.NETHER_BRICK), 12), new ItemStack(Items.LAVA_BUCKET)));
+        ThaumcraftApi.addMultiblockRecipeToCatalog(new ResourceLocation("thaumicgadgets", EnumHandler.MultiBlocks.BLAST_FURNACE.getName()), new ThaumcraftApi.BluePrint("TG_BLAST_FURNACE", new ItemStack(ModBlocks.FURNACE), MultiblockBlastFurnace, new ItemStack(Item.getItemFromBlock(Blocks.OBSIDIAN), 9), new ItemStack(Item.getItemFromBlock(Blocks.SOUL_SAND), 5), new ItemStack(Item.getItemFromBlock(Blocks.NETHER_BRICK), 12), new ItemStack(Items.LAVA_BUCKET)));
     }
 
 
@@ -69,7 +64,6 @@ public class ModMultiBlocks {
     public int getMaxRecipeCount() {
         return this.list.size();
     }
-
 
 
     public Map<String, MBHeading> getMultiBlockRecipeList() {
@@ -84,8 +78,7 @@ public class ModMultiBlocks {
 
             for (int x = 0; x < xSize; x++) {
 
-                for (int z = 0; z < zSize; z++)
-                {
+                for (int z = 0; z < zSize; z++) {
                     recipe[x][y][z] = new MBComponent(Blocks.AIR, Blocks.AIR, false, true);
                 }
             }
@@ -94,8 +87,7 @@ public class ModMultiBlocks {
     }
 
 
-    public class MBComponent
-    {
+    public class MBComponent {
         public IBlockState before;
         public IBlockState after;
         public boolean applyFacing;
@@ -118,8 +110,7 @@ public class ModMultiBlocks {
     }
 
 
-    public class MBHeading
-    {
+    public class MBHeading {
         public ModMultiBlocks.MBComponent[][][] recipe;
         public Block blockForClick;
         public Item itemForClick;

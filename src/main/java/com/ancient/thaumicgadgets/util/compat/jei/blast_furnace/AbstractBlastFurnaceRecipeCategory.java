@@ -11,7 +11,7 @@ import net.minecraft.util.ResourceLocation;
 public abstract class AbstractBlastFurnaceRecipeCategory<T extends IRecipeWrapper>
         implements IRecipeCategory<T>
 {
-    protected static final ResourceLocation TEXTURES = new ResourceLocation("tg:textures/gui/jei/blast_furnace.png");
+    protected static final ResourceLocation TEXTURES = new ResourceLocation("thaumicgadgets:textures/gui/jei/blast_furnace.png");
 
     protected static final int input1 = 0;
 

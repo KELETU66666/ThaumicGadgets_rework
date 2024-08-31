@@ -21,21 +21,19 @@ public class ArmorShade extends ArmorBase implements IWarpingGear, IItemAutoRepa
         super(name, materialIn, renderIndexIn, equipmentSlotIn);
         model = null;
         location = null;
-   }
+    }
 
-   public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-       if (!world.isRemote)
-     {
-         if (CheckTime(itemStack, world, 12516L, 24000L))
-       {
-           if (itemStack.getItemDamage() > 0) {
-               UpdateDamage(itemStack, player, world, 2, 100);
-         }
-       }
-     }
-   }
+    public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
+        if (!world.isRemote) {
+            if (CheckTime(itemStack, world, 12516L, 24000L)) {
+                if (itemStack.getItemDamage() > 0) {
+                    UpdateDamage(itemStack, player, world, 2, 100);
+                }
+            }
+        }
+    }
 
-   public int getWarp(ItemStack itemstack, EntityPlayer player) {
-/* 47 */     return 5;
-   }
+    public int getWarp(ItemStack itemstack, EntityPlayer player) {
+        return 5;
+    }
 }

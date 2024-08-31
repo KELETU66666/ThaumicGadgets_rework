@@ -3,11 +3,10 @@ package com.ancient.thaumicgadgets.util;
 import net.minecraft.world.World;
 
 
-public interface IDayTime
-{
+public interface IDayTime {
     default int getDayCount(World world) {
         long worldTime = world.getTotalWorldTime();
-        return (int)Math.floorDiv(worldTime, 24000L);
+        return (int) Math.floorDiv(worldTime, 24000L);
     }
 
 

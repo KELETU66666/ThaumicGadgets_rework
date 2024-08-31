@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "thaumicgadgets:blocks/blast_furnace_side_all",
+		"1": "thaumicgadgets:blocks/blast_furnace_side_top_all",
+		"2": "thaumicgadgets:blocks/blast_furnace_bottom_all",
+		"3": "thaumicgadgets:blocks/blast_furnace",
+		"4": "thaumicgadgets:blocks/blast_furnace_top",
+		"particle": "thaumicgadgets:blocks/blast_furnace"
+	},
+	"elements": [
+		{
+			"from": [-16, -16, -16],
+			"to": [32, 16, 32],
+			"faces": {
+				"north": {"uv": [0, 5.33333, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 5.33333, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 5.33333, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 5.33333, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-16, 16, -16],
+			"to": [32, 24, 32],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"west": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"up": {"uv": [16, 16, 0, 0], "texture": "#3"}
+			}
+		},
+		{
+			"from": [-10, 23, -10],
+			"to": [26, 31.5, 26],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"west": {"uv": [0, 0, 16, 3], "texture": "#3"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#4"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [-160, -40, 180],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"fixed": {
+			"rotation": [0, 63.5, 0]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "thaumcraft:blocks/arcane_stone_1",
+    "all": "thaumcraft:blocks/arcane_stone_1"
+  }
+}

@@ -20,7 +20,7 @@ public class GUIPouch
 
     protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-        ResourceLocation TEXTURE = new ResourceLocation("tg", "textures/gui/pouches/" + this.inventory.getName() + ".png");
+        ResourceLocation TEXTURE = new ResourceLocation("thaumicgadgets", "textures/gui/pouches/" + this.inventory.getName() + ".png");
         this.mc.getTextureManager().bindTexture(TEXTURE);
 
         drawTexturedModalRect(this.guiLeft, this.guiTop - 27, 0, 0, this.xSize, this.ySize + 20);

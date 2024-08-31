@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "NNN",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "type": "forge:ore_dict",
+      "ore": "cropWheat"
+    },
+    "N": {
+      "item": "thaumicgadgets:magicfood",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "thaumicgadgets:magicfood",
+    "data": 1
+  }
+}

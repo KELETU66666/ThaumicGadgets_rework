@@ -11,7 +11,7 @@
  public abstract class AbstractSpinningWheelRecipeCategory<T extends IRecipeWrapper>
    implements IRecipeCategory<T>
  {
-     protected static final ResourceLocation TEXTURES = new ResourceLocation("tg:textures/gui/spinning_wheel.png");
+     protected static final ResourceLocation TEXTURES = new ResourceLocation("thaumicgadgets:textures/gui/spinning_wheel.png");
    
    protected static final int input1 = 0;
    

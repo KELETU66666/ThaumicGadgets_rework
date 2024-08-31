@@ -1,6 +1,0 @@
-{
-   "parent": "item/generated",
-   "textures": {
-       "layer0": "tg:items/crystals/oval_crystal_water"
-   }
-}

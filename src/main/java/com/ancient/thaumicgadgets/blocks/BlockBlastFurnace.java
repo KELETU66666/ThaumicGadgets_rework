@@ -7,7 +7,6 @@ import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -129,17 +128,17 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
 
 
   public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-        worldIn.setBlockState(pos, getDefaultState().withProperty((IProperty)FACING, (Comparable)placer.getHorizontalFacing().getOpposite()), 2);
+        worldIn.setBlockState(pos, getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
   }
 
   public IBlockState withRotation(IBlockState state, Rotation rot) {
-     return state.withProperty((IProperty)FACING, (Comparable)rot.rotate((EnumFacing)state.getValue((IProperty)FACING)));
+     return state.withProperty(FACING, rot.rotate(state.getValue(FACING)));
   }
 
 
 
   public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-     return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue((IProperty)FACING)));
+     return state.withRotation(mirrorIn.toRotation(state.getValue(FACING)));
   }
 
   public IBlockState getStateFromMeta(int meta) {
@@ -148,11 +147,11 @@ public class BlockBlastFurnace extends BlockBase implements ITileEntityProvider 
     {
       face = EnumFacing.NORTH;
     }
-        return getDefaultState().withProperty((IProperty)FACING, (Comparable)face);
+        return getDefaultState().withProperty(FACING, face);
   }
 
   public int getMetaFromState(IBlockState state) {
-    return ((EnumFacing)state.getValue((IProperty)FACING)).getIndex();
+    return state.getValue(FACING).getIndex();
   }
 
 

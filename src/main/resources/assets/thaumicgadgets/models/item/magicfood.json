@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "thaumicgadgets:items/nether_swart"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "meta": 1
+      },
+      "model": "thaumicgadgets:item/nether_cake"
+    },
+    {
+      "predicate": {
+        "meta": 2
+      },
+      "model": "thaumicgadgets:item/brain_jerky"
+    }
+  ]
+}

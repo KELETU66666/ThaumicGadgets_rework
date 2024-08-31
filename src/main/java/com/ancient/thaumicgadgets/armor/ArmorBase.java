@@ -24,6 +24,6 @@ public class ArmorBase
 
 
     public void registerModels() {
-        Main.proxy.registerItemRenderer((Item)this, 0, "inventory");
+        Main.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

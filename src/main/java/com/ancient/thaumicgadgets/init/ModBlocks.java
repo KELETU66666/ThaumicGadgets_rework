@@ -10,8 +10,7 @@ import net.minecraft.item.Item;
 
 import java.util.List;
 
-public class ModBlocks
-{
+public class ModBlocks {
     public static final List<Block> BLOCKS = Lists.newArrayList();
 
     public static final Block LIGHT_BLOCK = new BlockLight("block_light", Material.IRON, 0.6F);

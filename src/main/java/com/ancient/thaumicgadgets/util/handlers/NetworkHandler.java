@@ -20,7 +20,7 @@ public class NetworkHandler
     public static SimpleNetworkWrapper INSTANCE;
 
     public static void init() {
-        INSTANCE = new SimpleNetworkWrapper("tg");
+        INSTANCE = new SimpleNetworkWrapper("thaumicgadgets");
         int id = 0;
 
         INSTANCE.registerMessage(MessageGUIButton.handler.class, MessageGUIButton.class, id++, Side.SERVER);

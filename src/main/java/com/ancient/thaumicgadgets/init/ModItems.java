@@ -34,13 +34,13 @@ public class ModItems {
     public static final Item.ToolMaterial TOOL_LIGHT = EnumHelper.addToolMaterial("tool_light", 3, 1024, 8.0F, 3.0F, 10);
     public static final Item.ToolMaterial TOOL_SHADE = EnumHelper.addToolMaterial("tool_shade", 3, 1024, 8.0F, 3.0F, 10);
 
-    public static final ItemArmor.ArmorMaterial ARMOR_PRIMAL = EnumHelper.addArmorMaterial("armor_primal", "tg:primal", 50, new int[]{4, 6, 8, 4}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 8.0F);
+    public static final ItemArmor.ArmorMaterial ARMOR_PRIMAL = EnumHelper.addArmorMaterial("armor_primal", "thaumicgadgets:primal", 50, new int[]{4, 6, 8, 4}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 8.0F);
 
-    public static final ItemArmor.ArmorMaterial ARMOR_SHADE = EnumHelper.addArmorMaterial("armor_shade", "tg:shade", 33, new int[]{3, 6, 9, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 15.0F);
+    public static final ItemArmor.ArmorMaterial ARMOR_SHADE = EnumHelper.addArmorMaterial("armor_shade", "thaumicgadgets:shade", 33, new int[]{3, 6, 9, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 15.0F);
 
-    public static final ItemArmor.ArmorMaterial ARMOR_LIGHT = EnumHelper.addArmorMaterial("armor_light", "tg:light", 33, new int[]{3, 6, 9, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 15.0F);
+    public static final ItemArmor.ArmorMaterial ARMOR_LIGHT = EnumHelper.addArmorMaterial("armor_light", "thaumicgadgets:light", 33, new int[]{3, 6, 9, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 15.0F);
 
-    public static final ItemArmor.ArmorMaterial ARMOR_MAGE = EnumHelper.addArmorMaterial("armor_mage", "tg:mage", 33, new int[]{4, 12, 8, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2.0F);
+    public static final ItemArmor.ArmorMaterial ARMOR_MAGE = EnumHelper.addArmorMaterial("armor_mage", "thaumicgadgets:mage", 33, new int[]{4, 12, 8, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2.0F);
 
 
     public static final Item HELMET_LIGHT = new ArmorLight("helmet_light", ARMOR_LIGHT, 1, EntityEquipmentSlot.HEAD);
@@ -148,5 +148,5 @@ public class ModItems {
     public static final Item FOOD_MATERIAL = new FoodMaterial();
     public static final ItemFood MAGIC_FOOD = new MagicFood();
 
-    public static final Item TG = new ItemTab("tg");
+    public static final Item TG = new ItemTab("thaumicgadgets");
 }

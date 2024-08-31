@@ -7,7 +7,6 @@ import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -28,10 +27,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.Random;
 
 
-
-
-public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
-{
+public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
     public static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
@@ -44,9 +40,8 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
         setResistance(30.0F);
         setLightOpacity(1);
         setHarvestLevel("axe", 0);
-        setDefaultState(this.blockState.getBaseState().withProperty((IProperty)FACING, (Comparable)EnumFacing.NORTH));
+        setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
-
 
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
@@ -54,22 +49,18 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
     }
 
 
-
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
         return new ItemStack(ModBlocks.SPINNING_WHEEL);
     }
 
 
-
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        if (!worldIn.isRemote)
-        {
+        if (!worldIn.isRemote) {
             playerIn.openGui(Main.instance, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
 
         return true;
     }
-
 
 
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
@@ -79,25 +70,22 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
             IBlockState south = worldIn.getBlockState(pos.south());
             IBlockState east = worldIn.getBlockState(pos.east());
             IBlockState west = worldIn.getBlockState(pos.west());
-            EnumFacing face = (EnumFacing)state.getValue((IProperty)FACING);
+            EnumFacing face = state.getValue(FACING);
 
             if (face == EnumFacing.NORTH && north.isFullBlock() && !south.isFullBlock()) {
 
                 face = EnumFacing.SOUTH;
-            }
-            else if (face == EnumFacing.SOUTH && !north.isFullBlock() && south.isFullBlock()) {
+            } else if (face == EnumFacing.SOUTH && !north.isFullBlock() && south.isFullBlock()) {
 
                 face = EnumFacing.NORTH;
-            }
-            else if (face == EnumFacing.WEST && west.isFullBlock() && !east.isFullBlock()) {
+            } else if (face == EnumFacing.WEST && west.isFullBlock() && !east.isFullBlock()) {
 
                 face = EnumFacing.EAST;
-            }
-            else if (face == EnumFacing.EAST && east.isFullBlock() && !west.isFullBlock()) {
+            } else if (face == EnumFacing.EAST && east.isFullBlock() && !west.isFullBlock()) {
 
                 face = EnumFacing.WEST;
             }
-            worldIn.setBlockState(pos, state.withProperty((IProperty)FACING, (Comparable)face), 2);
+            worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
         }
     }
 
@@ -107,7 +95,7 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
         TileEntity te = worldIn.getTileEntity(pos);
 
 
-        worldIn.setBlockState(pos, ModBlocks.SPINNING_WHEEL.getDefaultState().withProperty((IProperty)FACING, state.getValue((IProperty)FACING)));
+        worldIn.setBlockState(pos, ModBlocks.SPINNING_WHEEL.getDefaultState().withProperty(FACING, state.getValue(FACING)));
 
         if (te != null) {
 
@@ -117,26 +105,22 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
     }
 
 
-
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
-        return getDefaultState().withProperty((IProperty)FACING, (Comparable)placer.getHorizontalFacing().getOpposite());
+        return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
-
 
 
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-        worldIn.setBlockState(pos, getDefaultState().withProperty((IProperty)FACING, (Comparable)placer.getHorizontalFacing().getOpposite()), 2);
+        worldIn.setBlockState(pos, getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
     }
 
 
-
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-        TileEntitySpinningWheel tileentity = (TileEntitySpinningWheel)worldIn.getTileEntity(pos);
+        TileEntitySpinningWheel tileentity = (TileEntitySpinningWheel) worldIn.getTileEntity(pos);
         InventoryHelper.dropInventoryItems(worldIn, pos, tileentity);
 
         super.breakBlock(worldIn, pos, state);
     }
-
 
 
     public EnumBlockRenderType getRenderType(IBlockState state) {
@@ -150,18 +134,14 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
     }
 
 
-
-
     public IBlockState withRotation(IBlockState state, Rotation rot) {
-        return state.withProperty((IProperty)FACING, (Comparable)rot.rotate((EnumFacing)state.getValue((IProperty)FACING)));
+        return state.withProperty(FACING, rot.rotate(state.getValue(FACING)));
     }
-
 
 
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue((IProperty)FACING)));
+        return state.withRotation(mirrorIn.toRotation(state.getValue(FACING)));
     }
-
 
 
     protected BlockStateContainer createBlockState() {
@@ -169,24 +149,19 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
     }
 
 
-
     public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.byIndex(meta);
 
-        if (facing.getAxis() == EnumFacing.Axis.Y)
-        {
+        if (facing.getAxis() == EnumFacing.Axis.Y) {
             facing = EnumFacing.NORTH;
         }
-        return getDefaultState().withProperty((IProperty)FACING, (Comparable)facing);
+        return getDefaultState().withProperty(FACING, facing);
     }
-
-
 
 
     public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing)state.getValue((IProperty)FACING)).getIndex();
+        return state.getValue(FACING).getIndex();
     }
-
 
 
     public TileEntity createNewTileEntity(World worldIn, int meta) {
@@ -194,17 +169,14 @@ public class BlockSpinningWheel extends BlockBase implements ITileEntityProvider
     }
 
 
-
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
 
 
-
     public boolean isFullCube(IBlockState state) {
         return false;
     }
-
 
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {

@@ -1,15 +1,19 @@
 package com.ancient.thaumicgadgets.proxy;
 
 import com.ancient.thaumicgadgets.gui.GuiOverlay;
+import com.ancient.thaumicgadgets.init.ModBlocks;
 import com.ancient.thaumicgadgets.keys.KeyInputHandler;
 import com.ancient.thaumicgadgets.keys.Keybindings;
-import com.ancient.thaumicgadgets.objects.machines.extruder.RenderExtruderUp;
+import com.ancient.thaumicgadgets.objects.machines.extruder.TileEntityExtruder;
 import com.ancient.thaumicgadgets.objects.machines.extruder.TileEntityExtruderUp;
+import com.ancient.thaumicgadgets.objects.machines.extruder.TileRenderCobbleGenUp;
+import com.ancient.thaumicgadgets.util.TileRenderCobbleGen;
 import net.minecraft.client.particle.ParticleLava;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
+import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,12 +30,16 @@ public class ClientProxy extends CommonProxy {
     }
 
     public void init() {
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityExtruderUp.class, new RenderExtruderUp());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityExtruder.class, new TileRenderCobbleGen());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityExtruderUp.class, new TileRenderCobbleGenUp());
+
+        ForgeHooksClient.registerTESRItemStack(Item.getItemFromBlock(ModBlocks.EXTRUDER), 0, TileEntityExtruder.class);
+        ForgeHooksClient.registerTESRItemStack(Item.getItemFromBlock(ModBlocks.EXTRUDER_UP), 0, TileEntityExtruderUp.class);
     }
 
     public void preInit() {
 
-        OBJLoader.INSTANCE.addDomain("tg");
+        OBJLoader.INSTANCE.addDomain("thaumicgadgets");
 
         super.preInit();
 

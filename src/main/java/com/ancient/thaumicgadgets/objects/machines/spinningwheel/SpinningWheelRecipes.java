@@ -49,23 +49,23 @@ public class SpinningWheelRecipes
 
 
     private SpinningWheelRecipes() {
-        addSpinningWheelRecipe("tg:yarn", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ModItems.YARN), 5.0F);
-        addSpinningWheelRecipe("tg:yarn_gold", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.GOLD_NUGGET), new ItemStack(ModItems.YARN_GOLD), 5.0F);
-        addSpinningWheelRecipe("tg:yarn_thanium", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 6), new ItemStack(ModItems.YARN_THANIUM), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 8), new ItemStack(ModItems.YARN_MAGIC), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ModItems.NUGGET_LIGHT), new ItemStack(ModItems.YARN_LIGHT), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ModItems.NUGGET_SHADE), new ItemStack(ModItems.YARN_SHADE), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Item.getItemFromBlock(BlocksTC.shimmerleaf)), new ItemStack(ModItems.YARN_ETHER), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 7), new ItemStack(ModItems.YARN_VOID), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:yarn", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ModItems.YARN), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:yarn_gold", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.GOLD_NUGGET), new ItemStack(ModItems.YARN_GOLD), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:yarn_thanium", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 6), new ItemStack(ModItems.YARN_THANIUM), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 8), new ItemStack(ModItems.YARN_MAGIC), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ModItems.NUGGET_LIGHT), new ItemStack(ModItems.YARN_LIGHT), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ModItems.NUGGET_SHADE), new ItemStack(ModItems.YARN_SHADE), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Item.getItemFromBlock(BlocksTC.shimmerleaf)), new ItemStack(ModItems.YARN_ETHER), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 7), new ItemStack(ModItems.YARN_VOID), 5.0F);
 
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.FABRIC_DECORATED), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ItemsTC.fabric), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.FABRIC_ENCHANTED), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.FABRIC_LIGHT), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_SHADE), new ItemStack(ModItems.YARN_SHADE), new ItemStack(ModItems.FABRIC_SHADE), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_VOID), new ItemStack(ModItems.YARN_VOID), new ItemStack(ModItems.FABRIC_VOID), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.FABRIC_BEWITCHED), 5.0F);
-        addSpinningWheelRecipe("tg:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.YARN_SHADE), new ItemStack(ModItems.YARN_VOID), new ItemStack(ModItems.FABRIC_VOLATILE), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.FABRIC_DECORATED), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ItemsTC.fabric), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.FABRIC_ENCHANTED), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.FABRIC_LIGHT), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_SHADE), new ItemStack(ModItems.YARN_SHADE), new ItemStack(ModItems.FABRIC_SHADE), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_VOID), new ItemStack(ModItems.YARN_VOID), new ItemStack(ModItems.FABRIC_VOID), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.FABRIC_BEWITCHED), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.YARN_SHADE), new ItemStack(ModItems.YARN_VOID), new ItemStack(ModItems.FABRIC_VOLATILE), 5.0F);
     }
 
 
