@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'com.wynprice.cursemaven'
 
-version = "0.3.2-kedition"
+version = "0.4.0-kedition"
 group = "com.ancient.thaumicgadgets"
 archivesBaseName = "ThaumicGadgets"
 

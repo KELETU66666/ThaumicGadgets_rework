@@ -24,3 +24,4 @@ hs_err_pid*
 # 项目排除路径
 /.gradle/
 /build/
+/run/

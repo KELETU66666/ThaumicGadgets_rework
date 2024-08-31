@@ -21,7 +21,7 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.research.ResearchCategories;
 
 
-@Mod(modid = "thaumicgadgets", name = "Thaumic Gadgets", version = "0.3.2-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = "thaumicgadgets", name = "Thaumic Gadgets", version = "0.4.0-kedition", dependencies = "required-after:thaumcraft", acceptedMinecraftVersions = "[1.12.2]")
 public class Main {
     @Instance
     public static Main instance;
