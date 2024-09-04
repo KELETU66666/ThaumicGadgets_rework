@@ -5,7 +5,6 @@ import com.ancient.thaumicgadgets.network.gemcutter.MessageClientAllAspects;
 import com.ancient.thaumicgadgets.network.gemcutter.MessageServerChoosedAspects;
 import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticles;
 import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustom;
-import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustomLightning;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
@@ -32,7 +31,6 @@ public class NetworkHandler
         INSTANCE.registerMessage(MessageClientExtruderUp.handler.class, MessageClientExtruderUp.class, id++, Side.CLIENT);
         INSTANCE.registerMessage(MessageClientSpawnParticles.handler.class, MessageClientSpawnParticles.class, id++, Side.CLIENT);
         INSTANCE.registerMessage(MessageClientSpawnParticlesCustom.handler.class, MessageClientSpawnParticlesCustom.class, id++, Side.CLIENT);
-        INSTANCE.registerMessage(MessageClientSpawnParticlesCustomLightning.handler.class, MessageClientSpawnParticlesCustomLightning.class, id++, Side.CLIENT);
         INSTANCE.registerMessage(MessageClientCachePos.handler.class, MessageClientCachePos.class, id++, Side.CLIENT);
         INSTANCE.registerMessage(MessageServerChoosedAspects.handler.class, MessageServerChoosedAspects.class, id++, Side.SERVER);
         INSTANCE.registerMessage(MessageClientAllAspects.handler.class, MessageClientAllAspects.class, id++, Side.CLIENT);

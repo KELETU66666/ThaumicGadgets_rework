@@ -50,7 +50,7 @@ public class TileEntityBlastFurnace extends TileEntityWGBase implements ITickabl
         facingZ = facing.getZOffset();
     }
 
-    public void update()
+    /*public void update()
     {
         if(world.isRemote)
             return;
@@ -68,7 +68,7 @@ public class TileEntityBlastFurnace extends TileEntityWGBase implements ITickabl
 
         TileEntityBlastFurnace master = (TileEntityBlastFurnace) world.getTileEntity(pos);
         if(master.speedupTick <= 0)
-            master.speedupTick = AuraHelper.drainVis(world, pos, 0.5F, false);
+            master.speedupTick = AuraHelper.drainVis(world, pos, 0.05F, false);
 
         boolean cooking = false;
         if(processTick>0)
@@ -136,7 +136,7 @@ public class TileEntityBlastFurnace extends TileEntityWGBase implements ITickabl
             this.world.addBlockEvent(pos, getBlockType(), 4, active?1:0);
         }
 
-    }
+    }*/
 
     public boolean addStackToInputs(ItemStack stack) {
         for (int i = 0; i < inputs.size(); i++) if (this.inputs.get(i) != null && this.inputs.get(i).isItemEqual(stack)
@@ -215,14 +215,18 @@ public class TileEntityBlastFurnace extends TileEntityWGBase implements ITickabl
         world.addBlockEvent(pos, getBlockType(), 3, 0);
     }
 
-  /*  @Override
+    @Override
     public void update() {
         if (this.world.isRemote)
             return;
 
+        if (facingX == -5) {
+            setFacing();
+        }
+
         TileEntityBlastFurnace tile = (TileEntityBlastFurnace) world.getTileEntity(pos);
         if (tile.speedupTick <= 0)
-            tile.speedupTick = AuraHandler.drainVis(world, pos, 0.5f, false);
+            tile.speedupTick = AuraHelper.drainVis(world, pos, 0.05f, false);
 
         if (tick <= 80)
             ++tick;
@@ -246,7 +250,8 @@ public class TileEntityBlastFurnace extends TileEntityWGBase implements ITickabl
             if (processTick > calc) processTick = calc;
         }
 
-        if (processTick <= 0 && !inputs.isEmpty() && fuel > 0) if (cooking) {
+        if (processTick <= 0 && !inputs.isEmpty() && fuel > 0)
+            if (cooking) {
             ItemStack inputStack = inputs.get(0);
             InfernalBlastfurnaceRecipe recipe = InfernalBlastfurnaceRecipe.getRecipeForInput(inputStack);
             ItemStack outputStack = recipe.getOutput();
@@ -283,7 +288,7 @@ public class TileEntityBlastFurnace extends TileEntityWGBase implements ITickabl
             this.world.addBlockEvent(pos, getBlockType(), 4, active ? 1 : 0);
         }
     }
-*/
+
     @Override
     public void readCustomNBT(NBTTagCompound tags) {
         fuel = tags.getInteger("fuel");

@@ -17,13 +17,11 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
 
@@ -31,7 +29,6 @@ import java.util.Map;
 
 public class ArmorPrimal extends ArmorBase implements ICheckEnchantment {
     private final int regenCount;
-    private final long lastTick;
     private final int period;
     private final int mode;
     ModelBiped model;
@@ -42,7 +39,6 @@ public class ArmorPrimal extends ArmorBase implements ICheckEnchantment {
         model = null;
         location = null;
         this.regenCount = 2;
-        this.lastTick = 0L;
         this.period = 100;
     }
 
@@ -83,11 +79,6 @@ public class ArmorPrimal extends ArmorBase implements ICheckEnchantment {
         if (is.getTagCompound().getInteger("mode") > 5)
         {
             is.getTagCompound().setInteger("mode", 0);
-        }
-        if (stack.getItem() instanceof ArmorPrimalUpgraded) {
-
-            NBTTagList list = stack.getTagCompound().getTagList("primalInventory", 10);
-            is.getTagCompound().setTag("primalInventory", list);
         }
         player.inventory.armorInventory.set(slotId, is);
     }
@@ -156,39 +147,16 @@ public class ArmorPrimal extends ArmorBase implements ICheckEnchantment {
     }
 
     @Override
-    @Nullable
     @SideOnly(Side.CLIENT)
-    public ModelBiped getArmorModel(EntityLivingBase living, ItemStack stack, EntityEquipmentSlot slot, ModelBiped _default) {
-
-        if (model == null) {
-            if (slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.FEET)
-                model = new ArmorPrimalModel(stack);
-            else
-                model = new ArmorPrimalModel(stack);
-
-            model.bipedHead.showModel = slot == EntityEquipmentSlot.HEAD;
-            model.bipedHeadwear.showModel = slot == EntityEquipmentSlot.HEAD;
-            model.bipedBody.showModel = slot == EntityEquipmentSlot.CHEST || slot == EntityEquipmentSlot.LEGS;
-            model.bipedRightArm.showModel = slot == EntityEquipmentSlot.CHEST;
-            model.bipedLeftArm.showModel = slot == EntityEquipmentSlot.CHEST;
-            model.bipedRightLeg.showModel = slot == EntityEquipmentSlot.LEGS;
-            model.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.LEGS;
-        }
-
-        if(slot == EntityEquipmentSlot.LEGS)
-            return ArmorPrimalModel.getModel(living, stack);
-        if(slot == EntityEquipmentSlot.FEET)
-            return null;
-        return model;
+    public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, ModelBiped _default)
+    {
+        return ModelPrimordialArmor.getModel(entityLiving, itemStack);
     }
 
-    public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
-        if (location == null) {
-            if (slot == EntityEquipmentSlot.FEET)
-                location = "thaumicgadgets:textures/models/armor/primal_boots.png";
-            else
-                location = "thaumicgadgets:textures/models/armor/primal_armor.png";
-        }
-        return location;
+    @Override
+    @SideOnly(Side.CLIENT)
+    public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
+    {
+        return "thaumicgadgets:textures/models/armor/primal_armor.png";
     }
 }

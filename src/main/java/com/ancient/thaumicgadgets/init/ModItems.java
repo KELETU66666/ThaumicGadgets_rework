@@ -3,13 +3,13 @@ package com.ancient.thaumicgadgets.init;
 import com.ancient.thaumicgadgets.armor.light.ArmorLight;
 import com.ancient.thaumicgadgets.armor.light.LightBelt;
 import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
-import com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded;
 import com.ancient.thaumicgadgets.armor.shade.ArmorShade;
 import com.ancient.thaumicgadgets.armor.shade.ShadeBelt;
 import com.ancient.thaumicgadgets.items.*;
 import com.ancient.thaumicgadgets.items.pouches.ItemPouch;
 import com.ancient.thaumicgadgets.tools.light.*;
 import com.ancient.thaumicgadgets.tools.primal.ToolAxePrimal;
+import com.ancient.thaumicgadgets.tools.primal.ToolPickaxePrimal;
 import com.ancient.thaumicgadgets.tools.primal.ToolSwordPrimal;
 import com.ancient.thaumicgadgets.tools.shade.*;
 import com.ancient.thaumicgadgets.tools.thauminium.ScytheThaum;
@@ -75,19 +75,13 @@ public class ModItems {
 
     public static final Item SWORD_PRIMAL = new ToolSwordPrimal("sword_primal", TOOL_PRIMAL, 11.0F, -2.4F);
     public static final Item AXE_PRIMAL = new ToolAxePrimal("axe_primal", TOOL_PRIMAL, 12.0F, -2.75F);
-    public static final Item HAMMER_PRIMAL = new ToolAxePrimal("hammer_primal", TOOL_PRIMAL, 16.0F, -3.1F);
+    public static final Item HAMMER_PRIMAL = new ToolPickaxePrimal("hammer_primal", TOOL_PRIMAL, 16.0F, -3.1F);
 
 
     public static final Item HELMET_PRIMAL = new ArmorPrimal("helmet_primal", ARMOR_PRIMAL, 1, EntityEquipmentSlot.HEAD);
     public static final Item CHESTPLATE_PRIMAL = new ArmorPrimal("chestplate_primal", ARMOR_PRIMAL, 1, EntityEquipmentSlot.CHEST);
     public static final Item LEGGINS_PRIMAL = new ArmorPrimal("leggins_primal", ARMOR_PRIMAL, 2, EntityEquipmentSlot.LEGS);
     public static final Item BOOTS_PRIMAL = new ArmorPrimal("boots_primal", ARMOR_PRIMAL, 1, EntityEquipmentSlot.FEET);
-
-
-    public static final Item HELMET_PRIMAL_UP = new ArmorPrimalUpgraded("helmet_primal_up", ARMOR_PRIMAL, 1, EntityEquipmentSlot.HEAD);
-    public static final Item CHESTPLATE_PRIMAL_UP = new ArmorPrimalUpgraded("chestplate_primal_up", ARMOR_PRIMAL, 1, EntityEquipmentSlot.CHEST);
-    public static final Item LEGGINS_PRIMAL_UP = new ArmorPrimalUpgraded("leggins_primal_up", ARMOR_PRIMAL, 2, EntityEquipmentSlot.LEGS);
-    public static final Item BOOTS_PRIMAL_UP = new ArmorPrimalUpgraded("boots_primal_up", ARMOR_PRIMAL, 1, EntityEquipmentSlot.FEET);
 
     public static final Item TOOL_GEMCUTTER = new GemCutter("tool_gemcutter");
 
@@ -100,7 +94,7 @@ public class ModItems {
     public static final Item YARN_ETHER = new ItemBase("yarn_ether");
     public static final Item YARN_VOID = new ItemBase("yarn_void");
 
-    public static final Item FABRIC_DECORATED = new ItemBase("fabric_decorated");
+    public static final Item FABRIC_SPACIOUS = new ItemBase("fabric_spacious");
     public static final Item FABRIC_ENCHANTED = new ItemBase("fabric_enchanted");
     public static final Item FABRIC_LIGHT = new ItemBase("fabric_light");
     public static final Item FABRIC_SHADE = new ItemBase("fabric_shade");
@@ -128,16 +122,9 @@ public class ModItems {
     public static final Item SHARPED_CTYSTAL_ORDER = new ItemCrystal("sharped_crystal_order");
     public static final Item SHARPED_CTYSTAL_ENTROPY = new ItemCrystal("sharped_crystal_entropy");
 
-    public static final Item MAGIC_POUCH = new ItemPouch("pouch_magic_1");
-    public static final Item ENCHANTED_POUCH = new ItemPouch("pouch_magic_2");
-    public static final Item BEWITCHED_POUCH = new ItemPouch("pouch_magic_3");
-
-    public static final Item HUNGRY_MAGIC_POUCH = new ItemPouch("pouch_hungry_magic_1");
-    public static final Item HUNGRY_ENCHANTED_POUCH = new ItemPouch("pouch_hungry_magic_2");
-    public static final Item HUNGRY_BEWITCHED_POUCH = new ItemPouch("pouch_hungry_magic_3");
-
+    public static final Item MAGIC_POUCH = new ItemPouch("pouch_magic");
+    public static final Item HUNGRY_MAGIC_POUCH = new ItemPouch("pouch_hungry_magic");
     public static final Item ENDER_POUCH = new ItemPouch("pouch_ender");
-
     public static final Item VOID_POUCH = new ItemPouch("pouch_void");
 
     public static final Item SCYTHE_THAUM = new ScytheThaum("scythe_thaum", ThaumcraftMaterials.TOOLMAT_THAUMIUM, 8.0F, -3.0F, 2, 1, 2);

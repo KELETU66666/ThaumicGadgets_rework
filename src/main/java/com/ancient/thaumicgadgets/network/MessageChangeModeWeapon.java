@@ -1,18 +1,16 @@
 package com.ancient.thaumicgadgets.network;
 
 import com.ancient.thaumicgadgets.tools.primal.ToolAxePrimal;
+import com.ancient.thaumicgadgets.tools.primal.ToolPickaxePrimal;
 import com.ancient.thaumicgadgets.tools.primal.ToolSwordPrimal;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
-
-public class MessageChangeModeWeapon
-        implements IMessage {
+public class MessageChangeModeWeapon implements IMessage {
     private int itemSlot;
 
     public MessageChangeModeWeapon() {
@@ -46,11 +44,15 @@ public class MessageChangeModeWeapon
                         if (stack.getItem() instanceof ToolAxePrimal) {
 
                             ToolAxePrimal r = (ToolAxePrimal) stack.getItem();
-                            r.changeItemMode((EntityPlayer) pl, stack, message.itemSlot);
-                        } else if (stack.getItem() instanceof ToolSwordPrimal) {
+                            r.changeItemMode(pl, stack, message.itemSlot);
+                        } else if (stack.getItem() instanceof ToolPickaxePrimal) {
+
+                            ToolPickaxePrimal r = (ToolPickaxePrimal) stack.getItem();
+                            r.changeItemMode(pl, stack, message.itemSlot);
+                        }else if (stack.getItem() instanceof ToolSwordPrimal) {
 
                             ToolSwordPrimal r = (ToolSwordPrimal) stack.getItem();
-                            r.changeItemMode((EntityPlayer) pl, stack, message.itemSlot);
+                            r.changeItemMode(pl, stack, message.itemSlot);
                         }
                     }
                 }

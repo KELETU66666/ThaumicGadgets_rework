@@ -15,7 +15,6 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -86,11 +85,6 @@ public class ToolSwordPrimal extends ToolSwordBase implements ICheckEnchantment 
         is.setTagCompound(nbt);
         if (is.getTagCompound().getInteger("mode") > 5) {
             is.getTagCompound().setInteger("mode", 0);
-        }
-        if (stack.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded) {
-
-            NBTTagList list = stack.getTagCompound().getTagList("primalInventory", 10);
-            is.getTagCompound().setTag("primalInventory", list);
         }
         player.inventory.setInventorySlotContents(slotId, is);
     }

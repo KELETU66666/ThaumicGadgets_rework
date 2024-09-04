@@ -1,9 +1,9 @@
 key.categories.thaumicgadgets=神秘宝具
+tc.research.category.GADGETS=神秘宝具
 key.thaumicgadgets.open_gui=打开模组菜单
 key.thaumicgadgets.armor_ability=装甲能力
 
 item.tool_gemcutter.name=珠宝雕刻师的工具
-
 
 item.magicfood.sweetwart.name=糖渍地狱疣
 item.magicfood.nethercake.name=地狱蛋糕
@@ -22,7 +22,7 @@ item.yarn_shade.name=暗影纺线
 item.yarn_ether.name=水银纺线
 item.yarn_void.name=虚空纺线
 
-item.fabric_decorated.name=装饰布匹
+item.fabric_spacious.name=宽纺布匹
 item.fabric_enchanted.name=梦幻布匹
 item.fabric_light.name=光明布匹
 item.fabric_shade.name=暗影布匹
@@ -91,24 +91,14 @@ item.chestplate_primal.name=元始胸甲
 item.leggins_primal.name=元始护腿
 item.boots_primal.name=元始之靴
 
-item.helmet_primal_up.name=高级元始头盔
-item.chestplate_primal_up.name=高级元始胸甲
-item.leggins_primal_up.name=高级元始护腿
-item.boots_primal_up.name=高级元始之靴
-
 item.primal.description=当前元素: 
-item.primal_upgraded.description=当前晶体: 
 
 item.scythe_thaum.name=神秘镰刀
 item.scythe_void.name=虚空镰刀
 
-item.pouch_magic_1.name=魔法手袋
-item.pouch_magic_2.name=梦幻手袋
-item.pouch_magic_3.name=迷幻手袋
+item.pouch_magic.name=手袋
 
-item.pouch_hungry_magic_1.name=饕餮魔法手袋
-item.pouch_hungry_magic_2.name=饕餮梦幻手袋
-item.pouch_hungry_magic_3.name=饕餮迷幻手袋
+item.pouch_hungry_magic.name=饕餮手袋
 
 item.pouch_ender.name=末影手袋
 item.pouch_void.name=虚空手袋
@@ -179,18 +169,18 @@ research.TG_OBSIDIAN_EXTRUDER.title=造石机
 research.TG_OBSIDIAN_EXTRUDER.stage.1=当然，无限的圆石是件好事，但，是时候去想更多的东西了...
 research.TG_OBSIDIAN_EXTRUDER.stage.2=你改进了你的"圆石制造机"，现在它可以制造石头、圆石或者黑曜石，自由选择。制作一块黑曜石需要供应10点Ignis、10点Aqua和10点Terra源质。
 
-research.TG_BLAST_FURNACE.title=无间熔炉
-research.TG_BLAST_FURNACE.stage.1=炼狱熔炉当然是个好东西。但似乎你感觉它的温度和能量不是很足，冶炼矿簇也不是你想的那样高效...
-research.TG_BLAST_FURNACE.stage.2=无间熔炉具有如此高的内部温度以至于只有矿簇能容纳它的超高温。所有其它的物品都完全无法被冶炼，只留下灰烬。矿簇能被冶炼成三倍产量。安装奥术风箱和提供Ignis源质能加速无间熔炉的工作效率。
+research.TG_BLAST_FURNACE.title=炼狱高炉
+research.TG_BLAST_FURNACE.stage.1=炼狱高炉当然是个好东西。但似乎你感觉它的温度和能量不是很足，冶炼矿簇也不是你想的那样高效...
+research.TG_BLAST_FURNACE.stage.2=炼狱高炉具有如此高的内部温度以至于只有矿簇能容纳它的超高温。所有其它的物品都完全无法被冶炼，只留下灰烬。矿簇能被冶炼成三倍产量。安装奥术风箱能加速炼狱高炉的工作效率。炼狱高炉工作时需要并会自动抽取附近容器中的Ignis源质。
 
 research.TG_SHADOW_METAL.title=暗影金属
 research.TG_SHADOW_METAL.stage.1=暗影...总是暗影。暗影就是无法依存于它者之物的物质？或者，可以？
-research.TG_SHADOW_METAL.stage.2=可以。往金矿石里添加Tenebrae、Auram、Permutatio元素，你得到了暗影矿石—太难以驾驭而不能直接获得金属锭。多亏了无间熔炉。从中得到的金属似乎能吸收它周围的光，用气团裹住它周围的空间。这是不是气团呢...甚至被制成金属锭后仍能保持它的硬度，这种金属不能被常规的方法进行加工。要创造由暗影金属制成的工具，你需要注魔。这些天的仔细观察后，这些工具在晚上能自我修复，并且能在你干活的时候帮助你，但在白天吗...
+research.TG_SHADOW_METAL.stage.2=可以。往金矿石里添加Tenebrae、Auram、Permutatio元素，你得到了暗影矿石—太难以驾驭而不能直接获得金属锭。多亏了炼狱高炉。从中得到的金属似乎能吸收它周围的光，用气团裹住它周围的空间。这是不是气团呢...甚至被制成金属锭后仍能保持它的硬度，这种金属不能被常规的方法进行加工。要创造由暗影金属制成的工具，你需要注魔。这些天的仔细观察后，这些工具在晚上能自我修复，并且能在你干活的时候帮助你，但在白天吗...
 research.TG_SHADOW_METAL.stage.3=对暗影金属进行更长远的研究驱使你产生了一个想法：有没有可能，可以用它去制作一套优良的装甲。在暗影金属的帮助下，改变神秘要塞装甲的结构，你得到了暗影装甲—拥有十分强大的防御力。在夜晚，它同样拥有自我修复的性质。但对你来说，似乎它的潜能还没有完全显露出来...
 
 research.TG_LIGHT_METAL.title=光明金属
 research.TG_LIGHT_METAL.stage.1=光明...当你对着太阳研究，你开始思考:"如果风是坚硬的会发生什么？它的性质会是什么？"为了完全舍弃这个愚蠢至极的想法，你决定去证实给你自己那是不可能的...
-research.TG_LIGHT_METAL.stage.2=但努力保存下来了。你能够创造光明矿石，通过往金矿石添加Lux、Auram和Permutatio元素。但得到的矿石十分坚硬，甚至炼狱熔炉都不能将它冶炼。唯一的解决办法就是无间熔炉。得到的金属锭会散发出一种柔和、令人愉悦的光芒，但由于它极高的硬度，直接使用什么东西都做不出来...就像这样。为了能用光明金属制作工具，你需要注魔。经过这些天的仔细观察，这些工具能在白天自我修复，并且似乎能在你干活的时候帮助你，然而在夜间么...
+research.TG_LIGHT_METAL.stage.2=但努力保存下来了。你能够创造光明矿石，通过往金矿石添加Lux、Auram和Permutatio元素。但得到的矿石十分坚硬，甚至炼狱熔炉都不能将它冶炼。唯一的解决办法就是炼狱高炉。得到的金属锭会散发出一种柔和、令人愉悦的光芒，但由于它极高的硬度，直接使用什么东西都做不出来...就像这样。为了能用光明金属制作工具，你需要注魔。经过这些天的仔细观察，这些工具能在白天自我修复，并且似乎能在你干活的时候帮助你，然而在夜间么...
 research.TG_LIGHT_METAL.stage.3=对光明金属进行更长远的研究使你产生了一个想法：有没有可能，能用它去制作一套优良的装甲。在光明金属的帮助下，改变神秘要塞装甲的结构，你得到了光明装甲—拥有十分强大的防御力。在白天，它同样拥有自我修复的性质。但对你来说，似乎它的潜能还没有完全显露出来...
 
 research.TG_PRIMAL_ARMOR.title=元始装甲
@@ -200,10 +190,6 @@ research.TG_PRIMAL_ARMOR.stage.2=元始装甲。这就是全部。往神秘要�
 research.TG_PRIMAL_WEAPON.title=元始武器
 research.TG_PRIMAL_WEAPON.stage.1=既然能创造元始装甲，为什么不试着去创造元始武器呢？
 research.TG_PRIMAL_WEAPON.stage.2=它来了。代表着绝对力量的武器。元始武器。你成功打造了3件基础武器—剑、斧和锤。与元始装甲一样，元始武器都是无限耐久的，不可以被附魔并且拥有各元始元素独特的力量:<PAGE><LINE>§l增益:Aer§r<BR>无处不在的Aer之力量会给予武器风与天空的增益—剑拥有"横扫之刃IV"的附魔，斧头具有"急迫I"的附魔，战锤攻击时有20%的概率给你的敌人降下天雷。<PAGE><LINE>§l增益:Ignis§r<BR>猛烈的Ignis之力量会将武器填充这个元素的威力。剑会具有"火焰附加II"的附魔，斧每次攻击都会以一场小型爆炸的形势宣泄它的怒火，锤每一击都有20%的概率制造一场大爆炸把你的敌人分散到四周并造成极大的伤害。<PAGE><LINE>§l增益：Aqua§r<BR>流动的Aqua之力量会往武器充填海浪和隐藏之水的力量，这种力量甚至能破坏石头。也带有明显的恶意—中毒和致幻。剑具有“锋利VI”的附魔，斧攻击时会造成“反胃”和“中毒III”3秒，锤攻击会有50%的概率对敌人掷出一个水珠，造成3点伤害。<PAGE><LINE>§l增益：Terra§r<BR>Terra独特的力量会充满武器本身，对敌人而言，武器重量会变重，对你而言，并没有。剑具有“击退III”的附魔，斧攻击会有20%的概率造成暴击，锤攻击时会有25%的概率晕眩你的对手1秒。<PAGE><LINE>§l增益：Ordo§r<BR>Ordo那有序的力量会为你的武器带来谐和和光明之力。剑具有“亡灵杀手VI”的附魔，斧会对暗影装甲造成双倍伤害，锤攻击任意装甲会额外造成25%的伤害。<PAGE><LINE>§l增益：Perditio§r<BR>无序的Perditio力量会在你的武器充满邪恶的力量。剑会带有“节肢杀手VI”的附魔，斧会对光明装甲造成双倍伤害，锤攻击时有50%的概率给予敌人“燃烧II”2秒。
-
-research.TG_BETTER_PRIMAL_ARMOR.title=高级元始装甲
-research.TG_BETTER_PRIMAL_ARMOR.stage.1=尽你所能研究元始珍珠时，你得出了结论，那就是它的力量几乎是无限的，然而，现实的“束缚”和材料限制了它。如果试着把它与元始装甲结合会怎样，会拥有元始元素和元始珍珠的力量吗？
-research.TG_BETTER_PRIMAL_ARMOR.stage.2=当然会，但它并没有发生你所期望和希望的效果，但这也意味着失败。你觉得那已经是最大限度了，你认为最好是在持续的基础上，重复盔甲中嵌入元始珍珠的效果。然而，效果却完全不同：<PAGE><LINE>§增益：Aer§r<BR>元始珍珠中Aer的力量能够向装甲的各组成部分导入它的特殊力量。但相较于之前，它们能够相互增强。头盔会拥有“水下呼吸”I、II、III等级的能力。胸甲能在以玩家为中心，半径为4,5,6格的范围内将掉落物吸引至玩家。护腿会拥有“跳跃提升”I、II、III的附魔。靴子会拥有“减重”I、II、III级的附魔。当四件装甲全部装备时，你将拥有以下能力：“水下呼吸”，吸引半径为7格的掉落物，“跳跃提升IV”，免疫摔落伤害。另外，所有燃烧弹射物在你面前会返还给敌人，以致它们无法伤害你，但这个发生的概率只有90%。<PAGE><LINE>§l增益：Ignis§r<BR>元始珍珠中Ignis的力量会让你的装甲充满怒火。攻击你的敌人会被扔到周围，并且在一件装甲的加持下有25%的概率燃烧，两件燃烧概率提升至50%，三件75%，四件全部装备时，所有攻击你的敌人都会被弹开并燃烧。你会获得抗火，在你半径9格的万灵生物会燃烧，即使它们在你的视野开外。<PAGE><LINE>§l增益：Aqua§r<BR>元始珍珠中的Aqua装甲会给予你吸血的效果。你造成的任何伤害，都会治疗你造成伤害量的百分比。一件装备会治疗造成伤害量的15%，2件上升至30%，3件45%，四件全部装备时治疗量上升至造成伤害量的60%，并免疫中毒、凋零和反胃。<PAGE><LINE>§l增益：Terra§r<BR>元始珍珠中Terra的力量会给予你自然恢复的机会。一件装备会给予你“生命回复I”的效果，两件装备—“生命回复II”，三件—“生命回复III”，四件装备—“生命回复IV”和“生命提升”。<PAGE><LINE>§l增益：Ordo§r<BR>元始珍珠中Ordo的力量会移除攻击者一方的任何魔法优势，并驱散他身上施加的增益效果。一件装备时触发的概率为25%，两件概率提升至50%，三件—75%，四件装备—移除敌人拥有的所有增益效果并给予你敌人所拥有的全部增益效果。<PAGE><LINE>§l增益：Perditio§r<BR>元始珍珠中Perditio的力量会给你的敌人制造些麻烦，给予攻击者“中毒”5秒。一件装备—25%的概率，两件—50%，三件—75%，四件—给予攻击者“中毒”，并以你为中心，半径5格的范围内，“凋零”气团会萦绕于此，给予范围内的任何人（除了你）以“凋零”效果。
 
 research.TG_BELT_LIGHT.title=光明腰带
 research.TG_BELT_LIGHT.stage.1=你一直在思考这样的事实，既然你能创造装甲、武器和工具，那为什么不能创造一条腰带呢？然而，腰带的组成成分是皮革，不是金属...

@@ -1,8 +1,5 @@
 package com.ancient.thaumicgadgets.util.handlers;
 
-import com.ancient.thaumicgadgets.armor.primal.ContainerPrimalArmor;
-import com.ancient.thaumicgadgets.armor.primal.GUIPrimalArmor;
-import com.ancient.thaumicgadgets.armor.primal.InventoryPrimalArmor;
 import com.ancient.thaumicgadgets.items.pouches.ContainerPouch;
 import com.ancient.thaumicgadgets.items.pouches.GUIPouch;
 import com.ancient.thaumicgadgets.items.pouches.InventoryPouch;
@@ -24,8 +21,6 @@ public class GUIHandler implements IGuiHandler {
             return new ContainerSpinningWheel(player.inventory, (TileEntitySpinningWheel) world.getTileEntity(new BlockPos(x, y, z)));
         if (ID == 1)
             return new ContainerGemCutter(player.inventory, (TileEntityGemCutter) world.getTileEntity(new BlockPos(x, y, z)));
-        if (ID == 2)
-            return new ContainerPrimalArmor(player, player.inventory, new InventoryPrimalArmor(player.getHeldItemMainhand()));
         if (ID == 3)
             return new ContainerPouch(player, player.inventory, new InventoryPouch(player.getHeldItemMainhand()));
         return null;
@@ -37,8 +32,6 @@ public class GUIHandler implements IGuiHandler {
             return new GUISpinningWheel(player.inventory, (TileEntitySpinningWheel) world.getTileEntity(new BlockPos(x, y, z)));
         if (ID == 1)
             return new GUIGemCutter(player.inventory, (TileEntityGemCutter) world.getTileEntity(new BlockPos(x, y, z)));
-        if (ID == 2)
-            return new GUIPrimalArmor(new ContainerPrimalArmor(player, player.inventory, new InventoryPrimalArmor(player.getHeldItemMainhand())));
         if (ID == 3)
             return new GUIPouch(new ContainerPouch(player, player.inventory, new InventoryPouch(player.getHeldItemMainhand())));
         return null;

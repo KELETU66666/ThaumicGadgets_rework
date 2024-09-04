@@ -1,392 +1,719 @@
 {
-    "entries" :[
+  "entries": [
+    {
+      "key": "THAUMICGADGETS",
+      "name": "research.THAUMICGADGETS.title",
+      "icons": [
+        "thaumicgadgets:thaumicgadgets"
+      ],
+      "category": "GADGETS",
+      "location": [
+        0,
+        0
+      ],
+      "parents": [
+        "UNLOCKINFUSION"
+      ],
+      "meta": [
+        "ROUND",
+        "HIDDEN"
+      ],
+      "stages": [
         {
-        "key": "THAUMICGADGETS",    
-        "name": "research.THAUMICGADGETS.title",
-        "icons": [ "thaumicgadgets:thaumicgadgets" ],
-        "category": "GADGETS", "location": [ 0,0 ], 
-        "parents": [ "UNLOCKINFUSION" ],        
-        "meta": [ "ROUND" , "HIDDEN" ],        
-        "stages": [
-                {
-                    "text": "research.THAUMICGADGETS.stage.1"
-                }
-            ]
-        },
-        {
-        "key": "TG_WEAVING",    
-        "name": "research.TG_WEAVING.title",
-        "icons": ["thaumicgadgets:spinning_wheel" ],
-        "category": "GADGETS", "location": [ 0, -2 ], 
-        "parents": [ "THAUMICGADGETS"],
-        "stages": [
-                {
-                    "text": "research.TG_WEAVING.stage.1",  
-                    "required_knowledge":["THEORY;BASICS;1"],
-                    "required_item": ["thaumcraft:fabric", "minecraft:wool;4"]
-                      
-                },
-                {
-                    "text": "research.TG_WEAVING.stage.2",  
-                    "recipes": ["thaumicgadgets:spinning_wheel"]
-                }
-            ]
-        },
-        {
-        "key": "TG_BAGS",    
-        "name": "research.TG_BAGS.title",
-        "icons": ["thaumicgadgets:pouch_magic_1", "thaumicgadgets:pouch_magic_2", "thaumicgadgets:pouch_magic_3"],
-        "category": "GADGETS", "location": [  0, -4  ],
-        "parents": [ "TG_WEAVING" ],
-        "stages": [
-                {
-                    "text": "research.TG_BAGS.stage.1",  
-                    "required_knowledge":["THEORY;INFUSION;2", "THEORY;BASICS;1"]
-                },
-                {
-                    "text": "research.TG_BAGS.stage.2",
-                    "recipes":["thaumicgadgets:pouch_magic_1", "thaumicgadgets:pouch_magic_2", "thaumicgadgets:pouch_magic_2_1", "thaumicgadgets:pouch_magic_3", "thaumicgadgets:pouch_magic_3_1"]
-                }
-            ]
-        },
-        {
-        "key": "TG_HUNGRY_BAGS",    
-        "name": "research.TG_HUNGRY_BAGS.title",
-        "icons": ["thaumicgadgets:pouch_hungry_magic_1","thaumicgadgets:pouch_hungry_magic_2","thaumicgadgets:pouch_hungry_magic_3" ],
-        "category": "GADGETS", "location": [ 0, -6 ],
-        "parents": [ "TG_BAGS", "HUNGRYCHEST"],
-        "meta":["HIDDEN"],        
-        "stages": [
-                {
-                    "text": "research.TG_HUNGRY_BAGS.stage.1",  
-                    "required_knowledge":["THEORY;INFUSION;1"],  
-                    "required_item": ["thaumcraft:hungryChest;1"]
-                },
-                {
-                    "text": "research.TG_HUNGRY_BAGS.stage.2",  
-                    "recipes":["thaumicgadgets:pouch_hungry_magic_1", "thaumicgadgets:pouch_hungry_magic_2", "thaumicgadgets:pouch_hungry_magic_2_1", "thaumicgadgets:pouch_hungry_magic_3", "thaumicgadgets:pouch_hungry_magic_3_1"]
-                }
-            ]
-        },
-        {
-        "key": "TG_ENDER_BAG",    
-        "name": "research.TG_ENDER_BAG.title",
-        "icons": ["thaumicgadgets:pouch_ender"],
-        "category": "GADGETS", "location": [ 2, -6 ],
-        "parents": [ "TG_BAGS"],        
-        "stages": [
-                {
-                    "text": "research.TG_ENDER_BAG.stage.1",  
-                    "required_knowledge":["OBSERVATION;ARTIFICE;1"],
-                    "required_item": ["minecraft:ender_chest;1"]
-                },
-                {
-                    "text": "research.TG_ENDER_BAG.stage.2",
-                    "recipes":["thaumicgadgets:pouch_ender"]
-                }
-            ]
-        },
-        {
-        "key": "TG_VOID_BAG",    
-        "name": "research.TG_VOID_BAG.title",
-        "icons": ["thaumicgadgets:pouch_void"],
-        "category": "GADGETS", "location": [ 2, -8 ],
-        "parents": [ "TG_ENDER_BAG" ],        
-        "stages": [
-                {
-                    "text": "research.TG_VOID_BAG.stage.1",  
-                    "required_knowledge":["THEORY;BASICS;1"],
-                    "warp": 1
-                },
-                {
-                    "text": "research.TG_VOID_BAG.stage.2",
-                    "recipes":["thaumicgadgets:pouch_void"]
-                }
-            ]
-        },
-        {
-        "key": "TG_AGEING_STONE",    
-        "name": "research.TG_AGEING_STONE.title",
-        "icons": ["thaumicgadgets:ageing_stone"],
-        "category": "GADGETS", "location": [ 2, 2 ],
-        "parents": [ "THAUMICGADGETS", "PAVINGSTONES"],
-        "meta":["HIDDEN"],        
-        "stages": [
-                {
-                    "text": "research.TG_AGEING_STONE.stage.1",  
-                    "required_knowledge":["THEORY;ARTIFICE;1", "OBSERVATION;BASICS;1"] , 
-                    "required_item": ["minecraft:clock;1"],
-                    "reward_item": [ "minecraft:bone;4", "minecraft:skull;1;0" ]
-                },
-                {
-                    "text": "research.TG_AGEING_STONE.stage.2",
-                    "recipes":["thaumicgadgets:ageing_stone"]
-                }
-            ]
-        },
-        {
-        "key": "TG_STONE_EXTRUDER",    
-        "name": "research.TG_STONE_EXTRUDER.title",
-        "icons": ["thaumicgadgets:extruder"],
-        "category": "GADGETS", "location": [ 0, 2 ], 
-        "parents": [ "THAUMICGADGETS", "REDSTONERELAY" ],        
-            "stages": [
-                {
-                    "text": "research.TG_STONE_EXTRUDER.stage.1",  
-                    "required_knowledge":[ "OBSERVATION;BASICS;1"],
-                    "required_item": ["minecraft:water_bucket;1", "minecraft:lava_bucket;1"],
-                    "reward_item": [ "minecraft:diamond;1" ]
-                },
-                {
-                    "text": "research.TG_STONE_EXTRUDER.stage.2",
-                    "recipes":["thaumicgadgets:extruder"]
-                }
-            ]
-        },
-        {
-        "key": "TG_OBSIDIAN_EXTRUDER",    
-        "name": "research.TG_OBSIDIAN_EXTRUDER.title",
-        "icons": ["thaumicgadgets:extruder"],
-        "category": "GADGETS", "location": [ 0, 4 ], 
-        "parents": ["TG_STONE_EXTRUDER"],        
-            "stages": [
-                {
-                    "text": "research.TG_OBSIDIAN_EXTRUDER.stage.1",  
-                    "required_knowledge":["THEORY;ARTIFICE;1", "OBSERVATION;BASICS;1"],  
-                    "required_item": ["thaumicgadgets:extruder;1"]
-                },
-                {
-                    "text": "research.TG_OBSIDIAN_EXTRUDER.stage.2"  ,
-                    "recipes":["thaumicgadgets:extruder_up"]
-                }
-            ]
-        },
-        {
-        "key": "TG_BLAST_FURNACE",    
-        "name": "research.TG_BLAST_FURNACE.title",
-        "icons": ["thaumicgadgets:blast_furnace"],
-        "category": "GADGETS", "location": [ -2, -4 ], 
-        "parents": ["THAUMICGADGETS", "INFERNALFURNACE"],
-        "meta":["HIDDEN"],        
-            "stages": [
-                {
-                    "text": "research.TG_BLAST_FURNACE.stage.1",  
-                    "required_knowledge":["THEORY;ARTIFICE;1"],
-                    "recipes": ["thaumicgadgets:nether_swart", "thaumicgadgets:nether_cake"]
-                },
-                {
-                    "text": "research.TG_BLAST_FURNACE.stage.2",
-                    "recipes":["thaumicgadgets:blast_furnace", "thaumicgadgets:dust_flour", "thaumicgadgets:dust_netherwart", "thaumicgadgets:nether_dough"]
-                }
-            ]
-        },        
-        {
-        "key": "TG_SHADOW_METAL",    
-        "name": "research.TG_SHADOW_METAL.title",
-        "icons": ["thaumicgadgets:ingot_shade"],
-        "category": "GADGETS", "location": [ -3, -2 ], 
-        "parents": ["TG_BLAST_FURNACE"],
-        "meta":["HIDDEN"],        
-            "stages": [
-                {
-                    "text": "research.TG_SHADOW_METAL.stage.1",  
-                    "required_knowledge":["THEORY;INFUSION;1", "OBSERVATION;ALCHEMY;1"],
-                    "required_item": ["thaumcraft:celestialNotes;1;5"],
-                    "recipes":["thaumicgadgets:shade_ore","thaumicgadgets:shade_metal"]
-                },
-                {
-                    "text": "research.TG_SHADOW_METAL.stage.2",  
-                    "required_knowledge":["OBSERVATION;INFUSION;1"],
-                    "recipes":["thaumicgadgets:shade_ore","thaumicgadgets:shade_metal", "thaumicgadgets:shade_instruments"]
-                    
-                },
-                {
-                    "text": "research.TG_SHADOW_METAL.stage.3",  
-                    "recipes":["thaumicgadgets:shade_ore","thaumicgadgets:shade_metal", "thaumicgadgets:shade_instruments", "thaumicgadgets:shade_armor"]
-                }
-            ]
-        },
-        {
-        "key": "TG_LIGHT_METAL",    
-        "name": "research.TG_LIGHT_METAL.title",
-        "icons": ["thaumicgadgets:ingot_light"],
-        "category": "GADGETS", "location": [ -3, -6 ], 
-        "parents": ["TG_BLAST_FURNACE"],
-        "meta":["HIDDEN"],        
-            "stages": [
-                {
-                    "text": "research.TG_LIGHT_METAL.stage.1",  
-                    "required_knowledge":["THEORY;INFUSION;1", "OBSERVATION;ALCHEMY;1"],
-                    "required_item": ["thaumcraft:celestialNotes;1;0"],
-                    "recipes":["thaumicgadgets:light_ore","thaumicgadgets:light_metal"]
-                },
-                {
-                    "text": "research.TG_LIGHT_METAL.stage.2",  
-                    "required_knowledge":["OBSERVATION;INFUSION;1"],
-                    "recipes": ["thaumicgadgets:light_ore","thaumicgadgets:light_metal","thaumicgadgets:light_instruments"]
-                },
-                {
-                    "text": "research.TG_LIGHT_METAL.stage.3",  
-                    "recipes": ["thaumicgadgets:light_ore","thaumicgadgets:light_metal","thaumicgadgets:light_instruments", "thaumicgadgets:light_armor"]
-                }
-            ]
-        },
-        {
-        "key": "TG_PRIMAL_ARMOR",    
-        "name": "research.TG_PRIMAL_ARMOR.title",
-        "icons": ["thaumicgadgets:boots_primal", "thaumicgadgets:chestplate_primal", "thaumicgadgets:helmet_primal", "thaumicgadgets:leggins_primal"],
-        "category": "GADGETS", "location": [ -6, -4 ], 
-        "parents": ["TG_LIGHT_METAL", "TG_SHADOW_METAL"],        
-            "stages": [
-                {
-                    "text": "research.TG_PRIMAL_ARMOR.stage.1",  
-                    "required_knowledge":["OBSERVATION;ELDRITCH;1", "THEORY;INFUSION;1", "THEORY;ARTIFICE;1" ],
-                    "warp": 3
-                },
-                {
-                    "text": "research.TG_PRIMAL_ARMOR.stage.2",
-                    "recipes": ["thaumicgadgets:helmet_primal", "thaumicgadgets:chestplate_primal", "thaumicgadgets:leggins_primal", "thaumicgadgets:boots_primal"]
-                }
-            ]
-        },
-        {
-        "key": "TG_PRIMAL_WEAPON",    
-        "name": "research.TG_PRIMAL_WEAPON.title",
-        "icons": ["thaumicgadgets:hammer_primal", "thaumicgadgets:sword_primal", "thaumicgadgets:axe_primal"],
-        "category": "GADGETS", "location": [ -7, -6 ], 
-        "parents": ["TG_PRIMAL_ARMOR"],        
-            "stages": [
-                {
-                    "text": "research.TG_PRIMAL_WEAPON.stage.1",  
-                    "required_knowledge":["THEORY;ELDRITCH;1", "OBSERVATION;INFUSION;1"],
-                    "required_item":["thaumcraft:primalCrusher;1"],
-                    "warp": 5  
-                },
-                {
-                    "text": "research.TG_PRIMAL_WEAPON.stage.2",
-                    "recipes":["thaumicgadgets:primal_sword", "thaumicgadgets:primal_axe", "thaumicgadgets:primal_hammer"]
-                }
-            ]
-        },
-        {
-        "key": "TG_BETTER_PRIMAL_ARMOR",    
-        "name": "research.TG_BETTER_PRIMAL_ARMOR.title",
-        "icons": ["thaumicgadgets:boots_primal_up", "thaumicgadgets:chestplate_primal_up", "thaumicgadgets:helmet_primal_up", "thaumicgadgets:leggins_primal_up"],
-        "category": "GADGETS", "location": [ -7, -2 ],
-        "meta":["HIDDEN"], 
-        "parents": ["TG_PRIMAL_ARMOR", "TG_JEWELLERY"],        
-            "stages": [
-                {
-                    "text": "research.TG_BETTER_PRIMAL_ARMOR.stage.1",  
-                    "required_knowledge":["OBSERVATION;INFUSION;1", "THEORY;ARTIFICE;1"],
-                    "required_item":["thaumicgadgets:oval_crystal_air;1", "thaumicgadgets:oval_crystal_earth;1", "thaumicgadgets:oval_crystal_fire;1", "thaumicgadgets:oval_crystal_water;1", "thaumicgadgets:oval_crystal_order;1", "thaumicgadgets:oval_crystal_entropy;1"],
-                    "warp": 5
-                },
-                {
-                    "text": "research.TG_BETTER_PRIMAL_ARMOR.stage.2",
-                    "recipes":["thaumicgadgets:helmet_primal_up", "thaumicgadgets:chestplate_primal_up", "thaumicgadgets:leggins_primal_up", "thaumicgadgets:boots_primal_up"]
-                }
-            ]
-        },
-        {
-        "key": "TG_BELT_LIGHT",    
-        "name": "research.TG_BELT_LIGHT.title",
-        "icons": ["thaumicgadgets:belt_light"],
-        "category": "GADGETS", "location": [ -4, -7 ], 
-        "parents": ["TG_LIGHT_METAL"],
-        "meta": ["HIDDEN"],        
-            "stages": [
-                {
-                    "text": "research.TG_BELT_LIGHT.stage.1",  
-                    "required_item":["thaumcraft:baubles;1;6", "thaumcraft:celestialNotes;1;0"],
-                    "required_knowledge":["THEORY;INFUSION;1"], 
-                    "warp": 2  
-                },
-                {
-                    "text": "research.TG_BELT_LIGHT.stage.2",
-                    "recipes": ["thaumicgadgets:belt_light"]
-                }
-            ]
-        },
-        {
-        "key": "TG_BELT_SHADOW",    
-        "name": "research.TG_BELT_SHADOW.title",
-        "icons": ["thaumicgadgets:belt_shade"],
-        "category": "GADGETS", "location": [ -4, -1 ], 
-        "parents": ["TG_SHADOW_METAL"],
-        "meta": ["HIDDEN"],        
-            "stages": [
-                {
-                    "text": "research.TG_BELT_SHADOW.stage.1",  
-                    "required_item":["thaumcraft:baubles;1;6", "thaumcraft:celestialNotes;1;5"],
-                    "required_knowledge":["THEORY;INFUSION;1"],
-                    "warp": 2 
-                },
-                {
-                    "text": "research.TG_BELT_SHADOW.stage.2",
-                    "recipes": ["thaumicgadgets:belt_shade"]
-                }
-            ]
-        },
-        {
-        "key": "TG_SCYTHES",    
-        "name": "research.TG_SCYTHES.title",
-        "icons": [ "thaumicgadgets:scythe_light", "thaumicgadgets:scythe_shade", "thaumicgadgets:scythe_thaum", "thaumicgadgets:scythe_void" ],
-        "category": "GADGETS", "location": [ -2, 2 ], 
-        "parents": ["THAUMICGADGETS", "METALLURGY@1"],
-        "meta":["HIDDEN"],        
-            "stages": [
-                {
-                    "text": "research.TG_SCYTHES.stage.1",  
-                    "required_knowledge":["THEORY;BASICS;1"],  
-                    "required_item":["minecraft:stick;1", "minecraft:iron_ingot;1", "minecraft:flint;1"]
-                },
-                {
-                    "text": "research.TG_SCYTHES.stage.2",
-                    "recipes": ["thaumicgadgets:scythe_thaum"]
-                }
-            ],
-            "addenda":[
-                {
-                    "text":"research.TG_SCYTHES.void_metal",
-                    "required_research":["METALLURGY@3"],
-                    "recipes": ["thaumicgadgets:scythe_void"]
-                },
-                {
-                    "text":"research.TG_SCYTHES.shade",
-                    "required_research":["TG_SHADOW_METAL"],
-                    "recipes": ["thaumicgadgets:scythe_shade"]
-                },
-                {
-                    "text":"research.TG_SCYTHES.light",
-                    "required_research":["TG_LIGHT_METAL"],
-                    "recipes": ["thaumicgadgets:scythe_light"]
-                }
-            ]
-        },
-        {
-        "key": "TG_JEWELLERY",    
-        "name": "research.TG_JEWELLERY.title",
-        "icons": [ "thaumicgadgets:gemcutter"],
-        "category": "GADGETS", "location": [ -5, 1 ], 
-        "parents": ["THAUMICGADGETS" ],        
-            "stages": [
-                {
-                    "text": "research.TG_JEWELLERY.stage.1",  
-                    "required_knowledge":["THEORY;ALCHEMY;1", "OBSERVATION;ARTIFICE;1"],
-                    "recipes": ["thaumicgadgets:cutting_tools"]
-                },
-                {
-                    "text": "research.TG_JEWELLERY.stage.2",  
-                    "required_knowledge":["OBSERVATION;ALCHEMY;1"],
-                    "required_item":["thaumicgadgets:sharped_crystal_air;1", "thaumicgadgets:sharped_crystal_earth;1", "thaumicgadgets:sharped_crystal_fire;1", "thaumicgadgets:sharped_crystal_water;1", "thaumicgadgets:sharped_crystal_order;1", "thaumicgadgets:sharped_crystal_entropy;1"],
-                    "recipes": ["thaumicgadgets:cutting_tools"]
-                },
-                {
-                    "text": "research.TG_JEWELLERY.stage.3",
-                    "recipes": ["thaumicgadgets:cutting_tools"]
-                }
-            ]
+          "text": "research.THAUMICGADGETS.stage.1"
         }
+      ]
+    },
+    {
+      "key": "TG_WEAVING",
+      "name": "research.TG_WEAVING.title",
+      "icons": [
+        "thaumicgadgets:spinning_wheel"
+      ],
+      "category": "GADGETS",
+      "location": [
+        0,
+        -2
+      ],
+      "parents": [
+        "THAUMICGADGETS"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_WEAVING.stage.1",
+          "required_knowledge": [
+            "THEORY;BASICS;1"
+          ],
+          "required_item": [
+            "thaumcraft:fabric",
+            "minecraft:wool;4"
+          ]
+        },
+        {
+          "text": "research.TG_WEAVING.stage.2",
+          "recipes": [
+            "thaumicgadgets:spinning_wheel"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_BAGS",
+      "name": "research.TG_BAGS.title",
+      "icons": [
+        "thaumicgadgets:pouch_magic"
+      ],
+      "category": "GADGETS",
+      "location": [
+        0,
+        -4
+      ],
+      "parents": [
+        "TG_WEAVING"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_BAGS.stage.1",
+          "required_knowledge": [
+            "THEORY;INFUSION;2",
+            "THEORY;BASICS;1"
+          ]
+        },
+        {
+          "text": "research.TG_BAGS.stage.2",
+          "recipes": [
+            "thaumicgadgets:pouch_magic"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_HUNGRY_BAGS",
+      "name": "research.TG_HUNGRY_BAGS.title",
+      "icons": [
+        "thaumicgadgets:pouch_hungry_magic"
+      ],
+      "category": "GADGETS",
+      "location": [
+        0,
+        -6
+      ],
+      "parents": [
+        "TG_BAGS",
+        "HUNGRYCHEST"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_HUNGRY_BAGS.stage.1",
+          "required_knowledge": [
+            "THEORY;INFUSION;1"
+          ],
+          "required_item": [
+            "thaumcraft:hungryChest;1"
+          ]
+        },
+        {
+          "text": "research.TG_HUNGRY_BAGS.stage.2",
+          "recipes": [
+            "thaumicgadgets:pouch_hungry_magic"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_ENDER_BAG",
+      "name": "research.TG_ENDER_BAG.title",
+      "icons": [
+        "thaumicgadgets:pouch_ender"
+      ],
+      "category": "GADGETS",
+      "location": [
+        2,
+        -6
+      ],
+      "parents": [
+        "TG_BAGS"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_ENDER_BAG.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;ARTIFICE;1"
+          ],
+          "required_item": [
+            "minecraft:ender_chest;1"
+          ]
+        },
+        {
+          "text": "research.TG_ENDER_BAG.stage.2",
+          "recipes": [
+            "thaumicgadgets:pouch_ender"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_VOID_BAG",
+      "name": "research.TG_VOID_BAG.title",
+      "icons": [
+        "thaumicgadgets:pouch_void"
+      ],
+      "category": "GADGETS",
+      "location": [
+        2,
+        -8
+      ],
+      "parents": [
+        "TG_ENDER_BAG"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_VOID_BAG.stage.1",
+          "required_knowledge": [
+            "THEORY;BASICS;1"
+          ],
+          "warp": 1
+        },
+        {
+          "text": "research.TG_VOID_BAG.stage.2",
+          "recipes": [
+            "thaumicgadgets:pouch_void"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_AGEING_STONE",
+      "name": "research.TG_AGEING_STONE.title",
+      "icons": [
+        "thaumicgadgets:ageing_stone"
+      ],
+      "category": "GADGETS",
+      "location": [
+        2,
+        2
+      ],
+      "parents": [
+        "THAUMICGADGETS",
+        "PAVINGSTONES"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_AGEING_STONE.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;1",
+            "OBSERVATION;BASICS;1"
+          ],
+          "required_item": [
+            "minecraft:clock;1"
+          ],
+          "reward_item": [
+            "minecraft:bone;4",
+            "minecraft:skull;1;0"
+          ]
+        },
+        {
+          "text": "research.TG_AGEING_STONE.stage.2",
+          "recipes": [
+            "thaumicgadgets:ageing_stone"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_STONE_EXTRUDER",
+      "name": "research.TG_STONE_EXTRUDER.title",
+      "icons": [
+        "thaumicgadgets:extruder"
+      ],
+      "category": "GADGETS",
+      "location": [
+        0,
+        2
+      ],
+      "parents": [
+        "THAUMICGADGETS",
+        "REDSTONERELAY"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_STONE_EXTRUDER.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;BASICS;1"
+          ],
+          "required_item": [
+            "minecraft:water_bucket;1",
+            "minecraft:lava_bucket;1"
+          ],
+          "reward_item": [
+            "minecraft:diamond;1"
+          ]
+        },
+        {
+          "text": "research.TG_STONE_EXTRUDER.stage.2",
+          "recipes": [
+            "thaumicgadgets:extruder"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_OBSIDIAN_EXTRUDER",
+      "name": "research.TG_OBSIDIAN_EXTRUDER.title",
+      "icons": [
+        "thaumicgadgets:extruder"
+      ],
+      "category": "GADGETS",
+      "location": [
+        0,
+        4
+      ],
+      "parents": [
+        "TG_STONE_EXTRUDER"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_OBSIDIAN_EXTRUDER.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;1",
+            "OBSERVATION;BASICS;1"
+          ],
+          "required_item": [
+            "thaumicgadgets:extruder;1"
+          ]
+        },
+        {
+          "text": "research.TG_OBSIDIAN_EXTRUDER.stage.2",
+          "recipes": [
+            "thaumicgadgets:extruder_up"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_BLAST_FURNACE",
+      "name": "research.TG_BLAST_FURNACE.title",
+      "icons": [
+        "thaumicgadgets:blast_furnace"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -2,
+        -4
+      ],
+      "parents": [
+        "THAUMICGADGETS",
+        "INFERNALFURNACE"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_BLAST_FURNACE.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;1"
+          ],
+          "recipes": [
+            "thaumicgadgets:nether_swart",
+            "thaumicgadgets:nether_cake"
+          ]
+        },
+        {
+          "text": "research.TG_BLAST_FURNACE.stage.2",
+          "recipes": [
+            "thaumicgadgets:blast_furnace",
+            "thaumicgadgets:dust_flour",
+            "thaumicgadgets:dust_netherwart",
+            "thaumicgadgets:nether_dough"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_SHADOW_METAL",
+      "name": "research.TG_SHADOW_METAL.title",
+      "icons": [
+        "thaumicgadgets:ingot_shade"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -3,
+        -2
+      ],
+      "parents": [
+        "TG_BLAST_FURNACE"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_SHADOW_METAL.stage.1",
+          "required_knowledge": [
+            "THEORY;INFUSION;1",
+            "OBSERVATION;ALCHEMY;1"
+          ],
+          "required_item": [
+            "thaumcraft:celestialNotes;1;5"
+          ],
+          "recipes": [
+            "thaumicgadgets:shade_ore",
+            "thaumicgadgets:shade_metal"
+          ]
+        },
+        {
+          "text": "research.TG_SHADOW_METAL.stage.2",
+          "required_knowledge": [
+            "OBSERVATION;INFUSION;1"
+          ],
+          "recipes": [
+            "thaumicgadgets:shade_ore",
+            "thaumicgadgets:shade_metal",
+            "thaumicgadgets:shade_instruments"
+          ]
+        },
+        {
+          "text": "research.TG_SHADOW_METAL.stage.3",
+          "recipes": [
+            "thaumicgadgets:shade_ore",
+            "thaumicgadgets:shade_metal",
+            "thaumicgadgets:shade_instruments",
+            "thaumicgadgets:shade_armor"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_LIGHT_METAL",
+      "name": "research.TG_LIGHT_METAL.title",
+      "icons": [
+        "thaumicgadgets:ingot_light"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -3,
+        -6
+      ],
+      "parents": [
+        "TG_BLAST_FURNACE"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_LIGHT_METAL.stage.1",
+          "required_knowledge": [
+            "THEORY;INFUSION;1",
+            "OBSERVATION;ALCHEMY;1"
+          ],
+          "required_item": [
+            "thaumcraft:celestialNotes;1;0"
+          ],
+          "recipes": [
+            "thaumicgadgets:light_ore",
+            "thaumicgadgets:light_metal"
+          ]
+        },
+        {
+          "text": "research.TG_LIGHT_METAL.stage.2",
+          "required_knowledge": [
+            "OBSERVATION;INFUSION;1"
+          ],
+          "recipes": [
+            "thaumicgadgets:light_ore",
+            "thaumicgadgets:light_metal",
+            "thaumicgadgets:light_instruments"
+          ]
+        },
+        {
+          "text": "research.TG_LIGHT_METAL.stage.3",
+          "recipes": [
+            "thaumicgadgets:light_ore",
+            "thaumicgadgets:light_metal",
+            "thaumicgadgets:light_instruments",
+            "thaumicgadgets:light_armor"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_PRIMAL_ARMOR",
+      "name": "research.TG_PRIMAL_ARMOR.title",
+      "icons": [
+        "thaumicgadgets:boots_primal",
+        "thaumicgadgets:chestplate_primal",
+        "thaumicgadgets:helmet_primal",
+        "thaumicgadgets:leggins_primal"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -6,
+        -4
+      ],
+      "parents": [
+        "TG_LIGHT_METAL",
+        "TG_SHADOW_METAL"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_PRIMAL_ARMOR.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;ELDRITCH;1",
+            "THEORY;INFUSION;1",
+            "THEORY;ARTIFICE;1"
+          ],
+          "warp": 3
+        },
+        {
+          "text": "research.TG_PRIMAL_ARMOR.stage.2",
+          "recipes": [
+            "thaumicgadgets:helmet_primal",
+            "thaumicgadgets:chestplate_primal",
+            "thaumicgadgets:leggins_primal",
+            "thaumicgadgets:boots_primal"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_PRIMAL_WEAPON",
+      "name": "research.TG_PRIMAL_WEAPON.title",
+      "icons": [
+        "thaumicgadgets:hammer_primal",
+        "thaumicgadgets:sword_primal",
+        "thaumicgadgets:axe_primal"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -7,
+        -2
+      ],
+      "parents": [
+        "TG_PRIMAL_ARMOR"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_PRIMAL_WEAPON.stage.1",
+          "required_knowledge": [
+            "THEORY;ELDRITCH;1",
+            "OBSERVATION;INFUSION;1"
+          ],
+          "required_item": [
+            "thaumcraft:primalCrusher;1"
+          ],
+          "warp": 5
+        },
+        {
+          "text": "research.TG_PRIMAL_WEAPON.stage.2",
+          "recipes": [
+            "thaumicgadgets:primal_sword",
+            "thaumicgadgets:primal_axe",
+            "thaumicgadgets:primal_hammer"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_BELT_LIGHT",
+      "name": "research.TG_BELT_LIGHT.title",
+      "icons": [
+        "thaumicgadgets:belt_light"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -4,
+        -7
+      ],
+      "parents": [
+        "TG_LIGHT_METAL"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_BELT_LIGHT.stage.1",
+          "required_item": [
+            "thaumcraft:baubles;1;6",
+            "thaumcraft:celestialNotes;1;0"
+          ],
+          "required_knowledge": [
+            "THEORY;INFUSION;1"
+          ],
+          "warp": 2
+        },
+        {
+          "text": "research.TG_BELT_LIGHT.stage.2",
+          "recipes": [
+            "thaumicgadgets:belt_light"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_BELT_SHADOW",
+      "name": "research.TG_BELT_SHADOW.title",
+      "icons": [
+        "thaumicgadgets:belt_shade"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -4,
+        -1
+      ],
+      "parents": [
+        "TG_SHADOW_METAL"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_BELT_SHADOW.stage.1",
+          "required_item": [
+            "thaumcraft:baubles;1;6",
+            "thaumcraft:celestialNotes;1;5"
+          ],
+          "required_knowledge": [
+            "THEORY;INFUSION;1"
+          ],
+          "warp": 2
+        },
+        {
+          "text": "research.TG_BELT_SHADOW.stage.2",
+          "recipes": [
+            "thaumicgadgets:belt_shade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_SCYTHES",
+      "name": "research.TG_SCYTHES.title",
+      "icons": [
+        "thaumicgadgets:scythe_light",
+        "thaumicgadgets:scythe_shade",
+        "thaumicgadgets:scythe_thaum",
+        "thaumicgadgets:scythe_void"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -2,
+        2
+      ],
+      "parents": [
+        "THAUMICGADGETS",
+        "METALLURGY@1"
+      ],
+      "meta": [
+        "HIDDEN"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_SCYTHES.stage.1",
+          "required_knowledge": [
+            "THEORY;BASICS;1"
+          ],
+          "required_item": [
+            "minecraft:stick;1",
+            "minecraft:iron_ingot;1",
+            "minecraft:flint;1"
+          ]
+        },
+        {
+          "text": "research.TG_SCYTHES.stage.2",
+          "recipes": [
+            "thaumicgadgets:scythe_thaum"
+          ]
+        }
+      ],
+      "addenda": [
+        {
+          "text": "research.TG_SCYTHES.void_metal",
+          "required_research": [
+            "METALLURGY@3"
+          ],
+          "recipes": [
+            "thaumicgadgets:scythe_void"
+          ]
+        },
+        {
+          "text": "research.TG_SCYTHES.shade",
+          "required_research": [
+            "TG_SHADOW_METAL"
+          ],
+          "recipes": [
+            "thaumicgadgets:scythe_shade"
+          ]
+        },
+        {
+          "text": "research.TG_SCYTHES.light",
+          "required_research": [
+            "TG_LIGHT_METAL"
+          ],
+          "recipes": [
+            "thaumicgadgets:scythe_light"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "TG_JEWELLERY",
+      "name": "research.TG_JEWELLERY.title",
+      "icons": [
+        "thaumicgadgets:gemcutter"
+      ],
+      "category": "GADGETS",
+      "location": [
+        -5,
+        1
+      ],
+      "parents": [
+        "THAUMICGADGETS"
+      ],
+      "stages": [
+        {
+          "text": "research.TG_JEWELLERY.stage.1",
+          "required_knowledge": [
+            "THEORY;ALCHEMY;1",
+            "OBSERVATION;ARTIFICE;1"
+          ],
+          "recipes": [
+            "thaumicgadgets:cutting_tools"
+          ]
+        },
+        {
+          "text": "research.TG_JEWELLERY.stage.2",
+          "required_knowledge": [
+            "OBSERVATION;ALCHEMY;1"
+          ],
+          "required_item": [
+            "thaumicgadgets:sharped_crystal_air;1",
+            "thaumicgadgets:sharped_crystal_earth;1",
+            "thaumicgadgets:sharped_crystal_fire;1",
+            "thaumicgadgets:sharped_crystal_water;1",
+            "thaumicgadgets:sharped_crystal_order;1",
+            "thaumicgadgets:sharped_crystal_entropy;1"
+          ],
+          "recipes": [
+            "thaumicgadgets:cutting_tools"
+          ]
+        },
+        {
+          "text": "research.TG_JEWELLERY.stage.3",
+          "recipes": [
+            "thaumicgadgets:cutting_tools"
+          ]
+        }
+      ]
+    }
   ]
 }

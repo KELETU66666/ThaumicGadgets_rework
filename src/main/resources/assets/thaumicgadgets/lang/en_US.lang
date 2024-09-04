@@ -22,7 +22,7 @@ item.yarn_shade.name=Shaded Yarn
 item.yarn_ether.name=Ether Yarn
 item.yarn_void.name=Void Yarn
 
-item.fabric_decorated.name=Decorated Fabric
+item.fabric_spacious.name=Spacious Fabric
 item.fabric_enchanted.name=Enchanted Fabric
 item.fabric_light.name=Fabric of Light
 item.fabric_shade.name=Shaded Fabric
@@ -91,28 +91,17 @@ item.chestplate_primal.name=Primal Chestplate
 item.leggins_primal.name=Primal Leggins
 item.boots_primal.name=Primal Boots
 
-item.helmet_primal_up.name=Primal Helmet Upgraded
-item.chestplate_primal_up.name=Primal Chestplate Upgraded
-item.leggins_primal_up.name=Primal Leggins Upgraded
-item.boots_primal_up.name=Primal Boots Upgraded
-
 item.primal.description=Current Aspect: 
-item.primal_upgraded.description=Current Gem: 
 
 item.scythe_thaum.name=Thaumium Scythe
 item.scythe_void.name=Void Scythe
 
-item.pouch_magic_1.name=Magic Pouch
-item.pouch_magic_2.name=Enchanted Pouch
-item.pouch_magic_3.name=Bewitched Pouch
+item.pouch_magic.name=Magic Pouch
 
-item.pouch_hungry_magic_1.name=Hungry Magic Pouch
-item.pouch_hungry_magic_2.name=Hungry Enchanted Pouch
-item.pouch_hungry_magic_3.name=Hungry Bewitched Pouch
+item.pouch_hungry_magic.name=Hungry Magic Pouch
 
 item.pouch_ender.name=Ender Pouch
 item.pouch_void.name=Void Pouch
-item.pouch_lense.name=Lense Pouch
 
 item.pouch.description.soulbinded=Soulbinded!
 item.pouch.description.unbinded=Unbinded!
@@ -134,11 +123,6 @@ tile.extruder.name=Thaumic Extruder
 tile.extruder_up.name=Upgraded Thaumic Extruder
 
 tile.blast_furnace.name=Infernal Blast Furnace
-
-tile.shade_rose_bush.name=Shade Rose Bush
-tile.shade_rose.name=Shade Rose
-tile.light_rose_bush.name=Light Rose Bush
-tile.light_rose.name=Light Rose
 
 enchantment.regen_primal=Primal Regeneration
 
@@ -207,10 +191,6 @@ research.TG_PRIMAL_WEAPON.title=Primal Weapon
 research.TG_PRIMAL_WEAPON.stage.1=If there is a way to create an primal armor, then why not try to create a primal weapon?
 research.TG_PRIMAL_WEAPON.stage.2=Here it is. Weapons of absolute power. Primal weapons. You managed to invent at once 3 primary weapons - a sword, an axe and a hammer. Just as the Primal armor, the original weapon is indestructible, can not be enchanted and will have its own forces of the primal aspects:<PAGE><LINE>§lStrenght of Aer§r<BR>The ubiquitous power of Aer gives the weapon strength of wind and sky - The sword will have the ability to "Sweeping Edge 4," the Ax will have the ability to "Haste 1," and the Hammer with a 20% chance will summon a lightning bolt from heaven on your enemies.<PAGE><LINE>§lStrenght of Ignis§r<BR>The furious power of Ignis will fill the weapon with all the might of this aspect. The sword will have the ability to "Fire Aspect 3", the axe will spit out its rage with each blow in the form of a small explosion. The hammer will have a 20% chance to create a huge explosion, scattering your enemies in the sides and causing a very large damage.<PAGE><LINE>§lStrenght of Aqua§r<BR>Flowing power Aqua will fill the weapon with force of sea waves and underground sources, undermining even a stone. And also poison and acid - its hostile manifestations. The sword will have the ability to "Acuity 6", the Axe will cause "Nausea" and "Poison 3" for 3 seconds, and the Hammer will have a 50% chance to throw an acid at the enemy, dealing 3 damage.<PAGE><LINE>§lStrenght of Terra§r<BR>The monolithic power of Terra will fill the weapon, increasing its mass for the enemy, but not for you. The sword will have the ability to "Knockback 3", the Axe will deal a Critical Hit with a 20% chance, and a Hammer with a 25% chance will stun your opponent for 1 sec.<PAGE><LINE>§lStrenght of Ordo§r<BR>Ordo's ordered power will bring your weapon to harmony and light. The sword will have the ability to "Smite 6", the Axe will deal twice the damage to the Shadow Armor, and the Hammer will additionally destroy the armor by 25.<PAGE><LINE>§lStrenght of the Perditio§r<BR>The chaotic power of Perditio will fill your weapon with unholy energy. The sword will gain the ability of "Beech of Arthropods 6", the Axe will deal twice the damage to the Light Armor, and the Hammer will be able to cast "Searing 2" for 2 seconds with a 50% chance.
 
-research.TG_BETTER_PRIMAL_ARMOR.title=Upgraded Primal Armor
-research.TG_BETTER_PRIMAL_ARMOR.stage.1=Studying the stones as you should, you came to the conclusion that their strength is almost unlimited. However, the "fetters" of reality and their material limit it. And what if you try to combine your original armor, which has the power of aspects and stones?
-research.TG_BETTER_PRIMAL_ARMOR.stage.2=Of course, it did not happen the way you expected and hoped, but that does not mean it's a failure. You figured that at best, repeat the effects of the stones built into the armor, but on an ongoing basis. However, the effects were completely different:<PAGE><LINE>§lStrenght of Aer§r<BR>The strength of the Aer stone will fill every element with its special power. But they will, as before, reinforce each other. The helmet will have the ability to "Underwater Breath" 1, 2 or 3 levels. The Breastplate will gain the ability to attract items to a player within a radius of 4, 5 or 6 cells. Leggings will have the ability to "Jumble" 1,2 or 3 levels. Shoes will have the ability to "Weightlessness" 1,2 or 3 levels. When all 4 of the stones are together, you will receive the following abilities: "Breathing under water", Drawing nearby objects within a radius of 7, "Jumping 4", Immunity to damage from falling. In addition, any shells fired at you will be reflected back to the enemy without harming you, but chance of this only 90%.<PAGE><LINE>§lStrenght of Ignis§r<BR>The strength of the Ignis stone will fill the armor with the rage of this aspect. The enemies attacking you will be thrown to the side and ignited with a 25% chance at 1 stone, with a 50% chance at 2 stones, with a 75% chance at 3 stones. With 4 stones, any enemy that attacks you will be thrown back and set on fire. You will gain immunity to fire, and undead within a radius of 9 cells will burn, even being out of your sight.<PAGE><LINE>§lStrenght of the Aqua§r<BR>The strength of the Aqua stone will give your armor vampirism. Any damage you deal will heal you by% of the damage taken. at 1 stone will be treated by 15%, with 2 stones by 30%, with 3 stones by 45%, with 4 stones cured by 60% of the damage and provides immunity to poison, wither and nausea.<PAGE><LINE>§lStrenght of the Terra§r<BR>The strength of the Terra stone will give you the opportunity to rejuvenate nature. at 1 stone gives "regeneration 1", with 2 stones - "Regeneration 2", with 3 stones - "Regeneration 3", with 4 stones - Regeneration 4 and "Tide of health".<PAGE><LINE>§lStrenght of the Ordo§r<BR>The strength of the Ordo stone will remove any sorcerous advantage from the attacker's side, scattering the positive effects imposed on him. At 1 stone with a chance of 25%, with 2 stones - with a chance of 50%, with 3 stones - with a chance of 75%, with 4 stones - remove it and give you all the positive effects that the attacker will have.<PAGE><LINE>§lStrenght of the Perditio§r<BR>The strength of the Perditio stone will create problems for your enemies, imposing on the attacker "Poison" for 5 sec. At 1 stone - with a chance of 25%, with 2 stones - with a chance of 50%, with 3 stones - with a chance of 75%, with 4 stones - will put a poison on the attacker, and around you will wither the wither effect fog in a radius of 5 cells.
-
 research.TG_BELT_LIGHT.title=Belt of Light
 research.TG_BELT_LIGHT.stage.1=You are thinking about the fact that if you can create armor, weapons and tools, then why not create a belt? However, the belt consists of leather, not metal ...
 research.TG_BELT_LIGHT.stage.2=It seems that the Primordial Pearl takes off almost all the limitations of matter. Filling the decorated belt with light metal and pearl energy, you created a Belt of Light. When equipping him with boots of light, in the afternoon increases the speed of movement, the height of the jump and gives immunity to the damage from falling. In addition, when wearing a full set (helmet, armor, leggings, boots and belt), you can take off for a short time, using the accumulated energy of light pressing button "C". Also in the daytime you will receive "Damage Resistance 2".
@@ -229,4 +209,4 @@ research.TG_SCYTHES.light=A Light scythe, as well as a taum-scythe, cuts down le
 research.TG_JEWELLERY.title=Jewellery
 research.TG_JEWELLERY.stage.1=Once you accidentally spilled some of the essence on the stone and he... Filled with it. Having studied its properties, you thought that why not try it with other stones and essences?
 research.TG_JEWELLERY.stage.2=Definitely, the result is interesting. But for a stable effect, you need a table and tools. By creating tools for cutting stones and putting them on the table, you can create sharp magic stones. To do this, you need the essence and the stone itself. But there is one thing - the essence in its usual sense is not suitable for these purposes. A substance disintegrator built into the table allows you to direct the essence directly to the stone. <BR>You can fill the following types of stones: Quartz - 50 units, Amber - 40 units, Lapis - 35 units, Diamond - 25 units and Emerald - 20 units. The stone has an instant effect, but it only lasts for one application, after which it collapses.<BR> Effects of stones: Perditio - Gives a "death look" for 3 minutes; Ordo - Removes negative effects; Terra - Gives "Resistance Damage"; Aqua - Freezes water into ice and turns lava into obsidian in a 5x5x5 area; Ignis - gives "Fire Resistance" for 5 minutes; Aer - Gives "Speed 2" and "Jumping 2" for 3 minutes.<PAGE><IMG>thaumicgadgets:textures/gui/research/recipe_cutting_table.png:0:0:195:149:1</IMG>
-research.TG_JEWELLERY.stage.3=Experimenting with stones a little more, you invented another type of cut - oval. <BR>Stone and essence are also used to fill them: Quartz - 75 units, Amber - 60 units, Lapis - 50 units, Diamond - 40 units and Emerald - 35 units. These stones can be reused. After use, they will need time to recover. <BR>The effects of this cut are different from the sharp: Perditio - Increases the level of infection of the aura by 50 units; Ordo - Restores 5 health; Terra - Adds "10 golden hearts" for 5 min; Aqua - Creates a block of pure water; Ignis - Lights the fire on the block; Aer - Gives scuba breathing for 3 minutes. And don't forgot about prev. sharp cut. <BR> Effects of stones: Perditio - Gives a "death look" for 3 minutes; Ordo - Removes negative effects; Terra - Gives "Resistance Damage"; Aqua - Freezes water into ice and turns lava into obsidian in a 5x5x5 area; Ignis - gives "Fire Resistance" for 5 minutes; Aer - Gives "Speed ​​2" and "Jumping 2" for 3 minutes. <PAGE><IMG>thaumicgadgets:textures/gui/research/recipe_cutting_table.png:0:0:195:149:1</IMG>
+research.TG_JEWELLERY.stage.3=Experimenting with stones a little more, you invented another type of cut - oval. <BR>Stone and essence are also used to fill them: Quartz - 75 units, Amber - 60 units, Lapis - 50 units, Diamond - 40 units and Emerald - 35 units. These stones can be reused. After use, they will need time to recover. <BR>The effects of this cut are different from the sharp: Perditio - Increases the level of infection of the aura by 50 units; Ordo - Restores 5 health; Terra - Adds "10 golden hearts" for 5 min; Aqua - Creates a block of pure water; Ignis - Lights the fire on the block; Aer - Gives scuba breathing for 3 minutes. And don't forgot about prev. sharp cut. <BR> Effects of stones: Perditio - Gives a "death look" for 3 minutes; Ordo - Removes negative effects; Terra - Gives "Resistance Damage"; Aqua - Freezes water into ice and turns lava into obsidian in a 5x5x5 area; Ignis - gives "Fire Resistance" for 5 minutes; Aer - Gives "Speed 2" and "Jumping 2" for 3 minutes. <PAGE><IMG>thaumicgadgets:textures/gui/research/recipe_cutting_table.png:0:0:195:149:1</IMG>

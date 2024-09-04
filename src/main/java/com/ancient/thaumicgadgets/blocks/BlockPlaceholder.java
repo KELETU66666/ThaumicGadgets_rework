@@ -2,8 +2,6 @@ package com.ancient.thaumicgadgets.blocks;
 
 import com.ancient.thaumicgadgets.Main;
 import com.ancient.thaumicgadgets.init.ModBlocks;
-import com.ancient.thaumicgadgets.util.IHasModel;
-import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -20,14 +18,12 @@ import java.util.List;
 import java.util.Random;
 
 
-public class BlockPlaceholder extends Block implements IHasModel {
+public class BlockPlaceholder extends BlockBase {
     private Item drop;
 
     public BlockPlaceholder(String name, Material material, Item drop, SoundType sound, float hard, float res, int lightOp, String inst, int lvl) {
-        super(material);
+        super(name, material);
 
-        setTranslationKey(name);
-        setRegistryName(name);
         setSoundType(sound);
         setHardness(hard);
         setResistance(res);
@@ -35,7 +31,7 @@ public class BlockPlaceholder extends Block implements IHasModel {
         setHarvestLevel(inst, lvl);
         this.drop = drop;
 
-        ModBlocks.BLOCKS.add(this);
+        this.setCreativeTab(null);
     }
 
 

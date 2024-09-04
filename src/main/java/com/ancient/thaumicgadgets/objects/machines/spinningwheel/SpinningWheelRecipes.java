@@ -58,7 +58,7 @@ public class SpinningWheelRecipes
         addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Item.getItemFromBlock(BlocksTC.shimmerleaf)), new ItemStack(ModItems.YARN_ETHER), 5.0F);
         addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(Items.STRING), new ItemStack(ItemsTC.nuggets, 1, 7), new ItemStack(ModItems.YARN_VOID), 5.0F);
 
-        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.FABRIC_DECORATED), 5.0F);
+        addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.FABRIC_SPACIOUS), 5.0F);
         addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ItemsTC.fabric), 5.0F);
         addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_THANIUM), new ItemStack(ModItems.YARN_GOLD), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.FABRIC_ENCHANTED), 5.0F);
         addSpinningWheelRecipe("thaumicgadgets:weaving", new ItemStack(ModItems.YARN_ETHER), new ItemStack(ModItems.YARN_MAGIC), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.YARN_LIGHT), new ItemStack(ModItems.FABRIC_LIGHT), 5.0F);

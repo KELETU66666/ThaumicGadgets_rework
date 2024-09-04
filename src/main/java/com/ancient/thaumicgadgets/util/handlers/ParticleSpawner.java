@@ -3,7 +3,6 @@ package com.ancient.thaumicgadgets.util.handlers;
 
 import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticles;
 import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustom;
-import com.ancient.thaumicgadgets.network.particles.MessageClientSpawnParticlesCustomLightning;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.util.EnumParticleTypes;
@@ -23,31 +22,9 @@ public class ParticleSpawner {
         NetworkHandler.sendToAllNearby(new MessageClientSpawnParticles(type, x, y, z, count, this.rf.getRandomPartcileVelocity(0.2D), this.rf.getRandomPartcileVelocity(0.2D), this.rf.getRandomPartcileVelocity(0.2D)), new NetworkRegistry.TargetPoint(dim, x, y, z, 64.0D));
     }
 
-
-    public void transferData(EnumParticleTypes type, int count, double x, double y, double z, double velX, double velY, double velZ, int dim) {
-        NetworkHandler.sendToAllNearby(new MessageClientSpawnParticles(type, x, y, z, count, velX, velY, velZ), new NetworkRegistry.TargetPoint(dim, x, y, z, 64.0D));
-    }
-
-
     public void transferData(EnumHandler.CustomParticles type, int count, double x, double y, double z, double velX, double velY, double velZ, int dim) {
         NetworkHandler.sendToAllNearby(new MessageClientSpawnParticlesCustom(type, x, y, z, count, velX, velY, velZ), new NetworkRegistry.TargetPoint(dim, x, y, z, 64.0D));
     }
-
-
-    public void transferData(EnumHandler.CustomParticles type, Vec3d start, Vec3d finish, int dim) {
-        NetworkHandler.sendToAllNearby(new MessageClientSpawnParticlesCustomLightning(type, start, finish), new NetworkRegistry.TargetPoint(dim, start.x, start.y, start.z, 64.0D));
-    }
-
-
-    @SideOnly(Side.CLIENT)
-    public void spawnParticles(EnumParticleTypes type, int count, double x, double y, double z) {
-        if (count > 0) {
-            for (int q = 0; q < count; q++) {
-                (Minecraft.getMinecraft()).world.spawnParticle(type, x, y, z, this.rf.getRandomPartcileVelocity(0.2D), this.rf.getRandomPartcileVelocity(0.2D), this.rf.getRandomPartcileVelocity(0.2D));
-            }
-        }
-    }
-
 
     @SideOnly(Side.CLIENT)
     public void spawnParticles(EnumParticleTypes type, int count, double x, double y, double z, double velocityX, double velocityY, double velocityZ) {

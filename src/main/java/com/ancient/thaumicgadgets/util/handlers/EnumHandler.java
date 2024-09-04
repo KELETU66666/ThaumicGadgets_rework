@@ -1,39 +1,6 @@
 package com.ancient.thaumicgadgets.util.handlers;
 
 public class EnumHandler {
-    public enum PouchTypes {
-        pouch_magic_1("pouch_magic_1", 18),
-        pouch_magic_2("pouch_magic_2", 27),
-        pouch_magic_3("pouch_magic_3", 36),
-        pouch_hungry_magic_1("pouch_hungry_magic_1", 18),
-        pouch_hungry_magic_2("pouch_hungry_magic_2", 27),
-        pouch_hungry_magic_3("pouch_hungry_magic_3", 36),
-        pouch_void("pouch_void", 18);
-
-        private String name;
-
-        private int slotCount;
-
-        PouchTypes(String name, int slotCount) {
-            this.slotCount = slotCount;
-            this.name = name;
-        }
-
-
-        public String getName() {
-            return this.name;
-        }
-
-
-        public int getSlotCount() {
-            return this.slotCount;
-        }
-
-
-        public String toString() {
-            return getName();
-        }
-    }
 
     public enum CustomParticles {
         LIGHTNING(0, "lightning", "com.ancient.thaumicgadgets.particles.ParticleCustomLightning"),

@@ -14,7 +14,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.nbt.NBTTagCompound;
@@ -27,13 +26,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.List;
 import java.util.Set;
 
-public class ToolAxePrimal extends ItemTool implements IHasModel, ICheckEnchantment {
-    private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.LADDER, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE, Blocks.WEB);
+public class ToolPickaxePrimal extends ItemTool implements IHasModel, ICheckEnchantment {
+
+    private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.ACTIVATOR_RAIL, Blocks.COAL_ORE, Blocks.COBBLESTONE, Blocks.DETECTOR_RAIL, Blocks.DIAMOND_BLOCK, Blocks.DIAMOND_ORE, Blocks.DOUBLE_STONE_SLAB, Blocks.GOLDEN_RAIL, Blocks.GOLD_BLOCK, Blocks.GOLD_ORE, Blocks.ICE, Blocks.IRON_BLOCK, Blocks.IRON_ORE, Blocks.LAPIS_BLOCK, Blocks.LAPIS_ORE, Blocks.LIT_REDSTONE_ORE, Blocks.MOSSY_COBBLESTONE, Blocks.NETHERRACK, Blocks.PACKED_ICE, Blocks.RAIL, Blocks.REDSTONE_ORE, Blocks.SANDSTONE, Blocks.RED_SANDSTONE, Blocks.STONE, Blocks.STONE_SLAB, Blocks.STONE_BUTTON, Blocks.STONE_PRESSURE_PLATE);
 
     private final String name;
     private final int mode;
 
-    public ToolAxePrimal(String name, Item.ToolMaterial material, float damage, float attackSpeed) {
+    public ToolPickaxePrimal(String name, ToolMaterial material, float damage, float attackSpeed) {
         super(damage, attackSpeed, material, EFFECTIVE_ON);
         setTranslationKey(name);
         setRegistryName(name);
@@ -45,6 +45,48 @@ public class ToolAxePrimal extends ItemTool implements IHasModel, ICheckEnchantm
         ModItems.ITEMS.add(this);
     }
 
+    public boolean canHarvestBlock(IBlockState state) {
+        Block block = state.getBlock();
+        if (block == Blocks.OBSIDIAN) {
+            return this.toolMaterial.getHarvestLevel() == 3;
+        } else if (block != Blocks.DIAMOND_BLOCK && block != Blocks.DIAMOND_ORE) {
+            if (block != Blocks.EMERALD_ORE && block != Blocks.EMERALD_BLOCK) {
+                if (block != Blocks.GOLD_BLOCK && block != Blocks.GOLD_ORE) {
+                    if (block != Blocks.IRON_BLOCK && block != Blocks.IRON_ORE) {
+                        if (block != Blocks.LAPIS_BLOCK && block != Blocks.LAPIS_ORE) {
+                            if (block != Blocks.REDSTONE_ORE && block != Blocks.LIT_REDSTONE_ORE) {
+                                Material mat = state.getMaterial();
+                                if (mat == Material.ROCK) {
+                                    return true;
+                                } else if (mat == Material.IRON) {
+                                    return true;
+                                } else {
+                                    return mat == Material.ANVIL;
+                                }
+                            } else {
+                                return this.toolMaterial.getHarvestLevel() >= 2;
+                            }
+                        } else {
+                            return this.toolMaterial.getHarvestLevel() >= 1;
+                        }
+                    } else {
+                        return this.toolMaterial.getHarvestLevel() >= 1;
+                    }
+                } else {
+                    return this.toolMaterial.getHarvestLevel() >= 2;
+                }
+            } else {
+                return this.toolMaterial.getHarvestLevel() >= 2;
+            }
+        } else {
+            return this.toolMaterial.getHarvestLevel() >= 2;
+        }
+    }
+
+    public float getDestroySpeed(ItemStack stack, IBlockState state) {
+        Material mat = state.getMaterial();
+        return mat != Material.IRON && mat != Material.ANVIL && mat != Material.ROCK ? super.getDestroySpeed(stack, state) : this.efficiency;
+    }
 
     public float getStrVsBlock(ItemStack stack, IBlockState state) {
         Material material = state.getMaterial();
@@ -104,7 +146,7 @@ public class ToolAxePrimal extends ItemTool implements IHasModel, ICheckEnchantm
 
 
     public void changeItemMode(EntityPlayer player, ItemStack stack, int slotId) {
-        ToolAxePrimal ar = (ToolAxePrimal) stack.getItem();
+        ToolPickaxePrimal ar = (ToolPickaxePrimal) stack.getItem();
         ItemStack is = new ItemStack(stack.getItem());
         NBTTagCompound nbt = new NBTTagCompound();
         nbt.setInteger("mode", stack.getTagCompound().getInteger("mode") + 1);

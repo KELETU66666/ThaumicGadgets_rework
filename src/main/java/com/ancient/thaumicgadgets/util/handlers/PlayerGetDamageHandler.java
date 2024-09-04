@@ -4,14 +4,12 @@ package com.ancient.thaumicgadgets.util.handlers;
 import com.ancient.thaumicgadgets.armor.primal.ArmorPrimal;
 import com.ancient.thaumicgadgets.init.ModItems;
 import com.ancient.thaumicgadgets.tools.primal.ToolAxePrimal;
-import com.ancient.thaumicgadgets.util.IFunctionLibrary;
+import com.ancient.thaumicgadgets.tools.primal.ToolPickaxePrimal;
 import com.ancient.thaumicgadgets.util.IPrimalArmorAbilities;
 import com.ancient.thaumicgadgets.util.IPrimalWeaponAbilities;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -30,14 +28,6 @@ public class PlayerGetDamageHandler implements IPrimalArmorAbilities {
 
                     if (s.hasTagCompound()) {
                         count[s.getTagCompound().getInteger("mode")] = count[s.getTagCompound().getInteger("mode")] + 1;
-                    }
-                    if (s.getItem() instanceof com.ancient.thaumicgadgets.armor.primal.ArmorPrimalUpgraded) {
-
-                        NBTTagList nbt = s.getTagCompound().getTagList("primalInventory", 10);
-                        NBTTagCompound item = nbt.getCompoundTagAt(0);
-                        c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getTranslationKey())] = c[IFunctionLibrary.getCrystalModeFromName((new ItemStack(item)).getTranslationKey())] + 1;
-
-                        continue;
                     }
                     ArmorPrimal armor = (ArmorPrimal) s.getItem();
                     armor.OnPlayerHurt((EntityPlayer) event.getEntity(), event.getSource(), event.getAmount());
@@ -124,7 +114,7 @@ public class PlayerGetDamageHandler implements IPrimalArmorAbilities {
 
             if (stack.getItem() == ModItems.HAMMER_PRIMAL) {
 
-                ToolAxePrimal axe = (ToolAxePrimal) stack.getItem();
+                ToolPickaxePrimal axe = (ToolPickaxePrimal) stack.getItem();
                 int mode = stack.getTagCompound().getInteger("mode");
 
                 if (mode == 0) {
